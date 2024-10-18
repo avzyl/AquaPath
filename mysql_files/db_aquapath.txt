@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS db_aquapath;
+
+USE db_aquapath;
+
+CREATE TABLE IF NOT EXISTS tbl_sensor_value (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    water_lvl INT NOT NULL,
+    location VARCHAR(255) DEFAULT 'CEU Malolos',
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
