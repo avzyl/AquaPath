@@ -108,7 +108,7 @@ void loop() {
   Serial.print(centi + " Centimeters");
 
   // Construct SQL query
-  int water_lvl = feet;  // Assign water level to feet value
+  int water_lvl = ft;  // Assign water level to feet value
   char location[] = "CEU Malolos";  // Default location
   
   char query[256];
