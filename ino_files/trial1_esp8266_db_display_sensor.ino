@@ -13,7 +13,7 @@
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 float duration;
-int feet, cm, inches;
+int feet, cm, inches, ft, centi, in;
 
 // WiFi parameters to be configured
 const char* ssid = "Pegasus Hunter"; // Your Wi-Fi SSID
@@ -90,21 +90,25 @@ void loop() {
   feet = (duration * 0.0343 / 2) / 30.48;
   cm = (duration * 0.0343) / 2;
   inches = (duration * 0.01339) / 2;
+  ft = (4-feet);
+  centi = (122 - cm);
+
+  while (inches>=12){
+    inches -= 12;
+  }
+  in = inches;
+  
 
   // Display on LCD
   lcd.setCursor(0, 1);
   lcd.print(String(feet) + " ft, " + String(cm) + " cm");
 
   // Print result to serial monitor
-  Serial.print("Feet: ");
-  Serial.print(feet);
-  Serial.println(" ft");
-  Serial.print("Centimeters: ");
-  Serial.print(cm);
-  Serial.println(" cm");
+  Serial.print(ft +" Feet " + in + "In");
+  Serial.print(centi + " Centimeters");
 
   // Construct SQL query
-  int water_lvl = feet;  // Assign water level to feet value
+  int water_lvl = ft;  // Assign water level to feet value
   char location[] = "CEU Malolos";  // Default location
   
   char query[256];
