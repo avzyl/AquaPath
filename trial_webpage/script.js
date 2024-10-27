@@ -89,7 +89,7 @@ highwayLine.bindPopup("<b>McArthur Highway</b><br>Status: Passable.<br>Select a 
 
 // Initialize the Carmen de Luna polyline with red color
 let carmenLine = L.polyline(carmenCoord, { color: 'red', weight: 5 }).addTo(map);
-carmenLine.bindPopup("<b>Carmen de Luna</b><br>Status: Passable.<br>Select a color to indicate flood status.");
+carmenLine.bindPopup("<b>Carmen de Luna</b><br>Status: Impassable<br>High Danger");
 
 let hanggaStLine = L.polyline(hanggaStCoord, { color: 'yellow', weight: 5 }).addTo(map);
 
