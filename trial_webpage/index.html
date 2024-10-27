@@ -4,12 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malolos Map with Polyline</title>
+    <title>Malolos Map with Geolocation</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
         #map {
             height: 500px;
             width: 100%;
+        }
+
+        #locate-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            /* Ensures button is above the map */
+            padding: 10px;
+            background: white;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -17,6 +30,7 @@
 <body>
     <h2>Map of Malolos with Customizable McArthur Highway Indicator</h2>
     <div id="map"></div>
+    <button id="locate-btn">Show My Location</button>
     <label for="colorSelect">Choose Line Color: </label>
     <select id="colorSelect">
         <option value="green">Green</option>
@@ -25,7 +39,7 @@
     </select>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Link to your custom script -->
 </body>
 
 </html>
