@@ -108,14 +108,8 @@ function showLocation() {
         navigator.geolocation.getCurrentPosition((position) => {
             const lat = position.coords.latitude;
             const lng = position.coords.longitude;
-
-            // Set the view to the user's location
             map.setView([lat, lng], 15);
-
-            // Add a marker at the user's location
-            L.marker([lat, lng]).addTo(map)
-                .bindPopup('You are here!')
-                .openPopup();
+            L.marker([lat, lng]).addTo(map).bindPopup('You are here!').openPopup();
         }, () => {
             alert("Geolocation service failed.");
         });
@@ -124,10 +118,10 @@ function showLocation() {
     }
 }
 
-// Add event listener to the button
+// Event listener for the location button
 document.getElementById('locate-btn').addEventListener('click', showLocation);
 
-// Function to update the color of the polyline
+// Function to update the color of McArthur Highway line
 function updateLineColor(color) {
     highwayLine.setStyle({ color: color });
 }
@@ -136,7 +130,52 @@ function updateLineColor(color) {
 document.getElementById('colorSelect').addEventListener('change', function (e) {
     const selectedColor = e.target.value;
     updateLineColor(selectedColor);
-    highwayLine.openPopup(); // Keep this if you want the highway popup to open upon color change
+    highwayLine.openPopup();
+});
+
+// Initialize routing control
+let routingControl;
+
+// Function to create a route between two locations using Leaflet Routing Machine
+function createRoute(origin, destination) {
+    // Remove previous route if it exists
+    if (routingControl) map.removeControl(routingControl);
+
+    // Add a new routing control with OpenRouteService or OSRM
+    routingControl = L.Routing.control({
+        waypoints: [L.latLng(origin[0], origin[1]), L.latLng(destination[0], destination[1])],
+        routeWhileDragging: true,
+        geocoder: L.Control.Geocoder.nominatim(),
+        createMarker: function () { return null; },  // Hide default markers
+        lineOptions: { styles: [{ color: 'blue', opacity: 0.6, weight: 5 }] }
+    }).addTo(map);
+}
+
+// Geocode function for origin and destination
+function geocodeLocation(query, callback) {
+    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.length > 0) {
+                const { lat, lon } = data[0];
+                callback([parseFloat(lat), parseFloat(lon)]);
+            } else {
+                alert('Location not found');
+            }
+        });
+}
+
+// Event listener for search route button
+document.getElementById('searchRoute').addEventListener('click', function () {
+    const origin = document.getElementById('origin').value;
+    const destination = document.getElementById('destination').value;
+
+    // Geocode origin and destination locations and then create the route
+    geocodeLocation(origin, (originCoords) => {
+        geocodeLocation(destination, (destinationCoords) => {
+            createRoute(originCoords, destinationCoords);
+        });
+    });
 });
 
 // // Create a polygon for the boundaries with transparent fill
