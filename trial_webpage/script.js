@@ -80,6 +80,13 @@ const hanggaStCoord = [
     [14.869815, 120.794151],
     [14.875340, 120.790464]
 ]
+
+const forrestStCoord = [
+    [14.867832, 120.791535],
+    [14.869298, 120.790425],
+    [14.869625, 120.790107]
+]
+
 // Initialize the boundaries for Malolos, Bulacan
 let boundariesLine = L.polygon(boundaries, { color: 'black', fillColor: 'black', fillOpacity: 0.0 }).addTo(map);
 
@@ -92,6 +99,8 @@ let carmenLine = L.polyline(carmenCoord, { color: 'red', weight: 5 }).addTo(map)
 carmenLine.bindPopup("<b>Carmen de Luna</b><br>Status: Impassable<br>High Danger");
 
 let hanggaStLine = L.polyline(hanggaStCoord, { color: 'yellow', weight: 5 }).addTo(map);
+
+let forrestStLine = L.polyline(forrestStCoord, {color: 'red', weight: 10}).addTo(map);
 
 // Add click events to open popups for both polylines
 highwayLine.on('click', function () {
@@ -194,4 +203,3 @@ document.getElementById('searchRoute').addEventListener('click', function () {
 //     fillColor: 'gray',
 //     fillOpacity: 0.5,
 // }).addTo(map);
-
