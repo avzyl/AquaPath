@@ -203,4 +203,3 @@ document.getElementById('searchRoute').addEventListener('click', function () {
 //     fillColor: 'gray',
 //     fillOpacity: 0.5,
 // }).addTo(map);
-

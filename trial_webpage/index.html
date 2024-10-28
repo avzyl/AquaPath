@@ -8,44 +8,36 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
-    <style>
-        #map {
-            height: 500px;
-            width: 100%;
-        }
-
-        #locate-btn {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 1000;
-            padding: 10px;
-            background: white;
-            border: 2px solid #007bff;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h2>Map of Malolos with Customizable McArthur Highway Indicator</h2>
-    <div id="map"></div>
-    <button id="locate-btn">Show My Location</button>
-    <label for="colorSelect">Choose Line Color: </label>
-    <select id="colorSelect">
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
-        <option value="red">Red</option>
-    </select>
-    <label for="origin">Origin:</label>
-    <input type="text" id="origin" placeholder="Enter origin location">
-    <br>
-    <label for="destination">Destination:</label>
-    <input type="text" id="destination" placeholder="Enter destination location">
-    <br>
-    <button id="searchRoute">Find Route</button>
-
+    <section>
+        <div id="map"></div>
+        <div class="title">
+            <h2>Map of Malolos with Customizable McArthur Highway Indicator</h2>
+        </div>
+        <div class="button">
+            <button id="locate-btn">Show My Location</button>
+        </div>
+        <div class="line">
+            <label for="colorSelect">Choose Line Color: </label>
+            <select id="colorSelect">
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+            </select>
+        </div>
+        <div class="options">
+            <label class="orig" for="origin">Origin:</label>
+            <input type="text" id="origin" placeholder="Enter origin location">
+            <br>
+            <label class="dest" for="destination">Destination:</label>
+            <input type="text" id="destination" placeholder="Enter destination location">
+            <br>
+            <button id="searchRoute">Find Route</button>
+        </div>
+    </section>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
