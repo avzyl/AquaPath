@@ -215,10 +215,21 @@ const MAVSt15Coord = [
 ]
 
 const ibaLongosRdCoord = [
-    [14.875997, 120.795167],
     [14.875837, 120.794873],
     [14.875448, 120.793584],
-    [14.87542, 120.79056]
+    [14.875375, 120.790474],
+    [14.875292, 120.788710],
+    [14.875301, 120.788047],
+    [14.875246, 120.787344],
+    [14.875166, 120.787115],
+    [14.875164, 120.787070]
+]
+
+const calumpangLongosRdCoord = [
+    [14.878740, 120.788009],
+    [14.878505, 120.788146],
+    [14.877237, 120.789170],
+    [14.875418, 120.790377]
 ]
 
 // Initialize the boundaries for Malolos, Bulacan
@@ -269,6 +280,9 @@ let MAVSt14Line = L.polyline(MAVSt14Coord, {color: 'yellow', weight:10}).addTo(m
 let MAVSt15Line = L.polyline(MAVSt15Coord, {color: 'yellow', weight:10}).addTo(map)
 
 let ibaLongosRdLine = L.polyline(ibaLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
+
+let calumpangLongosRdLine = L.polyline(calumpangLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
+
 
 
 // Add click events to open popups for both polylines
