@@ -106,13 +106,39 @@ const McArthurVillageMainRCoord = [
 const MAVSt1Coord = [
     [14.879468, 120.790736],
     [14.878616, 120.791392],
-    [14.877400, 120.792357]
+    [14.877388, 120.792352]
 ]
 
 const MAVSt2Coord = [
     [14.879328, 120.790453],
-    [14.878449, 120.791114],
+    [14.878460, 120.791112],
     [14.877189, 120.792099]
+]
+
+const MAVSt3Coord = [
+    [14.879201, 120.790191],
+    [14.878288, 120.790872],
+    [14.876991, 120.791876]
+]
+
+const MAVSt4Coord = [
+    [14.879345, 120.789723],
+    [14.879160, 120.789877],
+    [14.878128, 120.790639],
+    [14.876811, 120.791653]
+]
+
+const MAVSt5Coord = [
+    [14.879216, 120.789465],
+    [14.877964, 120.790416],
+    [14.877155, 120.791031],
+    [14.876719, 120.791334],
+    [14.876512, 120.791267],
+    [14.876490, 120.791130],
+    [14.876469, 120.790929],
+    [14.876475, 120.790848],
+    [14.876833, 120.790573]
+
 ]
 
 // Initialize the boundaries for Malolos, Bulacan
@@ -135,6 +161,13 @@ let McArthurVillageMainRLine = L.polyline(McArthurVillageMainRCoord, {color: 'gr
 let MAVSt1Line = L.polyline(MAVSt1Coord, {color: 'yellow', weight:10}).addTo(map)
 
 let MAVSt2Line = L.polyline(MAVSt2Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt3Line = L.polyline(MAVSt3Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt4Line = L.polyline(MAVSt4Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt5Line = L.polyline(MAVSt5Coord, {color: 'yellow', weight:10}).addTo(map)
+
 // Add click events to open popups for both polylines
 highwayLine.on('click', function () {
     this.openPopup();
