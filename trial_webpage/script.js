@@ -153,6 +153,74 @@ const MAVSt7Coord = [
     [14.876859, 120.790542]
 ]
 
+const MAVSt8Coord = [
+    [14.878564, 120.788903],
+    [14.877474, 120.789720],
+    [14.876763, 120.790266]
+]
+
+const MAVSt9Coord = [
+    [14.879369, 120.789714],
+    [14.878904, 120.788826],
+    [14.878823, 120.788792],
+    [14.878585, 120.788872],
+    [14.878174, 120.788875],
+    [14.878097, 120.788887],
+    [14.877309, 120.789490],
+    [14.876612, 120.790070]
+]
+
+const MAVSt10Coord = [
+    [14.879289, 120.790920],
+    [14.879479, 120.791318],
+    [14.879549, 120.791329],
+    [14.879685, 120.791193],
+    [14.879692, 120.791132],
+    [14.879366, 120.790423],
+    [14.879245, 120.790157],
+    [14.879131, 120.789892]
+]
+
+const MAVSt11Coord = [
+    [14.877129, 120.791018],
+    [14.876851, 120.790548],
+    [14.876612, 120.790021]
+]
+
+const MAVSt12Coord = [
+    [14.877789, 120.792858],
+    [14.877360, 120.792361],
+    [14.877155, 120.792122],
+    [14.876748, 120.791656],
+    [14.876715, 120.791568],
+    [14.876693, 120.791474],
+    [14.876708, 120.791371],
+    [14.876744, 120.791303]
+]
+
+const MAVSt13Coord = [
+    [14.878266, 120.792445],
+    [14.877811, 120.792851]
+]
+
+const MAVSt14Coord = [
+    [14.878266, 120.792445],
+    [14.878090, 120.792202],
+    [14.877903, 120.791959]
+]
+
+const MAVSt15Coord = [
+    [14.878090, 120.792202],
+    [14.877599, 120.792600]
+]
+
+const ibaLongosRdCoord = [
+    [14.875997, 120.795167],
+    [14.875837, 120.794873],
+    [14.875448, 120.793584],
+    [14.87542, 120.79056]
+]
+
 // Initialize the boundaries for Malolos, Bulacan
 let boundariesLine = L.polygon(boundaries, { color: 'black', fillColor: 'black', fillOpacity: 0.0 }).addTo(map);
 
@@ -184,7 +252,23 @@ let MAVSt6Line = L.polyline(MAVSt6Coord, {color: 'yellow', weight:10}).addTo(map
 
 let MAVSt7Line = L.polyline(MAVSt7Coord, {color: 'yellow', weight:10}).addTo(map)
 
+let MAVSt8Line = L.polyline(MAVSt8Coord, {color: 'yellow', weight:10}).addTo(map)
 
+let MAVSt9Line = L.polyline(MAVSt9Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt10Line = L.polyline(MAVSt10Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt11Line = L.polyline(MAVSt11Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt12Line = L.polyline(MAVSt12Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt13Line = L.polyline(MAVSt13Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt14Line = L.polyline(MAVSt14Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt15Line = L.polyline(MAVSt15Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let ibaLongosRdLine = L.polyline(ibaLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
 
 
 // Add click events to open popups for both polylines
