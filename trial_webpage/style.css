@@ -44,6 +44,8 @@ section {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     color: white;
     border: 1px solid white;
+    transition: 0.3s;
+
 }
 
 .title {
@@ -89,6 +91,9 @@ h2 {
 
     grid-row: 3;
     margin: 18% 5% 1% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .options {
@@ -162,4 +167,12 @@ input {
     padding: 1% 10% 1% 10%;
     border: 1px solid rgba(20, 26, 34, .5);
     cursor: pointer;
+}
+
+#locate-btn:hover {
+    backdrop-filter: blur(5px);
+    background-color: rgba(182, 182, 182, 0.5);
+    color: #505050;
+    font-weight: bold;
+    /* box-shadow: 0 0 30px #fff; */
 }
