@@ -141,6 +141,18 @@ const MAVSt5Coord = [
 
 ]
 
+const MAVSt6Coord = [
+    [14.879078, 120.789207],
+    [14.877788, 120.790177],
+    [14.877009, 120.790785]
+]
+
+const MAVSt7Coord = [
+    [14.878947, 120.788977],
+    [14.877624, 120.789964],
+    [14.876859, 120.790542]
+]
+
 // Initialize the boundaries for Malolos, Bulacan
 let boundariesLine = L.polygon(boundaries, { color: 'black', fillColor: 'black', fillOpacity: 0.0 }).addTo(map);
 
@@ -167,6 +179,13 @@ let MAVSt3Line = L.polyline(MAVSt3Coord, {color: 'yellow', weight:10}).addTo(map
 let MAVSt4Line = L.polyline(MAVSt4Coord, {color: 'yellow', weight:10}).addTo(map)
 
 let MAVSt5Line = L.polyline(MAVSt5Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt6Line = L.polyline(MAVSt6Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt7Line = L.polyline(MAVSt7Coord, {color: 'yellow', weight:10}).addTo(map)
+
+
+
 
 // Add click events to open popups for both polylines
 highwayLine.on('click', function () {
