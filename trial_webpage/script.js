@@ -3,6 +3,7 @@ const map = L.map('map').setView([14.8713199, 120.7932753], 15); // Coordinates 
 
 // Add OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    zoomControl: False,
     maxZoom: 19,
     // attribution: '© OpenStreetMap contributors'
 }).addTo(map);
