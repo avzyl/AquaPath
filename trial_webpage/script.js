@@ -244,6 +244,43 @@ const calumpangLongosRdCoord = [
     [14.875418, 120.790377]
 ]
 
+const riversidestreetCoord = [
+    [14.874982, 120.790722],
+    [14.874905, 120.790428],
+    [14.874517, 120.789551],
+    [14.874425, 120.789376],
+    [14.874411, 120.789171],
+    [14.874359, 120.788868],
+    [14.874396, 120.788534],
+    [14.874429, 120.788280],
+    [14.874865, 120.787376],
+    [14.875141, 120.787108],
+    [14.875406, 120.786945],
+    [14.875579, 120.786901],
+    [14.875713, 120.786919],
+    [14.875796, 120.786952],
+    [14.876249, 120.787057],
+    [14.876450, 120.787127],
+    [14.876833, 120.787151],
+    [14.877115, 120.787121],
+    [14.877165, 120.787100],
+    [14.877219, 120.787092],
+    [14.877245, 120.787088],
+    [14.877306, 120.787040],
+    [14.877385, 120.786960],
+    [14.877473, 120.786801]
+]
+
+const sanjoseVillageRdCoord = [
+    [14.877385, 120.786960],
+    [14.877482, 120.786978],
+    [14.877918, 120.787215],
+    [14.877976, 120.787252],
+    [14.878046, 120.787281],
+    [14.878408, 120.787474],
+    [14.878742, 120.787976]
+]
+
 // Initialize the boundaries for Malolos, Bulacan
 let boundariesLine = L.polygon(boundaries, { color: 'black', fillColor: 'black', fillOpacity: 0.0 }).addTo(map);
 
@@ -294,6 +331,10 @@ let MAVSt15Line = L.polyline(MAVSt15Coord, {color: 'yellow', weight:10}).addTo(m
 let ibaLongosRdLine = L.polyline(ibaLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
 
 let calumpangLongosRdLine = L.polyline(calumpangLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
+
+let riversidestreetLine = L.polyline(riversidestreetCoord, {color: 'yellow', weight:10}).addTo(map)
+
+let sanjoseVillageRdLine = L.polyline(sanjoseVillageRdCoord, {color: 'orange', weight:10}).addTo(map)
 
 
 
