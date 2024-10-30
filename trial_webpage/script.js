@@ -281,6 +281,11 @@ const sanjoseVillageRdCoord = [
     [14.878742, 120.787976]
 ]
 
+const riversidestreet2Coord = [
+    [14.874490, 120.789528],
+    [14.874216, 120.789721]
+]
+
 // Initialize the boundaries for Malolos, Bulacan
 let boundariesLine = L.polygon(boundaries, { color: 'black', fillColor: 'black', fillOpacity: 0.0 }).addTo(map);
 
@@ -335,6 +340,8 @@ let calumpangLongosRdLine = L.polyline(calumpangLongosRdCoord, {color: 'yellow',
 let riversidestreetLine = L.polyline(riversidestreetCoord, {color: 'yellow', weight:10}).addTo(map)
 
 let sanjoseVillageRdLine = L.polyline(sanjoseVillageRdCoord, {color: 'orange', weight:10}).addTo(map)
+
+let riversidestreet2Line = L.polyline(riversidestreet2Coord, {color: 'green', weight:10}).addTo(map)
 
 
 
