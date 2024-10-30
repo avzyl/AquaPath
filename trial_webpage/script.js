@@ -72,8 +72,20 @@ const highwayCoordinates = [
 ];
 
 const carmenCoord = [
-    [14.871691, 120.796745], //Point A
-    [14.8720735, 120.796114] //Point B
+    [14.871691, 120.796745],
+    [14.8720735, 120.796114],
+    [14.872355, 120.795598],
+    [14.872617, 120.794732],
+    [14.872826, 120.794091],
+    [14.873199, 120.793310],
+    [14.873264, 120.793275],
+    [14.873539, 120.793043],
+    [14.874059, 120.792637],
+    [14.874559, 120.791961],
+    [14.875034, 120.791116],
+    [14.875027, 120.791071],
+    [14.875030, 120.790943],
+    [14.874990, 120.790784] 
 ];
 
 const hanggaStCoord = [
@@ -84,7 +96,152 @@ const hanggaStCoord = [
 const forrestStCoord = [
     [14.867832, 120.791535],
     [14.869298, 120.790425],
-    [14.869625, 120.790107]
+    [14.869625, 120.790107],
+    [14.870659, 120.789268]
+]
+
+const McArthurVillageMainRCoord = [
+    [14.879169, 120.792414],
+    [14.878710, 120.791636],
+    [14.878601, 120.791456],
+    [14.878448, 120.791198],
+    [14.878285, 120.790952],
+    [14.878109, 120.790705],
+    [14.877944, 120.790476],
+    [14.877784, 120.790251],
+    [14.877627, 120.790002],
+    [14.877447, 120.789778],
+    [14.877279, 120.789551],
+    [14.877164, 120.789400]
+]
+
+const MAVSt1Coord = [
+    [14.879468, 120.790736],
+    [14.878616, 120.791392],
+    [14.877388, 120.792352]
+]
+
+const MAVSt2Coord = [
+    [14.879328, 120.790453],
+    [14.878460, 120.791112],
+    [14.877189, 120.792099]
+]
+
+const MAVSt3Coord = [
+    [14.879201, 120.790191],
+    [14.878288, 120.790872],
+    [14.876991, 120.791876]
+]
+
+const MAVSt4Coord = [
+    [14.879345, 120.789723],
+    [14.879160, 120.789877],
+    [14.878128, 120.790639],
+    [14.876811, 120.791653]
+]
+
+const MAVSt5Coord = [
+    [14.879216, 120.789465],
+    [14.877964, 120.790416],
+    [14.877155, 120.791031],
+    [14.876719, 120.791334],
+    [14.876512, 120.791267],
+    [14.876490, 120.791130],
+    [14.876469, 120.790929],
+    [14.876475, 120.790848],
+    [14.876833, 120.790573]
+
+]
+
+const MAVSt6Coord = [
+    [14.879078, 120.789207],
+    [14.877788, 120.790177],
+    [14.877009, 120.790785]
+]
+
+const MAVSt7Coord = [
+    [14.878947, 120.788977],
+    [14.877624, 120.789964],
+    [14.876859, 120.790542]
+]
+
+const MAVSt8Coord = [
+    [14.878564, 120.788903],
+    [14.877474, 120.789720],
+    [14.876763, 120.790266]
+]
+
+const MAVSt9Coord = [
+    [14.879369, 120.789714],
+    [14.878904, 120.788826],
+    [14.878823, 120.788792],
+    [14.878585, 120.788872],
+    [14.878174, 120.788875],
+    [14.878097, 120.788887],
+    [14.877309, 120.789490],
+    [14.876612, 120.790070]
+]
+
+const MAVSt10Coord = [
+    [14.879289, 120.790920],
+    [14.879479, 120.791318],
+    [14.879549, 120.791329],
+    [14.879685, 120.791193],
+    [14.879692, 120.791132],
+    [14.879366, 120.790423],
+    [14.879245, 120.790157],
+    [14.879131, 120.789892]
+]
+
+const MAVSt11Coord = [
+    [14.877129, 120.791018],
+    [14.876851, 120.790548],
+    [14.876612, 120.790021]
+]
+
+const MAVSt12Coord = [
+    [14.877789, 120.792858],
+    [14.877360, 120.792361],
+    [14.877155, 120.792122],
+    [14.876748, 120.791656],
+    [14.876715, 120.791568],
+    [14.876693, 120.791474],
+    [14.876708, 120.791371],
+    [14.876744, 120.791303]
+]
+
+const MAVSt13Coord = [
+    [14.878266, 120.792445],
+    [14.877811, 120.792851]
+]
+
+const MAVSt14Coord = [
+    [14.878266, 120.792445],
+    [14.878090, 120.792202],
+    [14.877903, 120.791959]
+]
+
+const MAVSt15Coord = [
+    [14.878090, 120.792202],
+    [14.877599, 120.792600]
+]
+
+const ibaLongosRdCoord = [
+    [14.875837, 120.794873],
+    [14.875448, 120.793584],
+    [14.875375, 120.790474],
+    [14.875292, 120.788710],
+    [14.875301, 120.788047],
+    [14.875246, 120.787344],
+    [14.875166, 120.787115],
+    [14.875164, 120.787070]
+]
+
+const calumpangLongosRdCoord = [
+    [14.878740, 120.788009],
+    [14.878505, 120.788146],
+    [14.877237, 120.789170],
+    [14.875418, 120.790377]
 ]
 
 // Initialize the boundaries for Malolos, Bulacan
@@ -101,6 +258,44 @@ carmenLine.bindPopup("<b>Carmen de Luna</b><br>Status: Impassable<br>High Danger
 let hanggaStLine = L.polyline(hanggaStCoord, { color: 'yellow', weight: 5 }).addTo(map);
 
 let forrestStLine = L.polyline(forrestStCoord, {color: 'red', weight: 10}).addTo(map);
+
+let McArthurVillageMainRLine = L.polyline(McArthurVillageMainRCoord, {color: 'green', weight:10}).addTo(map)
+
+let MAVSt1Line = L.polyline(MAVSt1Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt2Line = L.polyline(MAVSt2Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt3Line = L.polyline(MAVSt3Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt4Line = L.polyline(MAVSt4Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt5Line = L.polyline(MAVSt5Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt6Line = L.polyline(MAVSt6Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt7Line = L.polyline(MAVSt7Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt8Line = L.polyline(MAVSt8Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt9Line = L.polyline(MAVSt9Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt10Line = L.polyline(MAVSt10Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt11Line = L.polyline(MAVSt11Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt12Line = L.polyline(MAVSt12Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt13Line = L.polyline(MAVSt13Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt14Line = L.polyline(MAVSt14Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let MAVSt15Line = L.polyline(MAVSt15Coord, {color: 'yellow', weight:10}).addTo(map)
+
+let ibaLongosRdLine = L.polyline(ibaLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
+
+let calumpangLongosRdLine = L.polyline(calumpangLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
+
+
 
 // Add click events to open popups for both polylines
 highwayLine.on('click', function () {
