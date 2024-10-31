@@ -54,7 +54,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: start;
-    margin-top: 3%;
+    margin: 3% 10% 3% 10%;
 }
 
 h2 {
@@ -94,6 +94,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* height: 100%; */
+    width: 100%;
 }
 
 .options {
@@ -112,6 +114,8 @@ h2 {
     grid-row: 4;
     margin: 0 5% 1% 10%;
 
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -167,6 +171,8 @@ input {
     padding: 1% 10% 1% 10%;
     border: 1px solid rgba(20, 26, 34, .5);
     cursor: pointer;
+    grid-column: span 3;
+    grid-row: 4;
 }
 
 #locate-btn:hover {
@@ -175,4 +181,107 @@ input {
     color: #505050;
     font-weight: bold;
     /* box-shadow: 0 0 30px #fff; */
+}
+
+.loc {
+    opacity: 0;
+    grid-column: 3;
+    grid-row: 4;
+    /* align-content: center; */
+    /* text-align: center; */
+    font-size: 110%;
+}
+
+@media (max-width: 1878px) {
+    * {
+        font-size: 95%;
+    }
+}
+
+@media (max-width: 1393px) {
+    .line {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .options {
+        font-size: 80%;
+    }
+
+    .line {
+        font-size: 80%;
+    }
+
+    .button {
+        font-size: 80%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .orig {
+        display: none;
+    }
+
+    #origin {
+        grid-column: span 3;
+    }
+
+    .dest {
+        display: none;
+    }
+
+    #destination {
+        grid-column: span 3;
+    }
+
+    .line {
+        display: block;
+        text-align: center;
+        align-content: center;
+        height: 50%;
+        width: 150%;
+        margin-top: 55px;
+    }
+
+    .options {
+        width: 150%;
+    }
+
+    #colorSelect {
+        margin-top: 5%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .loc {
+        opacity: 1;
+    }
+
+    #locate-btn {
+        margin-right: 2%;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .title {
+        margin-left: -5px;
+        grid-row: span 3;
+    }
+
+    #colorSelect {
+        margin-left: -0.4px;
+    }
+
+    .options {
+        width: 200%;
+    }
+
+    .line {
+        width: 200%;
+    }
 }
