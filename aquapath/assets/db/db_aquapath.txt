@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS db_aquapath;
+
+USE db_aquapath;
+
 CREATE TABLE IF NOT EXISTS water_levels (
     id INT AUTO_INCREMENT PRIMARY KEY,
     level INT NOT NULL,
