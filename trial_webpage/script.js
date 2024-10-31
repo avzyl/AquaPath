@@ -282,7 +282,7 @@ const sanjoseVillageRdCoord = [
 ]
 
 const riversidestreet2Coord = [
-    [14.874464, 120.789509],
+       [14.874464, 120.789509],
     [14.874200, 120.789692],
     [14.874211, 120.789816],
     [14.874163, 120.789853],
@@ -388,6 +388,30 @@ const riversidestreet2Coord = [
     [14.866182, 120.789301]
 ]
 
+const drmCrstCoord = [
+    [14.868848, 120.789047],
+    [14.869062, 120.788886],
+    [14.869428, 120.789391],
+    [14.870116, 120.788907],
+    [14.869025, 120.787258],
+    [14.868808, 120.787432],
+    [14.868398, 120.787728],
+    [14.868444, 120.787792],
+    [14.868310, 120.787884],
+    [14.868925, 120.788701],
+    [14.869163, 120.788541],
+    [14.868555, 120.787631],
+    [14.868798, 120.787437],
+    [14.869877, 120.789076],
+    [14.869690, 120.788796],
+    [14.869227, 120.789085],
+    [14.868928, 120.788708],
+    [14.869409, 120.788369],
+    [14.869547, 120.788572],
+    [14.869543, 120.788560],
+    [14.869768, 120.788395]
+]
+
 // Initialize the boundaries for Malolos, Bulacan
 let boundariesLine = L.polygon(boundaries, { color: 'black', fillColor: 'black', fillOpacity: 0.0 }).addTo(map);
 
@@ -445,7 +469,7 @@ let sanjoseVillageRdLine = L.polyline(sanjoseVillageRdCoord, {color: 'orange', w
 
 let riversidestreet2Line = L.polyline(riversidestreet2Coord, {color: 'green', weight:10}).addTo(map)
 
-
+let drmCrstLine = L.polyline(drmCrstCoord, {color: 'blue', weight:10}).addTo(map)
 
 // Add click events to open popups for both polylines
 highwayLine.on('click', function () {
