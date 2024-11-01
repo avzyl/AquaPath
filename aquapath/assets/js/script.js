@@ -16,12 +16,59 @@ import * as Constants from './const.js';
 console.log(Constants.boundaries);
 console.log(Constants.highwayCoordinates);
 console.log(Constants.carmenCoord);
+console.log(Constants.hanggaStCoord)
+console.log(Constants.forrestStCoord)
+console.log(Constants.McArthurVillageMainRCoord)
+console.log(Constants.MAVSt1Coord)
+console.log(Constants.MAVSt2Coord)
+console.log(Constants.MAVSt3Coord)
+console.log(Constants.MAVSt4Coord)
+console.log(Constants.MAVSt5Coord)
+console.log(Constants.MAVSt6Coord)
+console.log(Constants.MAVSt7Coord)
+console.log(Constants.MAVSt8Coord)
+console.log(Constants.MAVSt9Coord)
+console.log(Constants.MAVSt10Coord)
+console.log(Constants.MAVSt11Coord)
+console.log(Constants.MAVSt12Coord)
+console.log(Constants.MAVSt13Coord)
+console.log(Constants.MAVSt14Coord)
+console.log(Constants.MAVSt15Coord)
+console.log(Constants.ibaLongosRdCoord)
+console.log(Constants.calumpangLongosRdCoord)
+console.log(Constants.riversidestreetCoord)
+console.log(Constants.sanjoseVillageRdCoord)
+console.log(Constants.riversidestreet2Coord)
+console.log(Constants.drmCrstCoord)
 
 // polylines
 let boundariesLine = L.polyline(Constants.boundaries, { color: 'black', weight: 3 }).addTo(map);
 let highwayLine = L.polyline(Constants.highwayCoordinates, { color: 'green', weight: 5 }).addTo(map);
 let carmenLine = L.polyline(Constants.carmenCoord, { color: 'yellow', weight: 5 }).addTo(map);
-
+let hanggaStLine = L.polyline(hanggaStCoord, { color: 'yellow', weight: 5 }).addTo(map);
+let forrestStLine = L.polyline(forrestStCoord, {color: 'red', weight: 10}).addTo(map);
+let McArthurVillageMainRLine = L.polyline(McArthurVillageMainRCoord, {color: 'green', weight:10}).addTo(map)
+let MAVSt1Line = L.polyline(MAVSt1Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt2Line = L.polyline(MAVSt2Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt3Line = L.polyline(MAVSt3Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt4Line = L.polyline(MAVSt4Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt5Line = L.polyline(MAVSt5Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt6Line = L.polyline(MAVSt6Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt7Line = L.polyline(MAVSt7Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt8Line = L.polyline(MAVSt8Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt9Line = L.polyline(MAVSt9Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt10Line = L.polyline(MAVSt10Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt11Line = L.polyline(MAVSt11Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt12Line = L.polyline(MAVSt12Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt13Line = L.polyline(MAVSt13Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt14Line = L.polyline(MAVSt14Coord, {color: 'yellow', weight:10}).addTo(map)
+let MAVSt15Line = L.polyline(MAVSt15Coord, {color: 'yellow', weight:10}).addTo(map)
+let ibaLongosRdLine = L.polyline(ibaLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
+let calumpangLongosRdLine = L.polyline(calumpangLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
+let riversidestreetLine = L.polyline(riversidestreetCoord, {color: 'yellow', weight:10}).addTo(map)
+let sanjoseVillageRdLine = L.polyline(sanjoseVillageRdCoord, {color: 'orange', weight:10}).addTo(map)
+let riversidestreet2Line = L.polyline(riversidestreet2Coord, {color: 'green', weight:10}).addTo(map)
+let drmCrstLine = L.polyline(drmCrstCoord, {color: 'blue', weight:10}).addTo(map)
 // bind the popup
 const waterLevel = "<?php echo htmlspecialchars($waterLevel); ?>";
 const status = "<?php echo htmlspecialchars($status); ?>";
