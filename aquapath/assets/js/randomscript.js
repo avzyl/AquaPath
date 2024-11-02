@@ -75,6 +75,24 @@ let McArthurVillageMainRWaterLevel = 0;
 let MAVSt1WaterLevel = 0;
 let MAVSt2WaterLevel = 0;
 let MAVSt3WaterLevel = 0;
+let MAVSt4WaterLevel = 0;
+let MAVSt5WaterLevel = 0;
+let MAVSt6WaterLevel = 0;
+let MAVSt7WaterLevel = 0;
+let MAVSt8WaterLevel = 0;
+let MAVSt9WaterLevel = 0;
+let MAVSt10WaterLevel = 0;
+let MAVSt11WaterLevel = 0;
+let MAVSt12WaterLevel = 0;
+let MAVSt13WaterLevel = 0;
+let MAVSt14WaterLevel = 0;
+let MAVSt15WaterLevel = 0;
+let ibaLongosRdWaterLevel = 0;
+let calumpangLongosRdWaterLevel = 0;
+let riversidestreetWaterLevel = 0;
+let sanjoseVillageRdWaterLevel = 0;
+let riversidestreet2WaterLevel = 0;
+let drmCrstWaterLevel = 0;
 // !!! etong let kineme gagayahin
 
 // random increment generator
@@ -93,6 +111,24 @@ function updatePolyLineWaterLevels() {
     const MAVSt1Increment = getRandomIncrement(-2, 4);
     const MAVSt2Increment = getRandomIncrement(-2, 3);
     const MAVSt3Increment = getRandomIncrement(-3, 2);
+    const MAVSt4Increment = getRandomIncrement(-2, 4);
+    const MAVSt5Increment = getRandomIncrement(-3, 5);
+    const MAVSt6Increment = getRandomIncrement(-4, 6);
+    const MAVSt7Increment = getRandomIncrement(-3, 5);
+    const MAVSt8Increment = getRandomIncrement(-2, 4);
+    const MAVSt9Increment = getRandomIncrement(-2, 3);
+    const MAVSt10Increment = getRandomIncrement(-3, 2);
+    const MAVSt11Increment = getRandomIncrement(-2, 4);
+    const MAVSt12Increment = getRandomIncrement(-3, 5);
+    const MAVSt13Increment = getRandomIncrement(-4, 6);
+    const MAVSt14Increment = getRandomIncrement(-3, 5);
+    const MAVSt15Increment = getRandomIncrement(-2, 4);
+    const ibaLongosRdIncrement = getRandomIncrement(-2, 3);
+    const calumpangLongosRdIncrement = getRandomIncrement(-3, 2);
+    const riversidestreetIncrement = getRandomIncrement(-2, 4);
+    const sanjoseVillageRdIncrement = getRandomIncrement(-3, 5);
+    const riversidestreet2Increment = getRandomIncrement(-4, 6);
+    const drmCrstIncrement = getRandomIncrement(-3, 5);
     // !!! etong const kineme gagayahin
 
     // carmen
