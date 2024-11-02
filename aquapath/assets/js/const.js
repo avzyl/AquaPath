@@ -1,13 +1,6 @@
-// Initialize the map centered on Longos, Malolos, Bulacan
-const map = L.map('map').setView([14.8713199, 120.7932753], 15); // Coordinates for Longos, Malolos, Bulacan
+// plz dito na lang ilagay ang mga ginawang coords. palagyan na lang export tenkz!!
 
-// Add OpenStreetMap tiles
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    // attribution: '© OpenStreetMap contributors'
-}).addTo(map);
-
-const boundaries = [
+export export const boundaries = [
     [14.880076, 120.790732], //Boundary 1
     [14.879747, 120.789963], //Longos
     [14.878781, 120.787697], //Pio Cruzcosa B
@@ -62,16 +55,14 @@ const boundaries = [
     [14.865411, 120.788296], //Boundary 
     [14.872570, 120.797960], //Boundary
     [14.873716, 120.797019] //Longos
-
 ]
 
-// Define coordinates for the McArthur Highway polyline
-const highwayCoordinates = [
+export const highwayCoordinates = [
     [14.876023, 120.795324], // Point A
-    [14.871466, 120.799345]  // Point B (extend as needed)
+    [14.871466, 120.799345]  // Point B
 ];
 
-const carmenCoord = [
+export const carmenCoord = [
     [14.871691, 120.796745],
     [14.8720735, 120.796114],
     [14.872355, 120.795598],
@@ -85,15 +76,15 @@ const carmenCoord = [
     [14.875034, 120.791116],
     [14.875027, 120.791071],
     [14.875030, 120.790943],
-    [14.874990, 120.790784] 
+    [14.874990, 120.790784]
 ];
 
-const hanggaStCoord = [
+export const hanggaStCoord = [
     [14.869815, 120.794151],
     [14.875340, 120.790464]
 ]
 
-const forrestStCoord = [
+export const forrestStCoord = [
     [14.867824, 120.791514],
     [14.869294, 120.790414],
     [14.869625, 120.790107],
@@ -102,7 +93,7 @@ const forrestStCoord = [
     [14.871872, 120.788257]
 ]
 
-const McArthurVillageMainRCoord = [
+export const McArthurVillageMainRCoord = [
     [14.879169, 120.792414],
     [14.878710, 120.791636],
     [14.878601, 120.791456],
@@ -117,32 +108,32 @@ const McArthurVillageMainRCoord = [
     [14.877164, 120.789400]
 ]
 
-const MAVSt1Coord = [
+export const MAVSt1Coord = [
     [14.879468, 120.790736],
     [14.878616, 120.791392],
     [14.877388, 120.792352]
 ]
 
-const MAVSt2Coord = [
+export const MAVSt2Coord = [
     [14.879328, 120.790453],
     [14.878460, 120.791112],
     [14.877189, 120.792099]
 ]
 
-const MAVSt3Coord = [
+export const MAVSt3Coord = [
     [14.879201, 120.790191],
     [14.878288, 120.790872],
     [14.876991, 120.791876]
 ]
 
-const MAVSt4Coord = [
+export const MAVSt4Coord = [
     [14.879345, 120.789723],
     [14.879160, 120.789877],
     [14.878128, 120.790639],
     [14.876811, 120.791653]
 ]
 
-const MAVSt5Coord = [
+export const MAVSt5Coord = [
     [14.879216, 120.789465],
     [14.877964, 120.790416],
     [14.877155, 120.791031],
@@ -155,25 +146,25 @@ const MAVSt5Coord = [
 
 ]
 
-const MAVSt6Coord = [
+export const MAVSt6Coord = [
     [14.879078, 120.789207],
     [14.877788, 120.790177],
     [14.877009, 120.790785]
 ]
 
-const MAVSt7Coord = [
+export const MAVSt7Coord = [
     [14.878947, 120.788977],
     [14.877624, 120.789964],
     [14.876859, 120.790542]
 ]
 
-const MAVSt8Coord = [
+export const MAVSt8Coord = [
     [14.878564, 120.788903],
     [14.877474, 120.789720],
     [14.876763, 120.790266]
 ]
 
-const MAVSt9Coord = [
+export const MAVSt9Coord = [
     [14.879369, 120.789714],
     [14.878904, 120.788826],
     [14.878823, 120.788792],
@@ -184,7 +175,7 @@ const MAVSt9Coord = [
     [14.876612, 120.790070]
 ]
 
-const MAVSt10Coord = [
+export const MAVSt10Coord = [
     [14.879289, 120.790920],
     [14.879479, 120.791318],
     [14.879549, 120.791329],
@@ -195,13 +186,13 @@ const MAVSt10Coord = [
     [14.879131, 120.789892]
 ]
 
-const MAVSt11Coord = [
+export const MAVSt11Coord = [
     [14.877129, 120.791018],
     [14.876851, 120.790548],
     [14.876612, 120.790021]
 ]
 
-const MAVSt12Coord = [
+export const MAVSt12Coord = [
     [14.877789, 120.792858],
     [14.877360, 120.792361],
     [14.877155, 120.792122],
@@ -212,23 +203,23 @@ const MAVSt12Coord = [
     [14.876744, 120.791303]
 ]
 
-const MAVSt13Coord = [
+export const MAVSt13Coord = [
     [14.878266, 120.792445],
     [14.877811, 120.792851]
 ]
 
-const MAVSt14Coord = [
+export const MAVSt14Coord = [
     [14.878266, 120.792445],
     [14.878090, 120.792202],
     [14.877903, 120.791959]
 ]
 
-const MAVSt15Coord = [
+export const MAVSt15Coord = [
     [14.878090, 120.792202],
     [14.877599, 120.792600]
 ]
 
-const ibaLongosRdCoord = [
+export const ibaLongosRdCoord = [
     [14.875837, 120.794873],
     [14.875448, 120.793584],
     [14.875375, 120.790474],
@@ -239,14 +230,14 @@ const ibaLongosRdCoord = [
     [14.875164, 120.787070]
 ]
 
-const calumpangLongosRdCoord = [
+export const calumpangLongosRdCoord = [
     [14.878740, 120.788009],
     [14.878505, 120.788146],
     [14.877237, 120.789170],
     [14.875418, 120.790377]
 ]
 
-const riversidestreetCoord = [
+export const riversidestreetCoord = [
     [14.874982, 120.790722],
     [14.874905, 120.790428],
     [14.874517, 120.789551],
@@ -273,7 +264,7 @@ const riversidestreetCoord = [
     [14.877473, 120.786801]
 ]
 
-const sanjoseVillageRdCoord = [
+export const sanjoseVillageRdCoord = [
     [14.877385, 120.786960],
     [14.877482, 120.786978],
     [14.877918, 120.787215],
@@ -283,7 +274,7 @@ const sanjoseVillageRdCoord = [
     [14.878742, 120.787976]
 ]
 
-const riversidestreet2Coord = [
+export const riversidestreet2Coord = [
     [14.874464, 120.789509],
     [14.874200, 120.789692],
     [14.874211, 120.789816],
@@ -390,7 +381,7 @@ const riversidestreet2Coord = [
     [14.866182, 120.789301]
 ]
 
-const drmCrstCoord = [
+export const drmCrstCoord = [
     [14.868848, 120.789047],
     [14.869062, 120.788886],
     [14.869428, 120.789391],
@@ -413,164 +404,3 @@ const drmCrstCoord = [
     [14.869543, 120.788560],
     [14.869768, 120.788395]
 ]
-
-// Initialize the boundaries for Malolos, Bulacan
-let boundariesLine = L.polygon(boundaries, { color: 'black', fillColor: 'black', fillOpacity: 0.0 }).addTo(map);
-
-// Initialize the polyline for McArthur Highway with default color green
-let highwayLine = L.polyline(highwayCoordinates, { color: 'green', weight: 5 }).addTo(map);
-highwayLine.bindPopup("<b>McArthur Highway</b><br>Status: Passable.<br>Select a color to indicate flood status.");
-
-// Initialize the Carmen de Luna polyline with red color
-let carmenLine = L.polyline(carmenCoord, { color: 'red', weight: 5 }).addTo(map);
-carmenLine.bindPopup("<b>Carmen de Luna</b><br>Status: Impassable<br>High Danger");
-
-let hanggaStLine = L.polyline(hanggaStCoord, { color: 'yellow', weight: 5 }).addTo(map);
-
-let forrestStLine = L.polyline(forrestStCoord, {color: 'red', weight: 10}).addTo(map);
-
-let McArthurVillageMainRLine = L.polyline(McArthurVillageMainRCoord, {color: 'green', weight:10}).addTo(map)
-
-let MAVSt1Line = L.polyline(MAVSt1Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt2Line = L.polyline(MAVSt2Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt3Line = L.polyline(MAVSt3Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt4Line = L.polyline(MAVSt4Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt5Line = L.polyline(MAVSt5Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt6Line = L.polyline(MAVSt6Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt7Line = L.polyline(MAVSt7Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt8Line = L.polyline(MAVSt8Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt9Line = L.polyline(MAVSt9Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt10Line = L.polyline(MAVSt10Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt11Line = L.polyline(MAVSt11Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt12Line = L.polyline(MAVSt12Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt13Line = L.polyline(MAVSt13Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt14Line = L.polyline(MAVSt14Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let MAVSt15Line = L.polyline(MAVSt15Coord, {color: 'yellow', weight:10}).addTo(map)
-
-let ibaLongosRdLine = L.polyline(ibaLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
-
-let calumpangLongosRdLine = L.polyline(calumpangLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
-
-let riversidestreetLine = L.polyline(riversidestreetCoord, {color: 'yellow', weight:10}).addTo(map)
-
-let sanjoseVillageRdLine = L.polyline(sanjoseVillageRdCoord, {color: 'orange', weight:10}).addTo(map)
-
-let riversidestreet2Line = L.polyline(riversidestreet2Coord, {color: 'green', weight:10}).addTo(map)
-
-let drmCrstLine = L.polyline(drmCrstCoord, {color: 'blue', weight:10}).addTo(map)
-
-// Add click events to open popups for both polylines
-highwayLine.on('click', function () {
-    this.openPopup();
-});
-
-carmenLine.on('click', function () {
-    this.openPopup();
-});
-
-// Function to show user's location
-function showLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition((position) => {
-            const lat = position.coords.latitude;
-            const lng = position.coords.longitude;
-            map.setView([lat, lng], 15);
-            L.marker([lat, lng]).addTo(map).bindPopup('You are here!').openPopup();
-        }, () => {
-            alert("Geolocation service failed.");
-        });
-    } else {
-        alert("Your browser doesn't support geolocation.");
-    }
-}
-
-// Event listener for the location button
-document.getElementById('locate-btn').addEventListener('click', showLocation);
-
-// Function to update the color of McArthur Highway line
-function updateLineColor(color) {
-    highwayLine.setStyle({ color: color });
-}
-
-// Event listener for color change
-document.getElementById('colorSelect').addEventListener('change', function (e) {
-    const selectedColor = e.target.value;
-    updateLineColor(selectedColor);
-    highwayLine.openPopup();
-});
-
-// Initialize routing control
-let routingControl;
-
-// Function to create a route between two locations using Leaflet Routing Machine
-function createRoute(origin, destination) {
-    // Remove previous route if it exists
-    if (routingControl) map.removeControl(routingControl);
-
-    // Add a new routing control with OpenRouteService or OSRM
-    routingControl = L.Routing.control({
-        waypoints: [L.latLng(origin[0], origin[1]), L.latLng(destination[0], destination[1])],
-        routeWhileDragging: true,
-        geocoder: L.Control.Geocoder.nominatim(),
-        createMarker: function () { return null; },  // Hide default markers
-        lineOptions: { styles: [{ color: 'blue', opacity: 0.6, weight: 5 }] }
-    }).addTo(map);
-}
-
-// Geocode function for origin and destination
-function geocodeLocation(query, callback) {
-    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`)
-        .then(response => response.json())
-        .then(data => {
-            if (data.length > 0) {
-                const { lat, lon } = data[0];
-                callback([parseFloat(lat), parseFloat(lon)]);
-            } else {
-                alert('Location not found');
-            }
-        });
-}
-
-// Event listener for search route button
-document.getElementById('searchRoute').addEventListener('click', function () {
-    const origin = document.getElementById('origin').value;
-    const destination = document.getElementById('destination').value;
-
-    // Geocode origin and destination locations and then create the route
-    geocodeLocation(origin, (originCoords) => {
-        geocodeLocation(destination, (destinationCoords) => {
-            createRoute(originCoords, destinationCoords);
-        });
-    });
-});
-
-// // Create a polygon for the boundaries with transparent fill
-// const boundaryPolygon = L.polygon(boundaries, {
-//     color: 'transparent', // No border color
-//     fill: true,
-//     fillColor: 'yellow', // This will be the color but will be transparent
-//     fillOpacity: 0.1 // Set the fill opacity to 0
-// }).addTo(map);
-
-// // Add a gray overlay to fill the whole map with opacity
-// const worldBounds = [[-90, -180], [90, 180]]; // Cover the entire world
-// const grayOverlay = L.rectangle(worldBounds, {
-//     color: 'gray',
-//     fill: true,
-//     fillColor: 'gray',
-//     fillOpacity: 0.5,
-// }).addTo(map);

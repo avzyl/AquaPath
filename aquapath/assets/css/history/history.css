@@ -1,0 +1,29 @@
+ /* FEEL FREE TO EDIT THIS SHI */
+
+ canvas {
+     max-width: 600px;
+     margin: auto;
+ }
+
+ table {
+     width: 50%;
+     margin: 20px auto;
+     border-collapse: collapse;
+ }
+
+ th,
+ td {
+     border: 1px solid #ddd;
+     padding: 8px;
+     text-align: center;
+ }
+
+ th {
+     background-color: #f2f2f2;
+ }
+
+ #clock {
+     text-align: center;
+     font-size: 24px;
+     margin: 20px 0;
+ }
