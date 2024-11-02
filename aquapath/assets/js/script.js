@@ -41,6 +41,7 @@ console.log(Constants.sanjoseVillageRdCoord);
 console.log(Constants.riversidestreet2Coord);
 console.log(Constants.drmCrstCoord);
 
+
 // polylines
 let boundariesLine = L.polyline(Constants.boundaries, { color: 'black', weight: 3 }).addTo(map);
 let highwayLine = L.polyline(Constants.highwayCoordinates, { color: 'green', weight: 5 }).addTo(map);
@@ -69,6 +70,7 @@ let riversidestreetLine = L.polyline(riversidestreetCoord, {color: 'yellow', wei
 let sanjoseVillageRdLine = L.polyline(sanjoseVillageRdCoord, {color: 'orange', weight:10}).addTo(map);
 let riversidestreet2Line = L.polyline(riversidestreet2Coord, {color: 'green', weight:10}).addTo(map);
 let drmCrstLine = L.polyline(drmCrstCoord, {color: 'blue', weight:10}).addTo(map);
+
 // bind the popup
 const waterLevel = "<?php echo htmlspecialchars($waterLevel); ?>";
 const status = "<?php echo htmlspecialchars($status); ?>";
@@ -171,10 +173,18 @@ function createRoute(origin, destination) {
     routingControl = L.Routing.control({
         waypoints: [L.latLng(origin[0], origin[1]), L.latLng(destination[0], destination[1])],
         routeWhileDragging: true,
+        showAlternatives: true,
+        altLineOptions: {
+            styles: [
+                { color: 'blue', opacity: 0.6, weight: 5 },
+                { color: 'green', opacity: 0.7, weight: 7 },
+                { color: 'red', opacity: 0.8, weight: 9 }
+            ]
+        },
         geocoder: L.Control.Geocoder.nominatim(),
         createMarker: function () { return null; },
         show: false,
-        lineOptions: { styles: [{ color: 'blue', opacity: 0.6, weight: 5 }] }
+        lineOptions: { styles: [{ color: 'red', opacity: 0.6, weight: 5 }] }
     }).addTo(map);
 
     routingControl.on('routesfound', function (e) {
@@ -224,6 +234,26 @@ document.getElementById('searchRoute').addEventListener('click', () => {
     }
 });
 
+// clear routes
+function clearRoutes() {
+    if (routingControl) {
+        routingControl.setWaypoints([]);
+        map.eachLayer(function (layer) {
+            if (layer instanceof L.Marker) {
+                map.removeLayer(layer);
+            }
+        });
+    }
+
+    document.getElementById('origin').value = '';
+    document.getElementById('destination').value = '';
+
+    const routingInfo = document.getElementById('route-info');
+    routingInfo.innerHTML = '';
+    document.getElementById('directions').style.display = 'none';
+}
+
+document.getElementById('clearRouteBtn').addEventListener('click', clearRoutes);
 
 // data
 fetchLatestData();

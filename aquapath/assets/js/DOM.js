@@ -98,6 +98,7 @@ document.getElementById('closeRouteSearch').addEventListener('click', function (
     document.getElementById('searchContainer').style.display = 'block'; // Show location search
 });
 
+
 //--------------------- DIRECTION BTNs --------------------- //
 // toggle direction
 document.getElementById('toggle-directions').addEventListener('click', function () {
