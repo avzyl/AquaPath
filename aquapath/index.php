@@ -18,7 +18,7 @@
 
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="module" src="assets/js/script.js" defer></script>
+    <script type="module" src="assets/js/randomscript.js" defer></script>
     <script src="assets/js/DOM.js" defer></script>
 </head>
 
