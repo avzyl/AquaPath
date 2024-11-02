@@ -56,6 +56,7 @@
         <input type="text" id="destination" placeholder="Enter destination location">
         <br>
         <button id="searchRoute">Find Route</button>
+        <button id="clearRouteBtn">Clear Routes</button>
     </div>
 
     <div id="loadingMessage" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.7); color: white; padding: 20px; border-radius: 5px; z-index: 1000;">
