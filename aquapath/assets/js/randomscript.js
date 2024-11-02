@@ -111,6 +111,24 @@ function updatePolyLineWaterLevels() {
     const MAVSt1Increment = getRandomIncrement(-2, 4);
     const MAVSt2Increment = getRandomIncrement(-2, 3);
     const MAVSt3Increment = getRandomIncrement(-3, 2);
+    const MAVSt4Increment = getRandomIncrement(-2, 4);
+    const MAVSt5Increment = getRandomIncrement(-3, 5);
+    const MAVSt6Increment = getRandomIncrement(-4, 6);
+    const MAVSt7Increment = getRandomIncrement(-3, 5);
+    const MAVSt8Increment = getRandomIncrement(-2, 4);
+    const MAVSt9Increment = getRandomIncrement(-2, 3);
+    const MAVSt10Increment = getRandomIncrement(-3, 2);
+    const MAVSt11Increment = getRandomIncrement(-2, 4);
+    const MAVSt12Increment = getRandomIncrement(-3, 5);
+    const MAVSt13Increment = getRandomIncrement(-4, 6);
+    const MAVSt14Increment = getRandomIncrement(-3, 5);
+    const MAVSt15Increment = getRandomIncrement(-2, 4);
+    const ibaLongosRdIncrement = getRandomIncrement(-2, 3);
+    const calumpangLongosRdIncrement = getRandomIncrement(-3, 2);
+    const riversidestreetIncrement = getRandomIncrement(-2, 4);
+    const sanjoseVillageRdIncrement = getRandomIncrement(-3, 5);
+    const riversidestreet2Increment = getRandomIncrement(-4, 6);
+    const drmCrstIncrement = getRandomIncrement(-3, 5);
     // !!! etong const kineme gagayahin
 
     // carmen
