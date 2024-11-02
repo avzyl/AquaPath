@@ -75,6 +75,24 @@ let McArthurVillageMainRWaterLevel = 0;
 let MAVSt1WaterLevel = 0;
 let MAVSt2WaterLevel = 0;
 let MAVSt3WaterLevel = 0;
+let MAVSt4WaterLevel = 0;
+let MAVSt5WaterLevel = 0;
+let MAVSt6WaterLevel = 0;
+let MAVSt7WaterLevel = 0;
+let MAVSt8WaterLevel = 0;
+let MAVSt9WaterLevel = 0;
+let MAVSt10WaterLevel = 0;
+let MAVSt11WaterLevel = 0;
+let MAVSt12WaterLevel = 0;
+let MAVSt13WaterLevel = 0;
+let MAVSt14WaterLevel = 0;
+let MAVSt15WaterLevel = 0;
+let ibaLongosRdWaterLevel = 0;
+let calumpangLongosRdWaterLevel = 0;
+let riversidestreetWaterLevel = 0;
+let sanjoseVillageRdWaterLevel = 0;
+let riversidestreet2WaterLevel = 0;
+let drmCrstWaterLevel = 0;
 // !!! etong let kineme gagayahin
 
 // random increment generator
