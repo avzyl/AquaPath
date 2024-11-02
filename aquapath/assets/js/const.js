@@ -1,6 +1,6 @@
 // plz dito na lang ilagay ang mga ginawang coords. palagyan na lang export tenkz!!
 
-export export const boundaries = [
+export const boundaries = [
     [14.880076, 120.790732], //Boundary 1
     [14.879747, 120.789963], //Longos
     [14.878781, 120.787697], //Pio Cruzcosa B
