@@ -462,6 +462,28 @@ function updatePolyLineWaterLevels() {
     MAVSt15Line.setStyle({ color: MAVSt15Color });
     MAVSt15Line.bindPopup(`<b>Mc Arthur Village Street 15</b><br>Status: ${MAVSt15Status}<br>Water Level: ${MAVSt15WaterLevel} cm`);
 
+    // Iba Longos Rd.
+    ibaLongosRdWaterLevel += ibaLongosRdIncrement;
+    ibaLongosRdWaterLevel = Math.max(0, ibaLongosRdWaterLevel);
+
+    let ibaLongosRdColor = 'green';
+    let ibaLongosRdStatus = 'Passable';
+    if (ibaLongosRdLevel >= 15) {
+        ibaLongosRd = 'red';
+        ibaLongosRd = 'Impassable';
+    } else if (ibaLongosRdWaterLevel >= 10) {
+        ibaLongosRdColor = 'yellow';
+        ibaLongosRdStatus = 'Risky';
+    }
+
+    ibaLongosRdLine.setStyle({ color: ibaLongosRdColor });
+    ibaLongosRdLine.bindPopup(`<b>Iba Longos</b><br>Status: ${ibaLongosRdStatus}<br>Water Level: ${ibaLongosRdWaterLevel} cm`);
+
+    
+
+    
+
+    
 
 }
 
