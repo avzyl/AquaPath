@@ -597,7 +597,12 @@ MAVSt13Line.bindPopup(`<b>Mc Arthur Village Street 13</b><br>Status: ${status}<b
 MAVSt14Line.bindPopup(`<b>Mc Arthur Village Street 14</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 MAVSt15Line.bindPopup(`<b>Mc Arthur Village Street 15</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 calumpangLongosRdLine.bindPopup(`<b>Calumpang Longos Road</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-iversidestreetLine.bindPopup(`<b>Riverside Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+riversidestreetLine.bindPopup(`<b>Riverside Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+sanjoseVillageRdLine.bindPopup(`<b>San Jose Village Road</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+riversidestreet2Line.bindPopup(`<b>Riverside Street 2</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+drmCrstLine.bindPopup(`<b>Dream Crest Homes Subdivision</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+
+
 
 
 
