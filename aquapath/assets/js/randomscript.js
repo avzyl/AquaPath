@@ -488,7 +488,7 @@ function updatePolyLineWaterLevels() {
     if (calumpangLongosRdLevel >= 15) {
         calumpangLongosRd = 'red';
         calumpangLongosRd = 'Impassable';
-    } else if (icalumpangLongosRdaterLevel >= 10) {
+    } else if (calumpangLongosRdWaterLevel >= 10) {
         calumpangLongosRdColor = 'yellow';
         calumpangLongosRdStatus = 'Risky';
     }
@@ -496,11 +496,23 @@ function updatePolyLineWaterLevels() {
     calumpangLongosRdLine.setStyle({ color: calumpangLongosRdColor });
     calumpangLongosRdLine.bindPopup(`<b>Calumpang Longos Road</b><br>Status: ${calumpangLongosRdStatus}<br>Water Level: ${calumpangLongosRdWaterLevel} cm`);
 
-    
-
-    
-
-    
+    // riverside street
+    riversidestreetWaterLevel += riversidestreetIncrement;
+    riversidestreetWaterLevel = Math.max(0, riversidestreetWaterLevel);
+ 
+     let riversidestreetColor = 'green';
+     let riversidestreetStatus = 'Passable';
+     if (riversidestreetLevel >= 15) {
+        riversidestreet = 'red';
+        riversidestreet = 'Impassable';
+     } else if (riversidestreetWaterLevel >= 10) {
+        riversidestreetColor = 'yellow';
+        riversidestreetStatus = 'Risky';
+     }
+ 
+     riversidestreetLine.setStyle({ color: riversidestreetColor });
+     riversidestreetdLine.bindPopup(`<b>Calumpang Longos Road</b><br>Status: ${riversidestreetStatus}<br>Water Level: ${riversidestreetWaterLevel} cm`);
+ 
 
 }
 
