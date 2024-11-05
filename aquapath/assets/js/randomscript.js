@@ -468,9 +468,9 @@ function updatePolyLineWaterLevels() {
 
     let ibaLongosRdColor = 'green';
     let ibaLongosRdStatus = 'Passable';
-    if (ibaLongosRdLevel >= 15) {
-        ibaLongosRd = 'red';
-        ibaLongosRd = 'Impassable';
+    if (ibaLongosRdWaterLevel >= 15) {
+        ibaLongosRdColor = 'red';
+        ibaLongosRdStatus = 'Impassable';
     } else if (ibaLongosRdWaterLevel >= 10) {
         ibaLongosRdColor = 'yellow';
         ibaLongosRdStatus = 'Risky';
@@ -485,9 +485,9 @@ function updatePolyLineWaterLevels() {
 
     let calumpangLongosRdColor = 'green';
     let calumpangLongosRdStatus = 'Passable';
-    if (calumpangLongosRdLevel >= 15) {
-        calumpangLongosRd = 'red';
-        calumpangLongosRd = 'Impassable';
+    if (calumpangLongosRdWaterLevel >= 15) {
+        calumpangLongosRdColor = 'red';
+        calumpangLongosRdStatus = 'Impassable';
     } else if (calumpangLongosRdWaterLevel >= 10) {
         calumpangLongosRdColor = 'yellow';
         calumpangLongosRdStatus = 'Risky';
@@ -502,9 +502,9 @@ function updatePolyLineWaterLevels() {
  
      let riversidestreetColor = 'green';
      let riversidestreetStatus = 'Passable';
-     if (riversidestreetLevel >= 15) {
-        riversidestreet = 'red';
-        riversidestreet = 'Impassable';
+     if (riversidestreetWaterLevel >= 15) {
+        riversidestreetColor = 'red';
+        riversidestreetStatus = 'Impassable';
      } else if (riversidestreetWaterLevel >= 10) {
         riversidestreetColor = 'yellow';
         riversidestreetStatus = 'Risky';
@@ -515,30 +515,30 @@ function updatePolyLineWaterLevels() {
 
     // san jose village Rd.
     sanjoseVillageRdWaterLevel += sanjoseVillageRdIncrement;
-    sanjoseVillagetRdWaterLevel = Math.max(0, sanjoseVillageRdWaterLevel);
+    sanjoseVillageRdWaterLevel = Math.max(0, sanjoseVillageRdWaterLevel);
  
      let sanjoseVillageRdColor = 'green';
      let sanjoseVillageRdStatus = 'Passable';
-     if (sanjoseVillageRLevel >= 15) {
-        sanjoseVillageRd = 'red';
-        sanjoseVillageRd = 'Impassable';
+     if (sanjoseVillageRdWaterLevel >= 15) {
+        sanjoseVillageRdColor = 'red';
+        sanjoseVillageRdStatus = 'Impassable';
      } else if (sanjoseVillageRdWaterLevel >= 10) {
         sanjoseVillageRdColor = 'yellow';
-        sanjoseVillageRdtatus = 'Risky';
+        sanjoseVillageRdStatus = 'Risky';
      }
  
      sanjoseVillageRdLine.setStyle({ color:sanjoseVillageRdColor });
      sanjoseVillageRdLine.bindPopup(`<b>San Jose Village Road</b><br>Status: ${sanjoseVillageRdStatus}<br>Water Level: ${sanjoseVillageRdWaterLevel} cm`);
 
     //  riverside street2
-    riversidestreetWaterLevel += riversidestreet2Increment;
-    riversidestreetWaterLevel = Math.max(0, riversidestreet2WaterLevel);
+    riversidestreet2WaterLevel += riversidestreet2Increment;
+    riversidestreet2WaterLevel = Math.max(0, riversidestreet2WaterLevel);
  
      let riversidestreet2Color = 'green';
      let riversidestreet2Status = 'Passable';
-     if (riversidestreet2Level >= 15) {
-        riversidestreet2 = 'red';
-        riversidestreet2 = 'Impassable';
+     if (riversidestreet2WaterLevel >= 15) {
+        riversidestreet2Color = 'red';
+        riversidestreet2Status = 'Impassable';
      } else if (riversidestreet2WaterLevel >= 10) {
         riversidestreet2Color = 'yellow';
         riversidestreet2Status = 'Risky';
@@ -546,6 +546,24 @@ function updatePolyLineWaterLevels() {
  
      riversidestreet2Line.setStyle({ color: riversidestreet2Color });
      riversidestreet2Line.bindPopup(`<b>Riverside Street 2</b><br>Status: ${riversidestreet2Status}<br>Water Level: ${riversidestreet2WaterLevel} cm`);
+
+    //  drmCrst
+    drmCrstWaterLevel +=drmCrstIncrement;
+    drmCrstWaterLevel = Math.max(0, drmCrstWaterLevel);
+
+    let drmCrstColor = 'green';
+    let drmCrstStatus = 'Passable';
+    if (drmCrstWaterLevel >= 15) {
+        drmCrstColor = 'red';
+        drmCrstStatus = 'Impassable';
+    } else if (drmCrstWaterLevel >= 10) {
+        drmCrstColor = 'yellow';
+        drmCrstStatus = 'Risky';
+    }
+
+    drmCrstLine.setStyle({ color: drmCrstColor });
+    drmCrstLine.bindPopup(`<b>Dream Crest Homes Subdivision</b><br>Status: ${drmCrstStatus}<br>Water Level: ${drmCrstWaterLevel} cm`);
+    
 
  
 
