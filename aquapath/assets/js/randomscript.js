@@ -257,7 +257,315 @@ function updatePolyLineWaterLevels() {
     MAVSt3Line.setStyle({ color: MAVSt3Color });
     MAVSt3Line.bindPopup(`<b>Mc Arthur Village Street 3</b><br>Status: ${MAVSt3Status}<br>Water Level: ${MAVSt3WaterLevel} cm`);
 
-    // !!! etong buong kineme gagayahin
+    
+    // MAVSt. 4
+    MAVSt4WaterLevel += MAVSt4Increment;
+    MAVSt4WaterLevel = Math.max(0, MAVSt4WaterLevel);
+
+    let MAVSt4Color = 'green';
+    let MAVSt4Status = 'Passable';
+    if (MAVSt4WaterLevel >= 15) {
+        MAVSt4Color = 'red';
+        MAVSt4Status = 'Impassable';
+    } else if (MAVSt4WaterLevel >= 10) {
+        MAVSt4Color = 'yellow';
+        MAVSt4Status = 'Risky';
+    }
+
+    MAVSt4Line.setStyle({ color: MAVSt4Color });
+    MAVSt4Line.bindPopup(`<b>Mc Arthur Village Street 4</b><br>Status: ${MAVSt4Status}<br>Water Level: ${MAVSt4WaterLevel} cm`);
+
+    // MAVSt. 5
+    MAVSt5WaterLevel += MAVSt5Increment;
+    MAVSt5WaterLevel = Math.max(0, MAVSt5WaterLevel);
+
+    let MAVSt5Color = 'green';
+    let MAVSt5Status = 'Passable';
+    if (MAVSt5WaterLevel >= 15) {
+        MAVSt5Color = 'red';
+        MAVSt5Status = 'Impassable';
+    } else if (MAVSt5WaterLevel >= 10) {
+        MAVSt5Color = 'yellow';
+        MAVSt5Status = 'Risky';
+    }
+
+    MAVSt5Line.setStyle({ color: MAVSt5Color });
+    MAVSt5Line.bindPopup(`<b>Mc Arthur Village Street 5</b><br>Status: ${MAVSt5Status}<br>Water Level: ${MAVSt5WaterLevel} cm`);
+
+    // MAVSt. 6
+    MAVSt6WaterLevel += MAVSt6Increment;
+    MAVSt6WaterLevel = Math.max(0, MAVSt6WaterLevel);
+
+    let MAVSt6Color = 'green';
+    let MAVSt6Status = 'Passable';
+    if (MAVSt6WaterLevel >= 15) {
+        MAVSt6Color = 'red';
+        MAVSt6Status = 'Impassable';
+    } else if (MAVSt6WaterLevel >= 10) {
+        MAVSt6Color = 'yellow';
+        MAVSt6Status = 'Risky';
+    }
+
+    MAVSt6Line.setStyle({ color: MAVSt6Color });
+    MAVSt6Line.bindPopup(`<b>Mc Arthur Village Street 6</b><br>Status: ${MAVSt6Status}<br>Water Level: ${MAVSt6WaterLevel} cm`);
+
+    // MAVSt. 7
+    MAVSt7WaterLevel += MAVSt7Increment;
+    MAVSt7WaterLevel = Math.max(0, MAVSt7WaterLevel);
+
+    let MAVSt7Color = 'green';
+    let MAVSt7Status = 'Passable';
+    if (MAVSt7WaterLevel >= 15) {
+        MAVSt7Color = 'red';
+        MAVSt7Status = 'Impassable';
+    } else if (MAVSt7WaterLevel >= 10) {
+        MAVSt7Color = 'yellow';
+        MAVSt7Status = 'Risky';
+    }
+
+    MAVSt7Line.setStyle({ color: MAVSt7Color });
+    MAVSt7Line.bindPopup(`<b>Mc Arthur Village Street 7</b><br>Status: ${MAVSt7Status}<br>Water Level: ${MAVSt7WaterLevel} cm`);
+
+    // MAVSt. 8
+    MAVSt8WaterLevel += MAVSt8Increment;
+    MAVSt8WaterLevel = Math.max(0, MAVSt8WaterLevel);
+
+    let MAVSt8Color = 'green';
+    let MAVSt8Status = 'Passable';
+    if (MAVSt8WaterLevel >= 15) {
+        MAVSt8Color = 'red';
+        MAVSt8Status = 'Impassable';
+    } else if (MAVSt8WaterLevel >= 10) {
+        MAVSt8Color = 'yellow';
+        MAVSt8Status = 'Risky';
+    }
+
+    MAVSt8Line.setStyle({ color: MAVSt8Color });
+    MAVSt8Line.bindPopup(`<b>Mc Arthur Village Street 8</b><br>Status: ${MAVSt8Status}<br>Water Level: ${MAVSt8WaterLevel} cm`);
+
+    // MAVSt. 9
+    MAVSt9WaterLevel += MAVSt9Increment;
+    MAVSt9WaterLevel = Math.max(0, MAVSt9WaterLevel);
+
+    let MAVSt9Color = 'green';
+    let MAVSt9Status = 'Passable';
+    if (MAVSt9WaterLevel >= 15) {
+        MAVSt9Color = 'red';
+        MAVSt9Status = 'Impassable';
+    } else if (MAVSt9WaterLevel >= 10) {
+        MAVSt9Color = 'yellow';
+        MAVSt9Status = 'Risky';
+    }
+
+    MAVSt9Line.setStyle({ color: MAVSt9Color });
+    MAVSt9Line.bindPopup(`<b>Mc Arthur Village Street 9</b><br>Status: ${MAVSt9Status}<br>Water Level: ${MAVSt9WaterLevel} cm`);
+
+    // MAVSt. 10
+    MAVSt10WaterLevel += MAVSt10Increment;
+    MAVSt10WaterLevel = Math.max(0, MAVSt10WaterLevel);
+
+    let MAVSt10Color = 'green';
+    let MAVSt10Status = 'Passable';
+    if (MAVSt10WaterLevel >= 15) {
+        MAVSt10Color = 'red';
+        MAVSt10Status = 'Impassable';
+    } else if (MAVSt10WaterLevel >= 10) {
+        MAVSt10Color = 'yellow';
+        MAVSt10Status = 'Risky';
+    }
+
+    MAVSt10Line.setStyle({ color: MAVSt10Color });
+    MAVSt10Line.bindPopup(`<b>Mc Arthur Village Street 10</b><br>Status: ${MAVSt10Status}<br>Water Level: ${MAVSt10WaterLevel} cm`);
+
+    // MAVSt. 11
+    MAVSt11WaterLevel += MAVSt11Increment;
+    MAVSt11WaterLevel = Math.max(0, MAVSt11WaterLevel);
+
+    let MAVSt11Color = 'green';
+    let MAVSt11Status = 'Passable';
+    if (MAVSt11WaterLevel >= 15) {
+        MAVSt11Color = 'red';
+        MAVSt11Status = 'Impassable';
+    } else if (MAVSt11WaterLevel >= 10) {
+        MAVSt11Color = 'yellow';
+        MAVSt11Status = 'Risky';
+    }
+
+    MAVSt11Line.setStyle({ color: MAVSt11Color });
+    MAVSt11Line.bindPopup(`<b>Mc Arthur Village Street 11</b><br>Status: ${MAVSt11Status}<br>Water Level: ${MAVSt11WaterLevel} cm`);
+
+    // MAVSt. 12
+    MAVSt12WaterLevel += MAVSt12Increment;
+    MAVSt12WaterLevel = Math.max(0, MAVSt12WaterLevel);
+
+    let MAVSt12Color = 'green';
+    let MAVSt12Status = 'Passable';
+    if (MAVSt12WaterLevel >= 15) {
+        MAVSt12Color = 'red';
+        MAVSt12Status = 'Impassable';
+    } else if (MAVSt12WaterLevel >= 10) {
+        MAVSt12Color = 'yellow';
+        MAVSt12Status = 'Risky';
+    }
+
+    MAVSt12Line.setStyle({ color: MAVSt12Color });
+    MAVSt12Line.bindPopup(`<b>Mc Arthur Village Street 12</b><br>Status: ${MAVSt12Status}<br>Water Level: ${MAVSt12WaterLevel} cm`);
+
+    // MAVSt. 13
+    MAVSt13WaterLevel += MAVSt13Increment;
+    MAVSt13WaterLevel = Math.max(0, MAVSt13WaterLevel);
+
+    let MAVSt13Color = 'green';
+    let MAVSt13Status = 'Passable';
+    if (MAVSt13WaterLevel >= 15) {
+        MAVSt13Color = 'red';
+        MAVSt13Status = 'Impassable';
+    } else if (MAVSt13WaterLevel >= 10) {
+        MAVSt13Color = 'yellow';
+        MAVSt13Status = 'Risky';
+    }
+
+    MAVSt13Line.setStyle({ color: MAVSt13Color });
+    MAVSt13Line.bindPopup(`<b>Mc Arthur Village Street 13</b><br>Status: ${MAVSt13Status}<br>Water Level: ${MAVSt13WaterLevel} cm`);
+
+    // MAVSt. 14
+    MAVSt14WaterLevel += MAVSt14Increment;
+    MAVSt14WaterLevel = Math.max(0, MAVSt14WaterLevel);
+
+    let MAVSt14Color = 'green';
+    let MAVSt14Status = 'Passable';
+    if (MAVSt14WaterLevel >= 15) {
+        MAVSt14Color = 'red';
+        MAVSt14Status = 'Impassable';
+    } else if (MAVSt14WaterLevel >= 10) {
+        MAVSt14Color = 'yellow';
+        MAVSt14Status = 'Risky';
+    }
+
+    MAVSt14Line.setStyle({ color: MAVSt14Color });
+    MAVSt14Line.bindPopup(`<b>Mc Arthur Village Street 14</b><br>Status: ${MAVSt14Status}<br>Water Level: ${MAVSt14WaterLevel} cm`);
+
+    // MAVSt. 15
+    MAVSt15WaterLevel += MAVSt15Increment;
+    MAVSt15WaterLevel = Math.max(0, MAVSt15WaterLevel);
+
+    let MAVSt15Color = 'green';
+    let MAVSt15Status = 'Passable';
+    if (MAVSt15WaterLevel >= 15) {
+        MAVSt15Color = 'red';
+        MAVSt15Status = 'Impassable';
+    } else if (MAVSt15WaterLevel >= 10) {
+        MAVSt15Color = 'yellow';
+        MAVSt15Status = 'Risky';
+    }
+
+    MAVSt15Line.setStyle({ color: MAVSt15Color });
+    MAVSt15Line.bindPopup(`<b>Mc Arthur Village Street 15</b><br>Status: ${MAVSt15Status}<br>Water Level: ${MAVSt15WaterLevel} cm`);
+
+    // Iba Longos Rd.
+    ibaLongosRdWaterLevel += ibaLongosRdIncrement;
+    ibaLongosRdWaterLevel = Math.max(0, ibaLongosRdWaterLevel);
+
+    let ibaLongosRdColor = 'green';
+    let ibaLongosRdStatus = 'Passable';
+    if (ibaLongosRdWaterLevel >= 15) {
+        ibaLongosRdColor = 'red';
+        ibaLongosRdStatus = 'Impassable';
+    } else if (ibaLongosRdWaterLevel >= 10) {
+        ibaLongosRdColor = 'yellow';
+        ibaLongosRdStatus = 'Risky';
+    }
+
+    ibaLongosRdLine.setStyle({ color: ibaLongosRdColor });
+    ibaLongosRdLine.bindPopup(`<b>Iba Longos Road</b><br>Status: ${ibaLongosRdStatus}<br>Water Level: ${ibaLongosRdWaterLevel} cm`);
+
+    // Calumpang Longos Rd.
+   calumpangLongosRdWaterLevel += calumpangLongosRdIncrement;
+   calumpangLongosRdWaterLevel = Math.max(0, calumpangLongosRdWaterLevel);
+
+    let calumpangLongosRdColor = 'green';
+    let calumpangLongosRdStatus = 'Passable';
+    if (calumpangLongosRdWaterLevel >= 15) {
+        calumpangLongosRdColor = 'red';
+        calumpangLongosRdStatus = 'Impassable';
+    } else if (calumpangLongosRdWaterLevel >= 10) {
+        calumpangLongosRdColor = 'yellow';
+        calumpangLongosRdStatus = 'Risky';
+    }
+
+    calumpangLongosRdLine.setStyle({ color: calumpangLongosRdColor });
+    calumpangLongosRdLine.bindPopup(`<b>Calumpang Longos Road</b><br>Status: ${calumpangLongosRdStatus}<br>Water Level: ${calumpangLongosRdWaterLevel} cm`);
+
+    // riverside street
+    riversidestreetWaterLevel += riversidestreetIncrement;
+    riversidestreetWaterLevel = Math.max(0, riversidestreetWaterLevel);
+ 
+     let riversidestreetColor = 'green';
+     let riversidestreetStatus = 'Passable';
+     if (riversidestreetWaterLevel >= 15) {
+        riversidestreetColor = 'red';
+        riversidestreetStatus = 'Impassable';
+     } else if (riversidestreetWaterLevel >= 10) {
+        riversidestreetColor = 'yellow';
+        riversidestreetStatus = 'Risky';
+     }
+ 
+     riversidestreetLine.setStyle({ color: riversidestreetColor });
+     riversidestreetLine.bindPopup(`<b>Riverside Street</b><br>Status: ${riversidestreetStatus}<br>Water Level: ${riversidestreetWaterLevel} cm`);
+
+    // san jose village Rd.
+    sanjoseVillageRdWaterLevel += sanjoseVillageRdIncrement;
+    sanjoseVillageRdWaterLevel = Math.max(0, sanjoseVillageRdWaterLevel);
+ 
+     let sanjoseVillageRdColor = 'green';
+     let sanjoseVillageRdStatus = 'Passable';
+     if (sanjoseVillageRdWaterLevel >= 15) {
+        sanjoseVillageRdColor = 'red';
+        sanjoseVillageRdStatus = 'Impassable';
+     } else if (sanjoseVillageRdWaterLevel >= 10) {
+        sanjoseVillageRdColor = 'yellow';
+        sanjoseVillageRdStatus = 'Risky';
+     }
+ 
+     sanjoseVillageRdLine.setStyle({ color:sanjoseVillageRdColor });
+     sanjoseVillageRdLine.bindPopup(`<b>San Jose Village Road</b><br>Status: ${sanjoseVillageRdStatus}<br>Water Level: ${sanjoseVillageRdWaterLevel} cm`);
+
+    //  riverside street2
+    riversidestreet2WaterLevel += riversidestreet2Increment;
+    riversidestreet2WaterLevel = Math.max(0, riversidestreet2WaterLevel);
+ 
+     let riversidestreet2Color = 'green';
+     let riversidestreet2Status = 'Passable';
+     if (riversidestreet2WaterLevel >= 15) {
+        riversidestreet2Color = 'red';
+        riversidestreet2Status = 'Impassable';
+     } else if (riversidestreet2WaterLevel >= 10) {
+        riversidestreet2Color = 'yellow';
+        riversidestreet2Status = 'Risky';
+     }
+ 
+     riversidestreet2Line.setStyle({ color: riversidestreet2Color });
+     riversidestreet2Line.bindPopup(`<b>Riverside Street 2</b><br>Status: ${riversidestreet2Status}<br>Water Level: ${riversidestreet2WaterLevel} cm`);
+
+    //  drmCrst
+    drmCrstWaterLevel +=drmCrstIncrement;
+    drmCrstWaterLevel = Math.max(0, drmCrstWaterLevel);
+
+    let drmCrstColor = 'green';
+    let drmCrstStatus = 'Passable';
+    if (drmCrstWaterLevel >= 15) {
+        drmCrstColor = 'red';
+        drmCrstStatus = 'Impassable';
+    } else if (drmCrstWaterLevel >= 10) {
+        drmCrstColor = 'yellow';
+        drmCrstStatus = 'Risky';
+    }
+
+    drmCrstLine.setStyle({ color: drmCrstColor });
+    drmCrstLine.bindPopup(`<b>Dream Crest Homes Subdivision</b><br>Status: ${drmCrstStatus}<br>Water Level: ${drmCrstWaterLevel} cm`);
+    
+
+
 
 }
 
@@ -276,6 +584,29 @@ McArthurVillageMainRLine.bindPopup(`<b>Mc Arthur Village Main Road </b><br>Statu
 MAVSt1Line.bindPopup(`<b>MAVS </b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 MAVSt2Line.bindPopup(`<b>Mc Arthur Village Street 2 </b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 MAVSt3Line.bindPopup(`<b>Mc Arthur Village Street 3</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt4Line.bindPopup(`<b>Mc Arthur Village Street 4</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt5Line.bindPopup(`<b>Mc Arthur Village Street 5</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt6Line.bindPopup(`<b>Mc Arthur Village Street 6</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt7Line.bindPopup(`<b>Mc Arthur Village Street 7</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt8Line.bindPopup(`<b>Mc Arthur Village Street 8</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt9Line.bindPopup(`<b>Mc Arthur Village Street 9</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt10Line.bindPopup(`<b>Mc Arthur Village Street 10</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt11Line.bindPopup(`<b>Mc Arthur Village Street 11</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt12Line.bindPopup(`<b>Mc Arthur Village Street 12</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt13Line.bindPopup(`<b>Mc Arthur Village Street 13</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt14Line.bindPopup(`<b>Mc Arthur Village Street 14</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt15Line.bindPopup(`<b>Mc Arthur Village Street 15</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+calumpangLongosRdLine.bindPopup(`<b>Calumpang Longos Road</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+riversidestreetLine.bindPopup(`<b>Riverside Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+sanjoseVillageRdLine.bindPopup(`<b>San Jose Village Road</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+riversidestreet2Line.bindPopup(`<b>Riverside Street 2</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+drmCrstLine.bindPopup(`<b>Dream Crest Homes Subdivision</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+
+
+
+
+
+
 // !!! etong bindpopup kineme gagayahin at papalitan mga names
 
 // update route color based on water level (Mc Arthur)
