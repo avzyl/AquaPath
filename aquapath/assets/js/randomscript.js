@@ -511,7 +511,42 @@ function updatePolyLineWaterLevels() {
      }
  
      riversidestreetLine.setStyle({ color: riversidestreetColor });
-     riversidestreetdLine.bindPopup(`<b>Calumpang Longos Road</b><br>Status: ${riversidestreetStatus}<br>Water Level: ${riversidestreetWaterLevel} cm`);
+     riversidestreetLine.bindPopup(`<b>Riverside Street</b><br>Status: ${riversidestreetStatus}<br>Water Level: ${riversidestreetWaterLevel} cm`);
+
+    // san jose village Rd.
+    sanjoseVillageRdWaterLevel += sanjoseVillageRdIncrement;
+    sanjoseVillagetRdWaterLevel = Math.max(0, sanjoseVillageRdWaterLevel);
+ 
+     let sanjoseVillageRdColor = 'green';
+     let sanjoseVillageRdStatus = 'Passable';
+     if (sanjoseVillageRLevel >= 15) {
+        sanjoseVillageRd = 'red';
+        sanjoseVillageRd = 'Impassable';
+     } else if (sanjoseVillageRdWaterLevel >= 10) {
+        sanjoseVillageRdColor = 'yellow';
+        sanjoseVillageRdtatus = 'Risky';
+     }
+ 
+     sanjoseVillageRdLine.setStyle({ color:sanjoseVillageRdColor });
+     sanjoseVillageRdLine.bindPopup(`<b>San Jose Village Road</b><br>Status: ${sanjoseVillageRdStatus}<br>Water Level: ${sanjoseVillageRdWaterLevel} cm`);
+
+    //  riverside street2
+    riversidestreetWaterLevel += riversidestreet2Increment;
+    riversidestreetWaterLevel = Math.max(0, riversidestreet2WaterLevel);
+ 
+     let riversidestreet2Color = 'green';
+     let riversidestreet2Status = 'Passable';
+     if (riversidestreet2Level >= 15) {
+        riversidestreet2 = 'red';
+        riversidestreet2 = 'Impassable';
+     } else if (riversidestreet2WaterLevel >= 10) {
+        riversidestreet2Color = 'yellow';
+        riversidestreet2Status = 'Risky';
+     }
+ 
+     riversidestreet2Line.setStyle({ color: riversidestreet2Color });
+     riversidestreet2Line.bindPopup(`<b>Riverside Street 2</b><br>Status: ${riversidestreet2Status}<br>Water Level: ${riversidestreet2WaterLevel} cm`);
+
  
 
 }
