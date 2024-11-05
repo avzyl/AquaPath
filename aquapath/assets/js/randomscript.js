@@ -587,6 +587,11 @@ MAVSt3Line.bindPopup(`<b>Mc Arthur Village Street 3</b><br>Status: ${status}<br>
 MAVSt4Line.bindPopup(`<b>Mc Arthur Village Street 4</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 MAVSt5Line.bindPopup(`<b>Mc Arthur Village Street 5</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 MAVSt6Line.bindPopup(`<b>Mc Arthur Village Street 6</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt7Line.bindPopup(`<b>Mc Arthur Village Street 7</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt8Line.bindPopup(`<b>Mc Arthur Village Street 8</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt9Line.bindPopup(`<b>Mc Arthur Village Street 9</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+
+
 // !!! etong bindpopup kineme gagayahin at papalitan mga names
 
 // update route color based on water level (Mc Arthur)
