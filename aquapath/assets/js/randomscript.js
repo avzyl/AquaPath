@@ -377,6 +377,57 @@ function updatePolyLineWaterLevels() {
     MAVSt10Line.setStyle({ color: MAVSt10Color });
     MAVSt10Line.bindPopup(`<b>Mc Arthur Village Street 10</b><br>Status: ${MAVSt10Status}<br>Water Level: ${MAVSt10WaterLevel} cm`);
 
+    // MAVSt. 11
+    MAVSt11WaterLevel += MAVSt11Increment;
+    MAVSt11WaterLevel = Math.max(0, MAVSt11WaterLevel);
+
+    let MAVSt11Color = 'green';
+    let MAVSt11Status = 'Passable';
+    if (MAVSt11WaterLevel >= 15) {
+        MAVSt11Color = 'red';
+        MAVSt11Status = 'Impassable';
+    } else if (MAVSt11WaterLevel >= 10) {
+        MAVSt11Color = 'yellow';
+        MAVSt11Status = 'Risky';
+    }
+
+    MAVSt11Line.setStyle({ color: MAVSt11Color });
+    MAVSt11Line.bindPopup(`<b>Mc Arthur Village Street 11</b><br>Status: ${MAVSt11Status}<br>Water Level: ${MAVSt11WaterLevel} cm`);
+
+    // MAVSt. 12
+    MAVSt12WaterLevel += MAVSt12Increment;
+    MAVSt12WaterLevel = Math.max(0, MAVSt12WaterLevel);
+
+    let MAVSt12Color = 'green';
+    let MAVSt12Status = 'Passable';
+    if (MAVSt12WaterLevel >= 15) {
+        MAVSt12Color = 'red';
+        MAVSt12Status = 'Impassable';
+    } else if (MAVSt12WaterLevel >= 10) {
+        MAVSt12Color = 'yellow';
+        MAVSt12Status = 'Risky';
+    }
+
+    MAVSt12Line.setStyle({ color: MAVSt12Color });
+    MAVSt12Line.bindPopup(`<b>Mc Arthur Village Street 12</b><br>Status: ${MAVSt12Status}<br>Water Level: ${MAVSt12WaterLevel} cm`);
+
+    // MAVSt. 13
+    MAVSt13WaterLevel += MAVSt13Increment;
+    MAVSt13WaterLevel = Math.max(0, MAVSt4WaterLevel);
+
+    let MAVSt13Color = 'green';
+    let MAVSt13Status = 'Passable';
+    if (MAVSt13WaterLevel >= 15) {
+        MAVSt13Color = 'red';
+        MAVSt13Status = 'Impassable';
+    } else if (MAVSt13WaterLevel >= 10) {
+        MAVSt13Color = 'yellow';
+        MAVSt13Status = 'Risky';
+    }
+
+    MAVSt13Line.setStyle({ color: MAVSt13Color });
+    MAVSt13Line.bindPopup(`<b>Mc Arthur Village Street 13</b><br>Status: ${MAVSt13Status}<br>Water Level: ${MAVSt13WaterLevel} cm`);
+
 
 
 }
