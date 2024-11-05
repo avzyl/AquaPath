@@ -477,7 +477,24 @@ function updatePolyLineWaterLevels() {
     }
 
     ibaLongosRdLine.setStyle({ color: ibaLongosRdColor });
-    ibaLongosRdLine.bindPopup(`<b>Iba Longos</b><br>Status: ${ibaLongosRdStatus}<br>Water Level: ${ibaLongosRdWaterLevel} cm`);
+    ibaLongosRdLine.bindPopup(`<b>Iba Longos Road</b><br>Status: ${ibaLongosRdStatus}<br>Water Level: ${ibaLongosRdWaterLevel} cm`);
+
+    // Calumpang Longos Rd.
+   calumpangLongosRdWaterLevel += calumpangLongosRdIncrement;
+   calumpangLongosRdWaterLevel = Math.max(0, calumpangLongosRdWaterLevel);
+
+    let calumpangLongosRdColor = 'green';
+    let calumpangLongosRdStatus = 'Passable';
+    if (calumpangLongosRdLevel >= 15) {
+        calumpangLongosRd = 'red';
+        calumpangLongosRd = 'Impassable';
+    } else if (icalumpangLongosRdaterLevel >= 10) {
+        calumpangLongosRdColor = 'yellow';
+        calumpangLongosRdStatus = 'Risky';
+    }
+
+    calumpangLongosRdLine.setStyle({ color: calumpangLongosRdColor });
+    calumpangLongosRdLine.bindPopup(`<b>Calumpang Longos Road</b><br>Status: ${calumpangLongosRdStatus}<br>Water Level: ${calumpangLongosRdWaterLevel} cm`);
 
     
 
