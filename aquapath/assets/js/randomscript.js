@@ -365,7 +365,7 @@ function updatePolyLineWaterLevels() {
     MAVSt10WaterLevel = Math.max(0, MAVSt10WaterLevel);
 
     let MAVSt10Color = 'green';
-    let MAVSt10tatus = 'Passable';
+    let MAVSt10Status = 'Passable';
     if (MAVSt10WaterLevel >= 15) {
         MAVSt10Color = 'red';
         MAVSt10Status = 'Impassable';
@@ -413,7 +413,7 @@ function updatePolyLineWaterLevels() {
 
     // MAVSt. 13
     MAVSt13WaterLevel += MAVSt13Increment;
-    MAVSt13WaterLevel = Math.max(0, MAVSt4WaterLevel);
+    MAVSt13WaterLevel = Math.max(0, MAVSt13WaterLevel);
 
     let MAVSt13Color = 'green';
     let MAVSt13Status = 'Passable';
@@ -443,7 +443,7 @@ function updatePolyLineWaterLevels() {
     }
 
     MAVSt14Line.setStyle({ color: MAVSt14Color });
-    MAVSt14Line.bindPopup(`<b>Mc Arthur Village Street 4</b><br>Status: ${MAVSt14Status}<br>Water Level: ${MAVSt14WaterLevel} cm`);
+    MAVSt14Line.bindPopup(`<b>Mc Arthur Village Street 14</b><br>Status: ${MAVSt14Status}<br>Water Level: ${MAVSt14WaterLevel} cm`);
 
     // MAVSt. 15
     MAVSt15WaterLevel += MAVSt15Increment;
