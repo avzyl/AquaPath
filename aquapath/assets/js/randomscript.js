@@ -590,6 +590,9 @@ MAVSt6Line.bindPopup(`<b>Mc Arthur Village Street 6</b><br>Status: ${status}<br>
 MAVSt7Line.bindPopup(`<b>Mc Arthur Village Street 7</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 MAVSt8Line.bindPopup(`<b>Mc Arthur Village Street 8</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 MAVSt9Line.bindPopup(`<b>Mc Arthur Village Street 9</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt10Line.bindPopup(`<b>Mc Arthur Village Street 10</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt11Line.bindPopup(`<b>Mc Arthur Village Street 11</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt12Line.bindPopup(`<b>Mc Arthur Village Street 12</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 
 
 // !!! etong bindpopup kineme gagayahin at papalitan mga names
