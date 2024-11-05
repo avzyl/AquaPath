@@ -309,6 +309,74 @@ function updatePolyLineWaterLevels() {
     MAVSt6Line.setStyle({ color: MAVSt6Color });
     MAVSt6Line.bindPopup(`<b>Mc Arthur Village Street 6</b><br>Status: ${MAVSt6Status}<br>Water Level: ${MAVSt6WaterLevel} cm`);
 
+    // MAVSt. 7
+    MAVSt7WaterLevel += MAVSt7Increment;
+    MAVSt7WaterLevel = Math.max(0, MAVSt7WaterLevel);
+
+    let MAVSt7Color = 'green';
+    let MAVSt7Status = 'Passable';
+    if (MAVSt7WaterLevel >= 15) {
+        MAVSt7Color = 'red';
+        MAVSt7Status = 'Impassable';
+    } else if (MAVSt7WaterLevel >= 10) {
+        MAVSt7Color = 'yellow';
+        MAVSt7Status = 'Risky';
+    }
+
+    MAVSt7Line.setStyle({ color: MAVSt7Color });
+    MAVSt7Line.bindPopup(`<b>Mc Arthur Village Street 7</b><br>Status: ${MAVSt7Status}<br>Water Level: ${MAVSt7WaterLevel} cm`);
+
+    // MAVSt. 8
+    MAVSt8WaterLevel += MAVSt8Increment;
+    MAVSt8WaterLevel = Math.max(0, MAVSt8WaterLevel);
+
+    let MAVSt8Color = 'green';
+    let MAVSt8Status = 'Passable';
+    if (MAVSt8WaterLevel >= 15) {
+        MAVSt8Color = 'red';
+        MAVSt8Status = 'Impassable';
+    } else if (MAVSt8WaterLevel >= 10) {
+        MAVSt8Color = 'yellow';
+        MAVSt8Status = 'Risky';
+    }
+
+    MAVSt8Line.setStyle({ color: MAVSt8Color });
+    MAVSt8Line.bindPopup(`<b>Mc Arthur Village Street 8</b><br>Status: ${MAVSt8Status}<br>Water Level: ${MAVSt8WaterLevel} cm`);
+
+    // MAVSt. 9
+    MAVSt9WaterLevel += MAVSt9Increment;
+    MAVSt9WaterLevel = Math.max(0, MAVSt9WaterLevel);
+
+    let MAVSt9Color = 'green';
+    let MAVSt9Status = 'Passable';
+    if (MAVSt9WaterLevel >= 15) {
+        MAVSt9Color = 'red';
+        MAVSt9Status = 'Impassable';
+    } else if (MAVSt9WaterLevel >= 10) {
+        MAVSt9Color = 'yellow';
+        MAVSt9Status = 'Risky';
+    }
+
+    MAVSt9Line.setStyle({ color: MAVSt9Color });
+    MAVSt9Line.bindPopup(`<b>Mc Arthur Village Street 9</b><br>Status: ${MAVSt9Status}<br>Water Level: ${MAVSt9WaterLevel} cm`);
+
+    // MAVSt. 10
+    MAVSt10WaterLevel += MAVSt10Increment;
+    MAVSt10WaterLevel = Math.max(0, MAVSt10WaterLevel);
+
+    let MAVSt10Color = 'green';
+    let MAVSt10tatus = 'Passable';
+    if (MAVSt10WaterLevel >= 15) {
+        MAVSt10Color = 'red';
+        MAVSt10Status = 'Impassable';
+    } else if (MAVSt10WaterLevel >= 10) {
+        MAVSt10Color = 'yellow';
+        MAVSt10Status = 'Risky';
+    }
+
+    MAVSt10Line.setStyle({ color: MAVSt10Color });
+    MAVSt10Line.bindPopup(`<b>Mc Arthur Village Street 10</b><br>Status: ${MAVSt10Status}<br>Water Level: ${MAVSt10WaterLevel} cm`);
+
 
 
 }
