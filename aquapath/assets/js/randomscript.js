@@ -257,7 +257,59 @@ function updatePolyLineWaterLevels() {
     MAVSt3Line.setStyle({ color: MAVSt3Color });
     MAVSt3Line.bindPopup(`<b>Mc Arthur Village Street 3</b><br>Status: ${MAVSt3Status}<br>Water Level: ${MAVSt3WaterLevel} cm`);
 
-    // !!! etong buong kineme gagayahin
+    
+    // MAVSt. 4
+    MAVSt4WaterLevel += MAVSt4Increment;
+    MAVSt4WaterLevel = Math.max(0, MAVSt4WaterLevel);
+
+    let MAVSt4Color = 'green';
+    let MAVSt4Status = 'Passable';
+    if (MAVSt4WaterLevel >= 15) {
+        MAVSt4Color = 'red';
+        MAVSt4Status = 'Impassable';
+    } else if (MAVSt4WaterLevel >= 10) {
+        MAVSt4Color = 'yellow';
+        MAVSt4Status = 'Risky';
+    }
+
+    MAVSt4Line.setStyle({ color: MAVSt4Color });
+    MAVSt4Line.bindPopup(`<b>Mc Arthur Village Street 4</b><br>Status: ${MAVSt4Status}<br>Water Level: ${MAVSt4WaterLevel} cm`);
+
+    // MAVSt. 5
+    MAVSt5WaterLevel += MAVSt5Increment;
+    MAVSt5WaterLevel = Math.max(0, MAVSt5WaterLevel);
+
+    let MAVSt5Color = 'green';
+    let MAVSt5Status = 'Passable';
+    if (MAVSt5WaterLevel >= 15) {
+        MAVSt5Color = 'red';
+        MAVSt5Status = 'Impassable';
+    } else if (MAVSt5WaterLevel >= 10) {
+        MAVSt5Color = 'yellow';
+        MAVSt5Status = 'Risky';
+    }
+
+    MAVSt5Line.setStyle({ color: MAVSt5Color });
+    MAVSt5Line.bindPopup(`<b>Mc Arthur Village Street 5</b><br>Status: ${MAVSt5Status}<br>Water Level: ${MAVSt5WaterLevel} cm`);
+
+    // MAVSt. 6
+    MAVSt6WaterLevel += MAVSt6Increment;
+    MAVSt6WaterLevel = Math.max(0, MAVSt6WaterLevel);
+
+    let MAVSt6Color = 'green';
+    let MAVSt6Status = 'Passable';
+    if (MAVSt6WaterLevel >= 15) {
+        MAVSt6Color = 'red';
+        MAVSt6Status = 'Impassable';
+    } else if (MAVSt6WaterLevel >= 10) {
+        MAVSt6Color = 'yellow';
+        MAVSt6Status = 'Risky';
+    }
+
+    MAVSt6Line.setStyle({ color: MAVSt6Color });
+    MAVSt6Line.bindPopup(`<b>Mc Arthur Village Street 6</b><br>Status: ${MAVSt6Status}<br>Water Level: ${MAVSt6WaterLevel} cm`);
+
+
 
 }
 
