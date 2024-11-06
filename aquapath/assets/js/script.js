@@ -119,6 +119,26 @@ console.log(Constants.calumpangLongosRdCoord);
 console.log(Constants.riversidestreetCoord);
 console.log(Constants.sanjoseVillageRdCoord);
 console.log(Constants.riversidestreet2Coord);
+console.log(Constants.DCSt1Coord);
+console.log(Constants.DCSt2Coord);
+console.log(Constants.DCSt3Coord);
+console.log(Constants.DCSt4Coord);
+console.log(Constants.DCSt5Coord);
+console.log(Constants.DCSt6Coord);
+console.log(Constants.DCSt7Coord);
+console.log(Constants.DCSt8Coord);
+console.log(Constants.DCSt9Coord);
+console.log(Constants.DCSt10Coord);
+console.log(Constants.DCSt11Coord);
+console.log(Constants.DCSt12Coord);
+console.log(Constants.DCSt13Coord);
+console.log(Constants.DCSt14Coord);
+console.log(Constants.DCSt15Coord);
+console.log(Constants.DCSt16Coord);
+console.log(Constants.DCSt17Coord);
+console.log(Constants.DCSt18Coord);
+console.log(Constants.DCSt19Coord);
+console.log(Constants.DCSt20Coord);
 
 
 
@@ -232,6 +252,26 @@ let calumpangLongosRdLine = L.polyline(calumpangLongosRdCoord, {color: 'yellow',
 let riversidestreetLine = L.polyline(riversidestreetCoord, {color: 'yellow', weight:10}).addTo(map);
 let sanjoseVillageRdLine = L.polyline(sanjoseVillageRdCoord, {color: 'orange', weight:10}).addTo(map);
 let riversidestreet2Line = L.polyline(riversidestreet2Coord, {color: 'green', weight:10}).addTo(map);
+let DCSt1Line =  L.polyline(DCSt1Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt2Line =  L.polyline(DCSt2Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt3Line =  L.polyline(DCSt3Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt4Line =  L.polyline(DCSt4Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt5Line =  L.polyline(DCSt5Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt6Line =  L.polyline(DCSt6Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt7Line =  L.polyline(DCSt7Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt8Line =  L.polyline(DCSt8Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt9Line =  L.polyline(DCSt9Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt10Line =  L.polyline(DCSt10Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt11Line =  L.polyline(DCSt11Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt12Line =  L.polyline(DCSt12Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt13Line =  L.polyline(DCSt13Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt14Line =  L.polyline(DCSt14Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt15Line =  L.polyline(DCSt15Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt16Line =  L.polyline(DCSt16Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt17Line =  L.polyline(DCSt17Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt18Line =  L.polyline(DCSt18Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt19Line =  L.polyline(DCSt19Coord, {color: 'red', weight: 10}).addTo(map)
+let DCSt20Line =  L.polyline(DCSt20Coord, {color: 'red', weight: 10}).addTo(map)
 
 
 // bind the popup
