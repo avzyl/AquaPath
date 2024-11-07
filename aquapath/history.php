@@ -40,5 +40,6 @@
             <li><a href="history.php" class="nav__link"><i class="fa-solid fa-clock-rotate-left"></i></a></li>
         </ul>
     </nav>
+    
 </body>
 </html>
