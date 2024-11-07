@@ -27,11 +27,13 @@
     <!-- !!! please make the navbar responsive for larger screens -->
     <nav class="nav">
         <ul class="nav__list">
-            <li><a href="index.php" class="nav__link active-link"><i class="fas fa-home"></i></a></li>
-            <li>
-                <button class="nav__expand" id="nav-expand"><i class="fas fa-plus nav__expand-icon"></i></button>
+            <li class="home"><a href="index.php" class="nav__link active-link"><i class="fas fa-home"></i></a></li>
+            <li class="route"><button id="toggleRouteSearch" class="nav__route"><i class="fa-solid fa-route"></i></button></li>
+            <li class="plus"><button class="nav__expand" id="nav-expand"><i class="fas fa-plus nav__expand-icon"></i></button></li>
+            <li class="toggle">
+                <button id="toggle-directions"><i class="fa-solid fa-toggle-on"></i></button>
             </li>
-            <li><a href="history.php" class="nav__link"><i class="fa-solid fa-clock-rotate-left"></i></a></li>
+            <li class="history"><a href="history.php" class="nav__link"><i class="fa-solid fa-clock-rotate-left"></i></a></li>
         </ul>
     </nav>
 
@@ -44,9 +46,6 @@
         <button id="searchBtn">Search</button>
         <button id="clear-btn">Clear Search</button>
     </div>
-
-    <!-- !!! make this a button in the right, above the show my location and navbar -->
-    <button id="toggleRouteSearch">Show Route Search</button>
 
     <!-- !!! move all the styles to styles.css plz, tinatamad na ako maglipat-lipat file kaya dito ko na nilagay -->
     <div id="routeSearchContainer" style="display: none;">
@@ -64,11 +63,8 @@
     </div>
 
     <!-- !!! make this a button plz above the navbar -->
-    <button id="locate-btn">Show My Location</button>
-    
-    <!-- !!! make this a button plz -->
-    <button id="toggle-directions">Toggle Directions</button>
-    
+    <button id="locate-btn"><i class="fa-solid fa-location-dot"></i></button>
+        
     <div id="directions" style="display: none;">
         <button id="close-directions" style="float: right; border: none; background: none; cursor: pointer; font-size: 16px;">&times;</button>
         <h4>Routing Directions</h4>

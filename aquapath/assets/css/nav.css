@@ -1,13 +1,5 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    --first-color: hsl(225, 95%, 56%);
-    --black-color: hsl(225, 12%, 12%);
-    --white-color: hsl(0, 0%, 100%);
-    --text-color: #1c1c1c;
-    --body-color: hsl(225, 100%, 99%);
-
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 1000;
@@ -65,23 +57,28 @@ a {
 
 /*=============== NAVBAR ===============*/
 .nav {
-    position: fixed;
+    position: absolute;
     bottom: 1.5rem;
-    left: 0;
-    right: 0;
-    background-color: var(--black-color);
-    width: 88%;
-    margin-inline: auto;
+    backdrop-filter: blur(5px);
     box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
     padding: 0.5rem 1.25rem;
-    border-radius: 4rem;
+    border-radius: 15px;
     z-index: var(--z-fixed);
+    transition: 0.4s;
+    background-color: rgba(20, 26, 34, .5);
+    margin-inline: auto;
+    left: 0;
+    right: 0;
+    /* margin: 0 1.5em 0 1.5em; */
+    width: 350px;
 }
 
 .nav__list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .nav__link {
@@ -100,7 +97,8 @@ a {
     outline: none;
     width: 40px;
     height: 40px;
-    background-color: var(--first-color);
+    background-color: transparent;
+    color: white;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -117,17 +115,54 @@ a {
     color: var(--white-color);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For medium devices */
-@media screen and (min-width: 450px) {
-    .nav {
-        width: 350px;
-    }
+.nav__route {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    z-index: var(--z-fixed);
+    position: relative;
 }
 
-/* For large devices */
-@media screen and (min-width: 1150px) {
-    .container {
-        margin-inline: auto;
-    }
+#toggle-directions {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    background-color: transparent;
+    border: none;
+    z-index: var(--z-fixed);
+    position: relative;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    grid-column: 1;
+}
+
+.route {
+    grid-column: 2;
+}
+
+.plus {
+    grid-column: 3;
+}
+
+.toggle {
+    grid-column: 4;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.history {
+    grid-column: 5;
 }
