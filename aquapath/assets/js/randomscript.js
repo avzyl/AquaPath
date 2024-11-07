@@ -16,6 +16,86 @@ console.log(Constants.highwayCoordinates);
 console.log(Constants.carmenCoord);
 console.log(Constants.hanggaStCoord);
 console.log(Constants.forrestStCoord);
+console.log(Constants.TrvrStCoord);
+console.log(Constants.MchlStCoord);
+console.log(Constants.LnnlStCoord);
+console.log(Constants.ShrwdStCoord);
+console.log(Constants.ShlbyStCoord);
+console.log(Constants.StnlyStCoord);
+console.log(Constants.StvStCoord);
+console.log(Constants.SpncrStCoord);
+console.log(Constants.TrntnStCoord);
+console.log(Constants.TrcyStCoord);
+console.log(Constants.TmthyStCoord);
+console.log(Constants.TbbyStCoord);
+console.log(Constants.ThrmnStCoord);
+console.log(Constants.VncntStCoord);
+console.log(Constants.VrglStCoord);
+console.log(Constants.WrrnStCoord);
+console.log(Constants.WllcStCoord);
+console.log(Constants.WltrStCoord);
+console.log(Constants.WlkrStCoord);
+console.log(Constants.MchllStCoord);
+console.log(Constants.MrrsStCoord);
+console.log(Constants.GfryStCoord);
+console.log(Constants.MrryStCoord);
+console.log(Constants.MyrnStCoord);
+console.log(Constants.NthnStCoord );
+console.log(Constants.NvneStCoord);
+console.log(Constants.RdStCoord);
+console.log(Constants.RlphStCoord);
+console.log(Constants.PrkrStCoord);
+console.log(Constants.ScttStCoord);
+console.log(Constants.SnfrdStCoord);
+console.log(Constants.RbnStCoord);
+console.log(Constants.RlyStCoord);
+console.log(Constants.RcStCoord );
+console.log(Constants.PlStCoord);
+console.log(Constants.OrvllStCoord);
+console.log(Constants.ChnsyStCoord);
+console.log(Constants.LndsyStCoord);
+console.log(Constants.LnwdStCoord);
+console.log(Constants.CrsnStCoord);
+console.log(Constants.HltnStCoord);
+console.log(Constants.HwrdStCoord);
+console.log(Constants.HrshllStCoord);
+console.log(Constants.HrmnStCoord);
+console.log(Constants.HlthStCoord);
+console.log(Constants.HywdStCoord);
+console.log(Constants.HrldStCoord);
+console.log(Constants.JsprStCoord);
+console.log(Constants.LslyStCoord);
+console.log(Constants.FlydStCoord);
+console.log(Constants.ElwdStCoord);
+console.log(Constants.ErnstStCoord);
+console.log(Constants.EthnStCoord);
+console.log(Constants.EllswrthStCoord);
+console.log(Constants.EllsStCoord);
+console.log(Constants.ErlStCoord);
+console.log(Constants.HntrStCoord);
+console.log(Constants.JrrtStCoord);
+console.log(Constants.CmrnStCoord);
+console.log(Constants.KrbyStCoord);
+console.log(Constants.LvrnStCoord);
+console.log(Constants.KrtsStCoord);
+console.log(Constants.KvnStCoord);
+console.log(Constants.KnnStCoord);
+console.log(Constants.KndllStCoord);
+console.log(Constants.KthStCoord);
+console.log(Constants.KnnthStCoord);
+console.log(Constants.KndrckStCoord);
+console.log(Constants.KnnyStCoord);
+console.log(Constants.JysnStCoord);
+console.log(Constants.JrmnStCoord );
+console.log(Constants.JrllStCoord);
+console.log(Constants.JstnStCoord);
+console.log(Constants.BrcStCoord);
+console.log(Constants.MxwllStCoord);
+console.log(Constants.MynrdStCoord);
+console.log(Constants.McknlyStCoord);
+console.log(Constants.MrrllStCoord);
+console.log(Constants.mckyStCoord);
+console.log(Constants.RndllStCoord);
 console.log(Constants.McArthurVillageMainRCoord);
 console.log(Constants.MAVSt1Coord);
 console.log(Constants.MAVSt2Coord);
@@ -37,7 +117,8 @@ console.log(Constants.calumpangLongosRdCoord);
 console.log(Constants.riversidestreetCoord);
 console.log(Constants.sanjoseVillageRdCoord);
 console.log(Constants.riversidestreet2Coord);
-console.log(Constants.drmCrstCoord);
+
+
 
 // polylines
 let boundariesLine = L.polyline(Constants.boundaries, { color: 'black', weight: 3 }).addTo(map);
@@ -45,6 +126,79 @@ let highwayLine = L.polyline(Constants.highwayCoordinates, { color: 'green', opa
 let carmenLine = L.polyline(Constants.carmenCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let hanggaStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let forrestStLine = L.polyline(Constants.forrestStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let TrvrStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let MchlStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let LnnlStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let ShrwdStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let ShlbyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let StvStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let SpncrStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let TrntnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let TrcyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let TmthyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let TbbyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let ThrmnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let VncntStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let VrglStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let WrrnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let WllcStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let WltrStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let WlkrStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let MchllStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let GfryStine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let MrrsStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let MrryStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let NthnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let NvneStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let RdStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let RlphStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let PrkrStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let ScttStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let SnfrdStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let RbnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let RlyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let RcStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let PlStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let OrvllStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let ChnsyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let LndsyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let LnwdStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let CrsnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let HltnStine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let HwrdStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let HrshllStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let HrmnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let HlthStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let HywdStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let HrldStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let JsprStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let LslyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let FlydStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let ElwdStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let ErnstStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let EthnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let EllswrthStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let EllsStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let ErlStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let HntrStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let JrrtStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let CmrnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let KrbyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let LvrnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let KrtsStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let KvnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let KnnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let KndllStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let KthStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let KndrckStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let KnnyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let JysnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let JrmnStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let JrllStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let MxwllStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let McknlyStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let MrrllStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let RndllStLine = L.polyline(Constants.hanggaStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let McArthurVillageMainRLine = L.polyline(Constants.McArthurVillageMainRCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let MAVSt1Line = L.polyline(Constants.MAVSt1Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let MAVSt2Line = L.polyline(Constants.MAVSt2Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
@@ -68,9 +222,76 @@ let riversidestreet2Line = L.polyline(Constants.riversidestreet2Coord, { color: 
 let drmCrstLine = L.polyline(Constants.drmCrstCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 
 // intial water lvles
+let boundariesWaterlevel = 0;
+let highwayWaterlevel = 0;
 let hanggaStWaterLevel = 0;
 let carmenWaterLevel = 0;
-let forrestStWaterLevel = 0;
+let TrvrStWaterLevel = 0;
+let MchlStWaterLevel = 0;
+let ShrwdStWaterLevel = 0;
+let ShlbyStWaterLevel = 0;
+let StvStWaterLevel = 0;
+let SpncrStWaterLevel = 0;
+let TrntnStWaterLevel = 0;
+let TrcyStWaterLevel = 0;
+let TmthyStWaterLevel = 0;
+let TbbyStWaterLevel = 0;
+let ThrmnStWaterLevel = 0;
+let VncntStWaterLevel = 0;
+let VrglStWaterLevel = 0;
+let WrrnStWaterLevel = 0;
+let WlkrStStWaterLevel = 0;
+let MchllStWaterLevel = 0;
+let MrrsStWaterLevel = 0;
+let NthnStWaterLevel = 0;
+let NvneStWaterLevel = 0;
+let RdStWaterLevel = 0;
+let RlphStWaterLevel = 0;
+let PrkrStWaterLevel = 0;
+let SnfrdStWaterLevel = 0;
+let RbnStWaterLevel = 0;
+let RlyStWaterLevel = 0;
+let RcStWaterLevel = 0;
+let PlStWaterLevel = 0;
+let OrvllStWaterLevel = 0;
+let ChnsyStWaterLevel = 0;
+let LndsyStWaterLevel = 0;
+let LnwdStWaterLevel = 0;
+let CrsnStWaterLevel = 0;
+let HltnStWaterLevel = 0;
+let HwrdStWaterLevel = 0;
+let HrshllStWaterLevel = 0;
+let HrmnStWaterLevel = 0;
+let HlthStWaterLevel = 0;
+let HywdStWaterLevel = 0;
+let HrldStWaterLevel = 0;
+let JsprStWaterLevel = 0;
+let LslyStWaterLevel = 0;
+let ElwdStWaterLevel = 0;
+let ErnstStWaterLevel = 0;
+let EthnStWaterLevel = 0;
+let EllswrthStWaterLevel = 0;
+let EllsStWaterLevel = 0;
+let ErlStWaterLevel = 0;
+let HntrStWaterLevel = 0;
+let JrrtStWaterLevel = 0;
+let CmrnStWaterLevel = 0;
+let KrbyStWaterLevel = 0;
+let LvrnStWaterLevel = 0;
+let KrtsStWaterLevel = 0;
+let KvnStWaterLevel = 0;
+let KnnStWaterLevel = 0;
+let KndllStWaterLevel = 0;
+let KthStWaterLevel = 0;
+let KndrckStWaterLevel = 0;
+let KnnyStWaterLevel = 0;
+let JysnStWaterLevel = 0;
+let JrmnStWaterLevel = 0;
+let JrllStLevel = 0;
+let MxwllStWaterLevel = 0;
+let McknlyStWaterLevel = 0;
+let MrrllStWaterLevel = 0;
+let RndllStWaterLevel = 0;
 let McArthurVillageMainRWaterLevel = 0;
 let MAVSt1WaterLevel = 0;
 let MAVSt2WaterLevel = 0;
@@ -104,33 +325,140 @@ function getRandomIncrement(min, max) {
 function updatePolyLineWaterLevels() {
 
     // increments
-    const carmenIncrement = getRandomIncrement(-2, 4);
-    const hanggaStIncrement = getRandomIncrement(-3, 5);
-    const forrestStIncrement = getRandomIncrement(-4, 6);
-    const McArthurVillageMainRIncrement = getRandomIncrement(-3, 5);
-    const MAVSt1Increment = getRandomIncrement(-2, 4);
-    const MAVSt2Increment = getRandomIncrement(-2, 3);
-    const MAVSt3Increment = getRandomIncrement(-3, 2);
-    const MAVSt4Increment = getRandomIncrement(-2, 4);
-    const MAVSt5Increment = getRandomIncrement(-3, 5);
-    const MAVSt6Increment = getRandomIncrement(-4, 6);
-    const MAVSt7Increment = getRandomIncrement(-3, 5);
-    const MAVSt8Increment = getRandomIncrement(-2, 4);
-    const MAVSt9Increment = getRandomIncrement(-2, 3);
-    const MAVSt10Increment = getRandomIncrement(-3, 2);
-    const MAVSt11Increment = getRandomIncrement(-2, 4);
-    const MAVSt12Increment = getRandomIncrement(-3, 5);
-    const MAVSt13Increment = getRandomIncrement(-4, 6);
-    const MAVSt14Increment = getRandomIncrement(-3, 5);
-    const MAVSt15Increment = getRandomIncrement(-2, 4);
-    const ibaLongosRdIncrement = getRandomIncrement(-2, 3);
-    const calumpangLongosRdIncrement = getRandomIncrement(-3, 2);
-    const riversidestreetIncrement = getRandomIncrement(-2, 4);
-    const sanjoseVillageRdIncrement = getRandomIncrement(-3, 5);
-    const riversidestreet2Increment = getRandomIncrement(-4, 6);
-    const drmCrstIncrement = getRandomIncrement(-3, 5);
+    const boundariesWaterlevel = getRandomIncrement(-2, 4);
+    const highwayWaterlevel = getRandomIncrement(-2, 5);
+    const hanggaStWaterLevel = getRandomIncrement(-3, 5);
+    const carmenWaterLevel = getRandomIncrement(-2, 4);
+    const forrestStWaterLevel = getRandomIncrement(-3, 4)
+    const TrvrStWaterLevel = getRandomIncrement(-4, 6);
+    const MchlStWaterLevel = getRandomIncrement(-3, 5);
+    const ShrwdStWaterLevel = getRandomIncrement(-2, 4);
+    const ShlbyStWaterLevel = getRandomIncrement(-2, 3);
+    const StvStWaterLevel = getRandomIncrement(-3, 2);
+    const SpncrStWaterLevel = getRandomIncrement(-2, 4);
+    const TrntnStWaterLevel = getRandomIncrement(-3, 5);
+    const TrcyStWaterLevel = getRandomIncrement(-4, 6);
+    const TmthyStWaterLevel = getRandomIncrement(-3, 5);
+    const TbbyStWaterLevel = getRandomIncrement(-2, 4);
+    const ThrmnStWaterLevel = getRandomIncrement(-2, 3);
+    const VncntStWaterLevel = getRandomIncrement(-3, 2);
+    const VrglStWaterLevel = getRandomIncrement(-2, 4);
+    const WrrnStWaterLevel = getRandomIncrement(-3, 5);
+    const WlkrStStWaterLevel = getRandomIncrement(-4, 6);
+    const MchllStWaterLevel = getRandomIncrement(-3, 5);
+    const MrrsStWaterLevel = getRandomIncrement(-2, 4);
+    const NthnStWaterLevel = getRandomIncrement(-2, 3);
+    const NvneStWaterLevel = getRandomIncrement(-3, 2);
+    const RdStWaterLevel = getRandomIncrement(-2, 4);
+    const RlphStWaterLevel = getRandomIncrement(-3, 5);
+    const PrkrStWaterLevel = getRandomIncrement(-4, 6);
+    const SnfrdStWaterLevel = getRandomIncrement(-3, 5);
+    const RbnStWaterLevel = getRandomIncrement(-2, 4);
+    const RlyStWaterLevel = getRandomIncrement(-2, 3);
+    const RcStWaterLevel = getRandomIncrement(-3, 2);
+    const PlStWaterLevel = getRandomIncrement(-2, 4);
+    const OrvllStWaterLevel = getRandomIncrement(-3, 5);
+    const ChnsyStWaterLevel = getRandomIncrement(-4, 6);
+    const LndsyStWaterLevel = getRandomIncrement(-3, 5);
+    const LnwdStWaterLevel = getRandomIncrement(-2, 4);
+    const CrsnStWaterLevel = getRandomIncrement(-2, 3);
+    const HltnStWaterLevel = getRandomIncrement(-3, 2);
+    const HwrdStWaterLevel = getRandomIncrement(-2, 4);
+    const HrshllStWaterLevel = getRandomIncrement(-3, 5);
+    const HrmnStWaterLevel = getRandomIncrement(-4, 6);
+    const HlthStWaterLevel = getRandomIncrement(-3, 5);
+    const HywdStWaterLevel = getRandomIncrement(-2, 4);
+    const HrldStWaterLevel = getRandomIncrement(-2, 3);
+    const JsprStWaterLevel = getRandomIncrement(-3, 2);
+    const LslyStWaterLevel = getRandomIncrement(-2, 4);
+    const ElwdStWaterLevel = getRandomIncrement(-3, 5);
+    const ErnstStWaterLevel = getRandomIncrement(-4, 6);
+    const EthnStWaterLevel = getRandomIncrement(-3, 5);
+    const EllswrthStWaterLevel = getRandomIncrement(-2, 4);
+    const EllsStWaterLevel = getRandomIncrement(-2, 3);
+    const ErlStWaterLevel = getRandomIncrement(-3, 2);
+    const HntrStWaterLevel = getRandomIncrement(-2, 4);
+    const JrrtStWaterLevel = getRandomIncrement(-3, 5);
+    const CmrnStWaterLevel = getRandomIncrement(-4, 6);
+    const KrbyStWaterLevel = getRandomIncrement(-3, 5);
+    const LvrnStWaterLevel = getRandomIncrement(-2, 4);
+    const KrtsStWaterLevel = getRandomIncrement(-2, 3);
+    const KvnStWaterLevel = getRandomIncrement(-3, 2);
+    const KnnStWaterLevel = getRandomIncrement(-2, 4);
+    const KndllStWaterLevel = getRandomIncrement(-3, 5);
+    const KthStWaterLevel = getRandomIncrement(-4, 6);
+    const KndrckStWaterLevel = getRandomIncrement(-3, 5);
+    const KnnyStWaterLevel = getRandomIncrement(-2, 4);
+    const JysnStWaterLevel = getRandomIncrement(-2, 3);
+    const JrmnStWaterLevel = getRandomIncrement(-3, 2);
+    const JrllStWaterLevel = getRandomIncrement(-2, 4);
+    const MxwllStWaterLevel = getRandomIncrement(-3, 5);
+    const McknlyStWaterLevel = getRandomIncrement(-4, 6);
+    const MrrllStWaterLevel = getRandomIncrement(-3, 5);
+    const RndllStWaterLevel = getRandomIncrement(-2, 4);
+    const McArthurVillageMainRWaterLevel = getRandomIncrement(-3, 5);
+    const MAVSt1WaterLevel = getRandomIncrement(-2, 4);
+    const MAVSt2WaterLevel = getRandomIncrement(-2, 3);
+    const MAVSt3WaterLevel = getRandomIncrement(-3, 2);
+    const MAVSt4WaterLevel = getRandomIncrement(-2, 4);
+    const MAVSt5WaterLevel = getRandomIncrement(-3, 5);
+    const MAVSt6WaterLevel = getRandomIncrement(-4, 6);
+    const MAVSt7WaterLevel = getRandomIncrement(-3, 5);
+    const MAVSt8WaterLevel = getRandomIncrement(-2, 4);
+    const MAVSt9WaterLevel = getRandomIncrement(-2, 3);
+    const MAVSt10WaterLevel = getRandomIncrement(-3, 2);
+    const MAVSt11WaterLevel = getRandomIncrement(-2, 4);
+    const MAVSt12WaterLevel = getRandomIncrement(-3, 5);
+    const MAVSt13WaterLevel = getRandomIncrement(-4, 6);
+    const MAVSt14WaterLevel = getRandomIncrement(-3, 5);
+    const MAVSt15WaterLevel = getRandomIncrement(-2, 4);
+    const ibaLongosRdWaterLevel = getRandomIncrement(-2, 3);
+    const calumpangLongosRdWaterLevel = getRandomIncrement(-3, 2);
+    const riversidestreetWaterLevel = getRandomIncrement(-2, 4);
+    const sanjoseVillageRdWaterLevel = getRandomIncrement(-3, 5);
+    const riversidestreet2WaterLevel = getRandomIncrement(-4, 6);
+    const drmCrstWaterLevel = getRandomIncrement(-3, 5);
+    
     // !!! etong const kineme gagayahin
 
+        // Boundaries
+    boundariesWaterlevel += boundariesIncrement;
+    boundariesWaterlevel = Math.max(0, boundariesWaterLevel);
+
+    let boundariesColor = 'green';
+    let boundariesStatus = 'Passable';
+
+    if (boundariesWaterLevel >= 15) {
+        boundariesColor = 'red';
+        boundariesStatus = 'Impassable';  
+    } else if (boundariesWaterlevel >= 10) {
+        boundariesColor = 'yellow';
+        boundariesStatus = 'Risky';
+    }
+
+
+    boundariesLine.setStyle({ color: boundariesColor });
+    boundariesLine.getPopup().setContent(`<b>Boundaries</b><br>Status: ${boundariesStatus}<br>Water Level: ${boundariesWaterLevel} cm`);
+
+     // Highway
+     highwayWaterlevel += highwayWaterIncrement;
+     highwayWaterlevel = Math.max(0, highwayWaterWaterLevel);
+ 
+     let highwayWaterColor = 'green';
+     let highwayWaterStatus = 'Passable';
+ 
+     if (highwayWaterLevel >= 15) {
+        highwayWaterColor = 'red';
+        highwayWaterStatus = 'Impassable';
+     } else if (highwayWaterWaterLevel >= 10) {
+        highwayWaterColor = 'yellow';
+        highwayWaterStatus = 'Risky';
+     }
+ 
+     carmenLine.setStyle({ color: highwayWaterColor });
+     carmenLine.getPopup().setContent(`<b>Highway</b><br>Status: ${highwayStatus}<br>Water Level: ${highwayWaterLevel} cm`);
+
+    
     // carmen
     carmenWaterLevel += carmenIncrement;
     carmenWaterLevel = Math.max(0, carmenWaterLevel);
@@ -186,6 +514,998 @@ function updatePolyLineWaterLevels() {
     forrestStLine.setStyle({ color: forrestStColor });
     forrestStLine.getPopup().setContent(`<b>Forrest St.</b><br>Status: ${forrestStStatus}<br>Water Level: ${forrestStWaterLevel} cm`);
 
+    // TrvrSt
+    TrvrStWaterLevel += TrvrStIncrement;
+    TrvrStWaterLevel = Math.max(0, TrvrStWaterLevel);
+    let TrvrStColor = 'green';
+    let TrvrStStatus = 'Passable';
+    if (TrvrStWaterLevel >= 15) {
+        TrvrStColor = 'red';
+        TrvrStStatus = 'Impassable';
+    } else if (TrvrStWaterLevel >= 10) {
+        TrvrStColor = 'yellow';
+        TrvrStStatus = 'Risky';
+    }
+    TrvrStLine.setStyle({ color: TrvrStColor });
+    TrvrStLine.getPopup().setContent(`<b>Trevor Street</b><br>Status: ${TrvrStStatus}<br>Water Level: ${TrvrStWaterLevel} cm`);
+
+    // MchlSt
+    MchlStWaterLevel += MchlStIncrement;
+    MchlStWaterLevel = Math.max(0, MchlStWaterLevel);
+    let MchlStColor = 'green';
+    let MchlStStatus = 'Passable';
+    if (MchlStWaterLevel >= 15) {
+        MchlStColor = 'red';
+        MchlStStatus = 'Impassable';
+    } else if (MchlStWaterLevel >= 10) {
+        MchlStColor = 'yellow';
+        MchlStStatus = 'Risky';
+    }
+    MchlStLine.setStyle({ color: MchlStColor });
+    MchlStLine.getPopup().setContent(`<b>Michael Street</b><br>Status: ${MchlStStatus}<br>Water Level: ${MchlStWaterLevel} cm`);
+
+    // ShrwdSt
+    ShrwdStWaterLevel += ShrwdStIncrement;
+    ShrwdStWaterLevel = Math.max(0, ShrwdStWaterLevel);
+    let ShrwdStColor = 'green';
+    let ShrwdStStatus = 'Passable';
+    if (ShrwdStWaterLevel >= 15) {
+        ShrwdStColor = 'red';
+        ShrwdStStatus = 'Impassable';
+    } else if (ShrwdStWaterLevel >= 10) {
+        ShrwdStColor = 'yellow';
+        ShrwdStStatus = 'Risky';
+    }
+    ShrwdStLine.setStyle({ color: ShrwdStColor });
+    ShrwdStLine.getPopup().setContent(`<b>Shrwd Street</b><br>Status: ${ShrwdStStatus}<br>Water Level: ${ShrwdStWaterLevel} cm`);
+
+    // ShlbySt
+    ShlbyStWaterLevel += ShlbyStIncrement;
+    ShlbyStWaterLevel = Math.max(0, ShlbyStWaterLevel);
+    let ShlbyStColor = 'green';
+    let ShlbyStStatus = 'Passable';
+    if (ShlbyStWaterLevel >= 15) {
+        ShlbyStColor = 'red';
+        ShlbyStStatus = 'Impassable';
+    } else if (ShlbyStWaterLevel >= 10) {
+        ShlbyStColor = 'yellow';
+        ShlbyStStatus = 'Risky';
+    }
+    ShlbyStLine.setStyle({ color: ShlbyStColor });
+    ShlbyStLine.getPopup().setContent(`<b>Shelby Street</b><br>Status: ${ShlbyStStatus}<br>Water Level: ${ShlbyStWaterLevel} cm`);
+
+    // StvSt
+    StvStWaterLevel += StvStIncrement;
+    StvStWaterLevel = Math.max(0, StvStWaterLevel);
+    let StvStColor = 'green';
+    let StvStStatus = 'Passable';
+    if (StvStWaterLevel >= 15) {
+        StvStColor = 'red';
+        StvStStatus = 'Impassable';
+    } else if (StvStWaterLevel >= 10) {
+        StvStColor = 'yellow';
+        StvStStatus = 'Risky';
+    }
+    StvStLine.setStyle({ color: StvStColor });
+    StvStLine.getPopup().setContent(`<b>Steven Street</b><br>Status: ${StvStStatus}<br>Water Level: ${StvStWaterLevel} cm`);
+
+    // SpncrSt
+    SpncrStWaterLevel += SpncrStIncrement;
+    SpncrStWaterLevel = Math.max(0, SpncrStWaterLevel);
+    let SpncrStColor = 'green';
+    let SpncrStStatus = 'Passable';
+    if (SpncrStWaterLevel >= 15) {
+        SpncrStColor = 'red';
+        SpncrStStatus = 'Impassable';
+    } else if (SpncrStWaterLevel >= 10) {
+        SpncrStColor = 'yellow';
+        SpncrStStatus = 'Risky';
+    }
+    SpncrStLine.setStyle({ color: SpncrStColor });
+    SpncrStLine.getPopup().setContent(`<b>Spencer Street</b><br>Status: ${SpncrStStatus}<br>Water Level: ${SpncrStWaterLevel} cm`);
+
+    // TrntnSt
+    TrntnStWaterLevel += TrntnStIncrement;
+    TrntnStWaterLevel = Math.max(0, TrntnStWaterLevel);
+    let TrntnStColor = 'green';
+    let TrntnStStatus = 'Passable';
+    if (TrntnStWaterLevel >= 15) {
+        TrntnStColor = 'red';
+        TrntnStStatus = 'Impassable';
+    } else if (TrntnStWaterLevel >= 10) {
+        TrntnStColor = 'yellow';
+        TrntnStStatus = 'Risky';
+    }
+    TrntnStLine.setStyle({ color: TrntnStColor });
+    TrntnStLine.getPopup().setContent(`<b>Trntn Street</b><br>Status: ${TrntnStStatus}<br>Water Level: ${TrntnStWaterLevel} cm`);
+
+
+// TrcySt
+    TrcyStWaterLevel += TrcyStIncrement;
+    TrcyStWaterLevel = Math.max(0, TrcyStWaterLevel);
+    let TrcyStColor = 'green';
+    let TrcyStStatus = 'Passable';
+    if (TrcyStWaterLevel >= 15) {
+        TrcyStColor = 'red';
+        TrcyStStatus = 'Impassable';
+    } else if (TrcyStWaterLevel >= 10) {
+        TrcyStColor = 'yellow';
+        TrcyStStatus = 'Risky';
+    }
+    TrcyStLine.setStyle({ color: TrcyStColor });
+    TrcyStLine.getPopup().setContent(`<b>Tracy Street</b><br>Status: ${TrcyStStatus}<br>Water Level: ${TrcyStWaterLevel} cm`);
+
+    // TmthySt
+    TmthyStWaterLevel += TmthyStIncrement;
+    TmthyStWaterLevel = Math.max(0, TmthyStWaterLevel);
+    let TmthyStColor = 'green';
+    let TmthyStStatus = 'Passable';
+    if (TmthyStWaterLevel >= 15) {
+        TmthyStColor = 'red';
+        TmthyStStatus = 'Impassable';
+    } else if (TmthyStWaterLevel >= 10) {
+        TmthyStColor = 'yellow';
+        TmthyStStatus = 'Risky';
+    }
+    TmthyStLine.setStyle({ color: TmthyStColor });
+    TmthyStLine.getPopup().setContent(`<b>Timothy Street</b><br>Status: ${TmthyStStatus}<br>Water Level: ${TmthyStWaterLevel} cm`);
+
+        // TbbySt
+    TbbyStWaterLevel += TbbyStIncrement;
+    TbbyStWaterLevel = Math.max(0, TbbyStWaterLevel);
+    let TbbyStColor = 'green';
+    let TbbyStStatus = 'Passable';
+    if (TbbyStWaterLevel >= 15) {
+        TbbyStColor = 'red';
+        TbbyStStatus = 'Impassable';
+    } else if (TbbyStWaterLevel >= 10) {
+        TbbyStColor = 'yellow';
+        TbbyStStatus = 'Risky';
+    }
+    TbbyStLine.setStyle({ color: TbbyStColor });
+    TbbyStLine.getPopup().setContent(`<b>Tobby Street</b><br>Status: ${TbbyStStatus}<br>Water Level: ${TbbyStWaterLevel} cm`);
+
+    // ThrmnSt
+    ThrmnStWaterLevel += ThrmnStIncrement;
+    ThrmnStWaterLevel = Math.max(0, ThrmnStWaterLevel);
+    let ThrmnStColor = 'green';
+    let ThrmnStStatus = 'Passable';
+    if (ThrmnStWaterLevel >= 15) {
+        ThrmnStColor = 'red';
+        ThrmnStStatus = 'Impassable';
+    } else if (ThrmnStWaterLevel >= 10) {
+        ThrmnStColor = 'yellow';
+        ThrmnStStatus = 'Risky';
+    }
+    ThrmnStLine.setStyle({ color: ThrmnStColor });
+    ThrmnStLine.getPopup().setContent(`<b>Thrmn Street</b><br>Status: ${ThrmnStStatus}<br>Water Level: ${ThrmnStWaterLevel} cm`);
+
+    // VncntSt
+    VncntStWaterLevel += VncntStIncrement;
+    VncntStWaterLevel = Math.max(0, VncntStWaterLevel);
+    let VncntStColor = 'green';
+    let VncntStStatus = 'Passable';
+    if (VncntStWaterLevel >= 15) {
+        VncntStColor = 'red';
+        VncntStStatus = 'Impassable';
+    } else if (VncntStWaterLevel >= 10) {
+        VncntStColor = 'yellow';
+        VncntStStatus = 'Risky';
+    }
+    VncntStLine.setStyle({ color: VncntStColor });
+    VncntStLine.getPopup().setContent(`<b>Vincent Street</b><br>Status: ${VncntStStatus}<br>Water Level: ${VncntStWaterLevel} cm`);
+
+    // VrglSt
+    VrglStWaterLevel += VrglStIncrement;
+    VrglStWaterLevel = Math.max(0, VrglStWaterLevel);
+    let VrglStColor = 'green';
+    let VrglStStatus = 'Passable';
+    if (VrglStWaterLevel >= 15) {
+        VrglStColor = 'red';
+        VrglStStatus = 'Impassable';
+    } else if (VrglStWaterLevel >= 10) {
+        VrglStColor = 'yellow';
+        VrglStStatus = 'Risky';
+    }
+    VrglStLine.setStyle({ color: VrglStColor });
+    VrglStLine.getPopup().setContent(`<b>Virgila Street</b><br>Status: ${VrglStStatus}<br>Water Level: ${VrglStWaterLevel} cm`);
+
+    // WrrnSt
+    WrrnStWaterLevel += WrrnStIncrement;
+    WrrnStWaterLevel = Math.max(0, WrrnStWaterLevel);
+    let WrrnStColor = 'green';
+    let WrrnStStatus = 'Passable';
+    if (WrrnStWaterLevel >= 15) {
+        WrrnStColor = 'red';
+        WrrnStStatus = 'Impassable';
+    } else if (WrrnStWaterLevel >= 10) {
+        WrrnStColor = 'yellow';
+        WrrnStStatus = 'Risky';
+    }
+    WrrnStLine.setStyle({ color: WrrnStColor });
+    WrrnStLine.getPopup().setContent(`<b>Warren Street</b><br>Status: ${WrrnStStatus}<br>Water Level: ${WrrnStWaterLevel} cm`);
+
+    // WlkrSt
+    WlkrStStWaterLevel += WlkrStStIncrement;
+    WlkrStStWaterLevel = Math.max(0, WlkrStStWaterLevel);
+    let WlkrStColor = 'green';
+    let WlkrStStatus = 'Passable';
+    if (WlkrStStWaterLevel >= 15) {
+        WlkrStColor = 'red';
+        WlkrStStatus = 'Impassable';
+    } else if (WlkrStStWaterLevel >= 10) {
+        WlkrStColor = 'yellow';
+        WlkrStStatus = 'Risky';
+    }
+    WlkrStLine.setStyle({ color: WlkrStColor });
+    WlkrStLine.getPopup().setContent(`<b>Walker Street</b><br>Status: ${WlkrStStatus}<br>Water Level: ${WlkrStStWaterLevel} cm`);
+
+    // MchllSt
+    MchllStWaterLevel += MchllStIncrement;
+    MchllStWaterLevel = Math.max(0, MchllStWaterLevel);
+    let MchllStColor = 'green';
+    let MchllStStatus = 'Passable';
+    if (MchllStWaterLevel >= 15) {
+        MchllStColor = 'red';
+        MchllStStatus = 'Impassable';
+    } else if (MchllStWaterLevel >= 10) {
+        MchllStColor = 'yellow';
+        MchllStStatus = 'Risky';
+    }
+    MchllStLine.setStyle({ color: MchllStColor });
+    MchllStLine.getPopup().setContent(`<b>Mchll Street</b><br>Status: ${MchllStStatus}<br>Water Level: ${MchllStWaterLevel} cm`);
+
+    // MrrsSt
+    MrrsStWaterLevel += MrrsStIncrement;
+    MrrsStWaterLevel = Math.max(0, MrrsStWaterLevel);
+    let MrrsStColor = 'green';
+    let MrrsStStatus = 'Passable';
+    if (MrrsStWaterLevel >= 15) {
+        MrrsStColor = 'red';
+        MrrsStStatus = 'Impassable';
+    } else if (MrrsStWaterLevel >= 10) {
+        MrrsStColor = 'yellow';
+        MrrsStStatus = 'Risky';
+    }
+    MrrsStLine.setStyle({ color: MrrsStColor });
+    MrrsStLine.getPopup().setContent(`<b>Morris Street</b><br>Status: ${MrrsStStatus}<br>Water Level: ${MrrsStWaterLevel} cm`);
+
+    // NthnSt
+    NthnStWaterLevel += NthnStIncrement;
+    NthnStWaterLevel = Math.max(0, NthnStWaterLevel);
+    let NthnStColor = 'green';
+    let NthnStStatus = 'Passable';
+    if (NthnStWaterLevel >= 15) {
+        NthnStColor = 'red';
+        NthnStStatus = 'Impassable';
+    } else if (NthnStWaterLevel >= 10) {
+        NthnStColor = 'yellow';
+        NthnStStatus = 'Risky';
+    }
+    NthnStLine.setStyle({ color: NthnStColor });
+    NthnStLine.getPopup().setContent(`<b>Nathan Street</b><br>Status: ${NthnStStatus}<br>Water Level: ${NthnStWaterLevel} cm`);
+
+    // NvneSt
+    NvneStWaterLevel += NvneStIncrement;
+    NvneStWaterLevel = Math.max(0, NvneStWaterLevel);
+    let NvneStColor = 'green';
+    let NvneStStatus = 'Passable';
+    if (NvneStWaterLevel >= 15) {
+        NvneStColor = 'red';
+        NvneStStatus = 'Impassable';
+    } else if (NvneStWaterLevel >= 10) {
+        NvneStColor = 'yellow';
+        NvneStStatus = 'Risky';
+    }
+    NvneStLine.setStyle({ color: NvneStColor });
+    NvneStLine.getPopup().setContent(`<b>Nvne Street</b><br>Status: ${NvneStStatus}<br>Water Level: ${NvneStWaterLevel} cm`);
+
+    // RdSt
+    RdStWaterLevel += RdStIncrement;
+    RdStWaterLevel = Math.max(0, RdStWaterLevel);
+    let RdStColor = 'green';
+    let RdStStatus = 'Passable';
+    if (RdStWaterLevel >= 15) {
+        RdStColor = 'red';
+        RdStStatus = 'Impassable';
+    } else if (RdStWaterLevel >= 10) {
+        RdStColor = 'yellow';
+        RdStStatus = 'Risky';
+    }
+    RdStLine.setStyle({ color: RdStColor });
+    RdStLine.getPopup().setContent(`<b>Rd Street</b><br>Status: ${RdStStatus}<br>Water Level: ${RdStWaterLevel} cm`);
+
+    // RlphSt
+    RlphStWaterLevel += RlphStIncrement;
+    RlphStWaterLevel = Math.max(0, RlphStWaterLevel);
+    let RlphStColor = 'green';
+    let RlphStStatus = 'Passable';
+    if (RlphStWaterLevel >= 15) {
+        RlphStColor = 'red';
+        RlphStStatus = 'Impassable';
+    } else if (RlphStWaterLevel >= 10) {
+        RlphStColor = 'yellow';
+        RlphStStatus = 'Risky';
+    }
+    RlphStLine.setStyle({ color: RlphStColor });
+    RlphStLine.getPopup().setContent(`<b>Ralph Street</b><br>Status: ${RlphStStatus}<br>Water Level: ${RlphStWaterLevel} cm`);
+
+        // PrkrSt
+    PrkrStWaterLevel += PrkrStIncrement;
+    PrkrStWaterLevel = Math.max(0, PrkrStWaterLevel);
+    let PrkrStColor = 'green';
+    let PrkrStStatus = 'Passable';
+    if (PrkrStWaterLevel >= 15) {
+        PrkrStColor = 'red';
+        PrkrStStatus = 'Impassable';
+    } else if (PrkrStWaterLevel >= 10) {
+        PrkrStColor = 'yellow';
+        PrkrStStatus = 'Risky';
+    }
+    PrkrStLine.setStyle({ color: PrkrStColor });
+    PrkrStLine.getPopup().setContent(`<b>Parker Street</b><br>Status: ${PrkrStStatus}<br>Water Level: ${PrkrStWaterLevel} cm`);
+
+    // SnfrdSt
+    SnfrdStWaterLevel += SnfrdStIncrement;
+    SnfrdStWaterLevel = Math.max(0, SnfrdStWaterLevel);
+    let SnfrdStColor = 'green';
+    let SnfrdStStatus = 'Passable';
+    if (SnfrdStWaterLevel >= 15) {
+        SnfrdStColor = 'red';
+        SnfrdStStatus = 'Impassable';
+    } else if (SnfrdStWaterLevel >= 10) {
+        SnfrdStColor = 'yellow';
+        SnfrdStStatus = 'Risky';
+    }
+    SnfrdStLine.setStyle({ color: SnfrdStColor });
+    SnfrdStLine.getPopup().setContent(`<b>Snfrd Street</b><br>Status: ${SnfrdStStatus}<br>Water Level: ${SnfrdStWaterLevel} cm`);
+
+    // RbnSt
+    RbnStWaterLevel += RbnStIncrement;
+    RbnStWaterLevel = Math.max(0, RbnStWaterLevel);
+    let RbnStColor = 'green';
+    let RbnStStatus = 'Passable';
+    if (RbnStWaterLevel >= 15) {
+        RbnStColor = 'red';
+        RbnStStatus = 'Impassable';
+    } else if (RbnStWaterLevel >= 10) {
+        RbnStColor = 'yellow';
+        RbnStStatus = 'Risky';
+    }
+    RbnStLine.setStyle({ color: RbnStColor });
+    RbnStLine.getPopup().setContent(`<b>Rbn Street</b><br>Status: ${RbnStStatus}<br>Water Level: ${RbnStWaterLevel} cm`);
+
+    // RlySt
+    RlyStWaterLevel += RlyStIncrement;
+    RlyStWaterLevel = Math.max(0, RlyStWaterLevel);
+    let RlyStColor = 'green';
+    let RlyStStatus = 'Passable';
+    if (RlyStWaterLevel >= 15) {
+        RlyStColor = 'red';
+        RlyStStatus = 'Impassable';
+    } else if (RlyStWaterLevel >= 10) {
+        RlyStColor = 'yellow';
+        RlyStStatus = 'Risky';
+    }
+    RlyStLine.setStyle({ color: RlyStColor });
+    RlyStLine.getPopup().setContent(`<b>Rly Street</b><br>Status: ${RlyStStatus}<br>Water Level: ${RlyStWaterLevel} cm`);
+
+    // RcSt
+    RcStWaterLevel += RcStIncrement;
+    RcStWaterLevel = Math.max(0, RcStWaterLevel);
+    let RcStColor = 'green';
+    let RcStStatus = 'Passable';
+    if (RcStWaterLevel >= 15) {
+        RcStColor = 'red';
+        RcStStatus = 'Impassable';
+    } else if (RcStWaterLevel >= 10) {
+        RcStColor = 'yellow';
+        RcStStatus = 'Risky';
+    }
+    RcStLine.setStyle({ color: RcStColor });
+    RcStLine.getPopup().setContent(`<b>Rc Street</b><br>Status: ${RcStStatus}<br>Water Level: ${RcStWaterLevel} cm`);
+
+    // PlSt
+    PlStWaterLevel += PlStIncrement;
+    PlStWaterLevel = Math.max(0, PlStWaterLevel);
+    let PlStColor = 'green';
+    let PlStStatus = 'Passable';
+    if (PlStWaterLevel >= 15) {
+        PlStColor = 'red';
+        PlStStatus = 'Impassable';
+    } else if (PlStWaterLevel >= 10) {
+        PlStColor = 'yellow';
+        PlStStatus = 'Risky';
+    }
+    PlStLine.setStyle({ color: PlStColor });
+    PlStLine.getPopup().setContent(`<b>Pl Street</b><br>Status: ${PlStStatus}<br>Water Level: ${PlStWaterLevel} cm`);
+
+    // OrvllSt
+    OrvllStWaterLevel += OrvllStIncrement;
+    OrvllStWaterLevel = Math.max(0, OrvllStWaterLevel);
+    let OrvllStColor = 'green';
+    let OrvllStStatus = 'Passable';
+    if (OrvllStWaterLevel >= 15) {
+        OrvllStColor = 'red';
+        OrvllStStatus = 'Impassable';
+    } else if (OrvllStWaterLevel >= 10) {
+        OrvllStColor = 'yellow';
+        OrvllStStatus = 'Risky';
+    }
+    OrvllStLine.setStyle({ color: OrvllStColor });
+    OrvllStLine.getPopup().setContent(`<b>Orvll Street</b><br>Status: ${OrvllStStatus}<br>Water Level: ${OrvllStWaterLevel} cm`);
+
+    // ChnsySt
+    ChnsyStWaterLevel += ChnsyStIncrement;
+    ChnsyStWaterLevel = Math.max(0, ChnsyStWaterLevel);
+    let ChnsyStColor = 'green';
+    let ChnsyStStatus = 'Passable';
+    if (ChnsyStWaterLevel >= 15) {
+        ChnsyStColor = 'red';
+        ChnsyStStatus = 'Impassable';
+    } else if (ChnsyStWaterLevel >= 10) {
+        ChnsyStColor = 'yellow';
+        ChnsyStStatus = 'Risky';
+    }
+    ChnsyStLine.setStyle({ color: ChnsyStColor });
+    ChnsyStLine.getPopup().setContent(`<b>Chnsy Street</b><br>Status: ${ChnsyStStatus}<br>Water Level: ${ChnsyStWaterLevel} cm`);
+
+    // LndsySt
+    LndsyStWaterLevel += LndsyStIncrement;
+    LndsyStWaterLevel = Math.max(0, LndsyStWaterLevel);
+    let LndsyStColor = 'green';
+    let LndsyStStatus = 'Passable';
+    if (LndsyStWaterLevel >= 15) {
+        LndsyStColor = 'red';
+        LndsyStStatus = 'Impassable';
+    } else if (LndsyStWaterLevel >= 10) {
+        LndsyStColor = 'yellow';
+        LndsyStStatus = 'Risky';
+    }
+    LndsyStLine.setStyle({ color: LndsyStColor });
+    LndsyStLine.getPopup().setContent(`<b>Lndsy Street</b><br>Status: ${LndsyStStatus}<br>Water Level: ${LndsyStWaterLevel} cm`);
+
+    // LnwdSt
+    LnwdStWaterLevel += LnwdStIncrement;
+    LnwdStWaterLevel = Math.max(0, LnwdStWaterLevel);
+    let LnwdStColor = 'green';
+    let LnwdStStatus = 'Passable';
+    if (LnwdStWaterLevel >= 15) {
+        LnwdStColor = 'red';
+        LnwdStStatus = 'Impassable';
+    } else if (LnwdStWaterLevel >= 10) {
+        LnwdStColor = 'yellow';
+        LnwdStStatus = 'Risky';
+    }
+    LnwdStLine.setStyle({ color: LnwdStColor });
+    LnwdStLine.getPopup().setContent(`<b>Lnwd Street</b><br>Status: ${LnwdStStatus}<br>Water Level: ${LnwdStWaterLevel} cm`);
+
+    // CrsnSt
+    CrsnStWaterLevel += CrsnStIncrement;
+    CrsnStWaterLevel = Math.max(0, CrsnStWaterLevel);
+    let CrsnStColor = 'green';
+    let CrsnStStatus = 'Passable';
+    if (CrsnStWaterLevel >= 15) {
+        CrsnStColor = 'red';
+        CrsnStStatus = 'Impassable';
+    } else if (CrsnStWaterLevel >= 10) {
+        CrsnStColor = 'yellow';
+        CrsnStStatus = 'Risky';
+    }
+    CrsnStLine.setStyle({ color: CrsnStColor });
+    CrsnStLine.getPopup().setContent(`<b>Crsn Street</b><br>Status: ${CrsnStStatus}<br>Water Level: ${CrsnStWaterLevel} cm`);
+
+    // HltnSt
+    HltnStWaterLevel += HltnStIncrement;
+    HltnStWaterLevel = Math.max(0, HltnStWaterLevel);
+    let HltnStColor = 'green';
+    let HltnStStatus = 'Passable';
+    if (HltnStWaterLevel >= 15) {
+        HltnStColor = 'red';
+        HltnStStatus = 'Impassable';
+    } else if (HltnStWaterLevel >= 10) {
+        HltnStColor = 'yellow';
+        HltnStStatus = 'Risky';
+    }
+    HltnStLine.setStyle({ color: HltnStColor });
+    HltnStLine.getPopup().setContent(`<b>Hltn Street</b><br>Status: ${HltnStStatus}<br>Water Level: ${HltnStWaterLevel} cm`);
+
+    // HwrdSt
+    HwrdStWaterLevel += HwrdStIncrement;
+    HwrdStWaterLevel = Math.max(0, HwrdStWaterLevel);
+    let HwrdStColor = 'green';
+    let HwrdStStatus = 'Passable';
+    if (HwrdStWaterLevel >= 15) {
+        HwrdStColor = 'red';
+        HwrdStStatus = 'Impassable';
+    } else if (HwrdStWaterLevel >= 10) {
+        HwrdStColor = 'yellow';
+        HwrdStStatus = 'Risky';
+    }
+    HwrdStLine.setStyle({ color: HwrdStColor });
+    HwrdStLine.getPopup().setContent(`<b>Howard Street</b><br>Status: ${HwrdStStatus}<br>Water Level: ${HwrdStWaterLevel} cm`);
+
+    // HrshllSt
+    HrshllStWaterLevel += HrshllStIncrement;
+    HrshllStWaterLevel = Math.max(0, HrshllStWaterLevel);
+    let HrshllStColor = 'green';
+    let HrshllStStatus = 'Passable';
+    if (HrshllStWaterLevel >= 15) {
+        HrshllStColor = 'red';
+        HrshllStStatus = 'Impassable';
+    } else if (HrshllStWaterLevel >= 10) {
+        HrshllStColor = 'yellow';
+        HrshllStStatus = 'Risky';
+    }
+    HrshllStLine.setStyle({ color: HrshllStColor });
+    HrshllStLine.getPopup().setContent(`<b>Hrshll Street</b><br>Status: ${HrshllStStatus}<br>Water Level: ${HrshllStWaterLevel} cm`);
+
+    // HrmnSt
+    HrmnStWaterLevel += HrmnStIncrement;
+    HrmnStWaterLevel = Math.max(0, HrmnStWaterLevel);
+    let HrmnStColor = 'green';
+    let HrmnStStatus = 'Passable';
+    if (HrmnStWaterLevel >= 15) {
+        HrmnStColor = 'red';
+        HrmnStStatus = 'Impassable';
+    } else if (HrmnStWaterLevel >= 10) {
+        HrmnStColor = 'yellow';
+        HrmnStStatus = 'Risky';
+    }
+    HrmnStLine.setStyle({ color: HrmnStColor });
+    HrmnStLine.getPopup().setContent(`<b>Hrmn Street</b><br>Status: ${HrmnStStatus}<br>Water Level: ${HrmnStWaterLevel} cm`);
+
+        // HlthSt
+    HlthStWaterLevel += HlthStIncrement;
+    HlthStWaterLevel = Math.max(0, HlthStWaterLevel);
+    let HlthStColor = 'green';
+    let HlthStStatus = 'Passable';
+    if (HlthStWaterLevel >= 15) {
+        HlthStColor = 'red';
+        HlthStStatus = 'Impassable';
+    } else if (HlthStWaterLevel >= 10) {
+        HlthStColor = 'yellow';
+        HlthStStatus = 'Risky';
+    }
+    HlthStLine.setStyle({ color: HlthStColor });
+    HlthStLine.getPopup().setContent(`<b>Health Street</b><br>Status: ${HlthStStatus}<br>Water Level: ${HlthStWaterLevel} cm`);
+
+    // HywdSt
+    HywdStWaterLevel += HywdStIncrement;
+    HywdStWaterLevel = Math.max(0, HywdStWaterLevel);
+    let HywdStColor = 'green';
+    let HywdStStatus = 'Passable';
+    if (HywdStWaterLevel >= 15) {
+        HywdStColor = 'red';
+        HywdStStatus = 'Impassable';
+    } else if (HywdStWaterLevel >= 10) {
+        HywdStColor = 'yellow';
+        HywdStStatus = 'Risky';
+    }
+    HywdStLine.setStyle({ color: HywdStColor });
+    HywdStLine.getPopup().setContent(`<b>Hywd Street</b><br>Status: ${HywdStStatus}<br>Water Level: ${HywdStWaterLevel} cm`);
+
+    // HrldSt
+    HrldStWaterLevel += HrldStIncrement;
+    HrldStWaterLevel = Math.max(0, HrldStWaterLevel);
+    let HrldStColor = 'green';
+    let HrldStStatus = 'Passable';
+    if (HrldStWaterLevel >= 15) {
+        HrldStColor = 'red';
+        HrldStStatus = 'Impassable';
+    } else if (HrldStWaterLevel >= 10) {
+        HrldStColor = 'yellow';
+        HrldStStatus = 'Risky';
+    }
+    HrldStLine.setStyle({ color: HrldStColor });
+    HrldStLine.getPopup().setContent(`<b>Harold Street</b><br>Status: ${HrldStStatus}<br>Water Level: ${HrldStWaterLevel} cm`);
+
+    // JsprSt
+    JsprStWaterLevel += JsprStIncrement;
+    JsprStWaterLevel = Math.max(0, JsprStWaterLevel);
+    let JsprStColor = 'green';
+    let JsprStStatus = 'Passable';
+    if (JsprStWaterLevel >= 15) {
+        JsprStColor = 'red';
+        JsprStStatus = 'Impassable';
+    } else if (JsprStWaterLevel >= 10) {
+        JsprStColor = 'yellow';
+        JsprStStatus = 'Risky';
+    }
+    JsprStLine.setStyle({ color: JsprStColor });
+    JsprStLine.getPopup().setContent(`<b>Jasper Street</b><br>Status: ${JsprStStatus}<br>Water Level: ${JsprStWaterLevel} cm`);
+
+    // LslySt
+    LslyStWaterLevel += LslyStIncrement;
+    LslyStWaterLevel = Math.max(0, LslyStWaterLevel);
+    let LslyStColor = 'green';
+    let LslyStStatus = 'Passable';
+    if (LslyStWaterLevel >= 15) {
+        LslyStColor = 'red';
+        LslyStStatus = 'Impassable';
+    } else if (LslyStWaterLevel >= 10) {
+        LslyStColor = 'yellow';
+        LslyStStatus = 'Risky';
+    }
+    LslyStLine.setStyle({ color: LslyStColor });
+    LslyStLine.getPopup().setContent(`<b>Lsly Street</b><br>Status: ${LslyStStatus}<br>Water Level: ${LslyStWaterLevel} cm`);
+
+    // ElwdSt
+    ElwdStWaterLevel += ElwdStIncrement;
+    ElwdStWaterLevel = Math.max(0, ElwdStWaterLevel);
+    let ElwdStColor = 'green';
+    let ElwdStStatus = 'Passable';
+    if (ElwdStWaterLevel >= 15) {
+        ElwdStColor = 'red';
+        ElwdStStatus = 'Impassable';
+    } else if (ElwdStWaterLevel >= 10) {
+        ElwdStColor = 'yellow';
+        ElwdStStatus = 'Risky';
+    }
+    ElwdStLine.setStyle({ color: ElwdStColor });
+    ElwdStLine.getPopup().setContent(`<b>Elwd Street</b><br>Status: ${ElwdStStatus}<br>Water Level: ${ElwdStWaterLevel} cm`);
+
+    // ErnstSt
+    ErnstStWaterLevel += ErnstStIncrement;
+    ErnstStWaterLevel = Math.max(0, ErnstStWaterLevel);
+    let ErnstStColor = 'green';
+    let ErnstStStatus = 'Passable';
+    if (ErnstStWaterLevel >= 15) {
+        ErnstStColor = 'red';
+        ErnstStStatus = 'Impassable';
+    } else if (ErnstStWaterLevel >= 10) {
+        ErnstStColor = 'yellow';
+        ErnstStStatus = 'Risky';
+    }
+    ErnstStLine.setStyle({ color: ErnstStColor });
+    ErnstStLine.getPopup().setContent(`<b>Ernest Street</b><br>Status: ${ErnstStStatus}<br>Water Level: ${ErnstStWaterLevel} cm`);
+
+    // EthnSt
+    EthnStWaterLevel += EthnStIncrement;
+    EthnStWaterLevel = Math.max(0, EthnStWaterLevel);
+    let EthnStColor = 'green';
+    let EthnStStatus = 'Passable';
+    if (EthnStWaterLevel >= 15) {
+        EthnStColor = 'red';
+        EthnStStatus = 'Impassable';
+    } else if (EthnStWaterLevel >= 10) {
+        EthnStColor = 'yellow';
+        EthnStStatus = 'Risky';
+    }
+    EthnStLine.setStyle({ color: EthnStColor });
+    EthnStLine.getPopup().setContent(`<b>Ethan Street</b><br>Status: ${EthnStStatus}<br>Water Level: ${EthnStWaterLevel} cm`);
+
+    // EllswrthSt
+    EllswrthStWaterLevel += EllswrthStIncrement;
+    EllswrthStWaterLevel = Math.max(0, EllswrthStWaterLevel);
+    let EllswrthStColor = 'green';
+    let EllswrthStStatus = 'Passable';
+    if (EllswrthStWaterLevel >= 15) {
+        EllswrthStColor = 'red';
+        EllswrthStStatus = 'Impassable';
+    } else if (EllswrthStWaterLevel >= 10) {
+        EllswrthStColor = 'yellow';
+        EllswrthStStatus = 'Risky';
+    }
+    EllswrthStLine.setStyle({ color: EllswrthStColor });
+    EllswrthStLine.getPopup().setContent(`<b>Ellswrth Street</b><br>Status: ${EllswrthStStatus}<br>Water Level: ${EllswrthStWaterLevel} cm`);
+
+    // EllsSt
+    EllsStWaterLevel += EllsStIncrement;
+    EllsStWaterLevel = Math.max(0, EllsStWaterLevel);
+    let EllsStColor = 'green';
+    let EllsStStatus = 'Passable';
+    if (EllsStWaterLevel >= 15) {
+        EllsStColor = 'red';
+        EllsStStatus = 'Impassable';
+    } else if (EllsStWaterLevel >= 10) {
+        EllsStColor = 'yellow';
+        EllsStStatus = 'Risky';
+    }
+    EllsStLine.setStyle({ color: EllsStColor });
+    EllsStLine.getPopup().setContent(`<b>Ells Street</b><br>Status: ${EllsStStatus}<br>Water Level: ${EllsStWaterLevel} cm`);
+
+    // ErlSt
+    ErlStWaterLevel += ErlStIncrement;
+    ErlStWaterLevel = Math.max(0, ErlStWaterLevel);
+    let ErlStColor = 'green';
+    let ErlStStatus = 'Passable';
+    if (ErlStWaterLevel >= 15) {
+        ErlStColor = 'red';
+        ErlStStatus = 'Impassable';
+    } else if (ErlStWaterLevel >= 10) {
+        ErlStColor = 'yellow';
+        ErlStStatus = 'Risky';
+    }
+    ErlStLine.setStyle({ color: ErlStColor });
+    ErlStLine.getPopup().setContent(`<b>Earl Street</b><br>Status: ${ErlStStatus}<br>Water Level: ${ErlStWaterLevel} cm`);
+
+    // HntrSt
+    HntrStWaterLevel += HntrStIncrement;
+    HntrStWaterLevel = Math.max(0, HntrStWaterLevel);
+    let HntrStColor = 'green';
+    let HntrStStatus = 'Passable';
+    if (HntrStWaterLevel >= 15) {
+        HntrStColor = 'red';
+        HntrStStatus = 'Impassable';
+    } else if (HntrStWaterLevel >= 10) {
+        HntrStColor = 'yellow';
+        HntrStStatus = 'Risky';
+    }
+    HntrStLine.setStyle({ color: HntrStColor });
+    HntrStLine.getPopup().setContent(`<b>Hunter Street</b><br>Status: ${HntrStStatus}<br>Water Level: ${HntrStWaterLevel} cm`);
+
+    // JrrtSt
+    JrrtStWaterLevel += JrrtStIncrement;
+    JrrtStWaterLevel = Math.max(0, JrrtStWaterLevel);
+    let JrrtStColor = 'green';
+    let JrrtStStatus = 'Passable';
+    if (JrrtStWaterLevel >= 15) {
+        JrrtStColor = 'red';
+        JrrtStStatus = 'Impassable';
+    } else if (JrrtStWaterLevel >= 10) {
+        JrrtStColor = 'yellow';
+        JrrtStStatus = 'Risky';
+    }
+    JrrtStLine.setStyle({ color: JrrtStColor });
+    JrrtStLine.getPopup().setContent(`<b>Jrrt Street</b><br>Status: ${JrrtStStatus}<br>Water Level: ${JrrtStWaterLevel} cm`);
+
+    // CmrnSt
+    CrsnStWaterLevel += CrmnStIncrement;
+    CrsnStWaterLevel = Math.max(0, CrmnStWaterLevel);
+    let CmrnStColor = 'green';
+    letCmrnStStatus = 'Passable';
+    if (CmrnStWaterLevel >= 15) {
+        CmrnStColor = 'red';
+        CmrnStStatus = 'Impassable';
+    } else if (CmrnStWaterLevel >= 10) {
+        CmrnStColor = 'yellow';
+        CmrnStStatus = 'Risky';
+    }
+    CmrnStLine.setStyle({ color: CmrnStColor });
+    CmrnStLine.getPopup().setContent(`<b>Crmn Street</b><br>Status: ${CmrnStStatus}<br>Water Level: ${CmrnStWaterLevel} cm`);
+
+    // KrbySt
+    KrbyStWaterLevel += KrbyStIncrement;
+    KrbyStWaterLevel = Math.max(0, KrbyStWaterLevel);
+    let KrbyStColor = 'green';
+    let KrbyStStatus = 'Passable';
+    if (KrbyStWaterLevel >= 15) {
+        KrbyStColor = 'red';
+        KrbyStStatus = 'Impassable';
+    } else if (KrbyStWaterLevel >= 10) {
+        KrbyStColor = 'yellow';
+        KrbyStStatus = 'Risky';
+    }
+    KrbyStLine.setStyle({ color: KrbyStColor });
+    KrbyStLine.getPopup().setContent(`<b>Krby Street</b><br>Status: ${KrbyStStatus}<br>Water Level: ${KrbyStWaterLevel} cm`);
+
+    // LvrnSt
+    LvrnStWaterLevel += LvrnStIncrement;
+    LvrnStWaterLevel = Math.max(0, LvrnStWaterLevel);
+    let LvrnStColor = 'green';
+    let LvrnStStatus = 'Passable';
+    if (LvrnStWaterLevel >= 15) {
+        LvrnStColor = 'red';
+        LvrnStStatus = 'Impassable';
+    } else if (LvrnStWaterLevel >= 10) {
+        LvrnStColor = 'yellow';
+        LvrnStStatus = 'Risky';
+    }
+    LvrnStLine.setStyle({ color: LvrnStColor });
+    LvrnStLine.getPopup().setContent(`<b>Lvrn Street</b><br>Status: ${LvrnStStatus}<br>Water Level: ${LvrnStWaterLevel} cm`);
+
+    // KrtsSt
+    KrtsStWaterLevel += KrtsStIncrement;
+    KrtsStWaterLevel = Math.max(0, KrtsStWaterLevel);
+    let KrtsStColor = 'green';
+    let KrtsStStatus = 'Passable';
+    if (KrtsStWaterLevel >= 15) {
+        KrtsStColor = 'red';
+        KrtsStStatus = 'Impassable';
+    } else if (KrtsStWaterLevel >= 10) {
+        KrtsStColor = 'yellow';
+        KrtsStStatus = 'Risky';
+    }
+    KrtsStLine.setStyle({ color: KrtsStColor });
+    KrtsStLine.getPopup().setContent(`<b>Krts Street</b><br>Status: ${KrtsStStatus}<br>Water Level: ${KrtsStWaterLevel} cm`);
+
+    // KvnSt
+    KvnStWaterLevel += KvnStIncrement;
+    KvnStWaterLevel = Math.max(0, KvnStWaterLevel);
+    let KvnStColor = 'green';
+    let KvnStStatus = 'Passable';
+    if (KvnStWaterLevel >= 15) {
+        KvnStColor = 'red';
+        KvnStStatus = 'Impassable';
+    } else if (KvnStWaterLevel >= 10) {
+        KvnStColor = 'yellow';
+        KvnStStatus = 'Risky';
+    }
+    KvnStLine.setStyle({ color: KvnStColor });
+    KvnStLine.getPopup().setContent(`<b>Kvn Street</b><br>Status: ${KvnStStatus}<br>Water Level: ${KvnStWaterLevel} cm`);
+
+    // KnnSt
+    KnnStWaterLevel += KnnStIncrement;
+    KnnStWaterLevel = Math.max(0, KnnStWaterLevel);
+    let KnnStColor = 'green';
+    let KnnStStatus = 'Passable';
+    if (KnnStWaterLevel >= 15) {
+        KnnStColor = 'red';
+        KnnStStatus = 'Impassable';
+    } else if (KnnStWaterLevel >= 10) {
+        KnnStColor = 'yellow';
+        KnnStStatus = 'Risky';
+    }
+    KnnStLine.setStyle({ color: KnnStColor });
+    KnnStLine.getPopup().setContent(`<b>Knn Street</b><br>Status: ${KnnStStatus}<br>Water Level: ${KnnStWaterLevel} cm`);
+
+    // KndllSt
+    KndllStWaterLevel += KndllStIncrement;
+    KndllStWaterLevel = Math.max(0, KndllStWaterLevel);
+    let KndllStColor = 'green';
+    let KndllStStatus = 'Passable';
+    if (KndllStWaterLevel >= 15) {
+        KndllStColor = 'red';
+        KndllStStatus = 'Impassable';
+    } else if (KndllStWaterLevel >= 10) {
+        KndllStColor = 'yellow';
+        KndllStStatus = 'Risky';
+    }
+    KndllStLine.setStyle({ color: KndllStColor });
+    KndllStLine.getPopup().setContent(`<b>Kndll Street</b><br>Status: ${KndllStStatus}<br>Water Level: ${KndllStWaterLevel} cm`);
+
+    // KthSt
+    KthStWaterLevel += KthStIncrement;
+    KthStWaterLevel = Math.max(0, KthStWaterLevel);
+    let KthStColor = 'green';
+    let KthStStatus = 'Passable';
+    if (KthStWaterLevel >= 15) {
+        KthStColor = 'red';
+        KthStStatus = 'Impassable';
+    } else if (KthStWaterLevel >= 10) {
+        KthStColor = 'yellow';
+        KthStStatus = 'Risky';
+    }
+    KthStLine.setStyle({ color: KthStColor });
+    KthStLine.getPopup().setContent(`<b>Kth Street</b><br>Status: ${KthStStatus}<br>Water Level: ${KthStWaterLevel} cm`);
+
+    // KndrckSt
+    KndrckStWaterLevel += KndrckStIncrement;
+    KndrckStWaterLevel = Math.max(0, KndrckStWaterLevel);
+    let KndrckStColor = 'green';
+    let KndrckStStatus = 'Passable';
+    if (KndrckStWaterLevel >= 15) {
+        KndrckStColor = 'red';
+        KndrckStStatus = 'Impassable';
+    } else if (KndrckStWaterLevel >= 10) {
+        KndrckStColor = 'yellow';
+        KndrckStStatus = 'Risky';
+    }
+    KndrckStLine.setStyle({ color: KndrckStColor });
+    KndrckStLine.getPopup().setContent(`<b>Kndrck Street</b><br>Status: ${KndrckStStatus}<br>Water Level: ${KndrckStWaterLevel} cm`);
+
+    // KnnySt
+    KnnyStWaterLevel += KnnyStIncrement;
+    KnnyStWaterLevel = Math.max(0, KnnyStWaterLevel);
+    let KnnyStColor = 'green';
+    let KnnyStStatus = 'Passable';
+    if (KnnyStWaterLevel >= 15) {
+        KnnyStColor = 'red';
+        KnnyStStatus = 'Impassable';
+    } else if (KnnyStWaterLevel >= 10) {
+        KnnyStColor = 'yellow';
+        KnnyStStatus = 'Risky';
+    }
+    KnnyStLine.setStyle({ color: KnnyStColor });
+    KnnyStLine.getPopup().setContent(`<b>Knny Street</b><br>Status: ${KnnyStStatus}<br>Water Level: ${KnnyStWaterLevel} cm`);
+
+    // JysnSt
+    JysnStWaterLevel += JysnStIncrement;
+    JysnStWaterLevel = Math.max(0, JysnStWaterLevel);
+    let JysnStColor = 'green';
+    let JysnStStatus = 'Passable';
+    if (JysnStWaterLevel >= 15) {
+        JysnStColor = 'red';
+        JysnStStatus = 'Impassable';
+    } else if (JysnStWaterLevel >= 10) {
+        JysnStColor = 'yellow';
+        JysnStStatus = 'Risky';
+    }
+    JysnStLine.setStyle({ color: JysnStColor });
+    JysnStLine.getPopup().setContent(`<b>Jysn Street</b><br>Status: ${JysnStStatus}<br>Water Level: ${JysnStWaterLevel} cm`);
+
+    // JrmnSt
+    JrmnStWaterLevel += JrmnStIncrement;
+    JrmnStWaterLevel = Math.max(0, JrmnStWaterLevel);
+    let JrmnStColor = 'green';
+    let JrmnStStatus = 'Passable';
+    if (JrmnStWaterLevel >= 15) {
+        JrmnStColor = 'red';
+        JrmnStStatus = 'Impassable';
+    } else if (JrmnStWaterLevel >= 10) {
+        JrmnStColor = 'yellow';
+        JrmnStStatus = 'Risky';
+    }
+    JrmnStLine.setStyle({ color: JrmnStColor });
+    JrmnStLine.getPopup().setContent(`<b>Jrmn Street</b><br>Status: ${JrmnStStatus}<br>Water Level: ${JrmnStWaterLevel} cm`);
+
+    // JrllSt
+    JrllStWaterLevel += JrllStIncrement;
+    JrllStWaterLevel = Math.max(0, JrllStWaterLevel);
+    let JrllStColor = 'green';
+    let JrllStStatus = 'Passable';
+    if (JrllStWaterLevel >= 15) {
+        JrllStColor = 'red';
+        JrllStStatus = 'Impassable';
+    } else if (JrllStWaterLevel >= 10) {
+        JrllStColor = 'yellow';
+        JrllStStatus = 'Risky';
+    }
+    JrllStLine.setStyle({ color: JrllStColor });
+    JrllStLine.getPopup().setContent(`<b>Jrll Street</b><br>Status: ${JrllStStatus}<br>Water Level: ${JrllStWaterLevel} cm`);
+
+    // MxwllSt
+    MxwllStWaterLevel += MxwllStIncrement;
+    MxwllStWaterLevel = Math.max(0, MxwllStWaterLevel);
+    let MxwllStColor = 'green';
+    let MxwllStStatus = 'Passable';
+    if (MxwllStWaterLevel >= 15) {
+        MxwllStColor = 'red';
+        MxwllStStatus = 'Impassable';
+    } else if (MxwllStWaterLevel >= 10) {
+        MxwllStColor = 'yellow';
+        MxwllStStatus = 'Risky';
+    }
+    MxwllStLine.setStyle({ color: MxwllStColor });
+    MxwllStLine.getPopup().setContent(`<b>Mxwll Street</b><br>Status: ${MxwllStStatus}<br>Water Level: ${MxwllStWaterLevel} cm`);
+
+    // McknlySt
+    McknlyStWaterLevel += McknlyStIncrement;
+    McknlyStWaterLevel = Math.max(0, McknlyStWaterLevel);
+    let McknlyStColor = 'green';
+    let McknlyStStatus = 'Passable';
+    if (McknlyStWaterLevel >= 15) {
+        McknlyStColor = 'red';
+        McknlyStStatus = 'Impassable';
+    } else if (McknlyStWaterLevel >= 10) {
+        McknlyStColor = 'yellow';
+        McknlyStStatus = 'Risky';
+    }
+    McknlyStLine.setStyle({ color: McknlyStColor });
+    McknlyStLine.getPopup().setContent(`<b>Mcknly Street</b><br>Status: ${McknlyStStatus}<br>Water Level: ${McknlyStWaterLevel} cm`);
+
+    // MrrllSt
+    MrrllStWaterLevel += MrrllStIncrement;
+    MrrllStWaterLevel = Math.max(0, MrrllStWaterLevel);
+    let MrrllStColor = 'green';
+    let MrrllStStatus = 'Passable';
+    if (MrrllStWaterLevel >= 15) {
+        MrrllStColor = 'red';
+        MrrllStStatus = 'Impassable';
+    } else if (MrrllStWaterLevel >= 10) {
+        MrrllStColor = 'yellow';
+        MrrllStStatus = 'Risky';
+    }
+    MrrllStLine.setStyle({ color: MrrllStColor });
+    MrrllStLine.getPopup().setContent(`<b>Mrrll Street</b><br>Status: ${MrrllStStatus}<br>Water Level: ${MrrllStWaterLevel} cm`);
+
+    // RndllSt
+    RndllStWaterLevel += RndllStIncrement;
+    RndllStWaterLevel = Math.max(0, RndllStWaterLevel);
+    let RndllStColor = 'green';
+    let RndllStStatus = 'Passable';
+    if (RndllStWaterLevel >= 15) {
+        RndllStColor = 'red';
+        RndllStStatus = 'Impassable';
+    } else if (RndllStWaterLevel >= 10) {
+        RndllStColor = 'yellow';
+        RndllStStatus = 'Risky';
+    }
+    RndllStLine.setStyle({ color: RndllStColor });
+    RndllStLine.getPopup().setContent(`<b>Rndll Street</b><br>Status: ${RndllStStatus}<br>Water Level: ${RndllStWaterLevel} cm`);
+
+    
     // McArthur Village Main R.
     McArthurVillageMainRWaterLevel += McArthurVillageMainRIncrement;
     McArthurVillageMainRWaterLevel = Math.max(0, McArthurVillageMainRWaterLevel);
@@ -203,6 +1523,7 @@ function updatePolyLineWaterLevels() {
 
     McArthurVillageMainRLine.setStyle({ color: McArthurVillageMainRColor });
     McArthurVillageMainRLine.bindPopup(`<b>Mc Arthur Village Main Road</b><br>Status: ${McArthurVillageMainRStatus}<br>Water Level: ${McArthurVillageMainRWaterLevel} cm`);
+    
 
     // MAVSt. 1
     MAVSt1WaterLevel += MAVSt1Increment;
