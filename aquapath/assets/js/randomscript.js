@@ -753,7 +753,7 @@ function updatePolyLineWaterLevels() {
         MchllStStatus = 'Risky';
     }
     MchllStLine.setStyle({ color: MchllStColor });
-    MchllStLine.getPopup().setContent(`<b>Mchll Street</b><br>Status: ${MchllStStatus}<br>Water Level: ${MchllStWaterLevel} cm`);
+    MchllStLine.getPopup().setContent(`<b>Mitchell Street</b><br>Status: ${MchllStStatus}<br>Water Level: ${MchllStWaterLevel} cm`);
 
     // MrrsSt
     MrrsStWaterLevel += MrrsStIncrement;
