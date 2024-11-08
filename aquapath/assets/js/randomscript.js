@@ -557,7 +557,7 @@ function updatePolyLineWaterLevels() {
         ShrwdStStatus = 'Risky';
     }
     ShrwdStLine.setStyle({ color: ShrwdStColor });
-    ShrwdStLine.getPopup().setContent(`<b>Shrwd Street</b><br>Status: ${ShrwdStStatus}<br>Water Level: ${ShrwdStWaterLevel} cm`);
+    ShrwdStLine.getPopup().setContent(`<b>Sherwood Street</b><br>Status: ${ShrwdStStatus}<br>Water Level: ${ShrwdStWaterLevel} cm`);
 
     // ShlbySt
     ShlbyStWaterLevel += ShlbyStIncrement;
@@ -617,7 +617,7 @@ function updatePolyLineWaterLevels() {
         TrntnStStatus = 'Risky';
     }
     TrntnStLine.setStyle({ color: TrntnStColor });
-    TrntnStLine.getPopup().setContent(`<b>Trntn Street</b><br>Status: ${TrntnStStatus}<br>Water Level: ${TrntnStWaterLevel} cm`);
+    TrntnStLine.getPopup().setContent(`<b>Trenton Street</b><br>Status: ${TrntnStStatus}<br>Water Level: ${TrntnStWaterLevel} cm`);
 
 
 // TrcySt
@@ -678,9 +678,9 @@ function updatePolyLineWaterLevels() {
         ThrmnStStatus = 'Risky';
     }
     ThrmnStLine.setStyle({ color: ThrmnStColor });
-    ThrmnStLine.getPopup().setContent(`<b>Thrmn Street</b><br>Status: ${ThrmnStStatus}<br>Water Level: ${ThrmnStWaterLevel} cm`);
+    ThrmnStLine.getPopup().setContent(`<b>Thurman Street</b><br>Status: ${ThrmnStStatus}<br>Water Level: ${ThrmnStWaterLevel} cm`);
 
-    // VncntSt
+    // VncntSt we
     VncntStWaterLevel += VncntStIncrement;
     VncntStWaterLevel = Math.max(0, VncntStWaterLevel);
     let VncntStColor = 'green';
@@ -708,7 +708,7 @@ function updatePolyLineWaterLevels() {
         VrglStStatus = 'Risky';
     }
     VrglStLine.setStyle({ color: VrglStColor });
-    VrglStLine.getPopup().setContent(`<b>Virgila Street</b><br>Status: ${VrglStStatus}<br>Water Level: ${VrglStWaterLevel} cm`);
+    VrglStLine.getPopup().setContent(`<b>Virgil Street</b><br>Status: ${VrglStStatus}<br>Water Level: ${VrglStWaterLevel} cm`);
 
     // WrrnSt
     WrrnStWaterLevel += WrrnStIncrement;
@@ -753,7 +753,7 @@ function updatePolyLineWaterLevels() {
         MchllStStatus = 'Risky';
     }
     MchllStLine.setStyle({ color: MchllStColor });
-    MchllStLine.getPopup().setContent(`<b>Mchll Street</b><br>Status: ${MchllStStatus}<br>Water Level: ${MchllStWaterLevel} cm`);
+    MchllStLine.getPopup().setContent(`<b>Mitchell Street</b><br>Status: ${MchllStStatus}<br>Water Level: ${MchllStWaterLevel} cm`);
 
     // MrrsSt
     MrrsStWaterLevel += MrrsStIncrement;
@@ -798,7 +798,7 @@ function updatePolyLineWaterLevels() {
         NvneStStatus = 'Risky';
     }
     NvneStLine.setStyle({ color: NvneStColor });
-    NvneStLine.getPopup().setContent(`<b>Nvne Street</b><br>Status: ${NvneStStatus}<br>Water Level: ${NvneStWaterLevel} cm`);
+    NvneStLine.getPopup().setContent(`<b>Nevine Street</b><br>Status: ${NvneStStatus}<br>Water Level: ${NvneStWaterLevel} cm`);
 
     // RdSt
     RdStWaterLevel += RdStIncrement;
@@ -813,7 +813,7 @@ function updatePolyLineWaterLevels() {
         RdStStatus = 'Risky';
     }
     RdStLine.setStyle({ color: RdStColor });
-    RdStLine.getPopup().setContent(`<b>Rd Street</b><br>Status: ${RdStStatus}<br>Water Level: ${RdStWaterLevel} cm`);
+    RdStLine.getPopup().setContent(`<b>Reid Street</b><br>Status: ${RdStStatus}<br>Water Level: ${RdStWaterLevel} cm`);
 
     // RlphSt
     RlphStWaterLevel += RlphStIncrement;
@@ -858,7 +858,7 @@ function updatePolyLineWaterLevels() {
         SnfrdStStatus = 'Risky';
     }
     SnfrdStLine.setStyle({ color: SnfrdStColor });
-    SnfrdStLine.getPopup().setContent(`<b>Snfrd Street</b><br>Status: ${SnfrdStStatus}<br>Water Level: ${SnfrdStWaterLevel} cm`);
+    SnfrdStLine.getPopup().setContent(`<b>Sanford Street</b><br>Status: ${SnfrdStStatus}<br>Water Level: ${SnfrdStWaterLevel} cm`);
 
     // RbnSt
     RbnStWaterLevel += RbnStIncrement;
@@ -873,7 +873,7 @@ function updatePolyLineWaterLevels() {
         RbnStStatus = 'Risky';
     }
     RbnStLine.setStyle({ color: RbnStColor });
-    RbnStLine.getPopup().setContent(`<b>Rbn Street</b><br>Status: ${RbnStStatus}<br>Water Level: ${RbnStWaterLevel} cm`);
+    RbnStLine.getPopup().setContent(`<b>Robin Street</b><br>Status: ${RbnStStatus}<br>Water Level: ${RbnStWaterLevel} cm`);
 
     // RlySt
     RlyStWaterLevel += RlyStIncrement;
@@ -888,7 +888,7 @@ function updatePolyLineWaterLevels() {
         RlyStStatus = 'Risky';
     }
     RlyStLine.setStyle({ color: RlyStColor });
-    RlyStLine.getPopup().setContent(`<b>Rly Street</b><br>Status: ${RlyStStatus}<br>Water Level: ${RlyStWaterLevel} cm`);
+    RlyStLine.getPopup().setContent(`<b>Railey Street</b><br>Status: ${RlyStStatus}<br>Water Level: ${RlyStWaterLevel} cm`);
 
     // RcSt
     RcStWaterLevel += RcStIncrement;
@@ -903,7 +903,7 @@ function updatePolyLineWaterLevels() {
         RcStStatus = 'Risky';
     }
     RcStLine.setStyle({ color: RcStColor });
-    RcStLine.getPopup().setContent(`<b>Rc Street</b><br>Status: ${RcStStatus}<br>Water Level: ${RcStWaterLevel} cm`);
+    RcStLine.getPopup().setContent(`<b>Rich Street</b><br>Status: ${RcStStatus}<br>Water Level: ${RcStWaterLevel} cm`);
 
     // PlSt
     PlStWaterLevel += PlStIncrement;
@@ -918,7 +918,7 @@ function updatePolyLineWaterLevels() {
         PlStStatus = 'Risky';
     }
     PlStLine.setStyle({ color: PlStColor });
-    PlStLine.getPopup().setContent(`<b>Pl Street</b><br>Status: ${PlStStatus}<br>Water Level: ${PlStWaterLevel} cm`);
+    PlStLine.getPopup().setContent(`<b>Paul Street</b><br>Status: ${PlStStatus}<br>Water Level: ${PlStWaterLevel} cm`);
 
     // OrvllSt
     OrvllStWaterLevel += OrvllStIncrement;
@@ -933,7 +933,7 @@ function updatePolyLineWaterLevels() {
         OrvllStStatus = 'Risky';
     }
     OrvllStLine.setStyle({ color: OrvllStColor });
-    OrvllStLine.getPopup().setContent(`<b>Orvll Street</b><br>Status: ${OrvllStStatus}<br>Water Level: ${OrvllStWaterLevel} cm`);
+    OrvllStLine.getPopup().setContent(`<b>Orville Street</b><br>Status: ${OrvllStStatus}<br>Water Level: ${OrvllStWaterLevel} cm`);
 
     // ChnsySt
     ChnsyStWaterLevel += ChnsyStIncrement;
@@ -948,7 +948,7 @@ function updatePolyLineWaterLevels() {
         ChnsyStStatus = 'Risky';
     }
     ChnsyStLine.setStyle({ color: ChnsyStColor });
-    ChnsyStLine.getPopup().setContent(`<b>Chnsy Street</b><br>Status: ${ChnsyStStatus}<br>Water Level: ${ChnsyStWaterLevel} cm`);
+    ChnsyStLine.getPopup().setContent(`<b>Chaunsey Street</b><br>Status: ${ChnsyStStatus}<br>Water Level: ${ChnsyStWaterLevel} cm`);
 
     // LndsySt
     LndsyStWaterLevel += LndsyStIncrement;
@@ -963,7 +963,7 @@ function updatePolyLineWaterLevels() {
         LndsyStStatus = 'Risky';
     }
     LndsyStLine.setStyle({ color: LndsyStColor });
-    LndsyStLine.getPopup().setContent(`<b>Lndsy Street</b><br>Status: ${LndsyStStatus}<br>Water Level: ${LndsyStWaterLevel} cm`);
+    LndsyStLine.getPopup().setContent(`<b>Lindsey Street</b><br>Status: ${LndsyStStatus}<br>Water Level: ${LndsyStWaterLevel} cm`);
 
     // LnwdSt
     LnwdStWaterLevel += LnwdStIncrement;
@@ -978,7 +978,7 @@ function updatePolyLineWaterLevels() {
         LnwdStStatus = 'Risky';
     }
     LnwdStLine.setStyle({ color: LnwdStColor });
-    LnwdStLine.getPopup().setContent(`<b>Lnwd Street</b><br>Status: ${LnwdStStatus}<br>Water Level: ${LnwdStWaterLevel} cm`);
+    LnwdStLine.getPopup().setContent(`<b>Linwood Street</b><br>Status: ${LnwdStStatus}<br>Water Level: ${LnwdStWaterLevel} cm`);
 
     // CrsnSt
     CrsnStWaterLevel += CrsnStIncrement;
@@ -993,7 +993,7 @@ function updatePolyLineWaterLevels() {
         CrsnStStatus = 'Risky';
     }
     CrsnStLine.setStyle({ color: CrsnStColor });
-    CrsnStLine.getPopup().setContent(`<b>Crsn Street</b><br>Status: ${CrsnStStatus}<br>Water Level: ${CrsnStWaterLevel} cm`);
+    CrsnStLine.getPopup().setContent(`<b>Carson Street</b><br>Status: ${CrsnStStatus}<br>Water Level: ${CrsnStWaterLevel} cm`);
 
     // HltnSt
     HltnStWaterLevel += HltnStIncrement;
@@ -1008,7 +1008,7 @@ function updatePolyLineWaterLevels() {
         HltnStStatus = 'Risky';
     }
     HltnStLine.setStyle({ color: HltnStColor });
-    HltnStLine.getPopup().setContent(`<b>Hltn Street</b><br>Status: ${HltnStStatus}<br>Water Level: ${HltnStWaterLevel} cm`);
+    HltnStLine.getPopup().setContent(`<b>Hilton Street</b><br>Status: ${HltnStStatus}<br>Water Level: ${HltnStWaterLevel} cm`);
 
     // HwrdSt
     HwrdStWaterLevel += HwrdStIncrement;
@@ -1038,7 +1038,7 @@ function updatePolyLineWaterLevels() {
         HrshllStStatus = 'Risky';
     }
     HrshllStLine.setStyle({ color: HrshllStColor });
-    HrshllStLine.getPopup().setContent(`<b>Hrshll Street</b><br>Status: ${HrshllStStatus}<br>Water Level: ${HrshllStWaterLevel} cm`);
+    HrshllStLine.getPopup().setContent(`<b>Hershell Street</b><br>Status: ${HrshllStStatus}<br>Water Level: ${HrshllStWaterLevel} cm`);
 
     // HrmnSt
     HrmnStWaterLevel += HrmnStIncrement;
@@ -1053,7 +1053,7 @@ function updatePolyLineWaterLevels() {
         HrmnStStatus = 'Risky';
     }
     HrmnStLine.setStyle({ color: HrmnStColor });
-    HrmnStLine.getPopup().setContent(`<b>Hrmn Street</b><br>Status: ${HrmnStStatus}<br>Water Level: ${HrmnStWaterLevel} cm`);
+    HrmnStLine.getPopup().setContent(`<b>Herman Street</b><br>Status: ${HrmnStStatus}<br>Water Level: ${HrmnStWaterLevel} cm`);
 
         // HlthSt
     HlthStWaterLevel += HlthStIncrement;
@@ -1083,7 +1083,7 @@ function updatePolyLineWaterLevels() {
         HywdStStatus = 'Risky';
     }
     HywdStLine.setStyle({ color: HywdStColor });
-    HywdStLine.getPopup().setContent(`<b>Hywd Street</b><br>Status: ${HywdStStatus}<br>Water Level: ${HywdStWaterLevel} cm`);
+    HywdStLine.getPopup().setContent(`<b>Haywood Street</b><br>Status: ${HywdStStatus}<br>Water Level: ${HywdStWaterLevel} cm`);
 
     // HrldSt
     HrldStWaterLevel += HrldStIncrement;
@@ -1128,7 +1128,7 @@ function updatePolyLineWaterLevels() {
         LslyStStatus = 'Risky';
     }
     LslyStLine.setStyle({ color: LslyStColor });
-    LslyStLine.getPopup().setContent(`<b>Lsly Street</b><br>Status: ${LslyStStatus}<br>Water Level: ${LslyStWaterLevel} cm`);
+    LslyStLine.getPopup().setContent(`<b>Lesley Street</b><br>Status: ${LslyStStatus}<br>Water Level: ${LslyStWaterLevel} cm`);
 
     // ElwdSt
     ElwdStWaterLevel += ElwdStIncrement;
@@ -1143,7 +1143,7 @@ function updatePolyLineWaterLevels() {
         ElwdStStatus = 'Risky';
     }
     ElwdStLine.setStyle({ color: ElwdStColor });
-    ElwdStLine.getPopup().setContent(`<b>Elwd Street</b><br>Status: ${ElwdStStatus}<br>Water Level: ${ElwdStWaterLevel} cm`);
+    ElwdStLine.getPopup().setContent(`<b>Elwood Street</b><br>Status: ${ElwdStStatus}<br>Water Level: ${ElwdStWaterLevel} cm`);
 
     // ErnstSt
     ErnstStWaterLevel += ErnstStIncrement;
@@ -1188,7 +1188,7 @@ function updatePolyLineWaterLevels() {
         EllswrthStStatus = 'Risky';
     }
     EllswrthStLine.setStyle({ color: EllswrthStColor });
-    EllswrthStLine.getPopup().setContent(`<b>Ellswrth Street</b><br>Status: ${EllswrthStStatus}<br>Water Level: ${EllswrthStWaterLevel} cm`);
+    EllswrthStLine.getPopup().setContent(`<b>Ellsworth Street</b><br>Status: ${EllswrthStStatus}<br>Water Level: ${EllswrthStWaterLevel} cm`);
 
     // EllsSt
     EllsStWaterLevel += EllsStIncrement;
@@ -1248,7 +1248,7 @@ function updatePolyLineWaterLevels() {
         JrrtStStatus = 'Risky';
     }
     JrrtStLine.setStyle({ color: JrrtStColor });
-    JrrtStLine.getPopup().setContent(`<b>Jrrt Street</b><br>Status: ${JrrtStStatus}<br>Water Level: ${JrrtStWaterLevel} cm`);
+    JrrtStLine.getPopup().setContent(`<b>Jarret Street</b><br>Status: ${JrrtStStatus}<br>Water Level: ${JrrtStWaterLevel} cm`);
 
     // CmrnSt
     CrsnStWaterLevel += CrmnStIncrement;
@@ -1263,7 +1263,7 @@ function updatePolyLineWaterLevels() {
         CmrnStStatus = 'Risky';
     }
     CmrnStLine.setStyle({ color: CmrnStColor });
-    CmrnStLine.getPopup().setContent(`<b>Crmn Street</b><br>Status: ${CmrnStStatus}<br>Water Level: ${CmrnStWaterLevel} cm`);
+    CmrnStLine.getPopup().setContent(`<b>Cameron Street</b><br>Status: ${CmrnStStatus}<br>Water Level: ${CmrnStWaterLevel} cm`);
 
     // KrbySt
     KrbyStWaterLevel += KrbyStIncrement;
@@ -1278,7 +1278,7 @@ function updatePolyLineWaterLevels() {
         KrbyStStatus = 'Risky';
     }
     KrbyStLine.setStyle({ color: KrbyStColor });
-    KrbyStLine.getPopup().setContent(`<b>Krby Street</b><br>Status: ${KrbyStStatus}<br>Water Level: ${KrbyStWaterLevel} cm`);
+    KrbyStLine.getPopup().setContent(`<b>Kirby Street</b><br>Status: ${KrbyStStatus}<br>Water Level: ${KrbyStWaterLevel} cm`);
 
     // LvrnSt
     LvrnStWaterLevel += LvrnStIncrement;
@@ -1293,7 +1293,7 @@ function updatePolyLineWaterLevels() {
         LvrnStStatus = 'Risky';
     }
     LvrnStLine.setStyle({ color: LvrnStColor });
-    LvrnStLine.getPopup().setContent(`<b>Lvrn Street</b><br>Status: ${LvrnStStatus}<br>Water Level: ${LvrnStWaterLevel} cm`);
+    LvrnStLine.getPopup().setContent(`<b>Lavern Street</b><br>Status: ${LvrnStStatus}<br>Water Level: ${LvrnStWaterLevel} cm`);
 
     // KrtsSt
     KrtsStWaterLevel += KrtsStIncrement;
@@ -1308,7 +1308,7 @@ function updatePolyLineWaterLevels() {
         KrtsStStatus = 'Risky';
     }
     KrtsStLine.setStyle({ color: KrtsStColor });
-    KrtsStLine.getPopup().setContent(`<b>Krts Street</b><br>Status: ${KrtsStStatus}<br>Water Level: ${KrtsStWaterLevel} cm`);
+    KrtsStLine.getPopup().setContent(`<b>Kurtis Street</b><br>Status: ${KrtsStStatus}<br>Water Level: ${KrtsStWaterLevel} cm`);
 
     // KvnSt
     KvnStWaterLevel += KvnStIncrement;
@@ -1323,7 +1323,7 @@ function updatePolyLineWaterLevels() {
         KvnStStatus = 'Risky';
     }
     KvnStLine.setStyle({ color: KvnStColor });
-    KvnStLine.getPopup().setContent(`<b>Kvn Street</b><br>Status: ${KvnStStatus}<br>Water Level: ${KvnStWaterLevel} cm`);
+    KvnStLine.getPopup().setContent(`<b>Kevin Street</b><br>Status: ${KvnStStatus}<br>Water Level: ${KvnStWaterLevel} cm`);
 
     // KnnSt
     KnnStWaterLevel += KnnStIncrement;
@@ -1338,7 +1338,7 @@ function updatePolyLineWaterLevels() {
         KnnStStatus = 'Risky';
     }
     KnnStLine.setStyle({ color: KnnStColor });
-    KnnStLine.getPopup().setContent(`<b>Knn Street</b><br>Status: ${KnnStStatus}<br>Water Level: ${KnnStWaterLevel} cm`);
+    KnnStLine.getPopup().setContent(`<b>Keenan Street</b><br>Status: ${KnnStStatus}<br>Water Level: ${KnnStWaterLevel} cm`);
 
     // KndllSt
     KndllStWaterLevel += KndllStIncrement;
@@ -1353,7 +1353,7 @@ function updatePolyLineWaterLevels() {
         KndllStStatus = 'Risky';
     }
     KndllStLine.setStyle({ color: KndllStColor });
-    KndllStLine.getPopup().setContent(`<b>Kndll Street</b><br>Status: ${KndllStStatus}<br>Water Level: ${KndllStWaterLevel} cm`);
+    KndllStLine.getPopup().setContent(`<b>Kendall Street</b><br>Status: ${KndllStStatus}<br>Water Level: ${KndllStWaterLevel} cm`);
 
     // KthSt
     KthStWaterLevel += KthStIncrement;
@@ -1368,7 +1368,7 @@ function updatePolyLineWaterLevels() {
         KthStStatus = 'Risky';
     }
     KthStLine.setStyle({ color: KthStColor });
-    KthStLine.getPopup().setContent(`<b>Kth Street</b><br>Status: ${KthStStatus}<br>Water Level: ${KthStWaterLevel} cm`);
+    KthStLine.getPopup().setContent(`<b>Keith Street</b><br>Status: ${KthStStatus}<br>Water Level: ${KthStWaterLevel} cm`);
 
     // KndrckSt
     KndrckStWaterLevel += KndrckStIncrement;
@@ -1383,7 +1383,7 @@ function updatePolyLineWaterLevels() {
         KndrckStStatus = 'Risky';
     }
     KndrckStLine.setStyle({ color: KndrckStColor });
-    KndrckStLine.getPopup().setContent(`<b>Kndrck Street</b><br>Status: ${KndrckStStatus}<br>Water Level: ${KndrckStWaterLevel} cm`);
+    KndrckStLine.getPopup().setContent(`<b>Kendrick Street</b><br>Status: ${KndrckStStatus}<br>Water Level: ${KndrckStWaterLevel} cm`);
 
     // KnnySt
     KnnyStWaterLevel += KnnyStIncrement;
@@ -1398,7 +1398,7 @@ function updatePolyLineWaterLevels() {
         KnnyStStatus = 'Risky';
     }
     KnnyStLine.setStyle({ color: KnnyStColor });
-    KnnyStLine.getPopup().setContent(`<b>Knny Street</b><br>Status: ${KnnyStStatus}<br>Water Level: ${KnnyStWaterLevel} cm`);
+    KnnyStLine.getPopup().setContent(`<b>Kenny Street</b><br>Status: ${KnnyStStatus}<br>Water Level: ${KnnyStWaterLevel} cm`);
 
     // JysnSt
     JysnStWaterLevel += JysnStIncrement;
@@ -1413,7 +1413,7 @@ function updatePolyLineWaterLevels() {
         JysnStStatus = 'Risky';
     }
     JysnStLine.setStyle({ color: JysnStColor });
-    JysnStLine.getPopup().setContent(`<b>Jysn Street</b><br>Status: ${JysnStStatus}<br>Water Level: ${JysnStWaterLevel} cm`);
+    JysnStLine.getPopup().setContent(`<b>Jayson Street</b><br>Status: ${JysnStStatus}<br>Water Level: ${JysnStWaterLevel} cm`);
 
     // JrmnSt
     JrmnStWaterLevel += JrmnStIncrement;
@@ -1428,7 +1428,7 @@ function updatePolyLineWaterLevels() {
         JrmnStStatus = 'Risky';
     }
     JrmnStLine.setStyle({ color: JrmnStColor });
-    JrmnStLine.getPopup().setContent(`<b>Jrmn Street</b><br>Status: ${JrmnStStatus}<br>Water Level: ${JrmnStWaterLevel} cm`);
+    JrmnStLine.getPopup().setContent(`<b>Jermaine Street</b><br>Status: ${JrmnStStatus}<br>Water Level: ${JrmnStWaterLevel} cm`);
 
     // JrllSt
     JrllStWaterLevel += JrllStIncrement;
@@ -1443,7 +1443,7 @@ function updatePolyLineWaterLevels() {
         JrllStStatus = 'Risky';
     }
     JrllStLine.setStyle({ color: JrllStColor });
-    JrllStLine.getPopup().setContent(`<b>Jrll Street</b><br>Status: ${JrllStStatus}<br>Water Level: ${JrllStWaterLevel} cm`);
+    JrllStLine.getPopup().setContent(`<b>Jerell Street</b><br>Status: ${JrllStStatus}<br>Water Level: ${JrllStWaterLevel} cm`);
 
     // MxwllSt
     MxwllStWaterLevel += MxwllStIncrement;
@@ -1458,7 +1458,7 @@ function updatePolyLineWaterLevels() {
         MxwllStStatus = 'Risky';
     }
     MxwllStLine.setStyle({ color: MxwllStColor });
-    MxwllStLine.getPopup().setContent(`<b>Mxwll Street</b><br>Status: ${MxwllStStatus}<br>Water Level: ${MxwllStWaterLevel} cm`);
+    MxwllStLine.getPopup().setContent(`<b>Maxwell Street</b><br>Status: ${MxwllStStatus}<br>Water Level: ${MxwllStWaterLevel} cm`);
 
     // McknlySt
     McknlyStWaterLevel += McknlyStIncrement;
@@ -1473,7 +1473,7 @@ function updatePolyLineWaterLevels() {
         McknlyStStatus = 'Risky';
     }
     McknlyStLine.setStyle({ color: McknlyStColor });
-    McknlyStLine.getPopup().setContent(`<b>Mcknly Street</b><br>Status: ${McknlyStStatus}<br>Water Level: ${McknlyStWaterLevel} cm`);
+    McknlyStLine.getPopup().setContent(`<b>McKinley Street</b><br>Status: ${McknlyStStatus}<br>Water Level: ${McknlyStWaterLevel} cm`);
 
     // MrrllSt
     MrrllStWaterLevel += MrrllStIncrement;
@@ -1488,7 +1488,7 @@ function updatePolyLineWaterLevels() {
         MrrllStStatus = 'Risky';
     }
     MrrllStLine.setStyle({ color: MrrllStColor });
-    MrrllStLine.getPopup().setContent(`<b>Mrrll Street</b><br>Status: ${MrrllStStatus}<br>Water Level: ${MrrllStWaterLevel} cm`);
+    MrrllStLine.getPopup().setContent(`<b>Merrill Street</b><br>Status: ${MrrllStStatus}<br>Water Level: ${MrrllStWaterLevel} cm`);
 
     // RndllSt
     RndllStWaterLevel += RndllStIncrement;
@@ -1503,7 +1503,7 @@ function updatePolyLineWaterLevels() {
         RndllStStatus = 'Risky';
     }
     RndllStLine.setStyle({ color: RndllStColor });
-    RndllStLine.getPopup().setContent(`<b>Rndll Street</b><br>Status: ${RndllStStatus}<br>Water Level: ${RndllStWaterLevel} cm`);
+    RndllStLine.getPopup().setContent(`<b>Randall Street</b><br>Status: ${RndllStStatus}<br>Water Level: ${RndllStWaterLevel} cm`);
 
     
     // McArthur Village Main R.
