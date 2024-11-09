@@ -41,21 +41,25 @@
     <div id="map"></div>
 
     <div id="searchContainer">
-        <input type="text" id="searchLocation" placeholder="Enter location" style="width: 200px;">
+        <input type="text" id="searchLocation" placeholder="Search" style="width: 200px;">
         <div id="suggestions" style="display: none;"></div>
-        <button id="searchBtn">Search</button>
-        <button id="clear-btn">Clear Search</button>
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button id="clear-btn" style="display: none;"><i class="fa-solid fa-delete-left"></i></button>
     </div>
 
     <!-- !!! move all the styles to styles.css plz, tinatamad na ako maglipat-lipat file kaya dito ko na nilagay -->
-    <div id="routeSearchContainer" style="display: none;">
-        <button id="closeRouteSearch" style="float: right; border: none; background: none; cursor: pointer; font-size: 16px;">&times;</button>
-        <input type="text" id="origin" placeholder="Enter origin location">
+    <div class="routeContainer" id="routeSearchContainer" style="display: none;">
+        <button id="closeRouteSearch">&times;</button>
+        <h2>AquaPather</h2>
+        <input type="text" rows="2" id="origin" placeholder="Origin location">
         <br>
-        <input type="text" id="destination" placeholder="Enter destination location">
+        <i class="fa-solid fa-arrow-right-long rightArrow"></i>
+        <input type="text" rows="2" id="destination" placeholder="Destination location">
         <br>
-        <button id="searchRoute">Find Route</button>
-        <button id="clearRouteBtn">Clear Routes</button>
+        <div class="routeBtn">
+            <button id="searchRoute"><i class="fa-solid fa-magnifying-glass"></i>Search Route</button>
+            <button id="clearRouteBtn">Clear Routes</button>
+        </div>
     </div>
 
     <div id="loadingMessage" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.7); color: white; padding: 20px; border-radius: 5px; z-index: 1000;">

@@ -89,13 +89,13 @@ document.getElementById('clear-btn').addEventListener('click', clearSearch);
 // roggle route
 document.getElementById('toggleRouteSearch').addEventListener('click', function () {
     document.getElementById('searchContainer').style.display = 'none'; // Hide location search
-    document.getElementById('routeSearchContainer').style.display = 'block'; // Show route search
+    document.getElementById('routeSearchContainer').style.display = 'grid'; // Show route search
 });
 
 // close route
 document.getElementById('closeRouteSearch').addEventListener('click', function () {
     document.getElementById('routeSearchContainer').style.display = 'none'; // Hide route search
-    document.getElementById('searchContainer').style.display = 'block'; // Show location search
+    document.getElementById('searchContainer').style.display = 'flex'; // Show location search
 });
 
 
