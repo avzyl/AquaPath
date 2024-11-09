@@ -16,14 +16,17 @@ console.log(Constants.highwayCoordinates);
 console.log(Constants.carmenCoord);
 console.log(Constants.hanggaStCoord);
 console.log(Constants.forrestStCoord);
+console.log(Constants.drmCrstPrvCoord);
 console.log(Constants.TrvrStCoord);
 console.log(Constants.MchlStCoord);
 console.log(Constants.LnnlStCoord);
 console.log(Constants.ShrwdStCoord);
+console.log(Constants.ShwnStCoord);
 console.log(Constants.ShlbyStCoord);
 console.log(Constants.StnlyStCoord);
 console.log(Constants.StvStCoord);
 console.log(Constants.SpncrStCoord);
+console.log(Constants.TrmnStCoord);
 console.log(Constants.TrntnStCoord);
 console.log(Constants.TrcyStCoord);
 console.log(Constants.TmthyStCoord);
@@ -117,6 +120,26 @@ console.log(Constants.calumpangLongosRdCoord);
 console.log(Constants.riversidestreetCoord);
 console.log(Constants.sanjoseVillageRdCoord);
 console.log(Constants.riversidestreet2Coord);
+console.log(Constants.DCSt1Coord);
+console.log(Constants.DCSt2Coord);
+console.log(Constants.DCSt3Coord);
+console.log(Constants.DCSt4Coord);
+console.log(Constants.DCSt5Coord);
+console.log(Constants.DCSt6Coord);
+console.log(Constants.DCSt7Coord);
+console.log(Constants.DCSt8Coord);
+console.log(Constants.DCSt9Coord);
+console.log(Constants.DCSt10Coord);
+console.log(Constants.DCSt11Coord);
+console.log(Constants.DCSt12Coord);
+console.log(Constants.DCSt13Coord);
+console.log(Constants.DCSt14Coord);
+console.log(Constants.DCSt15Coord);
+console.log(Constants.DCSt16Coord);
+console.log(Constants.DCSt17Coord);
+console.log(Constants.DCSt18Coord);
+console.log(Constants.DCSt19Coord);
+console.log(Constants.DCSt20Coord);
 
 
 
@@ -220,7 +243,6 @@ let calumpangLongosRdLine = L.polyline(Constants.calumpangLongosRdCoord, { color
 let riversidestreetLine = L.polyline(Constants.riversidestreetCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let sanjoseVillageRdLine = L.polyline(Constants.sanjoseVillageRdCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let riversidestreet2Line = L.polyline(Constants.riversidestreet2Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let drmCrstLine = L.polyline(Constants.drmCrstCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 
 // intial water lvles
 let boundariesWaterlevel = 0;
