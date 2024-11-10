@@ -2715,6 +2715,26 @@ calumpangLongosRdLine.bindPopup(`<b>Calumpang Longos Road</b><br>Status: ${statu
 riversidestreetLine.bindPopup(`<b>Riverside Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 sanjoseVillageRdLine.bindPopup(`<b>San Jose Village Road</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 riversidestreet2Line.bindPopup(`<b>Riverside Street 2</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt1Line.bindPopup(`<b>Dream Crest Street 1</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt2Line.bindPopup(`<b>Dream Crest Street 2</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt3Line.bindPopup(`<b>Dream Crest Street 3</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt4Line.bindPopup(`<b>Dream Crest Street 4</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt5Line.bindPopup(`<b>Dream Crest Street 5</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt6Line.bindPopup(`<b>Dream Crest Street 6</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt7Line.bindPopup(`<b>Dream Crest Street 7</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt8Line.bindPopup(`<b>Dream Crest Street 8</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt9Line.bindPopup(`<b>Dream Crest Street 9</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt10Line.bindPopup(`<b>Dream Crest Street 10</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt11Line.bindPopup(`<b>Dream Crest Street 11</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt12Line.bindPopup(`<b>Dream Crest Street 12</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt13Line.bindPopup(`<b>Dream Crest Street 13</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt14Line.bindPopup(`<b>Dream Crest Street 14</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt15Line.bindPopup(`<b>Dream Crest Street 15</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt16Line.bindPopup(`<b>Dream Crest Street 16</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt17Line.bindPopup(`<b>Dream Crest Street 17</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt18Line.bindPopup(`<b>Dream Crest Street 18</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt19Line.bindPopup(`<b>Dream Crest Street 19</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt20Line.bindPopup(`<b>Dream Crest Street 20</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 
 
 
