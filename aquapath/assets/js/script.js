@@ -115,6 +115,7 @@ console.log(Constants.MAVSt13Coord);
 console.log(Constants.MAVSt14Coord);
 console.log(Constants.MAVSt15Coord);
 console.log(Constants.ibaLongosRdCoord);
+console.log(Constants.KapitanganLongosRdCoord);
 console.log(Constants.calumpangLongosRdCoord);
 console.log(Constants.riversidestreetCoord);
 console.log(Constants.sanjoseVillageRdCoord);
@@ -139,7 +140,67 @@ console.log(Constants.DCSt17Coord);
 console.log(Constants.DCSt18Coord);
 console.log(Constants.DCSt19Coord);
 console.log(Constants.DCSt20Coord);
-
+// Outside border
+console.log(Constants.AndersonSt);
+console.log(Constants.AmboseSt);
+console.log(Constants.AdrianStCoord);
+console.log(Constants.AllenStCoord);
+console.log(Constants.AndrewStCoord);
+console.log(Constants.AubreyStCoord);
+console.log(Constants.AveryStCoord);
+console.log(Constants.BarneyStCoord);
+console.log(Constants.BartonStCoord);
+console.log(Constants.BlaneStCoord);
+console.log(Constants.BlakeStCoord);
+console.log(Constants.BookerStCoord);
+console.log(Constants.BradleyStCoord);
+console.log(Constants.BufordStCoord);
+console.log(Constants.BryanStCoord);
+console.log(Constants.BroderickStCoord);
+console.log(Constants.BertramStCoord);
+console.log(Constants.BennetStCoord);
+console.log(Constants.BenedickStCoord);
+console.log(Constants.LincolnStCoord);
+console.log(Constants.CalvinStCoord);
+console.log(Constants.CharlesStCoord);
+console.log(Constants.CornellStLine);
+console.log(Constants.CollinStCoord);
+console.log(Constants.ColbyStLine);
+console.log(Constants.CourtneyStCoord);
+console.log(Constants.ClaytonStCoord);
+console.log(Constants.Clayton1StCoord);
+console.log(Constants.Clayton2StCoord);
+console.log(Constants.CarterStCoord);
+console.log(Constants.CaseyStCoord);
+console.log(Constants.ChadwickStCoord);
+console.log(Constants.ChesterStCoord);
+console.log(Constants.ClarkStCoord);
+console.log(Constants.CedrickStCoord);
+console.log(Constants.DwayneStCoord);
+console.log(Constants.DylanStCoord);
+console.log(Constants.DoyleStCoord);
+console.log(Constants.DorseyStCoord);
+console.log(Constants.DaltonStCoord);
+console.log(Constants.DanielStCoord);
+console.log(Constants.DarrenStCoord);
+console.log(Constants.GailStCoord);
+console.log(Constants.GarlandStCoord);
+console.log(Constants.GarretStCoord);
+console.log(Constants.GradyStCoord);
+console.log(Constants.GrahamStCoord);
+console.log(Constants.HarrisonStCoord);
+console.log(Constants.KingArthurStCoord);
+console.log(Constants.QueenVictoriaStCoord);
+console.log(Constants.QueenElizabethStCoord);
+console.log(Constants.KingPhillipStCoord);
+console.log(Constants.KingCarlosStCoord);
+console.log(Constants.QueenMargaretStCoord);
+console.log(Constants.RoyalState2St1Coord);
+console.log(Constants.RoyalState2St2Coord);
+console.log(Constants.RoyalState2St3Coord);
+console.log(Constants.RoyalState2St4Coord);
+console.log(Constants.RoyalState2St5Coord);
+console.log(Constants.RoyalState2St6Coord);
 
 
 // polylines
@@ -272,6 +333,84 @@ let DCSt17Line =  L.polyline(DCSt17Coord, {color: 'red', weight: 10}).addTo(map)
 let DCSt18Line =  L.polyline(DCSt18Coord, {color: 'red', weight: 10}).addTo(map)
 let DCSt19Line =  L.polyline(DCSt19Coord, {color: 'red', weight: 10}).addTo(map)
 let DCSt20Line =  L.polyline(DCSt20Coord, {color: 'red', weight: 10}).addTo(map)
+
+
+// ============================Oustide of Border=================
+
+// Dream Crest Street
+let AndersonStLine =  L.polyline(AndersonStCoord, {color: 'red', weight: 10}).addTo(map)
+let AmboseStLine =  L.polyline(AmboseStCoord, {color: 'red', weight: 10}).addTo(map)
+let AdrianStLine =  L.polyline(AdrianStCoord, {color: 'red', weight: 10}).addTo(map)
+let AllenStLine =  L.polyline(AllenStCoord, {color: 'red', weight: 10}).addTo(map)
+let AndrewStLine =  L.polyline(AndrewStCoord, {color: 'red', weight: 10}).addTo(map)
+let AubreyStLine =  L.polyline(AubreyStCoord, {color: 'red', weight: 10}).addTo(map)
+let AveryStLine =  L.polyline(AveryStCoord, {color: 'red', weight: 10}).addTo(map)
+
+let BarneyStLine =  L.polyline(BarneyStCoord, {color: 'red', weight: 10}).addTo(map)
+let BartonStLine =  L.polyline(BartonStCoord, {color: 'red', weight: 10}).addTo(map)
+let BlaneStLine =  L.polyline(BlaneStCoord, {color: 'red', weight: 10}).addTo(map)
+let BlakeStLine =  L.polyline(BlakeStCoord, {color: 'red', weight: 10}).addTo(map)
+let BookerStLine =  L.polyline(BookerStCoord, {color: 'red', weight: 10}).addTo(map)
+let BradleyStLine =  L.polyline(BradleyStCoord, {color: 'red', weight: 10}).addTo(map)
+let BufordStLine =  L.polyline(BufordStCoord, {color: 'red', weight: 10}).addTo(map)
+let BryanStLine =  L.polyline(BryanStCoord, {color: 'red', weight: 10}).addTo(map)
+let BroderickStLine =  L.polyline(BroderickStCoord, {color: 'red', weight: 10}).addTo(map)
+let BertramStLine =  L.polyline(BertramStCoord, {color: 'red', weight: 10}).addTo(map)
+let BennetStLine =  L.polyline(BennetStCoord, {color: 'red', weight: 10}).addTo(map)
+let BenedickStLine =  L.polyline(BenedickStCoord, {color: 'red', weight: 10}).addTo(map)
+let LincolnStLine =  L.polyline(LincolnStCoord, {color: 'red', weight: 10}).addTo(map)
+
+let CalvinStLine =  L.polyline(CalvinStCoord, {color: 'red', weight: 10}).addTo(map)
+let CharlesStLine =  L.polyline(CharlesStCoord, {color: 'red', weight: 10}).addTo(map)
+let CornellStLine =  L.polyline(CornelltonStCoord, {color: 'red', weight: 10}).addTo(map)
+let CollinStLine =  L.polyline(CollinStCoord, {color: 'red', weight: 10}).addTo(map)
+let ColbyStLine =  L.polyline(ColbyStCoord, {color: 'red', weight: 10}).addTo(map)
+let CourtneyStLine =  L.polyline(CourtneyStCoord, {color: 'red', weight: 10}).addTo(map)
+let ClaytonStLine =  L.polyline(ClaytonStCoord, {color: 'red', weight: 10}).addTo(map)
+let Clayton1StLine =  L.polyline(Clayton1StCoord, {color: 'red', weight: 10}).addTo(map)
+let Clayton2StLine =  L.polyline(Clayton2StCoord, {color: 'red', weight: 10}).addTo(map)
+let CarterStLine =  L.polyline(CarterStCoord, {color: 'red', weight: 10}).addTo(map)
+let CaseyStLine =  L.polyline(CaseyStCoord, {color: 'red', weight: 10}).addTo(map)
+let ChadwickStLine =  L.polyline(ChadwickStCoord, {color: 'red', weight: 10}).addTo(map)
+let ChesterStLine =  L.polyline(ChesterStCoord, {color: 'red', weight: 10}).addTo(map)
+let ClarkStLine =  L.polyline(ClarkStCoord, {color: 'red', weight: 10}).addTo(map)
+let CedrickStLine =  L.polyline(CedrickStCoord, {color: 'red', weight: 10}).addTo(map)
+
+let DwayneStLine =  L.polyline(DwayneStCoord, {color: 'red', weight: 10}).addTo(map)
+let DylanStLine =  L.polyline(DylanStCoord, {color: 'red', weight: 10}).addTo(map)
+let DoyleStLine =  L.polyline(DoyleStCoord, {color: 'red', weight: 10}).addTo(map)
+let DorseyStLine =  L.polyline(DorseyStCoord, {color: 'red', weight: 10}).addTo(map)
+let DaltonStLine =  L.polyline(DaltonStCoord, {color: 'red', weight: 10}).addTo(map)
+let DanielStLine =  L.polyline(DanielStCoord, {color: 'red', weight: 10}).addTo(map)
+let DarrenStLine =  L.polyline(DarrenStCoord, {color: 'red', weight: 10}).addTo(map)
+
+let GailStLine =  L.polyline(GailStCoord, {color: 'red', weight: 10}).addTo(map)
+let GarlandStLine =  L.polyline(GarlandStCoord, {color: 'red', weight: 10}).addTo(map)
+let GarretStLine =  L.polyline(GarretStCoord, {color: 'red', weight: 10}).addTo(map)
+let GradyStLine =  L.polyline(GradyStCoord, {color: 'red', weight: 10}).addTo(map)
+let GrahamStLine =  L.polyline(GrahamStCoord, {color: 'red', weight: 10}).addTo(map)
+let HarrisonStLine =  L.polyline(HarrisonStCoord, {color: 'red', weight: 10}).addTo(map)
+
+// Royal State 1 Street
+let RCGStLine =  L.polyline(RSGStCoord, {color: 'red', weight: 10}).addTo(map)
+let KingArthurStLine =  L.polyline(KingArthurStCoord, {color: 'red', weight: 10}).addTo(map)
+let QueenVictoriaStLine =  L.polyline(QueenVictoriaStCoord, {color: 'red', weight: 10}).addTo(map)
+let QueenElizabethStLine =  L.polyline(QueenElizabethStCoord, {color: 'red', weight: 10}).addTo(map)
+let KingPhillipStLine =  L.polyline(KingPhillipStCoord, {color: 'red', weight: 10}).addTo(map)
+let KingCarlosStLine =  L.polyline(KingCarlosStCoord, {color: 'red', weight: 10}).addTo(map)
+let QueenMargaretStLine =  L.polyline(QueenMargaretStCoord, {color: 'red', weight: 10}).addTo(map)
+
+// Royal state 2 Street
+let RoyalState2St1Line =  L.polyline(RoyalState2St1Coord, {color: 'red', weight: 10}).addTo(map)
+let RoyalState2St2Line =  L.polyline(RoyalState2St2Coord, {color: 'red', weight: 10}).addTo(map)
+let RoyalState2St3Line =  L.polyline(RoyalState2St3Coord, {color: 'red', weight: 10}).addTo(map)
+let RoyalState2St4Line =  L.polyline(RoyalState2St4Coord, {color: 'red', weight: 10}).addTo(map)
+let RoyalState2St5Line =  L.polyline(RoyalState2St5Coord, {color: 'red', weight: 10}).addTo(map)
+let RoyalState2St6Line =  L.polyline(RoyalState2St6Coord, {color: 'red', weight: 10}).addTo(map)
+
+let KapitanganLongosRdLine = L.polyline(KapitanganLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
+// ==============================End of Outside Border================================
+
 
 
 // bind the popup
