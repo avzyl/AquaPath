@@ -43,7 +43,7 @@ console.log(Constants.MrrsStCoord);
 console.log(Constants.GfryStCoord);
 console.log(Constants.MrryStCoord);
 console.log(Constants.MyrnStCoord);
-console.log(Constants.NthnStCoord );
+console.log(Constants.NthnStCoord);
 console.log(Constants.NvneStCoord);
 console.log(Constants.RdStCoord);
 console.log(Constants.RlphStCoord);
@@ -52,7 +52,7 @@ console.log(Constants.ScttStCoord);
 console.log(Constants.SnfrdStCoord);
 console.log(Constants.RbnStCoord);
 console.log(Constants.RlyStCoord);
-console.log(Constants.RcStCoord );
+console.log(Constants.RcStCoord);
 console.log(Constants.PlStCoord);
 console.log(Constants.OrvllStCoord);
 console.log(Constants.ChnsyStCoord);
@@ -89,7 +89,7 @@ console.log(Constants.KnnthStCoord);
 console.log(Constants.KndrckStCoord);
 console.log(Constants.KnnyStCoord);
 console.log(Constants.JysnStCoord);
-console.log(Constants.JrmnStCoord );
+console.log(Constants.JrmnStCoord);
 console.log(Constants.JrllStCoord);
 console.log(Constants.JstnStCoord);
 console.log(Constants.BrcStCoord);
@@ -97,7 +97,7 @@ console.log(Constants.MxwllStCoord);
 console.log(Constants.MynrdStCoord);
 console.log(Constants.McknlyStCoord);
 console.log(Constants.MrrllStCoord);
-console.log(Constants.mckyStCoord);
+console.log(Constants.MckyStCoord);
 console.log(Constants.RndllStCoord);
 console.log(Constants.McArthurVillageMainRCoord);
 console.log(Constants.MAVSt1Coord);
@@ -120,26 +120,26 @@ console.log(Constants.calumpangLongosRdCoord);
 console.log(Constants.riversidestreetCoord);
 console.log(Constants.sanjoseVillageRdCoord);
 console.log(Constants.riversidestreet2Coord);
-console.log(Constants.DCSt1Coord);
-console.log(Constants.DCSt2Coord);
-console.log(Constants.DCSt3Coord);
-console.log(Constants.DCSt4Coord);
-console.log(Constants.DCSt5Coord);
-console.log(Constants.DCSt6Coord);
-console.log(Constants.DCSt7Coord);
-console.log(Constants.DCSt8Coord);
-console.log(Constants.DCSt9Coord);
-console.log(Constants.DCSt10Coord);
-console.log(Constants.DCSt11Coord);
-console.log(Constants.DCSt12Coord);
-console.log(Constants.DCSt13Coord);
-console.log(Constants.DCSt14Coord);
-console.log(Constants.DCSt15Coord);
-console.log(Constants.DCSt16Coord);
-console.log(Constants.DCSt17Coord);
-console.log(Constants.DCSt18Coord);
-console.log(Constants.DCSt19Coord);
-console.log(Constants.DCSt20Coord);
+// console.log(Constants.DCSt1Coord);
+// console.log(Constants.DCSt2Coord);
+// console.log(Constants.DCSt3Coord);
+// console.log(Constants.DCSt4Coord);
+// console.log(Constants.DCSt5Coord);
+// console.log(Constants.DCSt6Coord);
+// console.log(Constants.DCSt7Coord);
+// console.log(Constants.DCSt8Coord);
+// console.log(Constants.DCSt9Coord);
+// console.log(Constants.DCSt10Coord);
+// console.log(Constants.DCSt11Coord);
+// console.log(Constants.DCSt12Coord);
+// console.log(Constants.DCSt13Coord);
+// console.log(Constants.DCSt14Coord);
+// console.log(Constants.DCSt15Coord);
+// console.log(Constants.DCSt16Coord);
+// console.log(Constants.DCSt17Coord);
+// console.log(Constants.DCSt18Coord);
+// console.log(Constants.DCSt19Coord);
+// console.log(Constants.DCSt20Coord);
 
 
 
@@ -231,7 +231,7 @@ let MxwllStLine = L.polyline(Constants.MxwllStCoord, { color: 'green', opacity: 
 let MynrdStLine = L.polyline(Constants.MynrdStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let McknlyStLine = L.polyline(Constants.McknlyStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let MrrllStLine = L.polyline(Constants.MrrllStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let mckyStLine = L.polyline(Constants.mckyStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let MckyStLine = L.polyline(Constants.MckyStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let RndllStLine = L.polyline(Constants.RndllStCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let McArthurVillageMainRLine = L.polyline(Constants.McArthurVillageMainRCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let MAVSt1Line = L.polyline(Constants.MAVSt1Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
@@ -254,29 +254,29 @@ let calumpangLongosRdLine = L.polyline(Constants.calumpangLongosRdCoord, { color
 let riversidestreetLine = L.polyline(Constants.riversidestreetCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let sanjoseVillageRdLine = L.polyline(Constants.sanjoseVillageRdCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let riversidestreet2Line = L.polyline(Constants.riversidestreet2Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt1Line = L.polyline(Constants.DCSt1Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt2Line = L.polyline(Constants.DCSt2Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt3Line = L.polyline(Constants.DCSt3Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt4Line = L.polyline(Constants.DCSt4Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt5Line = L.polyline(Constants.DCSt5Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt6Line = L.polyline(Constants.DCSt6Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt7Line = L.polyline(Constants.DCSt7Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt8Line = L.polyline(Constants.DCSt8Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt9Line = L.polyline(Constants.DCSt9Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt10Line = L.polyline(Constants.DCSt10Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt11Line = L.polyline(Constants.DCSt11Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt12Line = L.polyline(Constants.DCSt12Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt13Line = L.polyline(Constants.DCSt13Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt14Line = L.polyline(Constants.DCSt14Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt15Line = L.polyline(Constants.DCSt15Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt16Line = L.polyline(Constants.DCSt16Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt17Line = L.polyline(Constants.DCSt17Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt18Line = L.polyline(Constants.DCSt18Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt19Line = L.polyline(Constants.DCSt19Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-let DCSt20Line = L.polyline(Constants.DCSt20Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt1Line = L.polyline(Constants.DCSt1Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt2Line = L.polyline(Constants.DCSt2Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt3Line = L.polyline(Constants.DCSt3Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt4Line = L.polyline(Constants.DCSt4Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt5Line = L.polyline(Constants.DCSt5Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt6Line = L.polyline(Constants.DCSt6Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt7Line = L.polyline(Constants.DCSt7Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt8Line = L.polyline(Constants.DCSt8Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt9Line = L.polyline(Constants.DCSt9Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt10Line = L.polyline(Constants.DCSt10Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt11Line = L.polyline(Constants.DCSt11Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt12Line = L.polyline(Constants.DCSt12Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt13Line = L.polyline(Constants.DCSt13Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt14Line = L.polyline(Constants.DCSt14Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt15Line = L.polyline(Constants.DCSt15Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt16Line = L.polyline(Constants.DCSt16Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt17Line = L.polyline(Constants.DCSt17Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt18Line = L.polyline(Constants.DCSt18Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt19Line = L.polyline(Constants.DCSt19Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+// let DCSt20Line = L.polyline(Constants.DCSt20Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 
 // intial water lvles
-let boundariesWaterLevel = 0;
+// let boundariesWaterLevel = 0;
 let highwayWaterLevel = 0;
 let carmenWaterLevel = 0;
 let hanggaStWaterLevel = 0;
@@ -362,7 +362,7 @@ let MxwllStWaterLevel = 0;
 let MynrdStWaterLevel = 0;
 let McknlyStWaterLevel = 0;
 let MrrllStWaterLevel = 0;
-let mckyStWaterLevel = 0;
+let MckyStWaterLevel = 0;
 let RndllStWaterLevel = 0;
 let McArthurVillageMainRWaterLevel = 0;
 let MAVSt1WaterLevel = 0;
@@ -385,26 +385,26 @@ let calumpangLongosRdWaterLevel = 0;
 let riversidestreetWaterLevel = 0;
 let sanjoseVillageRdWaterLevel = 0;
 let riversidestreet2WaterLevel = 0;
-let DCSt1WaterLevel = 0;
-let DCSt2WaterLevel = 0;
-let DCSt3WaterLevel = 0;
-let DCSt4WaterLevel = 0;
-let DCSt5WaterLevel = 0;
-let DCSt6WaterLevel = 0;
-let DCSt7WaterLevel = 0;
-let DCSt8WaterLevel = 0;
-let DCSt9WaterLevel = 0;
-let DCSt10WaterLevel = 0;
-let DCSt11WaterLevel = 0;
-let DCSt12WaterLevel = 0;
-let DCSt13WaterLevel = 0;
-let DCSt14WaterLevel = 0;
-let DCSt15WaterLevel = 0;
-let DCSt16WaterLevel = 0;
-let DCSt17WaterLevel = 0;
-let DCSt18WaterLevel = 0;
-let DCSt19WaterLevel = 0;
-let DCSt20WaterLevel = 0;
+// let DCSt1WaterLevel = 0;
+// let DCSt2WaterLevel = 0;
+// let DCSt3WaterLevel = 0;
+// let DCSt4WaterLevel = 0;
+// let DCSt5WaterLevel = 0;
+// let DCSt6WaterLevel = 0;
+// let DCSt7WaterLevel = 0;
+// let DCSt8WaterLevel = 0;
+// let DCSt9WaterLevel = 0;
+// let DCSt10WaterLevel = 0;
+// let DCSt11WaterLevel = 0;
+// let DCSt12WaterLevel = 0;
+// let DCSt13WaterLevel = 0;
+// let DCSt14WaterLevel = 0;
+// let DCSt15WaterLevel = 0;
+// let DCSt16WaterLevel = 0;
+// let DCSt17WaterLevel = 0;
+// let DCSt18WaterLevel = 0;
+// let DCSt19WaterLevel = 0;
+// let DCSt20WaterLevel = 0;
 // !!! etong let kineme gagayahin
 
 // random increment generator
@@ -416,7 +416,7 @@ function getRandomIncrement(min, max) {
 function updatePolyLineWaterLevels() {
 
     // increments
-    const boundariesWaterLevel = getRandomIncrement(-2, 4);
+    // const boundariesWaterLevel = getRandomIncrement(-2, 4);
     const highwayWaterLevel = getRandomIncrement(-2, 4);
     const carmenWaterLevel = getRandomIncrement(-3, 5);
     const hanggaStWaterLevel = getRandomIncrement(-2, 4);
@@ -525,66 +525,66 @@ function updatePolyLineWaterLevels() {
     const riversidestreetWaterLevel = getRandomIncrement(-3, 4);
     const sanjoseVillageRdWaterLevel = getRandomIncrement(-2, 3);
     const riversidestreet2WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt1WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt2WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt3WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt4WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt5WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt6WaterLevel = getRandomIncrement(-3, 4);
-    const DCSt7WaterLevel = getRandomIncrement(-2, 5);
-    const DCSt8WaterLevel = getRandomIncrement(-3, 4);
-    const DCSt9WaterLevel = getRandomIncrement(-2, 5);
-    const DCSt10WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt11WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt12WaterLevel = getRandomIncrement(-3, 4);
-    const DCSt13WaterLevel = getRandomIncrement(-2, 5);
-    const DCSt14WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt15WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt16WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt17WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt18WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt19WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt20WaterLevel = getRandomIncrement(-3, 5);
+    // const DCSt1WaterLevel = getRandomIncrement(-2, 4);
+    // const DCSt2WaterLevel = getRandomIncrement(-3, 5);
+    // const DCSt3WaterLevel = getRandomIncrement(-2, 4);
+    // const DCSt4WaterLevel = getRandomIncrement(-3, 5);
+    // const DCSt5WaterLevel = getRandomIncrement(-2, 4);
+    // const DCSt6WaterLevel = getRandomIncrement(-3, 4);
+    // const DCSt7WaterLevel = getRandomIncrement(-2, 5);
+    // const DCSt8WaterLevel = getRandomIncrement(-3, 4);
+    // const DCSt9WaterLevel = getRandomIncrement(-2, 5);
+    // const DCSt10WaterLevel = getRandomIncrement(-3, 5);
+    // const DCSt11WaterLevel = getRandomIncrement(-2, 4);
+    // const DCSt12WaterLevel = getRandomIncrement(-3, 4);
+    // const DCSt13WaterLevel = getRandomIncrement(-2, 5);
+    // const DCSt14WaterLevel = getRandomIncrement(-3, 5);
+    // const DCSt15WaterLevel = getRandomIncrement(-2, 4);
+    // const DCSt16WaterLevel = getRandomIncrement(-3, 5);
+    // const DCSt17WaterLevel = getRandomIncrement(-2, 4);
+    // const DCSt18WaterLevel = getRandomIncrement(-3, 5);
+    // const DCSt19WaterLevel = getRandomIncrement(-2, 4);
+    // const DCSt20WaterLevel = getRandomIncrement(-3, 5);
     // !!! etong const kineme gagayahin
 
-        // Boundaries
-    boundariesWaterlevel += boundariesIncrement;
-    boundariesWaterlevel = Math.max(0, boundariesWaterLevel);
+    // Boundaries
+    // boundariesWaterlevel += boundariesIncrement;
+    // boundariesWaterlevel = Math.max(0, boundariesWaterLevel);
 
-    let boundariesColor = 'green';
-    let boundariesStatus = 'Passable';
+    // let boundariesColor = 'green';
+    // let boundariesStatus = 'Passable';
 
-    if (boundariesWaterLevel >= 15) {
-        boundariesColor = 'red';
-        boundariesStatus = 'Impassable';  
-    } else if (boundariesWaterlevel >= 10) {
-        boundariesColor = 'yellow';
-        boundariesStatus = 'Risky';
-    }
+    // if (boundariesWaterLevel >= 15) {
+    //     boundariesColor = 'red';
+    //     boundariesStatus = 'Impassable';
+    // } else if (boundariesWaterlevel >= 10) {
+    //     boundariesColor = 'yellow';
+    //     boundariesStatus = 'Risky';
+    // }
 
 
-    boundariesLine.setStyle({ color: boundariesColor });
-    boundariesLine.getPopup().setContent(`<b>Boundaries</b><br>Status: ${boundariesStatus}<br>Water Level: ${boundariesWaterLevel} cm`);
+    // boundariesLine.setStyle({ color: boundariesColor });
+    // boundariesLine.getPopup().setContent(`<b>Boundaries</b><br>Status: ${boundariesStatus}<br>Water Level: ${boundariesWaterLevel} cm`);
 
-     // Highway
-     highwayWaterlevel += highwayWaterIncrement;
-     highwayWaterlevel = Math.max(0, highwayWaterWaterLevel);
- 
-     let highwayWaterColor = 'green';
-     let highwayWaterStatus = 'Passable';
- 
-     if (highwayWaterLevel >= 15) {
+    // Highway
+    highwayWaterLevel += highwayWaterIncrement;
+    highwayWaterLevel = Math.max(0, highwayWaterLevel);
+
+    let highwayWaterColor = 'green';
+    let highwayWaterStatus = 'Passable';
+
+    if (highwayWaterLevel >= 15) {
         highwayWaterColor = 'red';
         highwayWaterStatus = 'Impassable';
-     } else if (highwayWaterWaterLevel >= 10) {
+    } else if (highwayWaterLevel >= 10) {
         highwayWaterColor = 'yellow';
         highwayWaterStatus = 'Risky';
-     }
- 
-     carmenLine.setStyle({ color: highwayWaterColor });
-     carmenLine.getPopup().setContent(`<b>Highway</b><br>Status: ${highwayStatus}<br>Water Level: ${highwayWaterLevel} cm`);
+    }
 
-    
+    highwayLine.setStyle({ color: highwayWaterColor });
+    highwayLine.getPopup().setContent(`<b>Highway</b><br>Status: ${highwayStatus}<br>Water Level: ${highwayWaterLevel} cm`);
+
+
     // carmen
     carmenWaterLevel += carmenIncrement;
     carmenWaterLevel = Math.max(0, carmenWaterLevel);
@@ -643,8 +643,10 @@ function updatePolyLineWaterLevels() {
     // TrvrSt
     TrvrStWaterLevel += TrvrStIncrement;
     TrvrStWaterLevel = Math.max(0, TrvrStWaterLevel);
+
     let TrvrStColor = 'green';
     let TrvrStStatus = 'Passable';
+
     if (TrvrStWaterLevel >= 15) {
         TrvrStColor = 'red';
         TrvrStStatus = 'Impassable';
@@ -652,6 +654,7 @@ function updatePolyLineWaterLevels() {
         TrvrStColor = 'yellow';
         TrvrStStatus = 'Risky';
     }
+
     TrvrStLine.setStyle({ color: TrvrStColor });
     TrvrStLine.getPopup().setContent(`<b>Trevor Street</b><br>Status: ${TrvrStStatus}<br>Water Level: ${TrvrStWaterLevel} cm`);
 
@@ -670,6 +673,21 @@ function updatePolyLineWaterLevels() {
     MchlStLine.setStyle({ color: MchlStColor });
     MchlStLine.getPopup().setContent(`<b>Michael Street</b><br>Status: ${MchlStStatus}<br>Water Level: ${MchlStWaterLevel} cm`);
 
+    // LnnlSt
+    LnnlStWaterLevel += LnnlStIncrement;
+    LnnlStWaterLevel = Math.max(0, LnnlStWaterLevel);
+    let LnnlStColor = 'green';
+    let LnnlStStatus = 'Passable';
+    if (LnnlStWaterLevel >= 15) {
+        LnnlStColor = 'red';
+        LnnlStStatus = 'Impassable';
+    } else if (LnnlStWaterLevel >= 10) {
+        LnnlStColor = 'yellow';
+        LnnlStStatus = 'Risky';
+    }
+    LnnlStLine.setStyle({ color: LnnlStColor });
+    LnnlStLine.getPopup().setContent(`<b>Lionnel Street</b><br>Status: ${LnnlStStatus}<br>Water Level: ${LnnlStWaterLevel} cm`);
+
     // ShrwdSt
     ShrwdStWaterLevel += ShrwdStIncrement;
     ShrwdStWaterLevel = Math.max(0, ShrwdStWaterLevel);
@@ -685,6 +703,21 @@ function updatePolyLineWaterLevels() {
     ShrwdStLine.setStyle({ color: ShrwdStColor });
     ShrwdStLine.getPopup().setContent(`<b>Sherwood Street</b><br>Status: ${ShrwdStStatus}<br>Water Level: ${ShrwdStWaterLevel} cm`);
 
+    // ShwnSt
+    ShwnStWaterLevel += ShwnStIncrement;
+    ShwnStWaterLevel = Math.max(0, ShwnStWaterLevel);
+    let ShwnStColor = 'green';
+    let ShwnStStatus = 'Passable';
+    if (ShwnStWaterLevel >= 15) {
+        ShwnStColor = 'red';
+        ShwnStStatus = 'Impassable';
+    } else if (ShwnStWaterLevel >= 10) {
+        ShwnStColor = 'yellow';
+        ShwnStStatus = 'Risky';
+    }
+    ShwnStLine.setStyle({ color: ShwnStColor });
+    ShwnStLine.getPopup().setContent(`<b>Shawn Street</b><br>Status: ${ShwnStStatus}<br>Water Level: ${ShwnStWaterLevel} cm`);
+
     // ShlbySt
     ShlbyStWaterLevel += ShlbyStIncrement;
     ShlbyStWaterLevel = Math.max(0, ShlbyStWaterLevel);
@@ -698,7 +731,22 @@ function updatePolyLineWaterLevels() {
         ShlbyStStatus = 'Risky';
     }
     ShlbyStLine.setStyle({ color: ShlbyStColor });
-    ShlbyStLine.getPopup().setContent(`<b>Shelby Street</b><br>Status: ${ShlbyStStatus}<br>Water Level: ${ShlbyStWaterLevel} cm`);
+    ShlbyStLine.getPopup().setContent(`<b>Stanly Street</b><br>Status: ${ShlbyStStatus}<br>Water Level: ${ShlbyStWaterLevel} cm`);
+
+    // StnlySt
+    StnlyStWaterLevel += StnlyStIncrement;
+    StnlyStWaterLevel = Math.max(0, StnlyStWaterLevel);
+    let StnlyStColor = 'green';
+    let StnlyStStatus = 'Passable';
+    if (StnlyStWaterLevel >= 15) {
+        StnlyStColor = 'red';
+        StnlyStStatus = 'Impassable';
+    } else if (StnlyStWaterLevel >= 10) {
+        StnlyStColor = 'yellow';
+        StnlyStStatus = 'Risky';
+    }
+    StnlyStLine.setStyle({ color: StnlyStColor });
+    StnlyStLine.getPopup().setContent(`<b>Shelby Street</b><br>Status: ${StnlyStStatus}<br>Water Level: ${StnlyStWaterLevel} cm`);
 
     // StvSt
     StvStWaterLevel += StvStIncrement;
@@ -728,7 +776,22 @@ function updatePolyLineWaterLevels() {
         SpncrStStatus = 'Risky';
     }
     SpncrStLine.setStyle({ color: SpncrStColor });
-    SpncrStLine.getPopup().setContent(`<b>Spencer Street</b><br>Status: ${SpncrStStatus}<br>Water Level: ${SpncrStWaterLevel} cm`);
+    SpncrStLine.getPopup().setContent(`<b>Truman Street</b><br>Status: ${SpncrStStatus}<br>Water Level: ${SpncrStWaterLevel} cm`);
+
+    // TrmnSt
+    TrmnStWaterLevel += TrmnStIncrement;
+    TrmnStWaterLevel = Math.max(0, TrmnStWaterLevel);
+    let TrmnStColor = 'green';
+    let TrmnStStatus = 'Passable';
+    if (TrmnStWaterLevel >= 15) {
+        TrmnStColor = 'red';
+        TrmnStStatus = 'Impassable';
+    } else if (TrmnStWaterLevel >= 10) {
+        TrmnStColor = 'yellow';
+        TrmnStStatus = 'Risky';
+    }
+    TrmnStLine.setStyle({ color: TrmnStColor });
+    TrmnStLine.getPopup().setContent(`<b>Spencer Street</b><br>Status: ${TrmnStStatus}<br>Water Level: ${TrmnStWaterLevel} cm`);
 
     // TrntnSt
     TrntnStWaterLevel += TrntnStIncrement;
@@ -746,7 +809,7 @@ function updatePolyLineWaterLevels() {
     TrntnStLine.getPopup().setContent(`<b>Trenton Street</b><br>Status: ${TrntnStStatus}<br>Water Level: ${TrntnStWaterLevel} cm`);
 
 
-// TrcySt
+    // TrcySt
     TrcyStWaterLevel += TrcyStIncrement;
     TrcyStWaterLevel = Math.max(0, TrcyStWaterLevel);
     let TrcyStColor = 'green';
@@ -776,7 +839,7 @@ function updatePolyLineWaterLevels() {
     TmthyStLine.setStyle({ color: TmthyStColor });
     TmthyStLine.getPopup().setContent(`<b>Timothy Street</b><br>Status: ${TmthyStStatus}<br>Water Level: ${TmthyStWaterLevel} cm`);
 
-        // TbbySt
+    // TbbySt
     TbbyStWaterLevel += TbbyStIncrement;
     TbbyStWaterLevel = Math.max(0, TbbyStWaterLevel);
     let TbbyStColor = 'green';
@@ -851,20 +914,50 @@ function updatePolyLineWaterLevels() {
     WrrnStLine.setStyle({ color: WrrnStColor });
     WrrnStLine.getPopup().setContent(`<b>Warren Street</b><br>Status: ${WrrnStStatus}<br>Water Level: ${WrrnStWaterLevel} cm`);
 
+    // WllcSt
+    WllcStWaterLevel += WllcStIncrement;
+    WllcStWaterLevel = Math.max(0, WllcStWaterLevel);
+    let WllcStColor = 'green';
+    let WllcStStatus = 'Passable';
+    if (WllcStWaterLevel >= 15) {
+        WllcStColor = 'red';
+        WllcStStatus = 'Impassable';
+    } else if (WllcStWaterLevel >= 10) {
+        WllcStColor = 'yellow';
+        WllcStStatus = 'Risky';
+    }
+    WllcStLine.setStyle({ color: WllcStColor });
+    WllcStLine.getPopup().setContent(`<b>Wllc Street</b><br>Status: ${WllcStStatus}<br>Water Level: ${WllcStWaterLevel} cm`);
+
+    // WltrSt
+    WltrStWaterLevel += WltrStIncrement;
+    WltrStWaterLevel = Math.max(0, WltrStWaterLevel);
+    let WltrStColor = 'green';
+    let WltrStStatus = 'Passable';
+    if (WltrStWaterLevel >= 15) {
+        WltrStColor = 'red';
+        WltrStStatus = 'Impassable';
+    } else if (WltrStWaterLevel >= 10) {
+        WltrStColor = 'yellow';
+        WltrStStatus = 'Risky';
+    }
+    WltrStLine.setStyle({ color: WltrStColor });
+    WltrStLine.getPopup().setContent(`<b>Walter Street</b><br>Status: ${WltrStStatus}<br>Water Level: ${WltrStWaterLevel} cm`);
+
     // WlkrSt
-    WlkrStStWaterLevel += WlkrStStIncrement;
-    WlkrStStWaterLevel = Math.max(0, WlkrStStWaterLevel);
+    WlkrStWaterLevel += WlkrStIncrement;
+    WlkrStWaterLevel = Math.max(0, WlkrStWaterLevel);
     let WlkrStColor = 'green';
     let WlkrStStatus = 'Passable';
-    if (WlkrStStWaterLevel >= 15) {
+    if (WlkrStWaterLevel >= 15) {
         WlkrStColor = 'red';
         WlkrStStatus = 'Impassable';
-    } else if (WlkrStStWaterLevel >= 10) {
+    } else if (WlkrStWaterLevel >= 10) {
         WlkrStColor = 'yellow';
         WlkrStStatus = 'Risky';
     }
     WlkrStLine.setStyle({ color: WlkrStColor });
-    WlkrStLine.getPopup().setContent(`<b>Walker Street</b><br>Status: ${WlkrStStatus}<br>Water Level: ${WlkrStStWaterLevel} cm`);
+    WlkrStLine.getPopup().setContent(`<b>Walker Street</b><br>Status: ${WlkrStStatus}<br>Water Level: ${WlkrStWaterLevel} cm`);
 
     // MchllSt
     MchllStWaterLevel += MchllStIncrement;
@@ -895,6 +988,51 @@ function updatePolyLineWaterLevels() {
     }
     MrrsStLine.setStyle({ color: MrrsStColor });
     MrrsStLine.getPopup().setContent(`<b>Morris Street</b><br>Status: ${MrrsStStatus}<br>Water Level: ${MrrsStWaterLevel} cm`);
+
+    // GfrySt
+    GfryStWaterLevel += GfryStIncrement;
+    GfryStWaterLevel = Math.max(0, GfryStWaterLevel);
+    let GfryStColor = 'green';
+    let GfryStStatus = 'Passable';
+    if (GfryStWaterLevel >= 15) {
+        GfryStColor = 'red';
+        GfryStStatus = 'Impassable';
+    } else if (GfryStWaterLevel >= 10) {
+        GfryStColor = 'yellow';
+        GfryStStatus = 'Risky';
+    }
+    GfryStLine.setStyle({ color: GfryStColor });
+    GfryStLine.getPopup().setContent(`<b>Gfry Street</b><br>Status: ${GfryStStatus}<br>Water Level: ${GfryStWaterLevel} cm`);
+
+    // MrrySt
+    MrryStWaterLevel += MrryStIncrement;
+    MrryStWaterLevel = Math.max(0, MrryStWaterLevel);
+    let MrryStColor = 'green';
+    let MrryStStatus = 'Passable';
+    if (MrryStWaterLevel >= 15) {
+        MrryStColor = 'red';
+        MrryStStatus = 'Impassable';
+    } else if (MrryStWaterLevel >= 10) {
+        MrryStColor = 'yellow';
+        MrryStStatus = 'Risky';
+    }
+    MrryStLine.setStyle({ color: MrryStColor });
+    MrryStLine.getPopup().setContent(`<b>Merry Street</b><br>Status: ${MrryStStatus}<br>Water Level: ${MrryStWaterLevel} cm`);
+
+    // MyrnaSt
+    MyrnStWaterLevel += MyrnStIncrement;
+    MyrnStWaterLevel = Math.max(0, MyrnStWaterLevel);
+    let MyrnStColor = 'green';
+    let MyrnStStatus = 'Passable';
+    if (MyrnStWaterLevel >= 15) {
+        MyrnStColor = 'red';
+        MyrnStStatus = 'Impassable';
+    } else if (MyrnStWaterLevel >= 10) {
+        MyrnStColor = 'yellow';
+        MyrnStStatus = 'Risky';
+    }
+    MyrnStLine.setStyle({ color: MyrnStColor });
+    MyrnStLine.getPopup().setContent(`<b>Myrna Street</b><br>Status: ${MyrnStStatus}<br>Water Level: ${MyrnStWaterLevel} cm`);
 
     // NthnSt
     NthnStWaterLevel += NthnStIncrement;
@@ -956,7 +1094,7 @@ function updatePolyLineWaterLevels() {
     RlphStLine.setStyle({ color: RlphStColor });
     RlphStLine.getPopup().setContent(`<b>Ralph Street</b><br>Status: ${RlphStStatus}<br>Water Level: ${RlphStWaterLevel} cm`);
 
-        // PrkrSt
+    // PrkrSt
     PrkrStWaterLevel += PrkrStIncrement;
     PrkrStWaterLevel = Math.max(0, PrkrStWaterLevel);
     let PrkrStColor = 'green';
@@ -970,6 +1108,21 @@ function updatePolyLineWaterLevels() {
     }
     PrkrStLine.setStyle({ color: PrkrStColor });
     PrkrStLine.getPopup().setContent(`<b>Parker Street</b><br>Status: ${PrkrStStatus}<br>Water Level: ${PrkrStWaterLevel} cm`);
+
+    // ScottSt
+    ScttStWaterLevel += ScttStIncrement;
+    ScttStWaterLevel = Math.max(0, ScttStWaterLevel);
+    let ScttStColor = 'green';
+    let ScttStStatus = 'Passable';
+    if (ScttStWaterLevel >= 15) {
+        ScttStColor = 'red';
+        ScttStStatus = 'Impassable';
+    } else if (ScttStWaterLevel >= 10) {
+        ScttStColor = 'yellow';
+        ScttStStatus = 'Risky';
+    }
+    ScttStLine.setStyle({ color: ScttStColor });
+    ScttStLine.getPopup().setContent(`<b>Scott Street</b><br>Status: ${ScttStStatus}<br>Water Level: ${ScttStWaterLevel} cm`);
 
     // SnfrdSt
     SnfrdStWaterLevel += SnfrdStIncrement;
@@ -1181,7 +1334,7 @@ function updatePolyLineWaterLevels() {
     HrmnStLine.setStyle({ color: HrmnStColor });
     HrmnStLine.getPopup().setContent(`<b>Herman Street</b><br>Status: ${HrmnStStatus}<br>Water Level: ${HrmnStWaterLevel} cm`);
 
-        // HlthSt
+    // HlthSt
     HlthStWaterLevel += HlthStIncrement;
     HlthStWaterLevel = Math.max(0, HlthStWaterLevel);
     let HlthStColor = 'green';
@@ -1254,7 +1407,22 @@ function updatePolyLineWaterLevels() {
         LslyStStatus = 'Risky';
     }
     LslyStLine.setStyle({ color: LslyStColor });
-    LslyStLine.getPopup().setContent(`<b>Lesley Street</b><br>Status: ${LslyStStatus}<br>Water Level: ${LslyStWaterLevel} cm`);
+    LslyStLine.getPopup().setContent(`<b>Floyd Street</b><br>Status: ${LslyStStatus}<br>Water Level: ${LslyStWaterLevel} cm`);
+
+    // FloydSt
+    FlydStWaterLevel += FlydStIncrement;
+    FlydStWaterLevel = Math.max(0, FlydStWaterLevel);
+    let FlydStColor = 'green';
+    let FlydStStatus = 'Passable';
+    if (FlydStWaterLevel >= 15) {
+        FlydStColor = 'red';
+        FlydStStatus = 'Impassable';
+    } else if (FlydStWaterLevel >= 10) {
+        FlydStColor = 'yellow';
+        FlydStStatus = 'Risky';
+    }
+    FlydStLine.setStyle({ color: FlydStColor });
+    FlydStLine.getPopup().setContent(`<b>Lesley Street</b><br>Status: ${FlydStStatus}<br>Water Level: ${FlydStWaterLevel} cm`);
 
     // ElwdSt
     ElwdStWaterLevel += ElwdStIncrement;
@@ -1496,6 +1664,21 @@ function updatePolyLineWaterLevels() {
     KthStLine.setStyle({ color: KthStColor });
     KthStLine.getPopup().setContent(`<b>Keith Street</b><br>Status: ${KthStStatus}<br>Water Level: ${KthStWaterLevel} cm`);
 
+    // KnnthSt
+    KnnthStWaterLevel += KnnthStIncrement;
+    KnnthStWaterLevel = Math.max(0, KnnthStWaterLevel);
+    let KnnthStColor = 'green';
+    let KnnthStStatus = 'Passable';
+    if (KnnthStWaterLevel >= 15) {
+        KnnthStColor = 'red';
+        KnnthStStatus = 'Impassable';
+    } else if (KnnthStWaterLevel >= 10) {
+        KnnthStColor = 'yellow';
+        KnnthStStatus = 'Risky';
+    }
+    KnnthStLine.setStyle({ color: KnnthStColor });
+    KnnthStLine.getPopup().setContent(`<b>Kenneth Street</b><br>Status: ${KnnthStStatus}<br>Water Level: ${KnnthStWaterLevel} cm`);
+
     // KndrckSt
     KndrckStWaterLevel += KndrckStIncrement;
     KndrckStWaterLevel = Math.max(0, KndrckStWaterLevel);
@@ -1571,6 +1754,36 @@ function updatePolyLineWaterLevels() {
     JrllStLine.setStyle({ color: JrllStColor });
     JrllStLine.getPopup().setContent(`<b>Jerell Street</b><br>Status: ${JrllStStatus}<br>Water Level: ${JrllStWaterLevel} cm`);
 
+    // JstnSt
+    JstnStWaterLevel += JstnStIncrement;
+    JstnStWaterLevel = Math.max(0, JstnStWaterLevel);
+    let JstnStColor = 'green';
+    let JstnStStatus = 'Passable';
+    if (JstnStWaterLevel >= 15) {
+        JstnStColor = 'red';
+        JstnStStatus = 'Impassable';
+    } else if (JstnStWaterLevel >= 10) {
+        JstnStColor = 'yellow';
+        JstnStStatus = 'Risky';
+    }
+    JstnStLine.setStyle({ color: JstnStColor });
+    JstnStLine.getPopup().setContent(`<b>Justin Street</b><br>Status: ${JstnStStatus}<br>Water Level: ${JstnStWaterLevel} cm`);
+
+    // BrcSt
+    BrcStWaterLevel += BrcStIncrement;
+    BrcStWaterLevel = Math.max(0, BrcStWaterLevel);
+    let BrcStColor = 'green';
+    let BrcStStatus = 'Passable';
+    if (BrcStWaterLevel >= 15) {
+        BrcStColor = 'red';
+        BrcStStatus = 'Impassable';
+    } else if (BrcStWaterLevel >= 10) {
+        BrcStColor = 'yellow';
+        BrcStStatus = 'Risky';
+    }
+    BrcStLine.setStyle({ color: BrcStColor });
+    BrcStLine.getPopup().setContent(`<b>Brice Street</b><br>Status: ${BrcStStatus}<br>Water Level: ${BrcStWaterLevel} cm`);
+
     // MxwllSt
     MxwllStWaterLevel += MxwllStIncrement;
     MxwllStWaterLevel = Math.max(0, MxwllStWaterLevel);
@@ -1585,6 +1798,21 @@ function updatePolyLineWaterLevels() {
     }
     MxwllStLine.setStyle({ color: MxwllStColor });
     MxwllStLine.getPopup().setContent(`<b>Maxwell Street</b><br>Status: ${MxwllStStatus}<br>Water Level: ${MxwllStWaterLevel} cm`);
+
+    // MynrdSt
+    MynrdStWaterLevel += MynrdStIncrement;
+    MynrdStWaterLevel = Math.max(0, MynrdStWaterLevel);
+    let MynrdStColor = 'green';
+    let MynrdStStatus = 'Passable';
+    if (MynrdStWaterLevel >= 15) {
+        MynrdStColor = 'red';
+        MynrdStStatus = 'Impassable';
+    } else if (MynrdStWaterLevel >= 10) {
+        MynrdStColor = 'yellow';
+        MynrdStStatus = 'Risky';
+    }
+    MynrdStLine.setStyle({ color: MynrdStColor });
+    MynrdStLine.getPopup().setContent(`<b>Maynard Street</b><br>Status: ${MynrdStStatus}<br>Water Level: ${MynrdStWaterLevel} cm`);
 
     // McknlySt
     McknlyStWaterLevel += McknlyStIncrement;
@@ -1616,6 +1844,21 @@ function updatePolyLineWaterLevels() {
     MrrllStLine.setStyle({ color: MrrllStColor });
     MrrllStLine.getPopup().setContent(`<b>Merrill Street</b><br>Status: ${MrrllStStatus}<br>Water Level: ${MrrllStWaterLevel} cm`);
 
+    // MckySt
+    MckyStWaterLevel += MckyStIncrement;
+    MckyStWaterLevel = Math.max(0, MckyStWaterLevel);
+    let MckyStColor = 'green';
+    let MckyStStatus = 'Passable';
+    if (MckyStWaterLevel >= 15) {
+        MckyStColor = 'red';
+        MckyStStatus = 'Impassable';
+    } else if (MckyStWaterLevel >= 10) {
+        MckyStColor = 'yellow';
+        MckyStStatus = 'Risky';
+    }
+    MckyStLine.setStyle({ color: MckyStColor });
+    MckyStLine.getPopup().setContent(`<b>Mickey Street</b><br>Status: ${MckyStStatus}<br>Water Level: ${MckyStWaterLevel} cm`);
+
     // RndllSt
     RndllStWaterLevel += RndllStIncrement;
     RndllStWaterLevel = Math.max(0, RndllStWaterLevel);
@@ -1631,7 +1874,7 @@ function updatePolyLineWaterLevels() {
     RndllStLine.setStyle({ color: RndllStColor });
     RndllStLine.getPopup().setContent(`<b>Randall Street</b><br>Status: ${RndllStStatus}<br>Water Level: ${RndllStWaterLevel} cm`);
 
-    
+
     // McArthur Village Main R.
     McArthurVillageMainRWaterLevel += McArthurVillageMainRIncrement;
     McArthurVillageMainRWaterLevel = Math.max(0, McArthurVillageMainRWaterLevel);
@@ -1649,7 +1892,7 @@ function updatePolyLineWaterLevels() {
 
     McArthurVillageMainRLine.setStyle({ color: McArthurVillageMainRColor });
     McArthurVillageMainRLine.bindPopup(`<b>Mc Arthur Village Main Road</b><br>Status: ${McArthurVillageMainRStatus}<br>Water Level: ${McArthurVillageMainRWaterLevel} cm`);
-    
+
 
     // MAVSt. 1
     MAVSt1WaterLevel += MAVSt1Increment;
@@ -1704,7 +1947,7 @@ function updatePolyLineWaterLevels() {
     MAVSt3Line.setStyle({ color: MAVSt3Color });
     MAVSt3Line.bindPopup(`<b>Mc Arthur Village Street 3</b><br>Status: ${MAVSt3Status}<br>Water Level: ${MAVSt3WaterLevel} cm`);
 
-    
+
     // MAVSt. 4
     MAVSt4WaterLevel += MAVSt4Increment;
     MAVSt4WaterLevel = Math.max(0, MAVSt4WaterLevel);
@@ -1927,8 +2170,8 @@ function updatePolyLineWaterLevels() {
     ibaLongosRdLine.bindPopup(`<b>Iba Longos Road</b><br>Status: ${ibaLongosRdStatus}<br>Water Level: ${ibaLongosRdWaterLevel} cm`);
 
     // Calumpang Longos Rd.
-   calumpangLongosRdWaterLevel += calumpangLongosRdIncrement;
-   calumpangLongosRdWaterLevel = Math.max(0, calumpangLongosRdWaterLevel);
+    calumpangLongosRdWaterLevel += calumpangLongosRdIncrement;
+    calumpangLongosRdWaterLevel = Math.max(0, calumpangLongosRdWaterLevel);
 
     let calumpangLongosRdColor = 'green';
     let calumpangLongosRdStatus = 'Passable';
@@ -1946,71 +2189,71 @@ function updatePolyLineWaterLevels() {
     // riverside street
     riversidestreetWaterLevel += riversidestreetIncrement;
     riversidestreetWaterLevel = Math.max(0, riversidestreetWaterLevel);
- 
-     let riversidestreetColor = 'green';
-     let riversidestreetStatus = 'Passable';
-     if (riversidestreetWaterLevel >= 15) {
+
+    let riversidestreetColor = 'green';
+    let riversidestreetStatus = 'Passable';
+    if (riversidestreetWaterLevel >= 15) {
         riversidestreetColor = 'red';
         riversidestreetStatus = 'Impassable';
-     } else if (riversidestreetWaterLevel >= 10) {
+    } else if (riversidestreetWaterLevel >= 10) {
         riversidestreetColor = 'yellow';
         riversidestreetStatus = 'Risky';
-     }
- 
-     riversidestreetLine.setStyle({ color: riversidestreetColor });
-     riversidestreetLine.bindPopup(`<b>Riverside Street</b><br>Status: ${riversidestreetStatus}<br>Water Level: ${riversidestreetWaterLevel} cm`);
+    }
+
+    riversidestreetLine.setStyle({ color: riversidestreetColor });
+    riversidestreetLine.bindPopup(`<b>Riverside Street</b><br>Status: ${riversidestreetStatus}<br>Water Level: ${riversidestreetWaterLevel} cm`);
 
     // san jose village Rd.
     sanjoseVillageRdWaterLevel += sanjoseVillageRdIncrement;
     sanjoseVillageRdWaterLevel = Math.max(0, sanjoseVillageRdWaterLevel);
- 
-     let sanjoseVillageRdColor = 'green';
-     let sanjoseVillageRdStatus = 'Passable';
-     if (sanjoseVillageRdWaterLevel >= 15) {
+
+    let sanjoseVillageRdColor = 'green';
+    let sanjoseVillageRdStatus = 'Passable';
+    if (sanjoseVillageRdWaterLevel >= 15) {
         sanjoseVillageRdColor = 'red';
         sanjoseVillageRdStatus = 'Impassable';
-     } else if (sanjoseVillageRdWaterLevel >= 10) {
+    } else if (sanjoseVillageRdWaterLevel >= 10) {
         sanjoseVillageRdColor = 'yellow';
         sanjoseVillageRdStatus = 'Risky';
-     }
- 
-     sanjoseVillageRdLine.setStyle({ color:sanjoseVillageRdColor });
-     sanjoseVillageRdLine.bindPopup(`<b>San Jose Village Road</b><br>Status: ${sanjoseVillageRdStatus}<br>Water Level: ${sanjoseVillageRdWaterLevel} cm`);
+    }
+
+    sanjoseVillageRdLine.setStyle({ color: sanjoseVillageRdColor });
+    sanjoseVillageRdLine.bindPopup(`<b>San Jose Village Road</b><br>Status: ${sanjoseVillageRdStatus}<br>Water Level: ${sanjoseVillageRdWaterLevel} cm`);
 
     //  riverside street2
     riversidestreet2WaterLevel += riversidestreet2Increment;
     riversidestreet2WaterLevel = Math.max(0, riversidestreet2WaterLevel);
- 
-     let riversidestreet2Color = 'green';
-     let riversidestreet2Status = 'Passable';
-     if (riversidestreet2WaterLevel >= 15) {
+
+    let riversidestreet2Color = 'green';
+    let riversidestreet2Status = 'Passable';
+    if (riversidestreet2WaterLevel >= 15) {
         riversidestreet2Color = 'red';
         riversidestreet2Status = 'Impassable';
-     } else if (riversidestreet2WaterLevel >= 10) {
+    } else if (riversidestreet2WaterLevel >= 10) {
         riversidestreet2Color = 'yellow';
         riversidestreet2Status = 'Risky';
-     }
- 
-     riversidestreet2Line.setStyle({ color: riversidestreet2Color });
-     riversidestreet2Line.bindPopup(`<b>Riverside Street 2</b><br>Status: ${riversidestreet2Status}<br>Water Level: ${riversidestreet2WaterLevel} cm`);
-
-    //  drmCrst
-    drmCrstWaterLevel +=drmCrstIncrement;
-    drmCrstWaterLevel = Math.max(0, drmCrstWaterLevel);
-
-    let drmCrstColor = 'green';
-    let drmCrstStatus = 'Passable';
-    if (drmCrstWaterLevel >= 15) {
-        drmCrstColor = 'red';
-        drmCrstStatus = 'Impassable';
-    } else if (drmCrstWaterLevel >= 10) {
-        drmCrstColor = 'yellow';
-        drmCrstStatus = 'Risky';
     }
 
-    drmCrstLine.setStyle({ color: drmCrstColor });
-    drmCrstLine.bindPopup(`<b>Dream Crest Homes Subdivision</b><br>Status: ${drmCrstStatus}<br>Water Level: ${drmCrstWaterLevel} cm`);
-    
+    riversidestreet2Line.setStyle({ color: riversidestreet2Color });
+    riversidestreet2Line.bindPopup(`<b>Riverside Street 2</b><br>Status: ${riversidestreet2Status}<br>Water Level: ${riversidestreet2WaterLevel} cm`);
+
+    //  drmCrst
+    drmCrstPrvWaterLevel += drmCrstPrvIncrement;
+    drmCrstPrvWaterLevel = Math.max(0, drmCrstPrvWaterLevel);
+
+    let drmCrstPrvColor = 'green';
+    let drmCrstPrvStatus = 'Passable';
+    if (drmCrstPrvWaterLevel >= 15) {
+        drmCrstPrvColor = 'red';
+        drmCrstPrvStatus = 'Impassable';
+    } else if (drmCrstPrvWaterLevel >= 10) {
+        drmCrstPrvColor = 'yellow';
+        drmCrstPrvStatus = 'Risky';
+    }
+
+    drmCrstPrvLine.setStyle({ color: drmCrstPrvColor });
+    drmCrstPrvLine.bindPopup(`<b>Dream Crest Homes Subdivision</b><br>Status: ${drmCrstPrvStatus}<br>Water Level: ${drmCrstPrvWaterLevel} cm`);
+
 
 
 
@@ -2024,33 +2267,113 @@ const status = "<?php echo htmlspecialchars($status); ?>";
 
 // !!! pagawang ganito kung gets niyo tapos paiba na lang name, if hindi aq na basta sabihin sa gc na hindi kineri. tenkz!!!
 highwayLine.bindPopup(`<b>McArthur Highway</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-carmenLine.bindPopup(`<b>Carmen V. de Luna Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-hanggaStLine.bindPopup(`<b>Hangga St.</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-forrestStLine.bindPopup(`<b>Forrest St.</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-McArthurVillageMainRLine.bindPopup(`<b>Mc Arthur Village Main Road </b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt1Line.bindPopup(`<b>MAVS </b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt2Line.bindPopup(`<b>Mc Arthur Village Street 2 </b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt3Line.bindPopup(`<b>Mc Arthur Village Street 3</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt4Line.bindPopup(`<b>Mc Arthur Village Street 4</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt5Line.bindPopup(`<b>Mc Arthur Village Street 5</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt6Line.bindPopup(`<b>Mc Arthur Village Street 6</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt7Line.bindPopup(`<b>Mc Arthur Village Street 7</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt8Line.bindPopup(`<b>Mc Arthur Village Street 8</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt9Line.bindPopup(`<b>Mc Arthur Village Street 9</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt10Line.bindPopup(`<b>Mc Arthur Village Street 10</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt11Line.bindPopup(`<b>Mc Arthur Village Street 11</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt12Line.bindPopup(`<b>Mc Arthur Village Street 12</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt13Line.bindPopup(`<b>Mc Arthur Village Street 13</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt14Line.bindPopup(`<b>Mc Arthur Village Street 14</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-MAVSt15Line.bindPopup(`<b>Mc Arthur Village Street 15</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+carmenLine.bindPopup(`<b>Carmen Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+hanggaStLine.bindPopup(`<b>Hangga Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+forrestStLine.bindPopup(`<b>Forrest Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+drmCrstPrvLine.bindPopup(`<b>Drummond Crest Private</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+TrvrStLine.bindPopup(`<b>Travellers Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MchlStLine.bindPopup(`<b>Mitchell Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+LnnlStLine.bindPopup(`<b>Lonnell Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+ShrwdStLine.bindPopup(`<b>Sherwood Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+ShwnStLine.bindPopup(`<b>Shawn Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+ShlbyStLine.bindPopup(`<b>Shelby Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+StnlyStLine.bindPopup(`<b>Stanley Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+StvStLine.bindPopup(`<b>Stavely Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+SpncrStLine.bindPopup(`<b>Spencer Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+TrmnStLine.bindPopup(`<b>Truman Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+TrntnStLine.bindPopup(`<b>Trenton Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+TrcyStLine.bindPopup(`<b>Tracy Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+TmthyStLine.bindPopup(`<b>Timothy Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+TbbyStLine.bindPopup(`<b>Toby Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+ThrmnStLine.bindPopup(`<b>Thurman Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+VncntStLine.bindPopup(`<b>Vincent Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+VrglStLine.bindPopup(`<b>Virgil Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+WrrnStLine.bindPopup(`<b>Warren Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+WllcStLine.bindPopup(`<b>Willick Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+WltrStLine.bindPopup(`<b>Walter Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+WlkrStLine.bindPopup(`<b>Walker Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MchllStLine.bindPopup(`<b>Mitchell Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MrrsStLine.bindPopup(`<b>Morris Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+GfryStLine.bindPopup(`<b>Gifford Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MrryStLine.bindPopup(`<b>Marry Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MyrnStLine.bindPopup(`<b>Myron Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+NthnStLine.bindPopup(`<b>Northern Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+NvneStLine.bindPopup(`<b>Nevan Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+RdStLine.bindPopup(`<b>Road Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+RlphStLine.bindPopup(`<b>Ralph Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+PrkrStLine.bindPopup(`<b>Parker Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+ScttStLine.bindPopup(`<b>Scott Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+SnfrdStLine.bindPopup(`<b>Sanford Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+RbnStLine.bindPopup(`<b>Reuben Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+RlyStLine.bindPopup(`<b>Riley Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+RcStLine.bindPopup(`<b>Rock Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+PlStLine.bindPopup(`<b>Pleasant Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+OrvllStLine.bindPopup(`<b>Orville Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+ChnsyStLine.bindPopup(`<b>Chansey Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+LndsyStLine.bindPopup(`<b>Lindsay Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+LnwdStLine.bindPopup(`<b>Linwood Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+CrsnStLine.bindPopup(`<b>Crescent Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+HltnStLine.bindPopup(`<b>Hulton Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+HwrdStLine.bindPopup(`<b>Howard Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+HrshllStLine.bindPopup(`<b>Marshall Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+HrmnStLine.bindPopup(`<b>Harman Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+HlthStLine.bindPopup(`<b>Health Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+HywdStLine.bindPopup(`<b>Haywood Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+HrldStLine.bindPopup(`<b>Harold Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+JsprStLine.bindPopup(`<b>Jasper Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+LslyStLine.bindPopup(`<b>Lesley Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+FlydStLine.bindPopup(`<b>Flynn Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+ElwdStLine.bindPopup(`<b>Elwood Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+ErnstStLine.bindPopup(`<b>Ernst Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+EthnStLine.bindPopup(`<b>Ethne Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+EllswrthStLine.bindPopup(`<b>Ellsworth Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+EllsStLine.bindPopup(`<b>Ellis Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+ErlStLine.bindPopup(`<b>Erl Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+HntrStLine.bindPopup(`<b>Hunter Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+JrrtStLine.bindPopup(`<b>Jerritt Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+CmrnStLine.bindPopup(`<b>Camaron Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+KrbyStLine.bindPopup(`<b>Kirby Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+LvrnStLine.bindPopup(`<b>Livern Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+KrtsStLine.bindPopup(`<b>Courts Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+KvnStLine.bindPopup(`<b>Kevin Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+KnnStLine.bindPopup(`<b>Kenneth Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+KndllStLine.bindPopup(`<b>Kendall Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+KthStLine.bindPopup(`<b>Kathleen Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+KnnthStLine.bindPopup(`<b>Kenneth North Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+KndrckStLine.bindPopup(`<b>Kendrick Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+KnnyStLine.bindPopup(`<b>Kenny Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+JysnStLine.bindPopup(`<b>Jayson Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+JrmnStLine.bindPopup(`<b>Jermyn Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+JrllStLine.bindPopup(`<b>Jerell Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+JstnStLine.bindPopup(`<b>Justin Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+BrcStLine.bindPopup(`<b>Brock Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MxwllStLine.bindPopup(`<b>Maxwell Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MynrdStLine.bindPopup(`<b>Mynard Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+McknlyStLine.bindPopup(`<b>McKinley Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MrrllStLine.bindPopup(`<b>Morrell Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MckyStLine.bindPopup(`<b>Mucky Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+RndllStLine.bindPopup(`<b>Randall Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+McArthurVillageMainRLine.bindPopup(`<b>McArthur Village Main Road</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt1Line.bindPopup(`<b>MAV Street 1</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt2Line.bindPopup(`<b>MAV Street 2</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt3Line.bindPopup(`<b>MAV Street 3</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt4Line.bindPopup(`<b>MAV Street 4</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt5Line.bindPopup(`<b>MAV Street 5</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt6Line.bindPopup(`<b>MAV Street 6</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt7Line.bindPopup(`<b>MAV Street 7</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt8Line.bindPopup(`<b>MAV Street 8</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt9Line.bindPopup(`<b>MAV Street 9</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt10Line.bindPopup(`<b>MAV Street 10</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt11Line.bindPopup(`<b>MAV Street 11</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt12Line.bindPopup(`<b>MAV Street 12</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt13Line.bindPopup(`<b>MAV Street 13</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt14Line.bindPopup(`<b>MAV Street 14</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+MAVSt15Line.bindPopup(`<b>MAV Street 15</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+ibaLongosRdLine.bindPopup(`<b>Iba Longos Road</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 calumpangLongosRdLine.bindPopup(`<b>Calumpang Longos Road</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 riversidestreetLine.bindPopup(`<b>Riverside Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 sanjoseVillageRdLine.bindPopup(`<b>San Jose Village Road</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 riversidestreet2Line.bindPopup(`<b>Riverside Street 2</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-drmCrstLine.bindPopup(`<b>Dream Crest Homes Subdivision</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-
-
-
 
 
 
