@@ -525,46 +525,46 @@ function updatePolyLineWaterLevels() {
     const riversidestreetWaterLevel = getRandomIncrement(-3, 4);
     const sanjoseVillageRdWaterLevel = getRandomIncrement(-2, 3);
     const riversidestreet2WaterLevel = getRandomIncrement(-3, 5);
-    // const DCSt1WaterLevel = getRandomIncrement(-2, 4);
-    // const DCSt2WaterLevel = getRandomIncrement(-3, 5);
-    // const DCSt3WaterLevel = getRandomIncrement(-2, 4);
-    // const DCSt4WaterLevel = getRandomIncrement(-3, 5);
-    // const DCSt5WaterLevel = getRandomIncrement(-2, 4);
-    // const DCSt6WaterLevel = getRandomIncrement(-3, 4);
-    // const DCSt7WaterLevel = getRandomIncrement(-2, 5);
-    // const DCSt8WaterLevel = getRandomIncrement(-3, 4);
-    // const DCSt9WaterLevel = getRandomIncrement(-2, 5);
-    // const DCSt10WaterLevel = getRandomIncrement(-3, 5);
-    // const DCSt11WaterLevel = getRandomIncrement(-2, 4);
-    // const DCSt12WaterLevel = getRandomIncrement(-3, 4);
-    // const DCSt13WaterLevel = getRandomIncrement(-2, 5);
-    // const DCSt14WaterLevel = getRandomIncrement(-3, 5);
-    // const DCSt15WaterLevel = getRandomIncrement(-2, 4);
-    // const DCSt16WaterLevel = getRandomIncrement(-3, 5);
-    // const DCSt17WaterLevel = getRandomIncrement(-2, 4);
-    // const DCSt18WaterLevel = getRandomIncrement(-3, 5);
-    // const DCSt19WaterLevel = getRandomIncrement(-2, 4);
-    // const DCSt20WaterLevel = getRandomIncrement(-3, 5);
+    const DCSt1WaterLevel = getRandomIncrement(-2, 4);
+    const DCSt2WaterLevel = getRandomIncrement(-3, 5);
+    const DCSt3WaterLevel = getRandomIncrement(-2, 4);
+    const DCSt4WaterLevel = getRandomIncrement(-3, 5);
+    const DCSt5WaterLevel = getRandomIncrement(-2, 4);
+    const DCSt6WaterLevel = getRandomIncrement(-3, 4);
+    const DCSt7WaterLevel = getRandomIncrement(-2, 5);
+    const DCSt8WaterLevel = getRandomIncrement(-3, 4);
+    const DCSt9WaterLevel = getRandomIncrement(-2, 5);
+    const DCSt10WaterLevel = getRandomIncrement(-3, 5);
+    const DCSt11WaterLevel = getRandomIncrement(-2, 4);
+    const DCSt12WaterLevel = getRandomIncrement(-3, 4);
+    const DCSt13WaterLevel = getRandomIncrement(-2, 5);
+    const DCSt14WaterLevel = getRandomIncrement(-3, 5);
+    const DCSt15WaterLevel = getRandomIncrement(-2, 4);
+    const DCSt16WaterLevel = getRandomIncrement(-3, 5);
+    const DCSt17WaterLevel = getRandomIncrement(-2, 4);
+    const DCSt18WaterLevel = getRandomIncrement(-3, 5);
+    const DCSt19WaterLevel = getRandomIncrement(-2, 4);
+    const DCSt20WaterLevel = getRandomIncrement(-3, 5);
     // !!! etong const kineme gagayahin
 
     // Boundaries
-    // boundariesWaterlevel += boundariesIncrement;
-    // boundariesWaterlevel = Math.max(0, boundariesWaterLevel);
+    boundariesWaterlevel += boundariesIncrement;
+    boundariesWaterlevel = Math.max(0, boundariesWaterLevel);
 
-    // let boundariesColor = 'green';
-    // let boundariesStatus = 'Passable';
+    let boundariesColor = 'green';
+    let boundariesStatus = 'Passable';
 
-    // if (boundariesWaterLevel >= 15) {
-    //     boundariesColor = 'red';
-    //     boundariesStatus = 'Impassable';
-    // } else if (boundariesWaterlevel >= 10) {
-    //     boundariesColor = 'yellow';
-    //     boundariesStatus = 'Risky';
-    // }
+    if (boundariesWaterLevel >= 15) {
+         boundariesColor = 'red';
+         boundariesStatus = 'Impassable';
+     } else if (boundariesWaterlevel >= 10) {
+         boundariesColor = 'yellow';
+         boundariesStatus = 'Risky';
+     }
 
 
-    // boundariesLine.setStyle({ color: boundariesColor });
-    // boundariesLine.getPopup().setContent(`<b>Boundaries</b><br>Status: ${boundariesStatus}<br>Water Level: ${boundariesWaterLevel} cm`);
+     boundariesLine.setStyle({ color: boundariesColor });
+     boundariesLine.getPopup().setContent(`<b>Boundaries</b><br>Status: ${boundariesStatus}<br>Water Level: ${boundariesWaterLevel} cm`);
 
     // Highway
     highwayWaterLevel += highwayWaterIncrement;
