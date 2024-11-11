@@ -2255,9 +2255,350 @@ function updatePolyLineWaterLevels() {
     drmCrstPrvLine.bindPopup(`<b>Dream Crest Homes Subdivision</b><br>Status: ${drmCrstPrvStatus}<br>Water Level: ${drmCrstPrvWaterLevel} cm`);
 
 
+        // DCSt 1
+    DCSt1WaterLevel += DCSt1Increment;
+    DCSt1WaterLevel = Math.max(0, DCSt1WaterLevel);
 
+    let DCSt1Color = 'green';
+    let DCSt1Status = 'Passable';
+    if (DCSt1WaterLevel >= 15) {
+        DCSt1Color = 'red';
+        DCSt1Status = 'Impassable';
+    } else if (DCSt1WaterLevel >= 10) {
+        DCSt1Color = 'yellow';
+        DCSt1Status = 'Risky';
+    }
+
+    DCSt1Line.setStyle({ color: DCSt1Color });
+    DCSt1Line.bindPopup(`<b>Dream Crest Street 1</b><br>Status: ${DCSt1Status}<br>Water Level: ${DCSt1WaterLevel} cm`);
+
+    // DCSt 2
+    DCSt2WaterLevel += DCSt2Increment;
+    DCSt2WaterLevel = Math.max(0, DCSt2WaterLevel);
+
+    let DCSt2Color = 'green';
+    let DCSt2Status = 'Passable';
+    if (DCSt2WaterLevel >= 15) {
+        DCSt2Color = 'red';
+        DCSt2Status = 'Impassable';
+    } else if (DCSt2WaterLevel >= 10) {
+        DCSt2Color = 'yellow';
+        DCSt2Status = 'Risky';
+    }
+
+    DCSt2Line.setStyle({ color: DCSt2Color });
+    DCSt2Line.bindPopup(`<b>Dream Crest Street 2</b><br>Status: ${DCSt2Status}<br>Water Level: ${DCSt2WaterLevel} cm`);
+
+    // DCSt 3
+    DCSt3WaterLevel += DCSt3Increment;
+    DCSt3WaterLevel = Math.max(0, DCSt3WaterLevel);
+
+    let DCSt3Color = 'green';
+    let DCSt3Status = 'Passable';
+    if (DCSt3WaterLevel >= 15) {
+        DCSt3Color = 'red';
+        DCSt3Status = 'Impassable';
+    } else if (DCSt3WaterLevel >= 10) {
+        DCSt3Color = 'yellow';
+        DCSt3Status = 'Risky';
+    }
+
+    DCSt3Line.setStyle({ color: DCSt3Color });
+    DCSt3Line.bindPopup(`<b>Dream Crest Street 3</b><br>Status: ${DCSt3Status}<br>Water Level: ${DCSt3WaterLevel} cm`);
+
+    // DCSt 4
+    DCSt4WaterLevel += DCSt4Increment;
+    DCSt4WaterLevel = Math.max(0, DCSt4WaterLevel);
+
+    let DCSt4Color = 'green';
+    let DCSt4Status = 'Passable';
+    if (DCSt4WaterLevel >= 15) {
+        DCSt4Color = 'red';
+        DCSt4Status = 'Impassable';
+    } else if (DCSt4WaterLevel >= 10) {
+        DCSt4Color = 'yellow';
+        DCSt4Status = 'Risky';
+    }
+
+    DCSt4Line.setStyle({ color: DCSt4Color });
+    DCSt4Line.bindPopup(`<b>Dream Crest Street 4</b><br>Status: ${DCSt4Status}<br>Water Level: ${DCSt4WaterLevel} cm`);
+
+    // DCSt 5
+    DCSt5WaterLevel += DCSt5Increment;
+    DCSt5WaterLevel = Math.max(0, DCSt5WaterLevel);
+
+    let DCSt5Color = 'green';
+    let DCSt5Status = 'Passable';
+    if (DCSt5WaterLevel >= 15) {
+        DCSt5Color = 'red';
+        DCSt5Status = 'Impassable';
+    } else if (DCSt5WaterLevel >= 10) {
+        DCSt5Color = 'yellow';
+        DCSt5Status = 'Risky';
+    }
+
+    DCSt5Line.setStyle({ color: DCSt5Color });
+    DCSt5Line.bindPopup(`<b>Dream Crest Street 5</b><br>Status: ${DCSt5Status}<br>Water Level: ${DCSt5WaterLevel} cm`);
+
+    // DCSt 6
+    DCSt6WaterLevel += DCSt6Increment;
+    DCSt6WaterLevel = Math.max(0, DCSt6WaterLevel);
+
+    let DCSt6Color = 'green';
+    let DCSt6Status = 'Passable';
+    if (DCSt6WaterLevel >= 15) {
+        DCSt6Color = 'red';
+        DCSt6Status = 'Impassable';
+    } else if (DCSt6WaterLevel >= 10) {
+        DCSt6Color = 'yellow';
+        DCSt6Status = 'Risky';
+    }
+
+    DCSt6Line.setStyle({ color: DCSt6Color });
+    DCSt6Line.bindPopup(`<b>Dream Crest Street 6</b><br>Status: ${DCSt6Status}<br>Water Level: ${DCSt6WaterLevel} cm`);
+    
+        // DCSt 7
+    DCSt7WaterLevel += DCSt7Increment;
+    DCSt6WaterLevel = Math.max(0, DCSt7WaterLevel);
+    
+    let DCSt7Color = 'green';
+    let DCSt7Status = 'Passable';
+    if (DCSt7WaterLevel >= 15) {
+        DCSt7Color = 'red';
+        DCSt7Status = 'Impassable';
+    } else if (DCSt7WaterLevel >= 10) {
+        DCSt7Color = 'yellow';
+        DCSt7Status = 'Risky';
+    }
+    
+    DCSt7Line.setStyle({ color: DCSt7Color });
+    DCSt7Line.bindPopup(`<b>Dream Crest Street 7</b><br>Status: ${DCSt7Status}<br>Water Level: ${DCSt7WaterLevel} cm`);
+    
+
+    DCSt8WaterLevel += DCSt8Increment;
+    DCSt8WaterLevel = Math.max(0, DCSt8WaterLevel);
+    
+    let DCSt8Color = 'green';
+    let DCSt8Status = 'Passable';
+    if (DCSt8WaterLevel >= 15) {
+        DCSt8Color = 'red';
+        DCSt8Status = 'Impassable';
+    } else if (DCSt8WaterLevel >= 10) {
+        DCSt8Color = 'yellow';
+        DCSt8Status = 'Risky';
+    }
+    
+    DCSt8Line.setStyle({ color: DCSt8Color });
+    DCSt8Line.bindPopup(`<b>Dream Crest Street 8</b><br>Status: ${DCSt8Status}<br>Water Level: ${DCSt8WaterLevel} cm`);
+    
+    // DCSt 9
+    DCSt9WaterLevel += DCSt9Increment;
+    DCSt9WaterLevel = Math.max(0, DCSt9WaterLevel);
+
+    let DCSt9Color = 'green';
+    let DCSt9Status = 'Passable';
+    if (DCSt9WaterLevel >= 15) {
+        DCSt9Color = 'red';
+        DCSt9Status = 'Impassable';
+    } else if (DCSt9WaterLevel >= 10) {
+        DCSt9Color = 'yellow';
+        DCSt9Status = 'Risky';
+    }
+
+    DCSt9Line.setStyle({ color: DCSt9Color });
+    DCSt9Line.bindPopup(`<b>Dream Crest Street 9</b><br>Status: ${DCSt9Status}<br>Water Level: ${DCSt9WaterLevel} cm`);
+
+    // DCSt 10
+    DCSt10WaterLevel += DCSt10Increment;
+    DCSt10WaterLevel = Math.max(0, DCSt10WaterLevel);
+
+    let DCSt10Color = 'green';
+    let DCSt10Status = 'Passable';
+    if (DCSt10WaterLevel >= 15) {
+        DCSt10Color = 'red';
+        DCSt10Status = 'Impassable';
+    } else if (DCSt10WaterLevel >= 10) {
+        DCSt10Color = 'yellow';
+        DCSt10Status = 'Risky';
+    }
+
+    DCSt10Line.setStyle({ color: DCSt10Color });
+    DCSt10Line.bindPopup(`<b>Dream Crest Street 10</b><br>Status: ${DCSt10Status}<br>Water Level: ${DCSt10WaterLevel} cm`);
+
+    // DCSt 11
+    DCSt11WaterLevel += DCSt11Increment;
+    DCSt11WaterLevel = Math.max(0, DCSt11WaterLevel);
+
+    let DCSt11Color = 'green';
+    let DCSt11Status = 'Passable';
+    if (DCSt11WaterLevel >= 15) {
+        DCSt11Color = 'red';
+        DCSt11Status = 'Impassable';
+    } else if (DCSt11WaterLevel >= 10) {
+        DCSt11Color = 'yellow';
+        DCSt11Status = 'Risky';
+    }
+
+    DCSt11Line.setStyle({ color: DCSt11Color });
+    DCSt11Line.bindPopup(`<b>Dream Crest Street 11</b><br>Status: ${DCSt11Status}<br>Water Level: ${DCSt11WaterLevel} cm`);
+
+    // DCSt 12
+    DCSt12WaterLevel += DCSt12Increment;
+    DCSt12WaterLevel = Math.max(0, DCSt12WaterLevel);
+
+    let DCSt12Color = 'green';
+    let DCSt12Status = 'Passable';
+    if (DCSt12WaterLevel >= 15) {
+        DCSt12Color = 'red';
+        DCSt12Status = 'Impassable';
+    } else if (DCSt12WaterLevel >= 10) {
+        DCSt12Color = 'yellow';
+        DCSt12Status = 'Risky';
+    }
+
+    DCSt12Line.setStyle({ color: DCSt12Color });
+    DCSt12Line.bindPopup(`<b>Dream Crest Street 12</b><br>Status: ${DCSt12Status}<br>Water Level: ${DCSt12WaterLevel} cm`);
+
+    // DCSt 13
+    DCSt13WaterLevel += DCSt13Increment;
+    DCSt13WaterLevel = Math.max(0, DCSt13WaterLevel);
+
+    let DCSt13Color = 'green';
+    let DCSt13Status = 'Passable';
+    if (DCSt13WaterLevel >= 15) {
+        DCSt13Color = 'red';
+        DCSt13Status = 'Impassable';
+    } else if (DCSt13WaterLevel >= 10) {
+        DCSt13Color = 'yellow';
+        DCSt13Status = 'Risky';
+    }
+
+    DCSt13Line.setStyle({ color: DCSt13Color });
+    DCSt13Line.bindPopup(`<b>Dream Crest Street 13</b><br>Status: ${DCSt13Status}<br>Water Level: ${DCSt13WaterLevel} cm`);
+
+    // DCSt 14
+    DCSt14WaterLevel += DCSt14Increment;
+    DCSt14WaterLevel = Math.max(0, DCSt14WaterLevel);
+
+    let DCSt14Color = 'green';
+    let DCSt14Status = 'Passable';
+    if (DCSt14WaterLevel >= 15) {
+        DCSt14Color = 'red';
+        DCSt14Status = 'Impassable';
+    } else if (DCSt14WaterLevel >= 10) {
+        DCSt14Color = 'yellow';
+        DCSt14Status = 'Risky';
+    }
+
+    DCSt14Line.setStyle({ color: DCSt14Color });
+    DCSt14Line.bindPopup(`<b>Dream Crest Street 14</b><br>Status: ${DCSt14Status}<br>Water Level: ${DCSt14WaterLevel} cm`);
+
+    // DCSt 15
+    DCSt15WaterLevel += DCSt15Increment;
+    DCSt15WaterLevel = Math.max(0, DCSt15WaterLevel);
+
+    let DCSt15Color = 'green';
+    let DCSt15Status = 'Passable';
+    if (DCSt15WaterLevel >= 15) {
+        DCSt15Color = 'red';
+        DCSt15Status = 'Impassable';
+    } else if (DCSt15WaterLevel >= 10) {
+        DCSt15Color = 'yellow';
+        DCSt15Status = 'Risky';
+    }
+
+    DCSt15Line.setStyle({ color: DCSt15Color });
+    DCSt15Line.bindPopup(`<b>Dream Crest Street 15</b><br>Status: ${DCSt15Status}<br>Water Level: ${DCSt15WaterLevel} cm`);
+
+    // DCSt 16
+    DCSt16WaterLevel += DCSt16Increment;
+    DCSt16WaterLevel = Math.max(0, DCSt16WaterLevel);
+
+    let DCSt16Color = 'green';
+    let DCSt16Status = 'Passable';
+    if (DCSt16WaterLevel >= 15) {
+        DCSt16Color = 'red';
+        DCSt16Status = 'Impassable';
+    } else if (DCSt16WaterLevel >= 10) {
+        DCSt16Color = 'yellow';
+        DCSt16Status = 'Risky';
+    }
+
+    DCSt16Line.setStyle({ color: DCSt16Color });
+    DCSt16Line.bindPopup(`<b>Dream Crest Street 16</b><br>Status: ${DCSt16Status}<br>Water Level: ${DCSt16WaterLevel} cm`);
+
+    // DCSt 17
+    DCSt17WaterLevel += DCSt17Increment;
+    DCSt17WaterLevel = Math.max(0, DCSt17WaterLevel);
+
+    let DCSt17Color = 'green';
+    let DCSt17Status = 'Passable';
+    if (DCSt17WaterLevel >= 15) {
+        DCSt17Color = 'red';
+        DCSt17Status = 'Impassable';
+    } else if (DCSt17WaterLevel >= 10) {
+        DCSt17Color = 'yellow';
+        DCSt17Status = 'Risky';
+    }
+
+    DCSt17Line.setStyle({ color: DCSt17Color });
+    DCSt17Line.bindPopup(`<b>Dream Crest Street 17</b><br>Status: ${DCSt17Status}<br>Water Level: ${DCSt17WaterLevel} cm`);
+
+    // DCSt 18
+    DCSt18WaterLevel += DCSt18Increment;
+    DCSt18WaterLevel = Math.max(0, DCSt18WaterLevel);
+
+    let DCSt18Color = 'green';
+    let DCSt18Status = 'Passable';
+    if (DCSt18WaterLevel >= 15) {
+        DCSt18Color = 'red';
+        DCSt18Status = 'Impassable';
+    } else if (DCSt18WaterLevel >= 10) {
+        DCSt18Color = 'yellow';
+        DCSt18Status = 'Risky';
+    }
+
+    DCSt18Line.setStyle({ color: DCSt18Color });
+    DCSt18Line.bindPopup(`<b>Dream Crest Street 18</b><br>Status: ${DCSt18Status}<br>Water Level: ${DCSt18WaterLevel} cm`);
+
+    // DCSt 19
+    DCSt19WaterLevel += DCSt19Increment;
+    DCSt19WaterLevel = Math.max(0, DCSt19WaterLevel);
+
+    let DCSt19Color = 'green';
+    let DCSt19Status = 'Passable';
+    if (DCSt19WaterLevel >= 15) {
+        DCSt19Color = 'red';
+        DCSt19Status = 'Impassable';
+    } else if (DCSt19WaterLevel >= 10) {
+        DCSt19Color = 'yellow';
+        DCSt19Status = 'Risky';
+    }
+
+    DCSt19Line.setStyle({ color: DCSt19Color });
+    DCSt19Line.bindPopup(`<b>Dream Crest Street 19</b><br>Status: ${DCSt19Status}<br>Water Level: ${DCSt19WaterLevel} cm`);
+
+    // DCSt 20
+    DCSt20WaterLevel += DCSt20Increment;
+    DCSt20WaterLevel = Math.max(0, DCSt20WaterLevel);
+
+    let DCSt20Color = 'green';
+    let DCSt20Status = 'Passable';
+    if (DCSt20WaterLevel >= 15) {
+        DCSt20Color = 'red';
+        DCSt20Status = 'Impassable';
+    } else if (DCSt20WaterLevel >= 10) {
+        DCSt20Color = 'yellow';
+        DCSt20Status = 'Risky';
+    }
+
+    DCSt20Line.setStyle({ color: DCSt20Color });
+    DCSt20Line.bindPopup(`<b>Dream Crest Street 20</b><br>Status: ${DCSt20Status}<br>Water Level: ${DCSt20WaterLevel} cm`);
+
+    
 
 }
+
 
 setInterval(updatePolyLineWaterLevels, 5000);
 
@@ -2374,6 +2715,26 @@ calumpangLongosRdLine.bindPopup(`<b>Calumpang Longos Road</b><br>Status: ${statu
 riversidestreetLine.bindPopup(`<b>Riverside Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 sanjoseVillageRdLine.bindPopup(`<b>San Jose Village Road</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 riversidestreet2Line.bindPopup(`<b>Riverside Street 2</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt1Line.bindPopup(`<b>Dream Crest Street 1</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt2Line.bindPopup(`<b>Dream Crest Street 2</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt3Line.bindPopup(`<b>Dream Crest Street 3</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt4Line.bindPopup(`<b>Dream Crest Street 4</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt5Line.bindPopup(`<b>Dream Crest Street 5</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt6Line.bindPopup(`<b>Dream Crest Street 6</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt7Line.bindPopup(`<b>Dream Crest Street 7</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt8Line.bindPopup(`<b>Dream Crest Street 8</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt9Line.bindPopup(`<b>Dream Crest Street 9</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt10Line.bindPopup(`<b>Dream Crest Street 10</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt11Line.bindPopup(`<b>Dream Crest Street 11</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt12Line.bindPopup(`<b>Dream Crest Street 12</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt13Line.bindPopup(`<b>Dream Crest Street 13</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt14Line.bindPopup(`<b>Dream Crest Street 14</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt15Line.bindPopup(`<b>Dream Crest Street 15</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt16Line.bindPopup(`<b>Dream Crest Street 16</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt17Line.bindPopup(`<b>Dream Crest Street 17</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt18Line.bindPopup(`<b>Dream Crest Street 18</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt19Line.bindPopup(`<b>Dream Crest Street 19</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
+DCSt20Line.bindPopup(`<b>Dream Crest Street 20</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 
 
 
