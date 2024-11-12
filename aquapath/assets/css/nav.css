@@ -155,6 +155,7 @@ li {
 
 .plus {
     grid-column: 3;
+ 
 }
 
 .toggle {
@@ -185,4 +186,9 @@ li {
     #suggestions {
         font-size: 100%;
     }
+
+    .nav__list li button .phone{
+        font-size: 150% !important;
+    }
 }
+

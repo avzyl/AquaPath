@@ -29,7 +29,7 @@
         <ul class="nav__list">
             <li class="home"><a href="index.php" class="nav__link active-link"><i class="fas fa-home"></i></a></li>
             <li class="route"><button id="toggleRouteSearch" class="nav__route"><i class="fa-solid fa-route"></i></button></li>
-            <li class="plus"><button class="nav__expand" id="nav-expand"><i class="fas fa-plus nav__expand-icon"></i></button></li>
+            <li class="plus"><button class="nav__expand" id="nav-expand"><i class="phone fa-solid fa-phone"></i></button></li>
             <li class="toggle">
                 <button id="toggle-directions"><i class="fa-solid fa-toggle-on"></i></button>
             </li>
