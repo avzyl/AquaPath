@@ -30,17 +30,14 @@ function fetchWaterLevelData() {
         .then(response => response.json())
         .then(data => {
             if (data) {
-                // Clear previous data
                 const tableBody = document.getElementById('dataTable');
                 tableBody.innerHTML = '';
 
-                // Update chart data
                 waterLevelChart.data.labels = [];
                 waterLevelChart.data.datasets[0].data = [];
-                waterLevelChart.data.datasets[0].borderColor = []; // Reset colors
+                waterLevelChart.data.datasets[0].borderColor = [];
 
                 data.forEach(entry => {
-                    // Determine line color based on level
                     let lineColor;
                     if (entry.level < 10) {
                         lineColor = 'rgba(76, 175, 80, 1)'; // Green
@@ -50,12 +47,10 @@ function fetchWaterLevelData() {
                         lineColor = 'rgba(255, 0, 0, 1)'; // Red
                     }
 
-                    // Push to chart data
                     waterLevelChart.data.labels.unshift(entry.time);
                     waterLevelChart.data.datasets[0].data.unshift(entry.level);
-                    waterLevelChart.data.datasets[0].borderColor.push(lineColor); // Add color for each point
+                    waterLevelChart.data.datasets[0].borderColor.push(lineColor);
 
-                    // Update table
                     tableBody.innerHTML += `
                             <tr>
                                 <td>${entry.time}</td>
@@ -66,7 +61,6 @@ function fetchWaterLevelData() {
                         `;
                 });
 
-                // Update the chart
                 waterLevelChart.update();
             }
         })
@@ -74,11 +68,7 @@ function fetchWaterLevelData() {
 }
 
 
-// Fetch data every 30 seconds (30000 milliseconds)
 setInterval(fetchWaterLevelData, 5000);
-// Initial fetch
 fetchWaterLevelData();
-// Update clock every second
 setInterval(updateClock, 1000);
-// Initial clock display
 updateClock();
