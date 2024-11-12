@@ -29,7 +29,11 @@
         <ul class="nav__list">
             <li class="home"><a href="index.php" class="nav__link active-link"><i class="fas fa-home"></i></a></li>
             <li class="route"><button id="toggleRouteSearch" class="nav__route"><i class="fa-solid fa-route"></i></button></li>
-            <li class="plus"><button class="nav__expand" id="nav-expand"><i class="phone fa-solid fa-phone"></i></button></li>
+            <li class="plus">
+                <button class="nav__expand" id="nav-expand">
+                    <i class="phone fa-solid fa-phone"></i>
+                </button>
+            </li>
             <li class="toggle">
                 <button id="toggle-directions"><i class="fa-solid fa-toggle-on"></i></button>
             </li>
@@ -73,6 +77,11 @@
         <button id="close-directions" style="float: right; border: none; background: none; cursor: pointer; font-size: 16px;">&times;</button>
         <h4>Routing Directions</h4>
         <div id="route-info"></div>
+    </div>
+
+    <div id="popup" style="display: none; position: fixed; top: 20%; left: 50%; transform: translateX(-50%); background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <button id="close-hotlines" style="float: right; border: none; background: none; cursor: pointer; font-size: 16px;">&times;</button>
+        <h4>Hotline information here...</h4>
     </div>
 
     <!-- scripts -->

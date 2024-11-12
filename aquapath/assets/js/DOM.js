@@ -110,3 +110,20 @@ document.getElementById('toggle-directions').addEventListener('click', function 
 document.getElementById('close-directions').addEventListener('click', function () {
     document.getElementById('directions').style.display = 'none';
 });
+
+// hotlines
+document.addEventListener('DOMContentLoaded', function () {
+    const expandButton = document.getElementById('nav-expand');
+    const closeButton = document.getElementById('close-hotlines');
+    const popup = document.getElementById('popup');
+
+    expandButton.addEventListener('click', function () {
+        popup.classList.add('show');
+        popup.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function () {
+        popup.classList.remove('show');
+        popup.style.display = 'none';
+    });
+});
