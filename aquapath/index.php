@@ -55,10 +55,13 @@
     <div class="routeContainer" id="routeSearchContainer" style="display: none;">
         <button id="closeRouteSearch">&times;</button>
         <h2>AquaPather</h2>
-        <input type="text" rows="2" id="origin" placeholder="Origin location">
-        <br>
+        <input type="text" rows="2" id="origin" placeholder="Enter origin">
+        <div id="origin-suggestions"></div> <!-- Suggestions dropdown for origin -->        
+
         <i class="fa-solid fa-arrow-right-long rightArrow"></i>
-        <input type="text" rows="2" id="destination" placeholder="Destination location">
+
+        <input type="text" rows="2" id="destination" placeholder="Enter destination">
+        <div id="destination-suggestions"></div>
         <br>
         <div class="routeBtn">
             <button id="searchRoute"><i class="fa-solid fa-magnifying-glass"></i>Search Route</button>
@@ -73,18 +76,10 @@
     <!-- !!! make this a button plz above the navbar -->
     <button id="locate-btn"><i class="fa-solid fa-location-dot"></i></button>
         
-    <div id="popup" style="display: none; position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%); background: none; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-        <button id="close-hotlines" style="float: right; border: none; background: none; cursor: pointer; font-size: 16px;">&times;</button>
-        <h4>Hotline Information</h4>
-        <p style="margin-top: 5px; color: #666; font-size: 14px;">
-        Hotline numbers you can call in case of Emergency:
-        <br> 
-        <strong>Longos Rescue:</strong> (044)760-6192
-        <br>
-        <strong>Malolos Rescue:</strong> (044)760-51-60
-        <br>
-        <strong>Bulacan Rescue:</strong> (044)-791-0566 
-        </p>
+    <div id="directions" style="display: none;">
+        <button id="close-directions" style="float: right; border: none; background: none; cursor: pointer; font-size: 16px;">&times;</button>
+        <h4>Routing Directions</h4>
+        <div id="route-info"></div>
     </div>
 
     <!-- hotlines -->
