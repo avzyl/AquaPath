@@ -1,36 +1,5 @@
 // DOM Elements
 // --------------------- SEARCH and SUGGESTIONS --------------------- //
-document.getElementById('searchLocation').addEventListener('input', function () {
-    const query = this.value;
-
-    if (query.length > 2) {
-        fetch(`https://nominatim.openstreetmap.org/search?format=json&limit=5&q=${query}, Philippines`)
-            .then(response => response.json())
-            .then(data => {
-                const suggestionsDiv = document.getElementById('suggestions');
-                suggestionsDiv.innerHTML = ''; // Clear previous suggestions
-
-                if (data.length > 0) {
-                    data.forEach(item => {
-                        const suggestionItem = document.createElement('div');
-                        suggestionItem.textContent = item.display_name;
-                        suggestionItem.style.cursor = 'pointer';
-                        suggestionItem.onclick = () => {
-                            setLocation(item);
-                            suggestionsDiv.innerHTML = ''; // Clear suggestions after selection
-                            suggestionsDiv.style.display = 'none'; // Hide suggestions
-                        };
-                        suggestionsDiv.appendChild(suggestionItem);
-                    });
-                    suggestionsDiv.style.display = 'block'; // Show suggestions
-                } else {
-                    suggestionsDiv.style.display = 'none'; // Hide if no suggestions
-                }
-            });
-    } else {
-        document.getElementById('suggestions').style.display = 'none'; // Hide suggestions if query is too short
-    }
-});
 
 document.getElementById('searchBtn').addEventListener('click', function () {
     const locationQuery = document.getElementById('searchLocation').value;
@@ -89,13 +58,13 @@ document.getElementById('clear-btn').addEventListener('click', clearSearch);
 // roggle route
 document.getElementById('toggleRouteSearch').addEventListener('click', function () {
     document.getElementById('searchContainer').style.display = 'none'; // Hide location search
-    document.getElementById('routeSearchContainer').style.display = 'grid'; // Show route search
+    document.getElementById('routeSearchContainer').style.display = 'block'; // Show route search
 });
 
 // close route
 document.getElementById('closeRouteSearch').addEventListener('click', function () {
     document.getElementById('routeSearchContainer').style.display = 'none'; // Hide route search
-    document.getElementById('searchContainer').style.display = 'flex'; // Show location search
+    document.getElementById('searchContainer').style.display = 'block'; // Show location search
 });
 
 
@@ -109,4 +78,20 @@ document.getElementById('toggle-directions').addEventListener('click', function 
 // close direction
 document.getElementById('close-directions').addEventListener('click', function () {
     document.getElementById('directions').style.display = 'none';
+});
+
+// hotlines
+// hotlines
+document.addEventListener('DOMContentLoaded', function () {
+    const expandButton = document.getElementById('nav-expand');
+    const closeButton = document.getElementById('close-hotlines');
+    const popup = document.getElementById('popup');
+    expandButton.addEventListener('click', function () {
+        popup.classList.add('show');
+        popup.style.display = 'block';
+    });
+    closeButton.addEventListener('click', function () {
+        popup.classList.remove('show');
+        popup.style.display = 'none';
+    });
 });

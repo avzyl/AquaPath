@@ -155,7 +155,7 @@ li {
 
 .plus {
     grid-column: 3;
- 
+
 }
 
 .toggle {
@@ -187,8 +187,7 @@ li {
         font-size: 100%;
     }
 
-    .nav__list li button .phone{
+    .nav__list li button .phone {
         font-size: 150% !important;
     }
 }
-
