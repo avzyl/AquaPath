@@ -1,3 +1,5 @@
 Array
 (
+    [decrease] => 
+    [rain] => 
 )

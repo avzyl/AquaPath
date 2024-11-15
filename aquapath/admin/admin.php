@@ -38,18 +38,72 @@ try {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <link rel="stylesheet" href="assets/css/admin.css"/>
+   
+    
+    <style>
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 10px;
+            color: #0076b6;
+        }
+
+        #waterLevel {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+            margin-right: 10px;
+            margin: 5px;
+        }
+
+        #updateColor {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #updateColor:hover {
+            background-color: #45a049;
+        }
+
+    
+
+    </style>
 </head>
 
 <body>
-    <div id="map" style="height: 600px;"></div>
+<div id="map" style="height: 600px;"></div>
 
-    <label for="waterLevel">Enter Water Level (cm): </label>
-    <input type="number" id="waterLevel" placeholder="Enter water level">
-    <button id="updateColor">Update Color</button>
+    <div class="controls">
+        <label for="waterLevel">Enter Water Level (cm): </label>
+        <input type="number" id="waterLevel" class="input-field" placeholder="Enter water level">
+        <button id="updateColor" class="primary-btn">Update Color</button>
+    </div>
 
-    <button id="rainButton" style="background-color: gray; color: white; border: none; padding: 10px 20px; border-radius: 5px;"><i class="fa-solid fa-cloud-rain"></i></button>
-    <button id="cloudButton"  style="background-color: blue; color: white; border: none; padding: 10px 20px; border-radius: 5px;"><i class="fa-solid fa-cloud"></i></button>
-    <button id="sunButton" style="background-color: yellow; color: black; border: none; padding: 10px 20px; border-radius: 5px;"><i class="fa-solid fa-sun"></i></button>
+    <div class="button-group">
+    <div class="button-group" style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
+        <button id="rainButton" 
+                style="background-color: gray; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; font-size: 16px;">
+            <i class="fa-solid fa-cloud-rain"></i>
+        </button>
+
+        <button id="cloudButton" 
+                style="background-color: blue; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; font-size: 16px;">
+            <i class="fa-solid fa-cloud"></i>
+        </button>
+
+        <button id="sunButton" 
+                style="background-color: yellow; color: black; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; font-size: 16px;">
+            <i class="fa-solid fa-sun"></i>
+        </button>
+    </div>
 
     <script>
         $(document).ready(function () {
