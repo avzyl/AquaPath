@@ -1,5 +1,3 @@
-<!-- OKAYYYYYY! -->
-
 <?php
 session_start();
 
@@ -34,6 +32,7 @@ try {
 
 <head>
     <title>Flood Monitoring</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -44,54 +43,57 @@ try {
 <body>
     <div id="map" style="height: 600px;"></div>
 
-
     <label for="waterLevel">Enter Water Level (cm): </label>
     <input type="number" id="waterLevel" placeholder="Enter water level">
     <button id="updateColor">Update Color</button>
 
-    <button id="rainButton">Rain</button>
-    <button id="cloudButton">Cloud</button>
-    <button id="sunButton">Sun</button>
-
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <button id="rainButton" style="background-color: gray; color: white; border: none; padding: 10px 20px; border-radius: 5px;"><i class="fa-solid fa-cloud-rain"></i></button>
+    <button id="cloudButton"  style="background-color: blue; color: white; border: none; padding: 10px 20px; border-radius: 5px;"><i class="fa-solid fa-cloud"></i></button>
+    <button id="sunButton" style="background-color: yellow; color: black; border: none; padding: 10px 20px; border-radius: 5px;"><i class="fa-solid fa-sun"></i></button>
 
     <script>
-        // trigger requests when buttons are pressed -- skayyy
-        $('#rainButton').click(function() {
-            $.ajax({
-                url: 'update_control_state.php',
-                method: 'POST',
-                data: { action: 'rain' },
-                success: function(response) {
-                    console.log('Rain button pressed');
-                }
+        $(document).ready(function () {
+            // trigger buttons when pressed
+            $('#rainButton').click(function () {
+                alert('Rain Button Clicked!');
             });
-        });
 
-        $('#cloudButton').click(function() {
-            $.ajax({
-                url: 'update_control_state.php',
-                method: 'POST',
-                data: { action: 'cloud' },
-                success: function(response) {
-                    console.log('Cloud button pressed');
-                }
+            // Handle Cloud button
+            $('#cloudButton').click(function () {
+                $.ajax({
+                    url: 'update_control_state.php',
+                    method: 'POST',
+                    data: { action: 'cloud' },
+                    success: function (response) {
+                        console.log('Cloud button pressed', response);
+                        alert('Cloud Button Clicked!');  // For testing purposes
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error in Cloud button AJAX:', error);
+                        alert('Cloud button request failed');
+                    }
+                });
             });
-        });
 
-        $('#sunButton').click(function() {
-            $.ajax({
-                url: 'update_control_state.php',
-                method: 'POST',
-                data: { action: 'sun' },
-                success: function(response) {
-                    console.log('Sun button pressed');
-                }
+            // Handle Sun button
+            $('#sunButton').click(function () {
+                $.ajax({
+                    url: 'update_control_state.php',
+                    method: 'POST',
+                    data: { action: 'sun' },
+                    success: function (response) {
+                        console.log('Sun button pressed', response);
+                        alert('Sun Button Clicked!');  // For testing purposes
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error in Sun button AJAX:', error);
+                        alert('Sun button request failed');
+                    }
+                });
             });
         });
     </script>
+
     <script>
         const map = L.map('map').setView([14.8713199, 120.7932753], 15);
 
