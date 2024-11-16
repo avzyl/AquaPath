@@ -893,6 +893,7 @@ document.getElementById('searchLocation').addEventListener('input', function () 
                     data.forEach(item => {
                         const suggestionItem = document.createElement('div');
                         suggestionItem.textContent = item.display_name;
+                        suggestionItem.classList.add('suggestion-item');
                         suggestionItem.style.cursor = 'pointer';
                         suggestionItem.onclick = () => {
                             setLocation(item);
@@ -910,6 +911,7 @@ document.getElementById('searchLocation').addEventListener('input', function () 
         document.getElementById('suggestions').style.display = 'none';
     }
 });
+
 
 document.getElementById('clear-btn').addEventListener('click', function () {
 
