@@ -106,10 +106,18 @@ try {
     </div>
 
     <script>
+        // trigger buttons when pressed
         $(document).ready(function () {
-            // trigger buttons when pressed
             $('#rainButton').click(function () {
-                alert('Rain Button Clicked!');
+                $.ajax({
+                    url: 'update_control_state.php',
+                    method: 'POST',
+                    data: { action: 'rain' },
+                    success: function(response) {
+                        console.log('Rain button pressed');
+                        alert('Rain Button Clicked!');
+                    }
+                });
             });
 
             // Handle Cloud button
