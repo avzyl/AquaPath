@@ -12,13 +12,13 @@ console.log("Map initialized:", map);
 
 // blik routes if hindi nagana, auq na
 const routes = [
-    // {
-    //     name: "Highway",
-    //     polyline: locations["Highway"] ? L.polyline(locations["Highway"], { color: 'green' }) : null,
-    //     status: 'safe',
-    //     waterLevel: 0,
-    //     incrementRange: { min: -2, max: 4 }
-    // },
+    {
+        name: "Highway",
+        polyline: locations["Highway"] ? L.polyline(locations["Highway"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
     {
         name: "Carmen V. de Luna Street",
         polyline: locations["Carmen V. de Luna"] ? L.polyline(locations["Carmen V. de Luna"], { color: 'green' }) : null,
@@ -549,22 +549,18 @@ function showLocation() {
                 currentLat = position.coords.latitude;
                 currentLng = position.coords.longitude;
 
-                // Center the map on the user's location
                 map.setView([currentLat, currentLng], 15);
 
-                // Add a marker for the user's location
                 const marker = L.marker([currentLat, currentLng]).addTo(map).bindPopup('You are here!').openPopup();
 
-                // Also add a circle to highlight the current location
                 L.circle([currentLat, currentLng], {
                     color: 'blue',
                     fillColor: '#30a8d8',
                     fillOpacity: 0.5,
-                    radius: 100  // Adjust the radius here (in meters)
+                    radius: 100
                 }).addTo(map);
 
-                // Set the current location as the origin (optional)
-                document.getElementById('origin').value = 'Current Location'; // You can update the input field to show "Current Location"
+                document.getElementById('origin').value = 'Current Location';
             },
             (error) => {
                 switch (error.code) {
@@ -605,9 +601,8 @@ function showSuggestions(input, suggestionsDiv) {
             location.toLowerCase().includes(inputValue)
         );
 
-        // Add the current location as a suggestion if it's not already present
         if (currentLat && currentLng && inputValue.includes('current location') === false) {
-            filteredLocations.unshift('Current Location');  // Add current location as the first suggestion
+            filteredLocations.unshift('Current Location');
         }
 
         filteredLocations.forEach(location => {
@@ -625,12 +620,12 @@ function showSuggestions(input, suggestionsDiv) {
 
 
 
-const inputElement = document.getElementById('origin');  // Assuming you have an input field with id 'origin'
-const suggestionsDiv = document.getElementById('suggestions');  // The div to show suggestions in
+const inputElement = document.getElementById('origin');
+const suggestionsDiv = document.getElementById('suggestions');
 
-// Event listener for input field
+
 inputElement.addEventListener('input', function () {
-    showSuggestions(inputElement, suggestionsDiv);  // Passing both the input element and suggestions div
+    showSuggestions(inputElement, suggestionsDiv);
 });
 
 
@@ -638,14 +633,13 @@ inputElement.addEventListener('input', function () {
 // ============================= ROUTING ============================= //
 let currentRoutingControl = null;
 
-// Function to find and display route
+
 function findRoute() {
     document.getElementById('loadingMessage').style.display = 'none';
 
     const originName = document.getElementById('origin').value;
     const destinationName = document.getElementById('destination').value;
 
-    // Use the current location as the origin if "Current Location" is selected
     let originLatLng;
     if (originName.toLowerCase() === 'current location' && currentLat && currentLng) {
         originLatLng = L.latLng(currentLat, currentLng);
@@ -669,7 +663,6 @@ function findRoute() {
 
     let isDanger = false;
 
-    // Check for dangerous routes
     for (const route of routes) {
         if (route.status === 'danger') {
             const dangerLatLngs = route.polyline.getLatLngs();
@@ -692,7 +685,6 @@ function findRoute() {
     } else {
         showToast('The selected route is safe.');
 
-        // Add the route control to the map
         currentRoutingControl = L.Routing.control({
             waypoints: [originLatLng, destinationLatLng],
             routeWhileDragging: true,
