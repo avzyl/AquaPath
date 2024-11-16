@@ -139,7 +139,7 @@ if (file_exists($historyFile)) {
         }
 
         // search functionality for easire life
-        document.getElementById('routeSearch').addEventListener('input', function() {
+        document.getElementById('routeSearch').addEventListener('input', function() { 
             const searchQuery = this.value.toLowerCase();
             const routeContainers = document.querySelectorAll('.route-container');
             
@@ -155,4 +155,4 @@ if (file_exists($historyFile)) {
     </script>
 
 </body>
-</html>
+</html> 
