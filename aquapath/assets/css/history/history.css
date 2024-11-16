@@ -89,7 +89,7 @@ td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #03afe477;
     color: white;
     font-weight: bold;
 }
@@ -147,6 +147,15 @@ canvas {
 
 .route-container:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    margin: 7px;
+    padding-left: 15px;
+    box-sizing: border-box;
 }
 
 .route-name {
@@ -154,11 +163,13 @@ canvas {
     color: #007BFF;
     font-size: 1em;
     margin: 0;
+    padding-left: 15px;
+    padding-right: 5px;
 }
 
 .route-name:hover {
     text-decoration: underline;
-}
+    }
 
 .route-details {
     display: none;
@@ -196,7 +207,7 @@ canvas {
 
     .route-name {
         font-size: 1.1em;
-        color: black;
+
     }
 
     canvas {

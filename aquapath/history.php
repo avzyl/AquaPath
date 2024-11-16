@@ -128,6 +128,20 @@ if (file_exists($historyFile)) {
                 const details = document.getElementById('details-' + routeName);
                 if (details.style.display === 'none' || details.style.display === '') {
                     details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+
+        // search functionality for easire life
+        document.getElementById('routeSearch').addEventListener('input', function() { 
+            const searchQuery = this.value.toLowerCase();
+            const routeContainers = document.querySelectorAll('.route-container');
+            
+            routeContainers.forEach(container => {
+                const routeName = container.querySelector('.route-name').textContent.toLowerCase();
+                if (routeName.includes(searchQuery)) {
+                    container.style.display = '';
                 } else {
                     details.style.display = 'none';
                 }
@@ -162,4 +176,4 @@ if (file_exists($historyFile)) {
     </script>
 
 </body>
-</html>
+</html> 

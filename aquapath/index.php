@@ -84,20 +84,20 @@
             <button id="close-hotlines">&times;</button>
         </div>
         <div class="con1">
-            <h4>National Emergency Hotline</h4>
-            <div class="box">911</div>
+            <h4>Longos Rescue:</h4>
+            <div class="box">(044)760-6192</div>
         </div>
         <div class="con2">
-            <h4>Red Cross</h4>
-            <div class="box">143</div>
+            <h4>Malolos Rescue:</h4>
+            <div class="box">(044)760-51-60</div>
         </div>
         <div class="con3">
-            <h4>NDRRMC</h4>
-            <div class="box">8911-1406</div>
+            <h4>Bulacan Rescue</h4>
+            <div class="box">(044)-791-0566</div>
         </div>
         <div class="con4">
-            <h4>Philippine Coast Guard</h4>
-            <div class="box">8517-3877</div>
+            <h4>National Emergency Hotline</h4>
+            <div class="box">911</div>
         </div>
     </div>
 
