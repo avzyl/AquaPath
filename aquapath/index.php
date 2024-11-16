@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/nav.css"/>
 
     <!-- scripts -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="assets/js/randomscript2.js" defer></script>
     <script src="assets/js/DOM.js" defer></script>
@@ -24,16 +25,11 @@
 
 <body>
     <!--=============== NAVBAR ===============-->
-    <!-- !!! please make the navbar responsive for larger screens -->
     <nav class="nav">
         <ul class="nav__list">
-            <li class="home"><a href="index.php" class="nav__link active-link"><i class="fas fa-home"></i></a></li>
-            <li class="route"><button id="toggleRouteSearch" class="nav__route"><i class="fa-solid fa-route"></i></button></li>
-            <li class="plus">
-                <button class="nav__expand" id="nav-expand">
-                    <i class="phone fa-solid fa-phone"></i>
-                </button>
-            </li>
+            <li class="home"><a href="index.php" class="nav__link active-link"><i class="homie fas fa-home"></i></a></li>
+            <li class="route"><button id="toggleRouteSearch" class="nav__route"><i class="routing fa-solid fa-route"></i></button></li>
+            <li class="plus"><button class="nav__expand" id="nav-expand"><i class="phone fa-solid fa-phone"></i></button></li>
             <li class="toggle">
                 <button id="toggle-directions"><i class="fa-solid fa-toggle-on"></i></button>
             </li>
@@ -77,20 +73,45 @@
     <button id="locate-btn"><i class="fa-solid fa-location-dot"></i></button>
         
     <div id="directions" style="display: none;">
-        <button id="close-directions" style="float: right; border: none; background: none; cursor: pointer; font-size: 16px;">&times;</button>
-        <h4>Routing Directions</h4>
-        <div id="route-info"></div>
+        <button id="close-directions">&times;</button>
+        <div id="route-info">paano magkaron ng sample data d2</div>
     </div>
 
     <!-- hotlines -->
-    <div id="popup" style="display: none; position: fixed; top: 20%; left: 50%; transform: translateX(-50%); background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-        <button id="close-hotlines" style="float: right; border: none; background: none; cursor: pointer; font-size: 16px;">&times;</button>
-        <h4>Hotline information here...</h4>
+    <div id="popup" style="display: none;">
+        <div class="contitle">
+            <h4 class="title">Need Help?</h4>
+            <button id="close-hotlines">&times;</button>
+        </div>
+        <div class="con1">
+            <h4>National Emergency Hotline</h4>
+            <div class="box">911</div>
+        </div>
+        <div class="con2">
+            <h4>Red Cross</h4>
+            <div class="box">143</div>
+        </div>
+        <div class="con3">
+            <h4>NDRRMC</h4>
+            <div class="box">8911-1406</div>
+        </div>
+        <div class="con4">
+            <h4>Philippine Coast Guard</h4>
+            <div class="box">8517-3877</div>
+        </div>
     </div>
 
     <!-- scripts -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1200
+            }
+        );
+    </script>
 </body>
 </html>

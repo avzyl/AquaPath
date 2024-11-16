@@ -1,23 +1,23 @@
-const ctx = document.getElementById('waterLevelChart').getContext('2d');
-const waterLevelChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: [],
-        datasets: [{
-            label: 'Water Level',
-            data: [],
-            borderWidth: 2,
-            fill: false
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
+// const ctx = document.getElementById('waterLevelChart').getContext('2d');
+// const waterLevelChart = new Chart(ctx, {
+//     type: 'line',
+//     data: {
+//         labels: [],
+//         datasets: [{
+//             label: 'Water Level',
+//             data: [],
+//             borderWidth: 2,
+//             fill: false
+//         }]
+//     },
+//     options: {
+//         scales: {
+//             y: {
+//                 beginAtZero: true
+//             }
+//         }
+//     }
+// });
 
 function updateClock() {
     const now = new Date();
