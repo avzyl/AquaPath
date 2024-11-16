@@ -1,5 +1,3 @@
 Array
 (
-    [decrease] => 
-    [rain] => 
 )
