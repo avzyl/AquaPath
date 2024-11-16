@@ -74,7 +74,7 @@
         
     <div id="directions" style="display: none;">
         <button id="close-directions">&times;</button>
-        <div id="route-info">paano magkaron ng sample data d2</div>
+        <div id="route-info"></div>
     </div>
 
     <!-- hotlines -->

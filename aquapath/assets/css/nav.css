@@ -235,10 +235,20 @@ li {
 
     #origin-suggestions {
         font-size: 70%;
+        cursor: pointer;
+        color: #444444;
+        transition: 0.2s;
     }
 
     #destination-suggestions {
         font-size: 70%;
         grid-column: 3;
+        cursor: pointer;
+        color: #444;
+        transition: 0.2s;
+    }
+
+    #directions {
+        font-size: 14px;
     }
 }

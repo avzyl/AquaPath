@@ -134,11 +134,11 @@ if (file_exists($historyFile)) {
         }
 
         // search functionality for easire life
-        document.getElementById('routeSearch').addEventListener('input', function() { 
+        document.getElementById('routeSearch').addEventListener('input'), function() { 
             const searchQuery = this.value.toLowerCase();
             const routeContainers = document.querySelectorAll('.route-container');
             
-            routeContainers.forEach(container => {
+            routeContainers.forEach(container) => {
                 const routeName = container.querySelector('.route-name').textContent.toLowerCase();
                 if (routeName.includes(searchQuery)) {
                     container.style.display = '';
@@ -161,6 +161,7 @@ if (file_exists($historyFile)) {
                     }
                 });
             });
+        }
         </script>
     </section>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
