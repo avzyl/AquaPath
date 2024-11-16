@@ -539,16 +539,32 @@ function showToast(message) {
 }
 
 // user location
+let currentLat = null;
+let currentLng = null;
+
 function showLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             (position) => {
-                const lat = position.coords.latitude;
-                const lng = position.coords.longitude;
+                currentLat = position.coords.latitude;
+                currentLng = position.coords.longitude;
 
-                map.setView([lat, lng], 15);
+                // Center the map on the user's location
+                map.setView([currentLat, currentLng], 15);
 
-                L.marker([lat, lng]).addTo(map).bindPopup('You are here!').openPopup();
+                // Add a marker for the user's location
+                const marker = L.marker([currentLat, currentLng]).addTo(map).bindPopup('You are here!').openPopup();
+
+                // Also add a circle to highlight the current location
+                L.circle([currentLat, currentLng], {
+                    color: 'blue',
+                    fillColor: '#30a8d8',
+                    fillOpacity: 0.5,
+                    radius: 100  // Adjust the radius here (in meters)
+                }).addTo(map);
+
+                // Set the current location as the origin (optional)
+                document.getElementById('origin').value = 'Current Location'; // You can update the input field to show "Current Location"
             },
             (error) => {
                 switch (error.code) {
@@ -582,13 +598,17 @@ document.getElementById('locate-btn').addEventListener('click', showLocation);
 // suggestions
 function showSuggestions(input, suggestionsDiv) {
     const inputValue = input.value.toLowerCase();
-    console.log('suggestionsDiv:', suggestionsDiv); // Check if suggestionsDiv is null or not
-
     suggestionsDiv.innerHTML = '';
+
     if (inputValue) {
         const filteredLocations = Object.keys(locations).filter(location =>
             location.toLowerCase().includes(inputValue)
         );
+
+        // Add the current location as a suggestion if it's not already present
+        if (currentLat && currentLng && inputValue.includes('current location') === false) {
+            filteredLocations.unshift('Current Location');  // Add current location as the first suggestion
+        }
 
         filteredLocations.forEach(location => {
             const suggestionItem = document.createElement('div');
@@ -602,6 +622,7 @@ function showSuggestions(input, suggestionsDiv) {
         });
     }
 }
+
 
 
 const inputElement = document.getElementById('origin');  // Assuming you have an input field with id 'origin'
@@ -624,26 +645,31 @@ function findRoute() {
     const originName = document.getElementById('origin').value;
     const destinationName = document.getElementById('destination').value;
 
-    const originRoute = routes.find(route => route.name.toLowerCase() === originName.toLowerCase());
+    // Use the current location as the origin if "Current Location" is selected
+    let originLatLng;
+    if (originName.toLowerCase() === 'current location' && currentLat && currentLng) {
+        originLatLng = L.latLng(currentLat, currentLng);
+    } else {
+        const originRoute = routes.find(route => route.name.toLowerCase() === originName.toLowerCase());
+        if (originRoute) {
+            originLatLng = originRoute.polyline ? originRoute.polyline.getLatLngs()[0] : originRoute.coordinates;
+        } else {
+            showToast("Please enter a valid origin.");
+            return;
+        }
+    }
+
     const destinationRoute = routes.find(route => route.name.toLowerCase() === destinationName.toLowerCase());
-
-    if (!originRoute || !destinationRoute) {
-        showToast("Please enter valid location names.");
+    if (!destinationRoute) {
+        showToast("Please enter a valid destination.");
         return;
     }
 
-    if (originRoute.waterLevel >= 15 || destinationRoute.waterLevel >= 15) {
-        showToast("One or both of the selected routes are impassable due to high water levels.");
-        return;
-    } else if (originRoute.waterLevel >= 10 || destinationRoute.waterLevel >= 10) {
-        showToast("One or both of the selected routes are risky due to water levels.");
-    }
-
-    const originLatLng = originRoute.polyline ? originRoute.polyline.getLatLngs()[0] : originRoute.coordinates;
     const destinationLatLng = destinationRoute.polyline ? destinationRoute.polyline.getLatLngs()[0] : destinationRoute.coordinates;
 
     let isDanger = false;
 
+    // Check for dangerous routes
     for (const route of routes) {
         if (route.status === 'danger') {
             const dangerLatLngs = route.polyline.getLatLngs();
@@ -666,6 +692,7 @@ function findRoute() {
     } else {
         showToast('The selected route is safe.');
 
+        // Add the route control to the map
         currentRoutingControl = L.Routing.control({
             waypoints: [originLatLng, destinationLatLng],
             routeWhileDragging: true,
