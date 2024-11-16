@@ -117,6 +117,27 @@ export const routes = [
         incrementRange: { min: -2, max: 4 }
     },
     {
+        name: "Street 13",
+        polyline: locations["MAV Streets"]["Street 13"] ? L.polyline(locations["MAV Streets"]["Street 13"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 14",
+        polyline: locations["MAV Streets"]["Street 14"] ? L.polyline(locations["MAV Streets"]["Street 14"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 15",
+        polyline: locations["MAV Streets"]["Street 15"] ? L.polyline(locations["MAV Streets"]["Street 15"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
         name: "Calumpang-Longos",
         polyline: locations["Calumpang-Longos"] ? L.polyline(locations["Calumpang-Longos"], { color: 'green' }) : null,
         status: 'safe',
