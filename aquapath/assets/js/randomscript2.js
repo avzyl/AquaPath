@@ -2,15 +2,13 @@
 
 import { map } from './maps.js';
 import * as Constants from './const2.js';
-const { locations, boundaries } = Constants;
+const { locations, boundaries, additionalLocations } = Constants;
 
 // checker
 console.log("Map initialized:", map);
 // console.log("Origin Route:", originRoute);
 // console.log("Destination Route:", destinationRoute);
 
-
-// blik routes if hindi nagana, auq na
 const routes = [
     {
         name: "Highway",
@@ -413,20 +411,20 @@ routes.forEach(route => {
 // additionals
 let boundariesLine = L.polyline(boundaries, { color: 'black', weight: 3 }).addTo(map);
 
-function addAdditionalLocations() {
-    if (Constants.additionalLocations && Object.keys(Constants.additionalLocations).length > 0) {
-        Object.keys(Constants.additionalLocations).forEach(locationName => {
-            const latLng = Constants.additionalLocations[locationName];
-            L.marker(latLng).addTo(map)
-                .bindPopup(locationName)
-                .openPopup();
-        });
-    } else {
-        console.error("No additional locations available.");
-    }
-}
+// function addAdditionalLocations() {
+//     if (Constants.additionalLocations && Object.keys(Constants.additionalLocations).length > 0) {
+//         Object.keys(Constants.additionalLocations).forEach(locationName => {
+//             const latLng = Constants.additionalLocations[locationName];
+//             L.marker(latLng).addTo(map)
+//                 .bindPopup(locationName)
+//                 .openPopup();
+//         });
+//     } else {
+//         console.error("No additional locations available.");
+//     }
+// }
 
-addAdditionalLocations();
+// addAdditionalLocations();
 
 // state checker
 let rainActive = false;
@@ -538,13 +536,14 @@ function showToast(message) {
     setTimeout(() => toast.remove(), 3000);
 }
 
-// user location
+// user location - real-time (sana)
 let currentLat = null;
 let currentLng = null;
+let locationWatcher = null;
 
 function showLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
+        locationWatcher = navigator.geolocation.watchPosition(
             (position) => {
                 currentLat = position.coords.latitude;
                 currentLng = position.coords.longitude;
@@ -597,7 +596,12 @@ function showSuggestions(input, suggestionsDiv) {
     suggestionsDiv.innerHTML = '';
 
     if (inputValue) {
-        const filteredLocations = Object.keys(locations).filter(location =>
+        const allLocations = {
+            ...locations,
+            ...Constants.additionalLocations
+        };
+
+        const filteredLocations = Object.keys(allLocations).filter(location =>
             location.toLowerCase().includes(inputValue)
         );
 
@@ -620,6 +624,7 @@ function showSuggestions(input, suggestionsDiv) {
 
 
 
+
 const inputElement = document.getElementById('origin');
 const suggestionsDiv = document.getElementById('suggestions');
 
@@ -633,18 +638,22 @@ inputElement.addEventListener('input', function () {
 // ============================= ROUTING ============================= //
 let currentRoutingControl = null;
 
-
 function findRoute() {
     document.getElementById('loadingMessage').style.display = 'none';
 
     const originName = document.getElementById('origin').value;
     const destinationName = document.getElementById('destination').value;
 
+    const allLocations = {
+        ...locations,
+        ...Constants.additionalLocations
+    };
+
     let originLatLng;
     if (originName.toLowerCase() === 'current location' && currentLat && currentLng) {
         originLatLng = L.latLng(currentLat, currentLng);
     } else {
-        const originRoute = routes.find(route => route.name.toLowerCase() === originName.toLowerCase());
+        const originRoute = findLocation(originName, allLocations);
         if (originRoute) {
             originLatLng = originRoute.polyline ? originRoute.polyline.getLatLngs()[0] : originRoute.coordinates;
         } else {
@@ -653,7 +662,7 @@ function findRoute() {
         }
     }
 
-    const destinationRoute = routes.find(route => route.name.toLowerCase() === destinationName.toLowerCase());
+    const destinationRoute = findLocation(destinationName, allLocations);
     if (!destinationRoute) {
         showToast("Please enter a valid destination.");
         return;
@@ -704,6 +713,13 @@ function findRoute() {
         });
     }
 }
+
+function findLocation(name, allLocations) {
+    return Object.keys(allLocations).find(location =>
+        location.toLowerCase() === name.toLowerCase()
+    );
+}
+
 
 // Event Listeners
 document.getElementById('searchRoute').addEventListener('click', findRoute);
