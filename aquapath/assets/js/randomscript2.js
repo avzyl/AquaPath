@@ -2,7 +2,7 @@
 
 import { map } from './maps.js';
 import * as Constants from './const2.js';
-const { locations, boundaries } = Constants;
+const { locations, boundaries, outLocations } = Constants;
 
 const routes = [
     // {
@@ -389,9 +389,362 @@ const routes = [
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ellsworth Street",
+        polyline: locations["Ellsworth Street"] ? L.polyline(locations["Ellsworth Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ellis Street",
+        polyline: locations["Ellis Street"] ? L.polyline(locations["Ellis Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Elwood Street",
+        polyline: locations["Elwood Street"] ? L.polyline(locations["Elwood Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Floyd Street",
+        polyline: locations["Floyd Street"] ? L.polyline(locations["Floyd Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ernest Street",
+        polyline: locations["Ernest Street"] ? L.polyline(locations["Ernest Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ethan Street",
+        polyline: locations["Ethan Street"] ? L.polyline(locations["Ethan Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Earl Street",
+        polyline: locations["Earl Street"] ? L.polyline(locations["Earl Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Lesley Street",
+        polyline: locations["Lesley Street"] ? L.polyline(locations["Lesley Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Jasper Street",
+        polyline: locations["Jasper Street"] ? L.polyline(locations["Jasper Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Hilton Street",
+        polyline: locations["Hilton Street"] ? L.polyline(locations["Hilton Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Howard Street",
+        polyline: locations["Howard Street"] ? L.polyline(locations["Howard Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Hershell Street",
+        polyline: locations["Hershell Street"] ? L.polyline(locations["Hershell Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Herman Street",
+        polyline: locations["Herman Street"] ? L.polyline(locations["Herman Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Health Street",
+        polyline: locations["Health Street"] ? L.polyline(locations["Health Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Haywood Street",
+        polyline: locations["Haywood Street"] ? L.polyline(locations["Haywood Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Harold Street",
+        polyline: locations["Harold Street"] ? L.polyline(locations["Harold Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Trenton Street",
+        polyline: locations["Trenton Street"] ? L.polyline(locations["Trenton Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Tracy Street",
+        polyline: locations["Tracy Street"] ? L.polyline(locations["Tracy Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Timothy Street",
+        polyline: locations["Timothy Street"] ? L.polyline(locations["Timothy Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Tobby Street",
+        polyline: locations["Tobby Street"] ? L.polyline(locations["Tobby Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Thurman Street",
+        polyline: locations["Thurman Street"] ? L.polyline(locations["Thurman Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Vincent Street",
+        polyline: locations["Vincent Street"] ? L.polyline(locations["Vincent Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Virgil Street",
+        polyline: locations["Virgil Street"] ? L.polyline(locations["Virgil Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Warren Street",
+        polyline: locations["Warren Street"] ? L.polyline(locations["Warren Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Wallace Street",
+        polyline: locations["Wallace Street"] ? L.polyline(locations["Wallace Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Walter Street",
+        polyline: locations["Walter Street"] ? L.polyline(locations["Walter Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Walker Street",
+        polyline: locations["Walker Street"] ? L.polyline(locations["Walker Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Mitchell Street",
+        polyline: locations["Mitchell Street"] ? L.polyline(locations["Mitchell Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Morris Street",
+        polyline: locations["Morris Street"] ? L.polyline(locations["Morris Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Geoffrey Street",
+        polyline: locations["Geoffrey Street"] ? L.polyline(locations["Geoffrey Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Lindsey Street",
+        polyline: locations["Lindsey Street"] ? L.polyline(locations["Lindsey Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Linwood Street",
+        polyline: locations["Linwood Street"] ? L.polyline(locations["Linwood Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Carson Street",
+        polyline: locations["Carson Street"] ? L.polyline(locations["Carson Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Murray Street",
+        polyline: locations["Murray Street"] ? L.polyline(locations["Murray Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Myron Street",
+        polyline: locations["Myron Street"] ? L.polyline(locations["Myron Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Nathan Street",
+        polyline: locations["Nathan Street"] ? L.polyline(locations["Nathan Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Nevine Street",
+        polyline: locations["Nevine Street"] ? L.polyline(locations["Nevine Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Reid Street",
+        polyline: locations["Reid Street"] ? L.polyline(locations["Reid Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ralph Street",
+        polyline: locations["Ralph Street"] ? L.polyline(locations["Ralph Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Randall Street",
+        polyline: locations["Randall Street"] ? L.polyline(locations["Randall Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Parker Street",
+        polyline: locations["Parker Street"] ? L.polyline(locations["Parker Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Paul Street",
+        polyline: locations["Paul Street"] ? L.polyline(locations["Paul Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Chaunsey",
+        polyline: locations["Chaunsey"] ? L.polyline(locations["Chaunsey"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Orville Street",
+        polyline: locations["Orville Street"] ? L.polyline(locations["Orville Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Scott Street",
+        polyline: locations["Scott Street"] ? L.polyline(locations["Scott Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Sanford Street",
+        polyline: locations["Sanford Street"] ? L.polyline(locations["Sanford Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Robin Street",
+        polyline: locations["Robin Street"] ? L.polyline(locations["Robin Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Railey Street",
+        polyline: locations["Railey Street"] ? L.polyline(locations["Railey Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Rich Street",
+        polyline: locations["Rich Street"] ? L.polyline(locations["Rich Street"], { color: 'green' }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
     }
 
+
 ];
+
+const outRoutes = [
+    {
+        name: "Geoffrey Street",
+        polyline: outLocations["Geoffrey Street"] ? L.polyline(outLocations["Geoffrey Street"], { color: 'white', fillOpacity: 0.2 }) : null
+
+
+    }
+]
 
 // routes
 routes.forEach(route => {
@@ -400,6 +753,14 @@ routes.forEach(route => {
         route.polyline.bindPopup(`<b>${route.name}</b><br>Status: ${route.status}<br>Water Level: ${route.waterLevel} cm`);
     } else {
         console.error(`Polyline for ${route.name} not created: Invalid location data.`);
+    }
+});
+
+outRoutes.forEach(outRoute => {
+    if (outRoute.polyline) {
+        outRoute.polyline.addTo(map);
+    } else {
+        console.error(`Polyline for ${outRoute.name} not created: Invalid location data.`);
     }
 });
 
@@ -422,58 +783,50 @@ let boundariesLine = L.polyline(boundaries, { color: 'black', weight: 3 }).addTo
 // addAdditionalLocations();
 
 // state checker
-let rainActive = false;
-let decreaseWaterLevel = false;
+// let rainActive = false;
+// let decreaseWaterLevel = false;
 
-function checkState() {
-    $.ajax({
-        url: 'assets/php/functions/get_control_state.php',
-        method: 'GET',
-        success: function (response) {
-            const state = JSON.parse(response);
-            console.log("Fetched state from server:", state);
+// function checkState() {
+//     $.ajax({
+//         url: 'assets/php/functions/get_control_state.php',
+//         method: 'GET',
+//         success: function (response) {
+//             const state = JSON.parse(response);
+//             console.log("Fetched state from server:", state);
 
-            rainActive = state.rain;
-            decreaseWaterLevel = state.decrease;
+//             rainActive = state.rain;
+//             decreaseWaterLevel = state.decrease;
 
-            console.log("Rain Active:", rainActive);
-            console.log("Decrease Water Level Active:", decreaseWaterLevel);
-        }
-    });
-}
+//             console.log("Rain Active:", rainActive);
+//             console.log("Decrease Water Level Active:", decreaseWaterLevel);
+//         }
+//     });
+// }
 
 // increment
+const MAX_HISTORY_ENTRIES = 100;
+const MAX_DATA_AGE_DAYS = 30;
+const MAX_DATA_AGE_MS = MAX_DATA_AGE_DAYS * 24 * 60 * 60 * 1000;
 
-// Define constants for cleaning up localStorage
-const MAX_HISTORY_ENTRIES = 100;   // Maximum number of entries to store in localStorage
-const MAX_DATA_AGE_DAYS = 30;      // Maximum age of data in days (older data will be removed)
-const MAX_DATA_AGE_MS = MAX_DATA_AGE_DAYS * 24 * 60 * 60 * 1000; // Convert days to milliseconds
 
-// Function to generate a random increment within the provided range
 function getRandomIncrement(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Update water levels every cycle (e.g., every 5 seconds or on button click)
 function updateWaterLevels() {
     routes.forEach(route => {
         let increment = 0;
 
         if (rainActive) {
-            // If rain is active, increment by a random value within the increment range
             increment = getRandomIncrement(route.incrementRange.min, route.incrementRange.max);
         } else if (!rainActive && decreaseWaterLevel) {
-            // If rain is not active and water level should decrease
             increment = getRandomIncrement(route.incrementRange.min, route.incrementRange.max);
         }
 
-        // Update the water level for the route
         route.waterLevel += increment;
 
-        // Ensure water level stays within the range [0, 100]
         route.waterLevel = Math.max(0, Math.min(100, route.waterLevel));
 
-        // Determine the color and status based on the current water level
         let routeColor = 'green';
         let routeStatus = 'Passable';
         if (route.waterLevel >= 15) {
@@ -484,12 +837,10 @@ function updateWaterLevels() {
             routeStatus = 'Risky';
         }
 
-        // Update the polyline's style based on the water level
         if (route.polyline) {
             route.polyline.setStyle({ color: routeColor });
         }
 
-        // Update the popup content for the route
         if (route.polyline && route.polyline.getPopup()) {
             route.polyline.getPopup().setContent(`
                 <b>${route.name}</b><br>
@@ -498,36 +849,29 @@ function updateWaterLevels() {
             `);
         }
 
-        // Save water level to history
         saveWaterLevelToHistory(route);
     });
 }
 
-// Save water level history with cleanup to avoid quota exceeded errors
 function saveWaterLevelToHistory(route) {
-    // Retrieve the current history (or an empty array if none exists)
     let waterLevelsHistory = JSON.parse(localStorage.getItem('waterLevelsHistory')) || [];
 
-    // Add the new water level data (for this route)
     waterLevelsHistory.push({
         routeName: route.name,
         waterLevel: route.waterLevel,
         timestamp: new Date().toISOString()
     });
 
-    // Remove old entries based on the timestamp (age of data)
     const currentTime = new Date().getTime();
     waterLevelsHistory = waterLevelsHistory.filter(entry => {
         const entryTime = new Date(entry.timestamp).getTime();
-        return (currentTime - entryTime) <= MAX_DATA_AGE_MS; // Keep only entries within the age limit
+        return (currentTime - entryTime) <= MAX_DATA_AGE_MS;
     });
 
-    // If the array exceeds the maximum size, remove the oldest entries
     if (waterLevelsHistory.length > MAX_HISTORY_ENTRIES) {
-        waterLevelsHistory.shift(); // Remove the oldest entry (first in the array)
+        waterLevelsHistory.shift();
     }
 
-    // Save the updated history back to localStorage
     try {
         localStorage.setItem('waterLevelsHistory', JSON.stringify(waterLevelsHistory));
     } catch (error) {
