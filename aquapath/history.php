@@ -111,7 +111,7 @@ if (file_exists($historyFile)) {
                                     label: '<?php echo htmlspecialchars($routeName); ?> - Water Levels',
                                     data: routeWaterLevels,
                                     borderColor: 'blue',
-                                    fill: false
+                                    fill: true
                                 }]
                             }
                         });
