@@ -38,9 +38,176 @@ try {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="assets/css/admin.css"/>
-    
+
+ <style>
+            #map {
+    height: 40vh; /* Set map height relative to the viewport */
+    width: 100%;  /* Full width */
+}
+
+.controls {
+    position: absolute;
+    bottom: 50px;  /* Adjusted for better mobile display */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 10;
+    padding: 0 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.controls label {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #0076b6;
+    margin: 10px;
+}
+
+.controls .input-field {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 150px;
+    margin: 5px 10px 5px 0;
+}
+
+.primary-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #45a049;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 100%; /* Make the button group responsive */
+    margin-left: 700px;
+}
+
+.icon-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    font-size: 1rem; /* Scalable font size */
+}
+
+.icon-btn:hover {
+    transform: scale(1.1);
+}
+
+.rain {
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cloud {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.sun {
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.sun:hover {
+    background-color: orange;
+    color: white;
+}
+
+.cloud:hover {
+    background-color: lightblue;
+}
+
+.rain:hover {
+    background-color: darkgray;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    #map {
+        height: 50vh; /* Map height for small screens */
+    }
+
+    .controls {
+        bottom: 30px;
+        flex-direction: row; /* Stack input field and button vertically */
+        align-items: center;
+    }
+
+    .controls label,
+    .controls .input-field,
+    .primary-btn {
+        font-size: 1rem;
+        margin: 5px 0;
+        bottom: 10px;
+    }
+
+    .button-group {
+        bottom: 3px;
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .icon-btn {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .controls label {
+        font-size: 1rem;
+    }
+
+    .controls .input-field {
+        width: 120px; /* Narrow input field for small screens */
+    }
+
+    .primary-btn {
+        font-size: 1rem;
+    }
+
+    .button-group {
+        bottom: 15px;
+        gap: 5px;
+    }
+
+    .icon-btn {
+        font-size: 1rem;
+    }
+}
+
+</style>
 </head>
 
 <body>
@@ -89,7 +256,7 @@ try {
                     data: { action: 'cloud' },
                     success: function (response) {
                         console.log('Cloud button pressed', response);
-                        alert('Cloud Button Clicked!');  // For testing purposes
+                        alert('Cloud Button Clicked!');  
                     },
                     error: function (xhr, status, error) {
                         console.error('Error in Cloud button AJAX:', error);
