@@ -7,728 +7,728 @@ const { locations, boundaries, outLocations } = Constants;
 const routes = [
     // {
     //     name: "Highway",
-    //     polyline: locations["Highway"] ? L.polyline(locations["Highway"], { color: 'green' }) : null,
+    //     polyline: locations["Highway"] ? L.polyline(locations["Highway"], { color: 'green', opacity: 0.6 }) : null,
     //     status: 'safe',
     //     waterLevel: 0,
     //     incrementRange: { min: -2, max: 4 }
     // },
     {
         name: "Carmen V. de Luna Street",
-        polyline: locations["Carmen V. de Luna"] ? L.polyline(locations["Carmen V. de Luna"], { color: 'green' }) : null,
+        polyline: locations["Carmen V. de Luna"] ? L.polyline(locations["Carmen V. de Luna"], { color: 'green', opacity: 0.6 }) : null,
         status: 'Passable',
         waterLevel: 0,
         incrementRange: { min: -3, max: 5 }
     },
     {
         name: "McArthur Village Main Road",
-        polyline: locations["McArthur Village Main Road"] ? L.polyline(locations["McArthur Village Main Road"], { color: 'green' }) : null,
+        polyline: locations["McArthur Village Main Road"] ? L.polyline(locations["McArthur Village Main Road"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 1",
-        polyline: locations["MAV Streets"]["Street 1"] ? L.polyline(locations["MAV Streets"]["Street 1"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 1"] ? L.polyline(locations["MAV Streets"]["Street 1"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 2",
-        polyline: locations["MAV Streets"]["Street 2"] ? L.polyline(locations["MAV Streets"]["Street 2"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 2"] ? L.polyline(locations["MAV Streets"]["Street 2"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 3",
-        polyline: locations["MAV Streets"]["Street 3"] ? L.polyline(locations["MAV Streets"]["Street 3"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 3"] ? L.polyline(locations["MAV Streets"]["Street 3"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 4",
-        polyline: locations["MAV Streets"]["Street 4"] ? L.polyline(locations["MAV Streets"]["Street 4"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 4"] ? L.polyline(locations["MAV Streets"]["Street 4"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 5",
-        polyline: locations["MAV Streets"]["Street 5"] ? L.polyline(locations["MAV Streets"]["Street 5"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 5"] ? L.polyline(locations["MAV Streets"]["Street 5"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 6",
-        polyline: locations["MAV Streets"]["Street 6"] ? L.polyline(locations["MAV Streets"]["Street 6"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 6"] ? L.polyline(locations["MAV Streets"]["Street 6"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 7",
-        polyline: locations["MAV Streets"]["Street 7"] ? L.polyline(locations["MAV Streets"]["Street 7"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 7"] ? L.polyline(locations["MAV Streets"]["Street 7"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 8",
-        polyline: locations["MAV Streets"]["Street 8"] ? L.polyline(locations["MAV Streets"]["Street 8"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 8"] ? L.polyline(locations["MAV Streets"]["Street 8"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 9",
-        polyline: locations["MAV Streets"]["Street 9"] ? L.polyline(locations["MAV Streets"]["Street 9"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 9"] ? L.polyline(locations["MAV Streets"]["Street 9"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 10",
-        polyline: locations["MAV Streets"]["Street 10"] ? L.polyline(locations["MAV Streets"]["Street 10"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 10"] ? L.polyline(locations["MAV Streets"]["Street 10"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 11",
-        polyline: locations["MAV Streets"]["Street 11"] ? L.polyline(locations["MAV Streets"]["Street 11"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 11"] ? L.polyline(locations["MAV Streets"]["Street 11"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 12",
-        polyline: locations["MAV Streets"]["Street 12"] ? L.polyline(locations["MAV Streets"]["Street 12"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 12"] ? L.polyline(locations["MAV Streets"]["Street 12"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 13",
-        polyline: locations["MAV Streets"]["Street 13"] ? L.polyline(locations["MAV Streets"]["Street 13"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 13"] ? L.polyline(locations["MAV Streets"]["Street 13"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 14",
-        polyline: locations["MAV Streets"]["Street 14"] ? L.polyline(locations["MAV Streets"]["Street 14"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 14"] ? L.polyline(locations["MAV Streets"]["Street 14"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Street 15",
-        polyline: locations["MAV Streets"]["Street 15"] ? L.polyline(locations["MAV Streets"]["Street 15"], { color: 'green' }) : null,
+        polyline: locations["MAV Streets"]["Street 15"] ? L.polyline(locations["MAV Streets"]["Street 15"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Calumpang-Longos",
-        polyline: locations["Calumpang-Longos"] ? L.polyline(locations["Calumpang-Longos"], { color: 'green' }) : null,
+        polyline: locations["Calumpang-Longos"] ? L.polyline(locations["Calumpang-Longos"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "San Jose Village",
-        polyline: locations["San Jose Village"] ? L.polyline(locations["San Jose Village"], { color: 'green' }) : null,
+        polyline: locations["San Jose Village"] ? L.polyline(locations["San Jose Village"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Iba-Longos",
-        polyline: locations["Iba-Longos"] ? L.polyline(locations["Iba-Longos"], { color: 'green' }) : null,
+        polyline: locations["Iba-Longos"] ? L.polyline(locations["Iba-Longos"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Carmen V. de Luna",
-        polyline: locations["Carmen V. de Luna"] ? L.polyline(locations["Carmen V. de Luna"], { color: 'green' }) : null,
+        polyline: locations["Carmen V. de Luna"] ? L.polyline(locations["Carmen V. de Luna"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Hangga Street",
-        polyline: locations["Hangga Street"] ? L.polyline(locations["Hangga Street"], { color: 'green' }) : null,
+        polyline: locations["Hangga Street"] ? L.polyline(locations["Hangga Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Jayson Street",
-        polyline: locations["Jayson Street"] ? L.polyline(locations["Jayson Street"], { color: 'green' }) : null,
+        polyline: locations["Jayson Street"] ? L.polyline(locations["Jayson Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Jerell Street",
-        polyline: locations["Jerell Street"] ? L.polyline(locations["Jerell Street"], { color: 'green' }) : null,
+        polyline: locations["Jerell Street"] ? L.polyline(locations["Jerell Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Jermaine Street",
-        polyline: locations["Jermaine Street"] ? L.polyline(locations["Jermaine Street"], { color: 'green' }) : null,
+        polyline: locations["Jermaine Street"] ? L.polyline(locations["Jermaine Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Kenneth Street",
-        polyline: locations["Kenneth Street"] ? L.polyline(locations["Kenneth Street"], { color: 'green' }) : null,
+        polyline: locations["Kenneth Street"] ? L.polyline(locations["Kenneth Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Kendrick Street",
-        polyline: locations["Kendrick Street"] ? L.polyline(locations["Kendrick Street"], { color: 'green' }) : null,
+        polyline: locations["Kendrick Street"] ? L.polyline(locations["Kendrick Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Justin Street",
-        polyline: locations["Justin Street"] ? L.polyline(locations["Justin Street"], { color: 'green' }) : null,
+        polyline: locations["Justin Street"] ? L.polyline(locations["Justin Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Kendall Street",
-        polyline: locations["Kendall Street"] ? L.polyline(locations["Kendall Street"], { color: 'green' }) : null,
+        polyline: locations["Kendall Street"] ? L.polyline(locations["Kendall Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Keenan Street",
-        polyline: locations["Keenan Street"] ? L.polyline(locations["Keenan Street"], { color: 'green' }) : null,
+        polyline: locations["Keenan Street"] ? L.polyline(locations["Keenan Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Keith Street",
-        polyline: locations["Keith Street"] ? L.polyline(locations["Keith Street"], { color: 'green' }) : null,
+        polyline: locations["Keith Street"] ? L.polyline(locations["Keith Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Kevin Street",
-        polyline: locations["Kevin Street"] ? L.polyline(locations["Kevin Street"], { color: 'green' }) : null,
+        polyline: locations["Kevin Street"] ? L.polyline(locations["Kevin Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Kurtis Street",
-        polyline: locations["Kurtis Street"] ? L.polyline(locations["Kurtis Street"], { color: 'green' }) : null,
+        polyline: locations["Kurtis Street"] ? L.polyline(locations["Kurtis Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Kirby Street",
-        polyline: locations["Kirby Street"] ? L.polyline(locations["Kirby Street"], { color: 'green' }) : null,
+        polyline: locations["Kirby Street"] ? L.polyline(locations["Kirby Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Laverne Street",
-        polyline: locations["Laverne Street"] ? L.polyline(locations["Laverne Street"], { color: 'green' }) : null,
+        polyline: locations["Laverne Street"] ? L.polyline(locations["Laverne Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Mc Kinley Street",
-        polyline: locations["Mc Kinley Street"] ? L.polyline(locations["Mc Kinley Street"], { color: 'green' }) : null,
+        polyline: locations["Mc Kinley Street"] ? L.polyline(locations["Mc Kinley Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Maynard Street",
-        polyline: locations["Maynard Street"] ? L.polyline(locations["Maynard Street"], { color: 'green' }) : null,
+        polyline: locations["Maynard Street"] ? L.polyline(locations["Maynard Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Maxwell Street",
-        polyline: locations["Maxwell Street"] ? L.polyline(locations["Maxwell Street"], { color: 'green' }) : null,
+        polyline: locations["Maxwell Street"] ? L.polyline(locations["Maxwell Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Merrill Street",
-        polyline: locations["Merrill Street"] ? L.polyline(locations["Merrill Street"], { color: 'green' }) : null,
+        polyline: locations["Merrill Street"] ? L.polyline(locations["Merrill Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Hunter Street",
-        polyline: locations["Hunter Street"] ? L.polyline(locations["Hunter Street"], { color: 'green' }) : null,
+        polyline: locations["Hunter Street"] ? L.polyline(locations["Hunter Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Ethan Street",
-        polyline: locations["Ethan Street"] ? L.polyline(locations["Ethan Street"], { color: 'green' }) : null,
+        polyline: locations["Ethan Street"] ? L.polyline(locations["Ethan Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Ernest Street",
-        polyline: locations["Ernest Street"] ? L.polyline(locations["Ernest Street"], { color: 'green' }) : null,
+        polyline: locations["Ernest Street"] ? L.polyline(locations["Ernest Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Cameron Street",
-        polyline: locations["Cameron Street"] ? L.polyline(locations["Cameron Street"], { color: 'green' }) : null,
+        polyline: locations["Cameron Street"] ? L.polyline(locations["Cameron Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Brice Street",
-        polyline: locations["Brice Street"] ? L.polyline(locations["Brice Street"], { color: 'green' }) : null,
+        polyline: locations["Brice Street"] ? L.polyline(locations["Brice Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Forrest Street",
-        polyline: locations["Forrest Street"] ? L.polyline(locations["Forrest Street"], { color: 'green' }) : null,
+        polyline: locations["Forrest Street"] ? L.polyline(locations["Forrest Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Riverside Street 1",
-        polyline: locations["Riverside Street 1"] ? L.polyline(locations["Riverside Street 1"], { color: 'green' }) : null,
+        polyline: locations["Riverside Street 1"] ? L.polyline(locations["Riverside Street 1"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Riverside Street 2",
-        polyline: locations["Riverside Street 2"] ? L.polyline(locations["Riverside Street 2"], { color: 'green' }) : null,
+        polyline: locations["Riverside Street 2"] ? L.polyline(locations["Riverside Street 2"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Dream Crest",
-        polyline: locations["Dream Crest"] ? L.polyline(locations["Dream Crest"], { color: 'green' }) : null,
+        polyline: locations["Dream Crest"] ? L.polyline(locations["Dream Crest"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Trevor Street",
-        polyline: locations["Trevor Street"] ? L.polyline(locations["Trevor Street"], { color: 'green' }) : null,
+        polyline: locations["Trevor Street"] ? L.polyline(locations["Trevor Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Michael Street",
-        polyline: locations["Michael Street"] ? L.polyline(locations["Michael Street"], { color: 'green' }) : null,
+        polyline: locations["Michael Street"] ? L.polyline(locations["Michael Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Lionel Street",
-        polyline: locations["Lionel Street"] ? L.polyline(locations["Lionel Street"], { color: 'green' }) : null,
+        polyline: locations["Lionel Street"] ? L.polyline(locations["Lionel Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Truman Street",
-        polyline: locations["Truman Street"] ? L.polyline(locations["Truman Street"], { color: 'green' }) : null,
+        polyline: locations["Truman Street"] ? L.polyline(locations["Truman Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Shawn Street",
-        polyline: locations["Shawn Street"] ? L.polyline(locations["Shawn Street"], { color: 'green' }) : null,
+        polyline: locations["Shawn Street"] ? L.polyline(locations["Shawn Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Mickey Street",
-        polyline: locations["Mickey Street"] ? L.polyline(locations["Mickey Street"], { color: 'green' }) : null,
+        polyline: locations["Mickey Street"] ? L.polyline(locations["Mickey Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Ellsworth Street",
-        polyline: locations["Ellsworth Street"] ? L.polyline(locations["Ellsworth Street"], { color: 'green' }) : null,
+        polyline: locations["Ellsworth Street"] ? L.polyline(locations["Ellsworth Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Ellis Street",
-        polyline: locations["Ellis Street"] ? L.polyline(locations["Ellis Street"], { color: 'green' }) : null,
+        polyline: locations["Ellis Street"] ? L.polyline(locations["Ellis Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Elwood Street",
-        polyline: locations["Elwood Street"] ? L.polyline(locations["Elwood Street"], { color: 'green' }) : null,
+        polyline: locations["Elwood Street"] ? L.polyline(locations["Elwood Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Floyd Street",
-        polyline: locations["Floyd Street"] ? L.polyline(locations["Floyd Street"], { color: 'green' }) : null,
+        polyline: locations["Floyd Street"] ? L.polyline(locations["Floyd Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Ernest Street",
-        polyline: locations["Ernest Street"] ? L.polyline(locations["Ernest Street"], { color: 'green' }) : null,
+        polyline: locations["Ernest Street"] ? L.polyline(locations["Ernest Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Ethan Street",
-        polyline: locations["Ethan Street"] ? L.polyline(locations["Ethan Street"], { color: 'green' }) : null,
+        polyline: locations["Ethan Street"] ? L.polyline(locations["Ethan Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Earl Street",
-        polyline: locations["Earl Street"] ? L.polyline(locations["Earl Street"], { color: 'green' }) : null,
+        polyline: locations["Earl Street"] ? L.polyline(locations["Earl Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Lesley Street",
-        polyline: locations["Lesley Street"] ? L.polyline(locations["Lesley Street"], { color: 'green' }) : null,
+        polyline: locations["Lesley Street"] ? L.polyline(locations["Lesley Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Jasper Street",
-        polyline: locations["Jasper Street"] ? L.polyline(locations["Jasper Street"], { color: 'green' }) : null,
+        polyline: locations["Jasper Street"] ? L.polyline(locations["Jasper Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Hilton Street",
-        polyline: locations["Hilton Street"] ? L.polyline(locations["Hilton Street"], { color: 'green' }) : null,
+        polyline: locations["Hilton Street"] ? L.polyline(locations["Hilton Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Howard Street",
-        polyline: locations["Howard Street"] ? L.polyline(locations["Howard Street"], { color: 'green' }) : null,
+        polyline: locations["Howard Street"] ? L.polyline(locations["Howard Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Hershell Street",
-        polyline: locations["Hershell Street"] ? L.polyline(locations["Hershell Street"], { color: 'green' }) : null,
+        polyline: locations["Hershell Street"] ? L.polyline(locations["Hershell Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Herman Street",
-        polyline: locations["Herman Street"] ? L.polyline(locations["Herman Street"], { color: 'green' }) : null,
+        polyline: locations["Herman Street"] ? L.polyline(locations["Herman Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Health Street",
-        polyline: locations["Health Street"] ? L.polyline(locations["Health Street"], { color: 'green' }) : null,
+        polyline: locations["Health Street"] ? L.polyline(locations["Health Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Haywood Street",
-        polyline: locations["Haywood Street"] ? L.polyline(locations["Haywood Street"], { color: 'green' }) : null,
+        polyline: locations["Haywood Street"] ? L.polyline(locations["Haywood Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Harold Street",
-        polyline: locations["Harold Street"] ? L.polyline(locations["Harold Street"], { color: 'green' }) : null,
+        polyline: locations["Harold Street"] ? L.polyline(locations["Harold Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Trenton Street",
-        polyline: locations["Trenton Street"] ? L.polyline(locations["Trenton Street"], { color: 'green' }) : null,
+        polyline: locations["Trenton Street"] ? L.polyline(locations["Trenton Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Tracy Street",
-        polyline: locations["Tracy Street"] ? L.polyline(locations["Tracy Street"], { color: 'green' }) : null,
+        polyline: locations["Tracy Street"] ? L.polyline(locations["Tracy Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Timothy Street",
-        polyline: locations["Timothy Street"] ? L.polyline(locations["Timothy Street"], { color: 'green' }) : null,
+        polyline: locations["Timothy Street"] ? L.polyline(locations["Timothy Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Tobby Street",
-        polyline: locations["Tobby Street"] ? L.polyline(locations["Tobby Street"], { color: 'green' }) : null,
+        polyline: locations["Tobby Street"] ? L.polyline(locations["Tobby Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Thurman Street",
-        polyline: locations["Thurman Street"] ? L.polyline(locations["Thurman Street"], { color: 'green' }) : null,
+        polyline: locations["Thurman Street"] ? L.polyline(locations["Thurman Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Vincent Street",
-        polyline: locations["Vincent Street"] ? L.polyline(locations["Vincent Street"], { color: 'green' }) : null,
+        polyline: locations["Vincent Street"] ? L.polyline(locations["Vincent Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Virgil Street",
-        polyline: locations["Virgil Street"] ? L.polyline(locations["Virgil Street"], { color: 'green' }) : null,
+        polyline: locations["Virgil Street"] ? L.polyline(locations["Virgil Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Warren Street",
-        polyline: locations["Warren Street"] ? L.polyline(locations["Warren Street"], { color: 'green' }) : null,
+        polyline: locations["Warren Street"] ? L.polyline(locations["Warren Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Wallace Street",
-        polyline: locations["Wallace Street"] ? L.polyline(locations["Wallace Street"], { color: 'green' }) : null,
+        polyline: locations["Wallace Street"] ? L.polyline(locations["Wallace Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Walter Street",
-        polyline: locations["Walter Street"] ? L.polyline(locations["Walter Street"], { color: 'green' }) : null,
+        polyline: locations["Walter Street"] ? L.polyline(locations["Walter Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Walker Street",
-        polyline: locations["Walker Street"] ? L.polyline(locations["Walker Street"], { color: 'green' }) : null,
+        polyline: locations["Walker Street"] ? L.polyline(locations["Walker Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Mitchell Street",
-        polyline: locations["Mitchell Street"] ? L.polyline(locations["Mitchell Street"], { color: 'green' }) : null,
+        polyline: locations["Mitchell Street"] ? L.polyline(locations["Mitchell Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Morris Street",
-        polyline: locations["Morris Street"] ? L.polyline(locations["Morris Street"], { color: 'green' }) : null,
+        polyline: locations["Morris Street"] ? L.polyline(locations["Morris Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Geoffrey Street",
-        polyline: locations["Geoffrey Street"] ? L.polyline(locations["Geoffrey Street"], { color: 'green' }) : null,
+        polyline: locations["Geoffrey Street"] ? L.polyline(locations["Geoffrey Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Lindsey Street",
-        polyline: locations["Lindsey Street"] ? L.polyline(locations["Lindsey Street"], { color: 'green' }) : null,
+        polyline: locations["Lindsey Street"] ? L.polyline(locations["Lindsey Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Linwood Street",
-        polyline: locations["Linwood Street"] ? L.polyline(locations["Linwood Street"], { color: 'green' }) : null,
+        polyline: locations["Linwood Street"] ? L.polyline(locations["Linwood Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Carson Street",
-        polyline: locations["Carson Street"] ? L.polyline(locations["Carson Street"], { color: 'green' }) : null,
+        polyline: locations["Carson Street"] ? L.polyline(locations["Carson Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Murray Street",
-        polyline: locations["Murray Street"] ? L.polyline(locations["Murray Street"], { color: 'green' }) : null,
+        polyline: locations["Murray Street"] ? L.polyline(locations["Murray Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Myron Street",
-        polyline: locations["Myron Street"] ? L.polyline(locations["Myron Street"], { color: 'green' }) : null,
+        polyline: locations["Myron Street"] ? L.polyline(locations["Myron Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Nathan Street",
-        polyline: locations["Nathan Street"] ? L.polyline(locations["Nathan Street"], { color: 'green' }) : null,
+        polyline: locations["Nathan Street"] ? L.polyline(locations["Nathan Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Nevine Street",
-        polyline: locations["Nevine Street"] ? L.polyline(locations["Nevine Street"], { color: 'green' }) : null,
+        polyline: locations["Nevine Street"] ? L.polyline(locations["Nevine Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Reid Street",
-        polyline: locations["Reid Street"] ? L.polyline(locations["Reid Street"], { color: 'green' }) : null,
+        polyline: locations["Reid Street"] ? L.polyline(locations["Reid Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Ralph Street",
-        polyline: locations["Ralph Street"] ? L.polyline(locations["Ralph Street"], { color: 'green' }) : null,
+        polyline: locations["Ralph Street"] ? L.polyline(locations["Ralph Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Randall Street",
-        polyline: locations["Randall Street"] ? L.polyline(locations["Randall Street"], { color: 'green' }) : null,
+        polyline: locations["Randall Street"] ? L.polyline(locations["Randall Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Parker Street",
-        polyline: locations["Parker Street"] ? L.polyline(locations["Parker Street"], { color: 'green' }) : null,
+        polyline: locations["Parker Street"] ? L.polyline(locations["Parker Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Paul Street",
-        polyline: locations["Paul Street"] ? L.polyline(locations["Paul Street"], { color: 'green' }) : null,
+        polyline: locations["Paul Street"] ? L.polyline(locations["Paul Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Chaunsey",
-        polyline: locations["Chaunsey"] ? L.polyline(locations["Chaunsey"], { color: 'green' }) : null,
+        polyline: locations["Chaunsey"] ? L.polyline(locations["Chaunsey"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Orville Street",
-        polyline: locations["Orville Street"] ? L.polyline(locations["Orville Street"], { color: 'green' }) : null,
+        polyline: locations["Orville Street"] ? L.polyline(locations["Orville Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Scott Street",
-        polyline: locations["Scott Street"] ? L.polyline(locations["Scott Street"], { color: 'green' }) : null,
+        polyline: locations["Scott Street"] ? L.polyline(locations["Scott Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Sanford Street",
-        polyline: locations["Sanford Street"] ? L.polyline(locations["Sanford Street"], { color: 'green' }) : null,
+        polyline: locations["Sanford Street"] ? L.polyline(locations["Sanford Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Robin Street",
-        polyline: locations["Robin Street"] ? L.polyline(locations["Robin Street"], { color: 'green' }) : null,
+        polyline: locations["Robin Street"] ? L.polyline(locations["Robin Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Railey Street",
-        polyline: locations["Railey Street"] ? L.polyline(locations["Railey Street"], { color: 'green' }) : null,
+        polyline: locations["Railey Street"] ? L.polyline(locations["Railey Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Rich Street",
-        polyline: locations["Rich Street"] ? L.polyline(locations["Rich Street"], { color: 'green' }) : null,
+        polyline: locations["Rich Street"] ? L.polyline(locations["Rich Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
@@ -1369,7 +1369,7 @@ const highwayCoordinates = [
     [14.872787, 120.798154]  // Point B
 ];
 
-let highwayLine = L.polyline(highwayCoordinates, { color: 'green', weight: 5 }).addTo(map);
+let highwayLine = L.polyline(highwayCoordinates, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 
 const waterLevel = "<?php echo $waterLevel; ?>";
 const status = "<?php echo $status; ?>";
