@@ -47,7 +47,7 @@ try {
 
 .controls {
     position: absolute;
-    bottom: 50px;  /* Adjusted for better mobile display */
+    bottom: 50px;  
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -97,7 +97,7 @@ try {
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    width: 100%; /* Make the button group responsive */
+    width: 100%; 
     margin-left: 700px;
 }
 
@@ -107,7 +107,7 @@ try {
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.3s ease;
-    font-size: 1rem; /* Scalable font size */
+    font-size: 1rem; 
 }
 
 .icon-btn:hover {
@@ -151,15 +151,15 @@ try {
     background-color: darkgray;
 }
 
-/* Media Queries for responsiveness */
+
 @media (max-width: 768px) {
     #map {
-        height: 50vh; /* Map height for small screens */
+        height: 50vh; 
     }
 
     .controls {
         bottom: 30px;
-        flex-direction: row; /* Stack input field and button vertically */
+        flex-direction: row; 
         align-items: center;
     }
 
@@ -190,8 +190,7 @@ try {
     }
 
     .controls .input-field {
-        width: 120px; /* Narrow input field for small screens */
-    }
+        width: 120px; 
 
     .primary-btn {
         font-size: 1rem;
@@ -234,7 +233,7 @@ try {
     </div>
 
     <script>
-        // trigger buttons when pressed
+        
         $(document).ready(function () {
             $('#rainButton').click(function () {
                 $.ajax({
@@ -273,7 +272,7 @@ try {
                     data: { action: 'sun' },
                     success: function (response) {
                         console.log('Sun button pressed', response);
-                        alert('Sun Button Clicked!');  // For testing purposes
+                        alert('Sun Button Clicked!');  
                     },
                     error: function (xhr, status, error) {
                         console.error('Error in Sun button AJAX:', error);
@@ -292,8 +291,8 @@ try {
         }).addTo(map);
 
         const highwayCoordinates = [
-            [14.876023, 120.795324], // Point A
-            [14.871466, 120.799345]  // Point B (extend as needed)
+            [14.876023, 120.795324], 
+            [14.871466, 120.799345]  
         ];
 
         let highwayLine = L.polyline(highwayCoordinates, { color: 'green', weight: 5 }).addTo(map);
