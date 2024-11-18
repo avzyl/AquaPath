@@ -55,7 +55,7 @@ body {
     gap: 20px;
 }
 
-#toggle-directions {
+/* #toggle-directions {
     position: fixed;
     bottom: 20px;
     left: 20px;
@@ -65,7 +65,7 @@ body {
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
-}
+} */
 
 #suggestions {
     border: 1px solid #ccc;
@@ -87,6 +87,16 @@ body {
     border-bottom: 1px solid #cccccc;
     margin-bottom: 5px;
     padding-bottom: 3%;
+}
+
+.suggestion-item {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
 }
 
 /* #suggestions div:hover {
@@ -308,7 +318,7 @@ input:focus {
     box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
     border-radius: 20px;
     background-color: rgba(255, 0, 0, 0.5);
-    height:30%;
+    height: 30%;
     max-width: 600px;
     z-index: 1000;
     display: grid;
@@ -339,9 +349,10 @@ input:focus {
 }
 
 #popup h4 {
-    font-size: 15px; 
+    font-size: 15px;
     color: #fff;
 }
+
 #popup.show {
     opacity: 1;
 }
@@ -355,4 +366,3 @@ input:focus {
     justify-content: center;
     align-items: center;
 }
-

@@ -81,7 +81,6 @@ document.getElementById('close-directions').addEventListener('click', function (
 });
 
 // hotlines
-// hotlines
 document.addEventListener('DOMContentLoaded', function () {
     const expandButton = document.getElementById('nav-expand');
     const closeButton = document.getElementById('close-hotlines');
