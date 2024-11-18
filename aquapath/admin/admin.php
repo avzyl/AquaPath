@@ -3,8 +3,8 @@ session_start();
 
 try {
     $pdo = new PDO('mysql:host=localhost;dbname=db_aquapath', 'root', '');
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Set error mode to exception
-    $sql = "SELECT level, status FROM tbl_water_lvl ORDER BY id DESC LIMIT 1"; // Fetch the latest entry
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = "SELECT level, status FROM tbl_water_lvl ORDER BY id DESC LIMIT 1";
     $stmt = $pdo->query($sql);
 
     if ($stmt) {
@@ -39,178 +39,186 @@ try {
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
 
- <style>
-            #map {
-    height: 40vh; /* Set map height relative to the viewport */
-    width: 100%;  /* Full width */
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            z-index: 1000;
+            padding: 0 15px;
+            width: 80%;
+            justify-content: center;
+        }
+
+        .controls label {
+            
+            font-size: 1.05rem;
+            font-weight: bold;
+            color: #003366; 
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(255, 255, 255, 0.7); 
+            padding: 5px;
+            border-radius: 5px; 
 }
+ 
 
-.controls {
-    position: absolute;
-    bottom: 50px;  
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    z-index: 10;
-    padding: 0 15px;
-    width: 100%;
-    justify-content: center;
-}
+        .controls .input-field {
+            padding: 8px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 150px;
+            margin: 5px 10px 5px 0;
+        }
 
-.controls label {
-    font-size: 1.05rem;
-    font-weight: bold;
-    color: #0076b6;
-    margin: 10px;
-}
+        .primary-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 180px;
+            margin-top: 10px;
+        }
 
-.controls .input-field {
-    padding: 8px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 150px;
-    margin: 5px 10px 5px 0;
-}
+        .primary-btn:hover {
+            background-color: #45a049;
+        }
 
-.primary-btn {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+        .button-group {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
 
-.primary-btn:hover {
-    background-color: #45a049;
-}
+        .icon-btn {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+            font-size: 1rem;
+        }
 
-.button-group {
-    display: flex;
-    gap: 10px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    width: 100%; 
-    margin-left: 700px;
-}
+        .icon-btn:hover {
+            transform: scale(1.1);
+        }
 
-.icon-btn {
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.3s ease;
-    font-size: 1rem; 
-}
+        .rain {
+            background-color: gray;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
 
-.icon-btn:hover {
-    transform: scale(1.1);
-}
+        .cloud {
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
 
-.rain {
-    background-color: gray;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
+        .sun {
+            background-color: yellow;
+            color: black;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
 
-.cloud {
-    background-color: blue;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
+        .sun:hover {
+            background-color: orange;
+            color: white;
+        }
 
-.sun {
-    background-color: yellow;
-    color: black;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
+        .cloud:hover {
+            background-color: lightblue;
+        }
 
-.sun:hover {
-    background-color: orange;
-    color: white;
-}
+        .rain:hover {
+            background-color: darkgray;
+        }
 
-.cloud:hover {
-    background-color: lightblue;
-}
+        @media (max-width: 768px) {
+            .controls {
+                top: 10px;
+            }
 
-.rain:hover {
-    background-color: darkgray;
-}
+            .controls label,
+            .controls .input-field,
+            .primary-btn {
+                font-size: 1rem;
+                margin: 5px 0;
+            }
 
+            .controls {
+                flex-direction: column;
+                align-items: center;
+            }
 
-@media (max-width: 768px) {
-    #map {
-        height: 50vh; 
-    }
+            .primary-btn {
+                width: 150px;
+                margin-top: 10px;
+            }
 
-    .controls {
-        bottom: 30px;
-        flex-direction: row; 
-        align-items: center;
-    }
+            .button-group {
+                bottom: 10px;
+            }
 
-    .controls label,
-    .controls .input-field,
-    .primary-btn {
-        font-size: 1rem;
-        margin: 5px 0;
-        bottom: 10px;
-    }
+            .icon-btn {
+                font-size: 1.2rem;
+            }
+        }
 
-    .button-group {
-        bottom: 3px;
-        flex-direction: row;
-        gap: 15px;
-        margin-top: 20px;
-    }
+        @media (max-width: 480px) {
+            .controls label {
+                font-size: 1rem;
+            }
 
-    .icon-btn {
-        font-size: 1.2rem;
-        padding: 10px;
-    }
-}
+            .controls .input-field {
+                width: 120px;
+            }
 
-@media (max-width: 480px) {
-    .controls label {
-        font-size: 1rem;
-    }
+            .primary-btn {
+                font-size: 1rem;
+                width: 120px;
+            }
 
-    .controls .input-field {
-        width: 120px; 
+            .button-group {
+                bottom: 10px;
+                gap: 5px;
+            }
 
-    .primary-btn {
-        font-size: 1rem;
-    }
-
-    .button-group {
-        bottom: 15px;
-        gap: 5px;
-    }
-
-    .icon-btn {
-        font-size: 1rem;
-    }
-}
-
-</style>
+            .icon-btn {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div id="map" style="height: 600px;"></div>
+    <div id="map"></div>
 
     <div class="controls">
         <label for="waterLevel">Enter Water Level (cm): </label>
@@ -233,7 +241,6 @@ try {
     </div>
 
     <script>
-        
         $(document).ready(function () {
             $('#rainButton').click(function () {
                 $.ajax({
@@ -247,7 +254,6 @@ try {
                 });
             });
 
-            // Handle Cloud button
             $('#cloudButton').click(function () {
                 $.ajax({
                     url: 'update_control_state.php',
@@ -255,7 +261,7 @@ try {
                     data: { action: 'cloud' },
                     success: function (response) {
                         console.log('Cloud button pressed', response);
-                        alert('Cloud Button Clicked!');  
+                        alert('Cloud Button Clicked!');
                     },
                     error: function (xhr, status, error) {
                         console.error('Error in Cloud button AJAX:', error);
@@ -264,7 +270,6 @@ try {
                 });
             });
 
-            // Handle Sun button
             $('#sunButton').click(function () {
                 $.ajax({
                     url: 'update_control_state.php',
@@ -272,7 +277,7 @@ try {
                     data: { action: 'sun' },
                     success: function (response) {
                         console.log('Sun button pressed', response);
-                        alert('Sun Button Clicked!');  
+                        alert('Sun Button Clicked!');
                     },
                     error: function (xhr, status, error) {
                         console.error('Error in Sun button AJAX:', error);
@@ -281,9 +286,7 @@ try {
                 });
             });
         });
-    </script>
 
-    <script>
         const map = L.map('map').setView([14.8713199, 120.7932753], 15);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -291,8 +294,8 @@ try {
         }).addTo(map);
 
         const highwayCoordinates = [
-            [14.876023, 120.795324], 
-            [14.871466, 120.799345]  
+            [14.876023, 120.795324],
+            [14.871466, 120.799345]
         ];
 
         let highwayLine = L.polyline(highwayCoordinates, { color: 'green', weight: 5 }).addTo(map);
