@@ -783,25 +783,25 @@ let boundariesLine = L.polyline(boundaries, { color: 'black', weight: 3 }).addTo
 // addAdditionalLocations();
 
 // state checker
-// let rainActive = false;
-// let decreaseWaterLevel = false;
+let rainActive = false;
+let decreaseWaterLevel = false;
 
-// function checkState() {
-//     $.ajax({
-//         url: 'assets/php/functions/get_control_state.php',
-//         method: 'GET',
-//         success: function (response) {
-//             const state = JSON.parse(response);
-//             console.log("Fetched state from server:", state);
+function checkState() {
+    $.ajax({
+        url: 'assets/php/functions/get_control_state.php',
+        method: 'GET',
+        success: function (response) {
+            const state = JSON.parse(response);
+            console.log("Fetched state from server:", state);
 
-//             rainActive = state.rain;
-//             decreaseWaterLevel = state.decrease;
+            rainActive = state.rain;
+            decreaseWaterLevel = state.decrease;
 
-//             console.log("Rain Active:", rainActive);
-//             console.log("Decrease Water Level Active:", decreaseWaterLevel);
-//         }
-//     });
-// }
+            console.log("Rain Active:", rainActive);
+            console.log("Decrease Water Level Active:", decreaseWaterLevel);
+        }
+    });
+}
 
 // increment
 const MAX_HISTORY_ENTRIES = 100;

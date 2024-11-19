@@ -1,432 +1,1382 @@
+// OAKAAAAAAAAAAAAAAAAY BWIET
 
-// Initialize the map centered on Longos, Malolos, Bulacan
-const map = L.map('map').setView([14.8713199, 120.7932753], 15);
+import { map } from './maps.js';
+import * as Constants from './const2.js';
+const { locations, boundaries, outLocations } = Constants;
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-}).addTo(map);
+const routes = [
+    {
+        name: "Highway",
+        polyline: locations["Highway"] ? L.polyline(locations["Highway"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Carmen V. de Luna Street",
+        polyline: locations["Carmen V. de Luna"] ? L.polyline(locations["Carmen V. de Luna"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'Passable',
+        waterLevel: 0,
+        incrementRange: { min: -3, max: 5 }
+    },
+    {
+        name: "McArthur Village Main Road",
+        polyline: locations["McArthur Village Main Road"] ? L.polyline(locations["McArthur Village Main Road"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 1",
+        polyline: locations["MAV Streets"]["Street 1"] ? L.polyline(locations["MAV Streets"]["Street 1"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 2",
+        polyline: locations["MAV Streets"]["Street 2"] ? L.polyline(locations["MAV Streets"]["Street 2"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 3",
+        polyline: locations["MAV Streets"]["Street 3"] ? L.polyline(locations["MAV Streets"]["Street 3"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 4",
+        polyline: locations["MAV Streets"]["Street 4"] ? L.polyline(locations["MAV Streets"]["Street 4"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 5",
+        polyline: locations["MAV Streets"]["Street 5"] ? L.polyline(locations["MAV Streets"]["Street 5"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 6",
+        polyline: locations["MAV Streets"]["Street 6"] ? L.polyline(locations["MAV Streets"]["Street 6"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 7",
+        polyline: locations["MAV Streets"]["Street 7"] ? L.polyline(locations["MAV Streets"]["Street 7"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 8",
+        polyline: locations["MAV Streets"]["Street 8"] ? L.polyline(locations["MAV Streets"]["Street 8"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 9",
+        polyline: locations["MAV Streets"]["Street 9"] ? L.polyline(locations["MAV Streets"]["Street 9"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 10",
+        polyline: locations["MAV Streets"]["Street 10"] ? L.polyline(locations["MAV Streets"]["Street 10"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 11",
+        polyline: locations["MAV Streets"]["Street 11"] ? L.polyline(locations["MAV Streets"]["Street 11"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 12",
+        polyline: locations["MAV Streets"]["Street 12"] ? L.polyline(locations["MAV Streets"]["Street 12"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 13",
+        polyline: locations["MAV Streets"]["Street 13"] ? L.polyline(locations["MAV Streets"]["Street 13"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 14",
+        polyline: locations["MAV Streets"]["Street 14"] ? L.polyline(locations["MAV Streets"]["Street 14"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Street 15",
+        polyline: locations["MAV Streets"]["Street 15"] ? L.polyline(locations["MAV Streets"]["Street 15"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Calumpang-Longos",
+        polyline: locations["Calumpang-Longos"] ? L.polyline(locations["Calumpang-Longos"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "San Jose Village",
+        polyline: locations["San Jose Village"] ? L.polyline(locations["San Jose Village"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Iba-Longos",
+        polyline: locations["Iba-Longos"] ? L.polyline(locations["Iba-Longos"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Carmen V. de Luna",
+        polyline: locations["Carmen V. de Luna"] ? L.polyline(locations["Carmen V. de Luna"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Hangga Street",
+        polyline: locations["Hangga Street"] ? L.polyline(locations["Hangga Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Jayson Street",
+        polyline: locations["Jayson Street"] ? L.polyline(locations["Jayson Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Jerell Street",
+        polyline: locations["Jerell Street"] ? L.polyline(locations["Jerell Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Jermaine Street",
+        polyline: locations["Jermaine Street"] ? L.polyline(locations["Jermaine Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Kenneth Street",
+        polyline: locations["Kenneth Street"] ? L.polyline(locations["Kenneth Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Kendrick Street",
+        polyline: locations["Kendrick Street"] ? L.polyline(locations["Kendrick Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Justin Street",
+        polyline: locations["Justin Street"] ? L.polyline(locations["Justin Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Kendall Street",
+        polyline: locations["Kendall Street"] ? L.polyline(locations["Kendall Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Keenan Street",
+        polyline: locations["Keenan Street"] ? L.polyline(locations["Keenan Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Keith Street",
+        polyline: locations["Keith Street"] ? L.polyline(locations["Keith Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Kevin Street",
+        polyline: locations["Kevin Street"] ? L.polyline(locations["Kevin Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Kurtis Street",
+        polyline: locations["Kurtis Street"] ? L.polyline(locations["Kurtis Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Kirby Street",
+        polyline: locations["Kirby Street"] ? L.polyline(locations["Kirby Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Laverne Street",
+        polyline: locations["Laverne Street"] ? L.polyline(locations["Laverne Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Mc Kinley Street",
+        polyline: locations["Mc Kinley Street"] ? L.polyline(locations["Mc Kinley Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Maynard Street",
+        polyline: locations["Maynard Street"] ? L.polyline(locations["Maynard Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Maxwell Street",
+        polyline: locations["Maxwell Street"] ? L.polyline(locations["Maxwell Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Merrill Street",
+        polyline: locations["Merrill Street"] ? L.polyline(locations["Merrill Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Hunter Street",
+        polyline: locations["Hunter Street"] ? L.polyline(locations["Hunter Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ethan Street",
+        polyline: locations["Ethan Street"] ? L.polyline(locations["Ethan Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ernest Street",
+        polyline: locations["Ernest Street"] ? L.polyline(locations["Ernest Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Cameron Street",
+        polyline: locations["Cameron Street"] ? L.polyline(locations["Cameron Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Brice Street",
+        polyline: locations["Brice Street"] ? L.polyline(locations["Brice Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Forrest Street",
+        polyline: locations["Forrest Street"] ? L.polyline(locations["Forrest Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Riverside Street 1",
+        polyline: locations["Riverside Street 1"] ? L.polyline(locations["Riverside Street 1"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Riverside Street 2",
+        polyline: locations["Riverside Street 2"] ? L.polyline(locations["Riverside Street 2"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Dream Crest",
+        polyline: locations["Dream Crest"] ? L.polyline(locations["Dream Crest"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Trevor Street",
+        polyline: locations["Trevor Street"] ? L.polyline(locations["Trevor Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Michael Street",
+        polyline: locations["Michael Street"] ? L.polyline(locations["Michael Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Lionel Street",
+        polyline: locations["Lionel Street"] ? L.polyline(locations["Lionel Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Truman Street",
+        polyline: locations["Truman Street"] ? L.polyline(locations["Truman Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Shawn Street",
+        polyline: locations["Shawn Street"] ? L.polyline(locations["Shawn Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Mickey Street",
+        polyline: locations["Mickey Street"] ? L.polyline(locations["Mickey Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ellsworth Street",
+        polyline: locations["Ellsworth Street"] ? L.polyline(locations["Ellsworth Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ellis Street",
+        polyline: locations["Ellis Street"] ? L.polyline(locations["Ellis Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Elwood Street",
+        polyline: locations["Elwood Street"] ? L.polyline(locations["Elwood Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Floyd Street",
+        polyline: locations["Floyd Street"] ? L.polyline(locations["Floyd Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ernest Street",
+        polyline: locations["Ernest Street"] ? L.polyline(locations["Ernest Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ethan Street",
+        polyline: locations["Ethan Street"] ? L.polyline(locations["Ethan Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Earl Street",
+        polyline: locations["Earl Street"] ? L.polyline(locations["Earl Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Lesley Street",
+        polyline: locations["Lesley Street"] ? L.polyline(locations["Lesley Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Jasper Street",
+        polyline: locations["Jasper Street"] ? L.polyline(locations["Jasper Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Hilton Street",
+        polyline: locations["Hilton Street"] ? L.polyline(locations["Hilton Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Howard Street",
+        polyline: locations["Howard Street"] ? L.polyline(locations["Howard Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Hershell Street",
+        polyline: locations["Hershell Street"] ? L.polyline(locations["Hershell Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Herman Street",
+        polyline: locations["Herman Street"] ? L.polyline(locations["Herman Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Health Street",
+        polyline: locations["Health Street"] ? L.polyline(locations["Health Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Haywood Street",
+        polyline: locations["Haywood Street"] ? L.polyline(locations["Haywood Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Harold Street",
+        polyline: locations["Harold Street"] ? L.polyline(locations["Harold Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Trenton Street",
+        polyline: locations["Trenton Street"] ? L.polyline(locations["Trenton Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Tracy Street",
+        polyline: locations["Tracy Street"] ? L.polyline(locations["Tracy Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Timothy Street",
+        polyline: locations["Timothy Street"] ? L.polyline(locations["Timothy Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Tobby Street",
+        polyline: locations["Tobby Street"] ? L.polyline(locations["Tobby Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Thurman Street",
+        polyline: locations["Thurman Street"] ? L.polyline(locations["Thurman Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Vincent Street",
+        polyline: locations["Vincent Street"] ? L.polyline(locations["Vincent Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Virgil Street",
+        polyline: locations["Virgil Street"] ? L.polyline(locations["Virgil Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Warren Street",
+        polyline: locations["Warren Street"] ? L.polyline(locations["Warren Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Wallace Street",
+        polyline: locations["Wallace Street"] ? L.polyline(locations["Wallace Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Walter Street",
+        polyline: locations["Walter Street"] ? L.polyline(locations["Walter Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Walker Street",
+        polyline: locations["Walker Street"] ? L.polyline(locations["Walker Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Mitchell Street",
+        polyline: locations["Mitchell Street"] ? L.polyline(locations["Mitchell Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Morris Street",
+        polyline: locations["Morris Street"] ? L.polyline(locations["Morris Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Geoffrey Street",
+        polyline: locations["Geoffrey Street"] ? L.polyline(locations["Geoffrey Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Lindsey Street",
+        polyline: locations["Lindsey Street"] ? L.polyline(locations["Lindsey Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Linwood Street",
+        polyline: locations["Linwood Street"] ? L.polyline(locations["Linwood Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Carson Street",
+        polyline: locations["Carson Street"] ? L.polyline(locations["Carson Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Murray Street",
+        polyline: locations["Murray Street"] ? L.polyline(locations["Murray Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Myron Street",
+        polyline: locations["Myron Street"] ? L.polyline(locations["Myron Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Nathan Street",
+        polyline: locations["Nathan Street"] ? L.polyline(locations["Nathan Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Nevine Street",
+        polyline: locations["Nevine Street"] ? L.polyline(locations["Nevine Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Reid Street",
+        polyline: locations["Reid Street"] ? L.polyline(locations["Reid Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Ralph Street",
+        polyline: locations["Ralph Street"] ? L.polyline(locations["Ralph Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Randall Street",
+        polyline: locations["Randall Street"] ? L.polyline(locations["Randall Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Parker Street",
+        polyline: locations["Parker Street"] ? L.polyline(locations["Parker Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Paul Street",
+        polyline: locations["Paul Street"] ? L.polyline(locations["Paul Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Chaunsey",
+        polyline: locations["Chaunsey"] ? L.polyline(locations["Chaunsey"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Orville Street",
+        polyline: locations["Orville Street"] ? L.polyline(locations["Orville Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Scott Street",
+        polyline: locations["Scott Street"] ? L.polyline(locations["Scott Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Sanford Street",
+        polyline: locations["Sanford Street"] ? L.polyline(locations["Sanford Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Robin Street",
+        polyline: locations["Robin Street"] ? L.polyline(locations["Robin Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Railey Street",
+        polyline: locations["Railey Street"] ? L.polyline(locations["Railey Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    },
+    {
+        name: "Rich Street",
+        polyline: locations["Rich Street"] ? L.polyline(locations["Rich Street"], { color: 'green', opacity: 0.6 }) : null,
+        status: 'safe',
+        waterLevel: 0,
+        incrementRange: { min: -2, max: 4 }
+    }
 
 
-import * as Constants from './const.js';
+];
 
-// constants
-// !!! pagawang ganito kung gets niyo, if hindi aq na basta sabihin sa gc na hindi kineri. tenkz!!!
-console.log(Constants.boundaries);
-console.log(Constants.highwayCoordinates);
-console.log(Constants.carmenCoord);
-console.log(Constants.hanggaStCoord);
-console.log(Constants.forrestStCoord);
-console.log(Constants.drmCrstPrvCoord);
-console.log(Constants.TrvrStCoord);
-console.log(Constants.MchlStCoord);
-console.log(Constants.LnnlStCoord);
-console.log(Constants.ShrwdStCoord);
-console.log(Constants.ShwnStCoord);
-console.log(Constants.ShlbyStCoord);
-console.log(Constants.StnlyStCoord);
-console.log(Constants.StvStCoord);
-console.log(Constants.SpncrStCoord);
-console.log(Constants.TrmnStCoord);
-console.log(Constants.TrntnStCoord);
-console.log(Constants.TrcyStCoord);
-console.log(Constants.TmthyStCoord);
-console.log(Constants.TbbyStCoord);
-console.log(Constants.ThrmnStCoord);
-console.log(Constants.VncntStCoord);
-console.log(Constants.VrglStCoord);
-console.log(Constants.WrrnStCoord);
-console.log(Constants.WllcStCoord);
-console.log(Constants.WltrStCoord);
-console.log(Constants.WlkrStCoord);
-console.log(Constants.MchllStCoord);
-console.log(Constants.MrrsStCoord);
-console.log(Constants.GfryStCoord);
-console.log(Constants.MrryStCoord);
-console.log(Constants.MyrnStCoord);
-console.log(Constants.NthnStCoord );
-console.log(Constants.NvneStCoord);
-console.log(Constants.RdStCoord);
-console.log(Constants.RlphStCoord);
-console.log(Constants.PrkrStCoord);
-console.log(Constants.ScttStCoord);
-console.log(Constants.SnfrdStCoord);
-console.log(Constants.RbnStCoord);
-console.log(Constants.RlyStCoord);
-console.log(Constants.RcStCoord );
-console.log(Constants.PlStCoord);
-console.log(Constants.OrvllStCoord);
-console.log(Constants.ChnsyStCoord);
-console.log(Constants.LndsyStCoord);
-console.log(Constants.LnwdStCoord);
-console.log(Constants.CrsnStCoord);
-console.log(Constants.HltnStCoord);
-console.log(Constants.HwrdStCoord);
-console.log(Constants.HrshllStCoord);
-console.log(Constants.HrmnStCoord);
-console.log(Constants.HlthStCoord);
-console.log(Constants.HywdStCoord);
-console.log(Constants.HrldStCoord);
-console.log(Constants.JsprStCoord);
-console.log(Constants.LslyStCoord);
-console.log(Constants.FlydStCoord);
-console.log(Constants.ElwdStCoord);
-console.log(Constants.ErnstStCoord);
-console.log(Constants.EthnStCoord);
-console.log(Constants.EllswrthStCoord);
-console.log(Constants.EllsStCoord);
-console.log(Constants.ErlStCoord);
-console.log(Constants.HntrStCoord);
-console.log(Constants.JrrtStCoord);
-console.log(Constants.CmrnStCoord);
-console.log(Constants.KrbyStCoord);
-console.log(Constants.LvrnStCoord);
-console.log(Constants.KrtsStCoord);
-console.log(Constants.KvnStCoord);
-console.log(Constants.KnnStCoord);
-console.log(Constants.KndllStCoord);
-console.log(Constants.KthStCoord);
-console.log(Constants.KnnthStCoord);
-console.log(Constants.KndrckStCoord);
-console.log(Constants.KnnyStCoord);
-console.log(Constants.JysnStCoord);
-console.log(Constants.JrmnStCoord );
-console.log(Constants.JrllStCoord);
-console.log(Constants.JstnStCoord);
-console.log(Constants.BrcStCoord);
-console.log(Constants.MxwllStCoord);
-console.log(Constants.MynrdStCoord);
-console.log(Constants.McknlyStCoord);
-console.log(Constants.MrrllStCoord);
-console.log(Constants.mckyStCoord);
-console.log(Constants.RndllStCoord);
-console.log(Constants.McArthurVillageMainRCoord);
-console.log(Constants.MAVSt1Coord);
-console.log(Constants.MAVSt2Coord);
-console.log(Constants.MAVSt3Coord);
-console.log(Constants.MAVSt4Coord);
-console.log(Constants.MAVSt5Coord);
-console.log(Constants.MAVSt6Coord);
-console.log(Constants.MAVSt7Coord);
-console.log(Constants.MAVSt8Coord);
-console.log(Constants.MAVSt9Coord);
-console.log(Constants.MAVSt10Coord);
-console.log(Constants.MAVSt11Coord);
-console.log(Constants.MAVSt12Coord);
-console.log(Constants.MAVSt13Coord);
-console.log(Constants.MAVSt14Coord);
-console.log(Constants.MAVSt15Coord);
-console.log(Constants.ibaLongosRdCoord);
-console.log(Constants.KapitanganLongosRdCoord);
-console.log(Constants.calumpangLongosRdCoord);
-console.log(Constants.riversidestreetCoord);
-console.log(Constants.sanjoseVillageRdCoord);
-console.log(Constants.riversidestreet2Coord);
-console.log(Constants.DCSt1Coord);
-console.log(Constants.DCSt2Coord);
-console.log(Constants.DCSt3Coord);
-console.log(Constants.DCSt4Coord);
-console.log(Constants.DCSt5Coord);
-console.log(Constants.DCSt6Coord);
-console.log(Constants.DCSt7Coord);
-console.log(Constants.DCSt8Coord);
-console.log(Constants.DCSt9Coord);
-console.log(Constants.DCSt10Coord);
-console.log(Constants.DCSt11Coord);
-console.log(Constants.DCSt12Coord);
-console.log(Constants.DCSt13Coord);
-console.log(Constants.DCSt14Coord);
-console.log(Constants.DCSt15Coord);
-console.log(Constants.DCSt16Coord);
-console.log(Constants.DCSt17Coord);
-console.log(Constants.DCSt18Coord);
-console.log(Constants.DCSt19Coord);
-console.log(Constants.DCSt20Coord);
-// Outside border
-console.log(Constants.AndersonSt);
-console.log(Constants.AmboseSt);
-console.log(Constants.AdrianStCoord);
-console.log(Constants.AllenStCoord);
-console.log(Constants.AndrewStCoord);
-console.log(Constants.AubreyStCoord);
-console.log(Constants.AveryStCoord);
-console.log(Constants.BarneyStCoord);
-console.log(Constants.BartonStCoord);
-console.log(Constants.BlaneStCoord);
-console.log(Constants.BlakeStCoord);
-console.log(Constants.BookerStCoord);
-console.log(Constants.BradleyStCoord);
-console.log(Constants.BufordStCoord);
-console.log(Constants.BryanStCoord);
-console.log(Constants.BroderickStCoord);
-console.log(Constants.BertramStCoord);
-console.log(Constants.BennetStCoord);
-console.log(Constants.BenedickStCoord);
-console.log(Constants.LincolnStCoord);
-console.log(Constants.CalvinStCoord);
-console.log(Constants.CharlesStCoord);
-console.log(Constants.CornellStLine);
-console.log(Constants.CollinStCoord);
-console.log(Constants.ColbyStLine);
-console.log(Constants.CourtneyStCoord);
-console.log(Constants.ClaytonStCoord);
-console.log(Constants.Clayton1StCoord);
-console.log(Constants.Clayton2StCoord);
-console.log(Constants.CarterStCoord);
-console.log(Constants.CaseyStCoord);
-console.log(Constants.ChadwickStCoord);
-console.log(Constants.ChesterStCoord);
-console.log(Constants.ClarkStCoord);
-console.log(Constants.CedrickStCoord);
-console.log(Constants.DwayneStCoord);
-console.log(Constants.DylanStCoord);
-console.log(Constants.DoyleStCoord);
-console.log(Constants.DorseyStCoord);
-console.log(Constants.DaltonStCoord);
-console.log(Constants.DanielStCoord);
-console.log(Constants.DarrenStCoord);
-console.log(Constants.GailStCoord);
-console.log(Constants.GarlandStCoord);
-console.log(Constants.GarretStCoord);
-console.log(Constants.GradyStCoord);
-console.log(Constants.GrahamStCoord);
-console.log(Constants.HarrisonStCoord);
-console.log(Constants.KingArthurStCoord);
-console.log(Constants.QueenVictoriaStCoord);
-console.log(Constants.QueenElizabethStCoord);
-console.log(Constants.KingPhillipStCoord);
-console.log(Constants.KingCarlosStCoord);
-console.log(Constants.QueenMargaretStCoord);
-console.log(Constants.RoyalState2St1Coord);
-console.log(Constants.RoyalState2St2Coord);
-console.log(Constants.RoyalState2St3Coord);
-console.log(Constants.RoyalState2St4Coord);
-console.log(Constants.RoyalState2St5Coord);
-console.log(Constants.RoyalState2St6Coord);
+const outRoutes = [
+    {
+        name: "Geoffrey Street",
+        polyline: outLocations["Geoffrey Street"] ? L.polyline(outLocations["Geoffrey Street"], { color: 'white', fillOpacity: 0.2 }) : null
 
 
-// polylines
-let boundariesLine = L.polyline(Constants.boundaries, { color: 'black', weight: 3 }).addTo(map);
-let highwayLine = L.polyline(Constants.highwayCoordinates, { color: 'red', weight: 10 }).addTo(map);
-let carmenLine = L.polyline(Constants.carmenCoord, { color: 'red', weight: 10 }).addTo(map);
-let hanggaStLine = L.polyline(Constants.hanggaStCoord, { color: 'red', weight: 10 }).addTo(map);
-let forrestStLine = L.polyline(Constants.forrestStCoord, { color: 'red', weight: 10 }).addTo(map);
-let drmCrstPrvLine = L.polyline(Constants.drmCrstPrvCoord, { color: 'red', weight: 10 }).addTo(map);
-let TrvrStLine = L.polyline(Constants.TrvrStCoord, { color: 'red', weight: 10 }).addTo(map);
-let MchlStLine = L.polyline(Constants.MchlStCoord, { color: 'red', weight: 10 }).addTo(map);
-let LnnlStLine = L.polyline(Constants.LnnlStCoord, { color: 'red', weight: 10 }).addTo(map);
-let ShrwdStLine = L.polyline(Constants.ShrwdStCoord, { color: 'red', weight: 10 }).addTo(map);
-let ShwnStLine = L.polyline(Constants.ShwnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let ShlbyStLine = L.polyline(Constants.ShlbyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let StnlyStLine = L.polyline(Constants.StnlyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let StvStLine = L.polyline(Constants.StvStCoord, { color: 'red', weight: 10 }).addTo(map);
-let SpncrStLine = L.polyline(Constants.SpncrStCoord, { color: 'red', weight: 10 }).addTo(map);
-let TrmnStLine = L.polyline(Constants.TrmnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let TrntnStLine = L.polyline(Constants.TrntnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let TrcyStLine = L.polyline(Constants.TrcyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let TmthyStLine = L.polyline(Constants.TmthyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let TbbyStLine = L.polyline(Constants.TbbyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let ThrmnStLine = L.polyline(Constants.ThrmnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let VncntStLine = L.polyline(Constants.VncntStCoord, { color: 'red', weight: 10 }).addTo(map);
-let VrglStLine = L.polyline(Constants.VrglStCoord, { color: 'red', weight: 10 }).addTo(map);
-let WrrnStLine = L.polyline(Constants.WrrnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let WllcStLine = L.polyline(Constants.WllcStCoord, { color: 'red', weight: 10 }).addTo(map);
-let WltrStLine = L.polyline(Constants.WltrStCoord, { color: 'red', weight: 10 }).addTo(map);
-let WlkrStLine = L.polyline(Constants.WlkrStCoord, { color: 'red', weight: 10 }).addTo(map);
-let MchllStLine = L.polyline(Constants.MchllStCoord, { color: 'red', weight: 10 }).addTo(map);
-let MrrsStLine = L.polyline(Constants.MrrsStCoord, { color: 'red', weight: 10 }).addTo(map);
-let GfryStLine = L.polyline(Constants.GfryStCoord, { color: 'red', weight: 10 }).addTo(map);
-let MrryStLine = L.polyline(Constants.MrryStCoord, { color: 'red', weight: 10 }).addTo(map);
-let MyrnStLine = L.polyline(Constants.MyrnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let NthnStLine = L.polyline(Constants.NthnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let NvneStLine = L.polyline(Constants.NvneStCoord, { color: 'red', weight: 10 }).addTo(map);
-let RdStLine = L.polyline(Constants.RdStCoord, { color: 'red', weight: 10 }).addTo(map);
-let RlphStLine = L.polyline(Constants.RlphStCoord, { color: 'red', weight: 10 }).addTo(map);
-let PrkrStLine = L.polyline(Constants.PrkrStCoord, { color: 'red', weight: 10 }).addTo(map);
-let ScttStLine = L.polyline(Constants.ScttStCoord, { color: 'red', weight: 10 }).addTo(map);
-let SnfrdStLine = L.polyline(Constants.SnfrdStCoord, { color: 'red', weight: 10 }).addTo(map);
-let RbnStLine = L.polyline(Constants.RbnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let RlyStLine = L.polyline(Constants.RlyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let RcStLine = L.polyline(Constants.RcStCoord, { color: 'red', weight: 10 }).addTo(map);
-let PlStLine = L.polyline(Constants.PlStCoord, { color: 'red', weight: 10 }).addTo(map);
-let OrvllStLine = L.polyline(Constants.OrvllStCoord, { color: 'red', weight: 10 }).addTo(map);
-let ChnsyStLine = L.polyline(Constants.ChnsyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let LndsyStLine = L.polyline(Constants.LndsyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let LnwdStLine = L.polyline(Constants.LnwdStCoord, { color: 'red', weight: 10 }).addTo(map);
-let CrsnStLine = L.polyline(Constants.CrsnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let HltnStLine = L.polyline(Constants.HltnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let HwrdStLine = L.polyline(Constants.HwrdStCoord, { color: 'red', weight: 10 }).addTo(map);
-let HrshllStLine = L.polyline(Constants.HrshllStCoord, { color: 'red', weight: 10 }).addTo(map);
-let HrmnStLine = L.polyline(Constants.HrmnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let HlthStLine = L.polyline(Constants.HlthStCoord, { color: 'red', weight: 10 }).addTo(map);
-let HywdStLine = L.polyline(Constants.HywdStCoord, { color: 'red', weight: 10 }).addTo(map);
-let HrldStLine = L.polyline(Constants.HrldStCoord, { color: 'red', weight: 10 }).addTo(map);
-let JsprStLine = L.polyline(Constants.JsprStCoord, { color: 'red', weight: 10 }).addTo(map);
-let LslyStLine = L.polyline(Constants.LslyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let FlydStLine = L.polyline(Constants.FlydStCoord, { color: 'red', weight: 10 }).addTo(map);
-let ElwdStLine = L.polyline(Constants.ElwdStCoord, { color: 'red', weight: 10 }).addTo(map);
-let ErnstStLine = L.polyline(Constants.ErnstStCoord, { color: 'red', weight: 10 }).addTo(map);
-let EthnStLine = L.polyline(Constants.EthnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let EllswrthStLine = L.polyline(Constants.EllswrthStCoord, { color: 'red', weight: 10 }).addTo(map);
-let EllsStLine = L.polyline(Constants.EllsStCoord, { color: 'red', weight: 10 }).addTo(map);
-let ErlStLine = L.polyline(Constants.ErlStCoord, { color: 'red', weight: 10 }).addTo(map);
-let HntrStLine = L.polyline(Constants.HntrStCoord, { color: 'red', weight: 10 }).addTo(map);
-let JrrtStLine = L.polyline(Constants.JrrtStCoord, { color: 'red', weight: 10 }).addTo(map);
-let CmrnStLine = L.polyline(Constants.CmrnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let KrbyStLine = L.polyline(Constants.KrbyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let LvrnStLine = L.polyline(Constants.LvrnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let KrtsStLine = L.polyline(Constants.KrtsStCoord, { color: 'red', weight: 10 }).addTo(map);
-let KvnStLine = L.polyline(Constants.KvnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let KnnStLine = L.polyline(Constants.KnnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let KndllStLine = L.polyline(Constants.KndllStCoord, { color: 'red', weight: 10 }).addTo(map);
-let KthStLine = L.polyline(Constants.KthStCoord, { color: 'red', weight: 10 }).addTo(map);
-let KnnthStLine = L.polyline(Constants.KnnthStCoord, { color: 'red', weight: 10 }).addTo(map);
-let KndrckStLine = L.polyline(Constants.KndrckStCoord, { color: 'red', weight: 10 }).addTo(map);
-let KnnyStLine = L.polyline(Constants.KnnyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let JysnStLine = L.polyline(Constants.JysnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let JrmnStLine = L.polyline(Constants.JrmnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let JrllStLine = L.polyline(Constants.JrllStCoord, { color: 'red', weight: 10 }).addTo(map);
-let JstnStLine = L.polyline(Constants.JstnStCoord, { color: 'red', weight: 10 }).addTo(map);
-let BrcStLine = L.polyline(Constants.BrcStCoord, { color: 'red', weight: 10 }).addTo(map);
-let MxwllStLine = L.polyline(Constants.MxwllStCoord, { color: 'red', weight: 10 }).addTo(map);
-let MynrdStLine = L.polyline(Constants.MynrdStCoord, { color: 'red', weight: 10 }).addTo(map);
-let McknlyStLine = L.polyline(Constants.McknlyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let MrrllStLine = L.polyline(Constants.MrrllStCoord, { color: 'red', weight: 10 }).addTo(map);
-let mckyStLine = L.polyline(Constants.mckyStCoord, { color: 'red', weight: 10 }).addTo(map);
-let RndllStLine = L.polyline(Constants.RndllStCoord, { color: 'red', weight: 10 }).addTo(map);
-let McArthurVillageMainRLine = L.polyline(Constants.McArthurVillageMainRCoord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt1Line = L.polyline(Constants.MAVSt1Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt2Line = L.polyline(Constants.MAVSt2Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt3Line = L.polyline(Constants.MAVSt3Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt4Line = L.polyline(Constants.MAVSt4Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt5Line = L.polyline(Constants.MAVSt5Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt6Line = L.polyline(Constants.MAVSt6Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt7Line = L.polyline(Constants.MAVSt7Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt8Line = L.polyline(Constants.MAVSt8Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt9Line = L.polyline(Constants.MAVSt9Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt10Line = L.polyline(Constants.MAVSt10Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt11Line = L.polyline(Constants.MAVSt11Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt12Line = L.polyline(Constants.MAVSt12Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt13Line = L.polyline(Constants.MAVSt13Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt14Line = L.polyline(Constants.MAVSt14Coord, { color: 'red', weight: 10 }).addTo(map);
-let MAVSt15Line = L.polyline(Constants.MAVSt15Coord, { color: 'red', weight: 10 }).addTo(map);
-let ibaLongosRdLine = L.polyline(Constants.ibaLongosRdCoord, { color: 'red', weight: 10 }).addTo(map);
-let calumpangLongosRdLine = L.polyline(Constants.calumpangLongosRdCoord, { color: 'red', weight: 10 }).addTo(map);
-let riversidestreetLine = L.polyline(Constants.riversidestreetCoord, { color: 'red', weight: 10 }).addTo(map);
-let sanjoseVillageRdLine = L.polyline(Constants.sanjoseVillageRdCoord, { color: 'red', weight: 10 }).addTo(map);
-let riversidestreet2Line = L.polyline(Constants.riversidestreet2Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt1Line = L.polyline(Constants.DCSt1Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt2Line = L.polyline(Constants.DCSt2Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt3Line = L.polyline(Constants.DCSt3Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt4Line = L.polyline(Constants.DCSt4Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt5Line = L.polyline(Constants.DCSt5Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt6Line = L.polyline(Constants.DCSt6Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt7Line = L.polyline(Constants.DCSt7Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt8Line = L.polyline(Constants.DCSt8Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt9Line = L.polyline(Constants.DCSt9Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt10Line = L.polyline(Constants.DCSt10Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt11Line = L.polyline(Constants.DCSt11Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt12Line = L.polyline(Constants.DCSt12Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt13Line = L.polyline(Constants.DCSt13Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt14Line = L.polyline(Constants.DCSt14Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt15Line = L.polyline(Constants.DCSt15Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt16Line = L.polyline(Constants.DCSt16Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt17Line = L.polyline(Constants.DCSt17Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt18Line = L.polyline(Constants.DCSt18Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt19Line = L.polyline(Constants.DCSt19Coord, { color: 'red', weight: 10 }).addTo(map);
-let DCSt20Line = L.polyline(Constants.DCSt20Coord, { color: 'red', weight: 10 }).addTo(map);
+    }
+]
+
+// routes
+routes.forEach(route => {
+    if (route.polyline) {
+        route.polyline.addTo(map);
+        route.polyline.bindPopup(`<b>${route.name}</b><br>Status: ${route.status}<br>Water Level: ${route.waterLevel} cm`);
+    } else {
+        console.error(`Polyline for ${route.name} not created: Invalid location data.`);
+    }
+});
+
+outRoutes.forEach(outRoute => {
+    if (outRoute.polyline) {
+        outRoute.polyline.addTo(map);
+    } else {
+        console.error(`Polyline for ${outRoute.name} not created: Invalid location data.`);
+    }
+});
+
+// additionals
+let boundariesLine = L.polyline(boundaries, { color: 'black', weight: 3 }).addTo(map);
+
+// function addAdditionalLocations() {
+//     if (Constants.additionalLocations && Object.keys(Constants.additionalLocations).length > 0) {
+//         Object.keys(Constants.additionalLocations).forEach(locationName => {
+//             const latLng = Constants.additionalLocations[locationName];
+//             L.marker(latLng).addTo(map)
+//                 .bindPopup(locationName)
+//                 .openPopup();
+//         });
+//     } else {
+//         console.error("No additional locations available.");
+//     }
+// }
+
+// addAdditionalLocations();
+
+// state checker
+let rainActive = false;
+let decreaseWaterLevel = false;
+
+// function checkState() {
+//     $.ajax({
+//         url: 'assets/php/functions/get_control_state.php',
+//         method: 'GET',
+//         success: function (response) {
+//             const state = JSON.parse(response);
+//             console.log("Fetched state from server:", state);
+
+//             rainActive = state.rain;
+//             decreaseWaterLevel = state.decrease;
+
+//             console.log("Rain Active:", rainActive);
+//             console.log("Decrease Water Level Active:", decreaseWaterLevel);
+//         }
+//     });
+// }
+
+// increment
+// const MAX_HISTORY_ENTRIES = 100;
+// const MAX_DATA_AGE_DAYS = 30;
+// const MAX_DATA_AGE_MS = MAX_DATA_AGE_DAYS * 24 * 60 * 60 * 1000;
+
+
+// function getRandomIncrement(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// function updateWaterLevels() {
+//     routes.forEach(route => {
+//         let increment = 0;
+
+//         if (rainActive) {
+//             increment = getRandomIncrement(route.incrementRange.min, route.incrementRange.max);
+//         } else if (!rainActive && decreaseWaterLevel) {
+//             increment = getRandomIncrement(route.incrementRange.min, route.incrementRange.max);
+//         }
+
+//         route.waterLevel += increment;
+
+//         route.waterLevel = Math.max(0, Math.min(100, route.waterLevel));
+
+//         let routeColor = 'green';
+//         let routeStatus = 'Passable';
+//         if (route.waterLevel >= 15) {
+//             routeColor = 'red';
+//             routeStatus = 'Impassable';
+//         } else if (route.waterLevel >= 10) {
+//             routeColor = 'yellow';
+//             routeStatus = 'Risky';
+//         }
+
+//         if (route.polyline) {
+//             route.polyline.setStyle({ color: routeColor });
+//         }
+
+//         if (route.polyline && route.polyline.getPopup()) {
+//             route.polyline.getPopup().setContent(`
+//                 <b>${route.name}</b><br>
+//                 Status: ${routeStatus}<br>
+//                 Water Level: ${route.waterLevel} cm
+//             `);
+//         }
+
+//         saveWaterLevelToHistory(route);
+//     });
+// }
+
+// function saveWaterLevelToHistory(route) {
+//     let waterLevelsHistory = JSON.parse(localStorage.getItem('waterLevelsHistory')) || [];
+
+//     waterLevelsHistory.push({
+//         routeName: route.name,
+//         waterLevel: route.waterLevel,
+//         timestamp: new Date().toISOString()
+//     });
+
+//     const currentTime = new Date().getTime();
+//     waterLevelsHistory = waterLevelsHistory.filter(entry => {
+//         const entryTime = new Date(entry.timestamp).getTime();
+//         return (currentTime - entryTime) <= MAX_DATA_AGE_MS;
+//     });
+
+//     if (waterLevelsHistory.length > MAX_HISTORY_ENTRIES) {
+//         waterLevelsHistory.shift();
+//     }
+
+//     try {
+//         localStorage.setItem('waterLevelsHistory', JSON.stringify(waterLevelsHistory));
+//     } catch (error) {
+//         console.error('Failed to save to localStorage:', error);
+//     }
+// }
+
+// intervals
+// setInterval(updateWaterLevels, 5000);
+// setInterval(checkState, 5000);
+
+
+// toast messages
+function showToast(message) {
+    const toast = document.createElement('div');
+    toast.textContent = message;
+    toast.style.position = 'fixed';
+    toast.style.top = '50%';
+    toast.style.left = '50%';
+    toast.style.transform = 'translate(-50%, -50%)';
+    toast.style.background = 'rgba(0,0,0,0.7)';
+    toast.style.color = '#fff';
+    toast.style.padding = '10px';
+    toast.style.borderRadius = '5px';
+    toast.style.zIndex = '9999';
+    document.body.appendChild(toast);
+    setTimeout(() => toast.remove(), 3000);
+}
+
+// user location
+let currentLat = null;
+let currentLng = null;
+
+function showLocation() {
+    if (navigator.geolocation) {
+        locationWatcher = navigator.geolocation.watchPosition(
+            (position) => {
+                currentLat = position.coords.latitude;
+                currentLng = position.coords.longitude;
+
+                map.setView([currentLat, currentLng], 15);
+
+                const marker = L.marker([currentLat, currentLng]).addTo(map).bindPopup('You are here!').openPopup();
+
+                L.circle([currentLat, currentLng], {
+                    color: 'blue',
+                    fillColor: '#30a8d8',
+                    fillOpacity: 0.5,
+                    radius: 100
+                }).addTo(map);
+
+                document.getElementById('origin').value = 'Current Location';
+            },
+            (error) => {
+                switch (error.code) {
+                    case error.PERMISSION_DENIED:
+                        showToast("You denied access to your location. Please enable location services.");
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        showToast("Location information is unavailable. Please check your GPS or network.");
+                        break;
+                    case error.TIMEOUT:
+                        showToast("The request to get your location timed out. Please try again.");
+                        break;
+                    default:
+                        showToast("An unknown error occurred while retrieving your location.");
+                        break;
+                }
+            },
+            {
+                enableHighAccuracy: true,
+                timeout: 10000,
+                maximumAge: 0
+            }
+        );
+    } else {
+        showToast("Your browser doesn't support geolocation.");
+    }
+}
+
+document.getElementById('locate-btn').addEventListener('click', () => {
+    showLocation();
+    watchLocationAndEraseRoute();
+});
+
+// suggestions
+function showSuggestions(input, suggestionsDiv) {
+    const inputValue = input.value.toLowerCase();
+    suggestionsDiv.innerHTML = '';
+
+    if (inputValue) {
+        const filteredLocations = Object.keys(locations).filter(location =>
+            location.toLowerCase().includes(inputValue)
+        );
+
+        if (currentLat && currentLng && inputValue.includes('current location') === false) {
+            filteredLocations.unshift('Current Location');
+        }
+
+        filteredLocations.forEach(location => {
+            const suggestionItem = document.createElement('div');
+            suggestionItem.classList.add('suggestion-item');
+            suggestionItem.textContent = location;
+            suggestionItem.onclick = () => {
+                input.value = location;
+                suggestionsDiv.innerHTML = '';
+            };
+            suggestionsDiv.appendChild(suggestionItem);
+        });
+    }
+}
+
+const inputElement = document.getElementById('origin');
+const suggestionsDiv = document.getElementById('suggestions');
+
+
+inputElement.addEventListener('input', function () {
+    showSuggestions(inputElement, suggestionsDiv);
+});
 
 
 
-// ============================Oustide of Border=================
+// ============================= ROUTING ============================= //
+let currentRoutingControl = null;
+let polylineToErase = null;  // Store the polyline for potential modification
 
-// Dream Crest Street
-let AndersonStLine =  L.polyline(AndersonStCoord, {color: 'red', weight: 10}).addTo(map)
-let AmboseStLine =  L.polyline(AmboseStCoord, {color: 'red', weight: 10}).addTo(map)
-let AdrianStLine =  L.polyline(AdrianStCoord, {color: 'red', weight: 10}).addTo(map)
-let AllenStLine =  L.polyline(AllenStCoord, {color: 'red', weight: 10}).addTo(map)
-let AndrewStLine =  L.polyline(AndrewStCoord, {color: 'red', weight: 10}).addTo(map)
-let AubreyStLine =  L.polyline(AubreyStCoord, {color: 'red', weight: 10}).addTo(map)
-let AveryStLine =  L.polyline(AveryStCoord, {color: 'red', weight: 10}).addTo(map)
+// Find and show the route
+function findRoute() {
+    document.getElementById('loadingMessage').style.display = 'none';
 
-let BarneyStLine =  L.polyline(BarneyStCoord, {color: 'red', weight: 10}).addTo(map)
-let BartonStLine =  L.polyline(BartonStCoord, {color: 'red', weight: 10}).addTo(map)
-let BlaneStLine =  L.polyline(BlaneStCoord, {color: 'red', weight: 10}).addTo(map)
-let BlakeStLine =  L.polyline(BlakeStCoord, {color: 'red', weight: 10}).addTo(map)
-let BookerStLine =  L.polyline(BookerStCoord, {color: 'red', weight: 10}).addTo(map)
-let BradleyStLine =  L.polyline(BradleyStCoord, {color: 'red', weight: 10}).addTo(map)
-let BufordStLine =  L.polyline(BufordStCoord, {color: 'red', weight: 10}).addTo(map)
-let BryanStLine =  L.polyline(BryanStCoord, {color: 'red', weight: 10}).addTo(map)
-let BroderickStLine =  L.polyline(BroderickStCoord, {color: 'red', weight: 10}).addTo(map)
-let BertramStLine =  L.polyline(BertramStCoord, {color: 'red', weight: 10}).addTo(map)
-let BennetStLine =  L.polyline(BennetStCoord, {color: 'red', weight: 10}).addTo(map)
-let BenedickStLine =  L.polyline(BenedickStCoord, {color: 'red', weight: 10}).addTo(map)
-let LincolnStLine =  L.polyline(LincolnStCoord, {color: 'red', weight: 10}).addTo(map)
+    const originName = document.getElementById('origin').value;
+    const destinationName = document.getElementById('destination').value;
 
-let CalvinStLine =  L.polyline(CalvinStCoord, {color: 'red', weight: 10}).addTo(map)
-let CharlesStLine =  L.polyline(CharlesStCoord, {color: 'red', weight: 10}).addTo(map)
-let CornellStLine =  L.polyline(CornelltonStCoord, {color: 'red', weight: 10}).addTo(map)
-let CollinStLine =  L.polyline(CollinStCoord, {color: 'red', weight: 10}).addTo(map)
-let ColbyStLine =  L.polyline(ColbyStCoord, {color: 'red', weight: 10}).addTo(map)
-let CourtneyStLine =  L.polyline(CourtneyStCoord, {color: 'red', weight: 10}).addTo(map)
-let ClaytonStLine =  L.polyline(ClaytonStCoord, {color: 'red', weight: 10}).addTo(map)
-let Clayton1StLine =  L.polyline(Clayton1StCoord, {color: 'red', weight: 10}).addTo(map)
-let Clayton2StLine =  L.polyline(Clayton2StCoord, {color: 'red', weight: 10}).addTo(map)
-let CarterStLine =  L.polyline(CarterStCoord, {color: 'red', weight: 10}).addTo(map)
-let CaseyStLine =  L.polyline(CaseyStCoord, {color: 'red', weight: 10}).addTo(map)
-let ChadwickStLine =  L.polyline(ChadwickStCoord, {color: 'red', weight: 10}).addTo(map)
-let ChesterStLine =  L.polyline(ChesterStCoord, {color: 'red', weight: 10}).addTo(map)
-let ClarkStLine =  L.polyline(ClarkStCoord, {color: 'red', weight: 10}).addTo(map)
-let CedrickStLine =  L.polyline(CedrickStCoord, {color: 'red', weight: 10}).addTo(map)
+    let originLatLng;
+    if (originName.toLowerCase() === 'current location' && currentLat && currentLng) {
+        originLatLng = L.latLng(currentLat, currentLng);
+    } else {
+        const originRoute = routes.find(route => route.name.toLowerCase() === originName.toLowerCase());
+        if (originRoute) {
+            originLatLng = originRoute.polyline ? originRoute.polyline.getLatLngs()[0] : originRoute.coordinates;
+        } else {
+            showToast("Please enter a valid origin.");
+            return;
+        }
+    }
 
-let DwayneStLine =  L.polyline(DwayneStCoord, {color: 'red', weight: 10}).addTo(map)
-let DylanStLine =  L.polyline(DylanStCoord, {color: 'red', weight: 10}).addTo(map)
-let DoyleStLine =  L.polyline(DoyleStCoord, {color: 'red', weight: 10}).addTo(map)
-let DorseyStLine =  L.polyline(DorseyStCoord, {color: 'red', weight: 10}).addTo(map)
-let DaltonStLine =  L.polyline(DaltonStCoord, {color: 'red', weight: 10}).addTo(map)
-let DanielStLine =  L.polyline(DanielStCoord, {color: 'red', weight: 10}).addTo(map)
-let DarrenStLine =  L.polyline(DarrenStCoord, {color: 'red', weight: 10}).addTo(map)
+    const destinationRoute = routes.find(route => route.name.toLowerCase() === destinationName.toLowerCase());
+    if (!destinationRoute) {
+        showToast("Please enter a valid destination.");
+        return;
+    }
 
-let GailStLine =  L.polyline(GailStCoord, {color: 'red', weight: 10}).addTo(map)
-let GarlandStLine =  L.polyline(GarlandStCoord, {color: 'red', weight: 10}).addTo(map)
-let GarretStLine =  L.polyline(GarretStCoord, {color: 'red', weight: 10}).addTo(map)
-let GradyStLine =  L.polyline(GradyStCoord, {color: 'red', weight: 10}).addTo(map)
-let GrahamStLine =  L.polyline(GrahamStCoord, {color: 'red', weight: 10}).addTo(map)
-let HarrisonStLine =  L.polyline(HarrisonStCoord, {color: 'red', weight: 10}).addTo(map)
+    const destinationLatLng = destinationRoute.polyline ? destinationRoute.polyline.getLatLngs()[0] : destinationRoute.coordinates;
 
-// Royal State 1 Street
-let RCGStLine =  L.polyline(RSGStCoord, {color: 'red', weight: 10}).addTo(map)
-let KingArthurStLine =  L.polyline(KingArthurStCoord, {color: 'red', weight: 10}).addTo(map)
-let QueenVictoriaStLine =  L.polyline(QueenVictoriaStCoord, {color: 'red', weight: 10}).addTo(map)
-let QueenElizabethStLine =  L.polyline(QueenElizabethStCoord, {color: 'red', weight: 10}).addTo(map)
-let KingPhillipStLine =  L.polyline(KingPhillipStCoord, {color: 'red', weight: 10}).addTo(map)
-let KingCarlosStLine =  L.polyline(KingCarlosStCoord, {color: 'red', weight: 10}).addTo(map)
-let QueenMargaretStLine =  L.polyline(QueenMargaretStCoord, {color: 'red', weight: 10}).addTo(map)
+    let isDanger = false;
 
-// Royal state 2 Street
-let RoyalState2St1Line =  L.polyline(RoyalState2St1Coord, {color: 'red', weight: 10}).addTo(map)
-let RoyalState2St2Line =  L.polyline(RoyalState2St2Coord, {color: 'red', weight: 10}).addTo(map)
-let RoyalState2St3Line =  L.polyline(RoyalState2St3Coord, {color: 'red', weight: 10}).addTo(map)
-let RoyalState2St4Line =  L.polyline(RoyalState2St4Coord, {color: 'red', weight: 10}).addTo(map)
-let RoyalState2St5Line =  L.polyline(RoyalState2St5Coord, {color: 'red', weight: 10}).addTo(map)
-let RoyalState2St6Line =  L.polyline(RoyalState2St6Coord, {color: 'red', weight: 10}).addTo(map)
+    for (const route of routes) {
+        if (route.status === 'danger') {
+            const dangerLatLngs = route.polyline.getLatLngs();
+            for (let j = 0; j < dangerLatLngs.length - 1; j++) {
+                const dangerStart = dangerLatLngs[j];
+                const dangerEnd = dangerLatLngs[j + 1];
 
-let KapitanganLongosRdLine = L.polyline(KapitanganLongosRdCoord, {color: 'yellow', weight:10}).addTo(map)
-// ==============================End of Outside Border================================
+                if (doIntersect(originLatLng, destinationLatLng, dangerStart, dangerEnd)) {
+                    isDanger = true;
+                    break;
+                }
+            }
+        }
+        if (isDanger) break;
+    }
+
+    if (isDanger) {
+        showToast('The selected route contains dangerous roads. Suggesting safer alternatives.');
+        suggestSafeRoutes();
+    } else {
+        showToast('The selected route is safe.');
+
+        // Remove existing polyline if any
+        if (currentRoutingControl) {
+            currentRoutingControl.remove();
+        }
+
+        currentRoutingControl = L.Routing.control({
+            waypoints: [originLatLng, destinationLatLng],
+            routeWhileDragging: true,
+            lineOptions: { styles: [{ color: 'blue', weight: 5 }] }
+        }).addTo(map).on('routesfound', function (e) {
+            const routes = e.routes;
+            const directionsDiv = document.getElementById('directions');
+            directionsDiv.style.display = 'block';
+
+            const locationNames = `<h5>From: <strong>${originName}</strong> to <strong>${destinationName}</strong></h5>`;
+            const routeSummary = `<p><strong>${routes[0].summary.totalDistance.toFixed(1)} meters</strong>, 
+            <strong>${routes[0].summary.totalTime.toFixed(0)} seconds</strong></p>`;
+            const routeInstructions = routes[0].instructions.map(i => `<p>${i.text}</p>`).join('');
+
+            const routeInfoDiv = document.getElementById('route-info');
+            routeInfoDiv.innerHTML = locationNames + routeSummary + routeInstructions;
+
+            // Store the polyline for further checks
+            polylineToErase = e.routes[0].coordinates;
+        });
+    }
+}
+
+// Event Listeners
+document.getElementById('searchRoute').addEventListener('click', findRoute);
+document.getElementById('clearRouteBtn').addEventListener('click', clearRoutes);
+
+// close the directions
+document.getElementById('close-directions').addEventListener('click', function () {
+    document.getElementById('directions').style.display = 'none';
+});
+
+function findSafeRoutes(originRoute, destinationRoute) {
+    const visited = new Set();
+    const routeQueue = [{ route: originRoute, path: [originRoute] }];
+    let safePaths = [];
+
+    while (routeQueue.length > 0) {
+        const { route, path } = routeQueue.shift();
+
+        if (route.waterLevel >= 15) {
+            continue;
+        } else if (route.waterLevel >= 10) {
+            // warning
+        }
+
+        if (route === destinationRoute) {
+            safePaths.push(path);
+            continue;
+        }
+
+        visited.add(route.name);
+
+        routes.forEach(nextRoute => {
+            if (nextRoute.waterLevel < 15 && !visited.has(nextRoute.name)) {
+                if (canConnect(route, nextRoute)) {
+                    routeQueue.push({ route: nextRoute, path: [...path, nextRoute] });
+                }
+            }
+        });
+    }
+
+    return safePaths;
+}
+
+// polyline erase
+function watchLocationAndEraseRoute() {
+    if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(
+            (position) => {
+                currentLat = position.coords.latitude;
+                currentLng = position.coords.longitude;
+
+                // Check if the current position intersects or is near the route polyline
+                if (polylineToErase) {
+                    const userLatLng = L.latLng(currentLat, currentLng);
+
+                    // Loop through the polyline and check if the user is near the route
+                    for (let i = 0; i < polylineToErase.length - 1; i++) {
+                        const point1 = polylineToErase[i];
+                        const point2 = polylineToErase[i + 1];
+
+                        // Calculate the distance from the user's location to the polyline segment
+                        const distance = getDistanceFromLine(userLatLng, point1, point2);
+
+                        // If the user is within a certain distance (e.g., 20 meters), consider erasing this segment
+                        if (distance < 20) {
+                            // Logic to "erase" or modify the polyline (e.g., remove that segment)
+                            polylineToErase.splice(i, 1); // Erase the segment (example)
+
+                            // Optionally update the route on the map by removing or updating the polyline
+                            currentRoutingControl.getPlan().setWaypoints(polylineToErase);
+                        }
+                    }
+                }
+            },
+            (error) => {
+                showToast("Error getting location.");
+            },
+            { enableHighAccuracy: true, timeout: 10000 }
+        );
+    }
+}
+
+// Utility function to get distance from a point to a line segment
+function getDistanceFromLine(point, lineStart, lineEnd) {
+    const line = L.LineUtil;
+    return line.pointToSegmentDistance(point, lineStart, lineEnd);
+}
 
 
 
-// bind the popup
-const waterLevel = "<?php echo htmlspecialchars($waterLevel); ?>";
-const status = "<?php echo htmlspecialchars($status); ?>";
+function canConnect(routeA, routeB) {
+    const latLngsA = routeA.polyline.getLatLngs();
+    const latLngsB = routeB.polyline.getLatLngs();
+    return latLngsA.some(latLngA => latLngsB.some(latLngB => latLngA.equals(latLngB)));
+}
 
-// !!! pagawang ganito kung gets niyo tapos paiba na lang name, if hindi aq na basta sabihin sa gc na hindi kineri. tenkz!!!
+function isAlongDanger(route) {
+    for (const dangerRoute of routes.filter(r => r.status === 'danger')) {
+        const dangerLatLngs = dangerRoute.polyline.getLatLngs();
+
+        for (let j = 0; j < dangerLatLngs.length - 1; j++) {
+            const dangerStart = dangerLatLngs[j];
+            const dangerEnd = dangerLatLngs[j + 1];
+
+            for (const latLng of route.polyline.getLatLngs()) {
+                if (doIntersect(latLng, dangerStart, latLng, dangerEnd)) {
+                    return true;
+                }
+            }
+        }
+    }
+    return false;
+}
+
+function suggestSafeRoutes() {
+    const originName = document.getElementById('origin').value;
+    const destinationName = document.getElementById('destination').value;
+
+    const originRoute = routes.find(route => route.name.toLowerCase() === originName.toLowerCase());
+    const destinationRoute = routes.find(route => route.name.toLowerCase() === destinationName.toLowerCase());
+
+    if (!originRoute || !destinationRoute) {
+        showToast("Please enter valid location names.");
+        return;
+    }
+
+    const safeRoutes = findSafeRoutes(originRoute, destinationRoute);
+
+    const filteredSafeRoutes = safeRoutes.filter(path => {
+        return path.every(route => route.status === 'safe' && !isAlongDanger(route));
+    });
+
+    if (filteredSafeRoutes.length === 0) {
+        // showToast('No safe routes available.');
+        return;
+    }
+
+    filteredSafeRoutes.forEach(path => {
+        path.forEach(route => {
+            route.polyline.setStyle({ color: 'blue' });
+            route.polyline.addTo(map);
+        });
+    });
+
+    showToast('Suggested longer safe routes found.');
+}
+
+
+function doIntersect(p1, p2, p3, p4) {
+    const orientation = (p, q, r) => {
+        const val = (q.lat - p.lat) * (r.lng - q.lng) - (q.lng - p.lng) * (r.lat - q.lat);
+        return (val === 0 ? 0 : (val > 0 ? 1 : 2));
+    };
+
+    const onSegment = (p, q, r) => {
+        return (q.lng <= Math.max(p.lng, r.lng) && q.lng >= Math.min(p.lng, r.lng) &&
+            q.lat <= Math.max(p.lat, r.lat) && q.lat >= Math.min(p.lat, r.lat));
+    };
+
+    const o1 = orientation(p1, p2, p3);
+    const o2 = orientation(p1, p2, p4);
+    const o3 = orientation(p3, p4, p1);
+    const o4 = orientation(p3, p4, p2);
+
+    if (o1 !== o2 && o3 !== o4) return true;
+
+    // special cases
+    if (o1 === 0 && onSegment(p1, p3, p2)) return true;
+    if (o2 === 0 && onSegment(p1, p4, p2)) return true;
+    if (o3 === 0 && onSegment(p3, p1, p4)) return true;
+    if (o4 === 0 && onSegment(p3, p2, p4)) return true;
+
+    return false;
+}
+
+
+// event listeners
+
+document.getElementById('searchLocation').addEventListener('input', function () {
+    showSuggestions(this, document.getElementById('suggestions'));
+});
+
+document.getElementById('origin').addEventListener('input', function () {
+    showSuggestions(this, document.getElementById('origin-suggestions'));
+});
+
+document.getElementById('destination').addEventListener('input', function () {
+    showSuggestions(this, document.getElementById('destination-suggestions'));
+});
+
+
+
+// clear routes
+function clearRoutes() {
+    if (currentRoutingControl) {
+        map.removeControl(currentRoutingControl);
+
+        currentRoutingControl = null;
+    }
+
+    document.getElementById('origin').value = '';
+    document.getElementById('destination').value = '';
+
+    const routingInfo = document.getElementById('route-info');
+    const paragraphs = routingInfo.getElementsByTagName('p');
+    for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].innerHTML = '';
+    }
+
+    const directionsDiv = document.getElementById('directions');
+    directionsDiv.style.display = 'none';
+}
+
+document.getElementById('clearRouteBtn').addEventListener('click', clearRoutes);
+
+// clear buttons
+document.getElementById('clearRouteBtn').addEventListener('click', () => {
+    document.getElementById('origin').value = '';
+    document.getElementById('destination').value = '';
+    showToast("Route search cleared.");
+});
+
+
+// search location
+let currentMarker = null;
+
+function setLocation(location) {
+    const lat = location.lat;
+    const lon = location.lon;
+
+    if (currentMarker) {
+        map.removeLayer(currentMarker);
+    }
+
+    currentMarker = L.marker([lat, lon]).addTo(map);
+
+    currentMarker.bindPopup(`<b>${location.display_name}</b>`).openPopup();
+
+    map.setView([lat, lon], 13);
+}
+
+document.getElementById('searchLocation').addEventListener('input', function () {
+    const query = this.value;
+    if (query.length > 2) {
+        fetch(`https://nominatim.openstreetmap.org/search?format=json&limit=5&q=${query}, Philippines`)
+            .then(response => response.json())
+            .then(data => {
+                const suggestionsDiv = document.getElementById('suggestions');
+                suggestionsDiv.innerHTML = '';
+
+                if (data.length > 0) {
+                    data.forEach(item => {
+                        const suggestionItem = document.createElement('div');
+                        suggestionItem.textContent = item.display_name;
+                        suggestionItem.classList.add('suggestion-item');
+                        suggestionItem.style.cursor = 'pointer';
+                        suggestionItem.onclick = () => {
+                            setLocation(item);
+                            suggestionsDiv.innerHTML = '';
+                            suggestionsDiv.style.display = 'none';
+                        };
+                        suggestionsDiv.appendChild(suggestionItem);
+                    });
+                    suggestionsDiv.style.display = 'block';
+                } else {
+                    suggestionsDiv.style.display = 'none';
+                }
+            });
+    } else {
+        document.getElementById('suggestions').style.display = 'none';
+    }
+});
+
+
+document.getElementById('clear-btn').addEventListener('click', function () {
+
+    if (currentMarker) {
+        map.removeLayer(currentMarker);
+        currentMarker = null;
+    }
+
+    document.getElementById('searchLocation').value = '';
+    document.getElementById('suggestions').style.display = 'none';
+});
+
+
+// ======================= HIGHWAY ADMIN INPUT ================= //
+const highwayCoordinates = [
+    [14.880470, 120.791338], // Point A
+    [14.872787, 120.798154]  // Point B
+];
+
+let highwayLine = L.polyline(highwayCoordinates, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+
+const waterLevel = "<?php echo $waterLevel; ?>";
+const status = "<?php echo $status; ?>";
+
 highwayLine.bindPopup(`<b>McArthur Highway</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-carmenLine.bindPopup(`<b>Carmen V. de Luna Street</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 
-
-// update route color based on water level (Mac Arthur)
+// update water level & status
 function updateLineColor(waterLevel) {
     let color = 'green';
     let status = 'Passable';
@@ -440,7 +1390,7 @@ function updateLineColor(waterLevel) {
         status = 'Risky';
     }
 
-    highwayLine.setStyle({ color });
+    highwayLine.setStyle({ color: color });
 
     highwayLine.getPopup().setContent(`<b>McArthur Highway</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
 }
@@ -451,158 +1401,6 @@ highwayLine.on('click', function () {
     this.openPopup();
 });
 
-// show user location on map
-function showLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition((position) => {
-            const lat = position.coords.latitude;
-            const lng = position.coords.longitude;
-            map.setView([lat, lng], 15);
-            L.marker([lat, lng]).addTo(map).bindPopup('You are here!').openPopup();
-        }, () => {
-            alert("Geolocation service failed.");
-        });
-    } else {
-        alert("Your browser doesn't support geolocation.");
-    }
-}
-
-document.getElementById('locate-btn').addEventListener('click', showLocation);
-
-function setLocation(item) {
-    const coords = [parseFloat(item.lat), parseFloat(item.lon)];
-    map.setView(coords, 15);
-    L.marker(coords).addTo(map).bindPopup(item.display_name).openPopup();
-}
-
-// search suggestions
-document.getElementById('searchLocation').addEventListener('input', function () {
-    const query = this.value;
-
-    if (query.length > 2) {
-        fetch(`https://nominatim.openstreetmap.org/search?format=json&limit=5&q=${query}, Philippines`)
-            .then(response => response.json())
-            .then(data => {
-                const suggestionsDiv = document.getElementById('suggestions');
-                suggestionsDiv.innerHTML = ''; // Clear previous suggestions
-                if (data.length > 0) {
-                    data.forEach(item => {
-                        const suggestionItem = document.createElement('div');
-                        suggestionItem.textContent = item.display_name;
-                        suggestionItem.style.cursor = 'pointer';
-                        suggestionItem.onclick = () => {
-                            setLocation(item);
-                            suggestionsDiv.innerHTML = ''; // Clear suggestions after selection
-                            suggestionsDiv.style.display = 'none'; // Hide suggestions
-                        };
-                        suggestionsDiv.appendChild(suggestionItem);
-                    });
-                    suggestionsDiv.style.display = 'block'; // Show suggestions
-                } else {
-                    suggestionsDiv.style.display = 'none'; // Hide if no suggestions
-                }
-            });
-    } else {
-        document.getElementById('suggestions').style.display = 'none'; // Hide suggestions if query is too short
-    }
-});
-
-
-// routing control
-let routingControl;
-
-function createRoute(origin, destination) {
-    if (routingControl) {
-        map.removeControl(routingControl);
-    }
-
-    routingControl = L.Routing.control({
-        waypoints: [L.latLng(origin[0], origin[1]), L.latLng(destination[0], destination[1])],
-        routeWhileDragging: true,
-        showAlternatives: true,
-        altLineOptions: {
-            styles: [
-                { color: 'blue', opacity: 0.6, weight: 5 },
-                { color: 'green', opacity: 0.7, weight: 7 },
-                { color: 'red', opacity: 0.8, weight: 9 }
-            ]
-        },
-        geocoder: L.Control.Geocoder.nominatim(),
-        createMarker: function () { return null; },
-        show: false,
-        lineOptions: { styles: [{ color: 'red', opacity: 0.6, weight: 5 }] }
-    }).addTo(map);
-
-    routingControl.on('routesfound', function (e) {
-        const routes = e.routes;
-        const routingInfo = document.getElementById('route-info');
-        routingInfo.innerHTML = `
-                    <p><strong>${routes[0].summary.totalDistance.toFixed(1)} m, ${routes[0].summary.totalTime.toFixed(0)} s</strong></p>
-                    <p>${routes[0].instructions.map(i => i.text).join('<br>')}</p>
-                `;
-
-        // diretions container
-        document.getElementById('directions').style.display = 'block';
-    });
-}
-
-// routing system
-document.getElementById('searchRoute').addEventListener('click', () => {
-    const origin = document.getElementById('origin').value;
-    const destination = document.getElementById('destination').value;
-
-    document.getElementById('loadingMessage').style.display = 'block';
-
-    if (origin && destination) {
-        Promise.all([
-            fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${origin}`),
-            fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${destination}`)
-        ])
-            .then(([originResponse, destinationResponse]) => Promise.all([originResponse.json(), destinationResponse.json()]))
-            .then(([originData, destinationData]) => {
-                if (originData.length > 0 && destinationData.length > 0) {
-                    const originLatLng = [originData[0].lat, originData[0].lon];
-                    const destinationLatLng = [destinationData[0].lat, destinationData[0].lon];
-                    createRoute(originLatLng, destinationLatLng); // Create the route
-                } else {
-                    throw new Error("One of the locations not found.");
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert(error.message);
-            })
-            .finally(() => {
-                document.getElementById('loadingMessage').style.display = 'none';
-            });
-    } else {
-        alert('Please enter both origin and destination.');
-    }
-});
-
-// clear routes
-function clearRoutes() {
-    if (routingControl) {
-        routingControl.setWaypoints([]);
-        map.eachLayer(function (layer) {
-            if (layer instanceof L.Marker) {
-                map.removeLayer(layer);
-            }
-        });
-    }
-
-    document.getElementById('origin').value = '';
-    document.getElementById('destination').value = '';
-
-    const routingInfo = document.getElementById('route-info');
-    routingInfo.innerHTML = '';
-    document.getElementById('directions').style.display = 'none';
-}
-
-document.getElementById('clearRouteBtn').addEventListener('click', clearRoutes);
-
-// data
-fetchLatestData();
 
 function fetchLatestData() {
     fetch('assets/php/functions/fetch_data.php')
@@ -611,10 +1409,14 @@ function fetchLatestData() {
             const waterLevel = parseInt(data.level);
             const status = data.status;
 
+            if (waterLevel === 'No data') {
+                console.error('No water level data found.');
+                return;
+            }
+
             updateLineColor(waterLevel);
-            // // update popup content
-            // highwayLine.getPopup().setContent(`<b>McArthur Highway</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
-            // highwayLine.openPopup();
+
+            highwayLine.getPopup().setContent(`<b>McArthur Highway</b><br>Status: ${status}<br>Water Level: ${waterLevel} cm`);
         })
         .catch(error => {
             console.error('Error fetching latest data:', error);
@@ -622,18 +1424,3 @@ function fetchLatestData() {
 }
 
 setInterval(fetchLatestData, 5000);
-
-
-// polyline size
-map.on('zoomend', function () {
-    const currentZoom = map.getZoom();
-
-    // based on the zoom level
-    if (currentZoom > 15) {
-        highwayLine.setStyle({ weight: 5 });
-    } else if (currentZoom > 10) {
-        highwayLine.setStyle({ weight: 3 });
-    } else {
-        highwayLine.setStyle({ weight: 1 });
-    }
-});
