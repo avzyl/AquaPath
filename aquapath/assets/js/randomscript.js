@@ -254,30 +254,30 @@ let calumpangLongosRdLine = L.polyline(Constants.calumpangLongosRdCoord, { color
 let riversidestreetLine = L.polyline(Constants.riversidestreetCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let sanjoseVillageRdLine = L.polyline(Constants.sanjoseVillageRdCoord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 let riversidestreet2Line = L.polyline(Constants.riversidestreet2Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt1Line = L.polyline(Constants.DCSt1Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt2Line = L.polyline(Constants.DCSt2Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt3Line = L.polyline(Constants.DCSt3Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt4Line = L.polyline(Constants.DCSt4Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt5Line = L.polyline(Constants.DCSt5Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt6Line = L.polyline(Constants.DCSt6Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt7Line = L.polyline(Constants.DCSt7Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt8Line = L.polyline(Constants.DCSt8Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt9Line = L.polyline(Constants.DCSt9Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt10Line = L.polyline(Constants.DCSt10Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt11Line = L.polyline(Constants.DCSt11Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt12Line = L.polyline(Constants.DCSt12Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt13Line = L.polyline(Constants.DCSt13Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt14Line = L.polyline(Constants.DCSt14Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt15Line = L.polyline(Constants.DCSt15Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt16Line = L.polyline(Constants.DCSt16Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt17Line = L.polyline(Constants.DCSt17Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt18Line = L.polyline(Constants.DCSt18Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt19Line = L.polyline(Constants.DCSt19Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
-// let DCSt20Line = L.polyline(Constants.DCSt20Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt1Line = L.polyline(Constants.DCSt1Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt2Line = L.polyline(Constants.DCSt2Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt3Line = L.polyline(Constants.DCSt3Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt4Line = L.polyline(Constants.DCSt4Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt5Line = L.polyline(Constants.DCSt5Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt6Line = L.polyline(Constants.DCSt6Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt7Line = L.polyline(Constants.DCSt7Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt8Line = L.polyline(Constants.DCSt8Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt9Line = L.polyline(Constants.DCSt9Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt10Line = L.polyline(Constants.DCSt10Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt11Line = L.polyline(Constants.DCSt11Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt12Line = L.polyline(Constants.DCSt12Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt13Line = L.polyline(Constants.DCSt13Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt14Line = L.polyline(Constants.DCSt14Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt15Line = L.polyline(Constants.DCSt15Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt16Line = L.polyline(Constants.DCSt16Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt17Line = L.polyline(Constants.DCSt17Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt18Line = L.polyline(Constants.DCSt18Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt19Line = L.polyline(Constants.DCSt19Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
+let DCSt20Line = L.polyline(Constants.DCSt20Coord, { color: 'green', opacity: 0.6, weight: 5 }).addTo(map);
 
 // intial water lvles
 // let boundariesWaterLevel = 0;
-let highwayWaterLevel = 0;
+// let highwayWaterLevel = 0;
 let carmenWaterLevel = 0;
 let hanggaStWaterLevel = 0;
 let forrestStWaterLevel = 0;
@@ -385,26 +385,26 @@ let calumpangLongosRdWaterLevel = 0;
 let riversidestreetWaterLevel = 0;
 let sanjoseVillageRdWaterLevel = 0;
 let riversidestreet2WaterLevel = 0;
-// let DCSt1WaterLevel = 0;
-// let DCSt2WaterLevel = 0;
-// let DCSt3WaterLevel = 0;
-// let DCSt4WaterLevel = 0;
-// let DCSt5WaterLevel = 0;
-// let DCSt6WaterLevel = 0;
-// let DCSt7WaterLevel = 0;
-// let DCSt8WaterLevel = 0;
-// let DCSt9WaterLevel = 0;
-// let DCSt10WaterLevel = 0;
-// let DCSt11WaterLevel = 0;
-// let DCSt12WaterLevel = 0;
-// let DCSt13WaterLevel = 0;
-// let DCSt14WaterLevel = 0;
-// let DCSt15WaterLevel = 0;
-// let DCSt16WaterLevel = 0;
-// let DCSt17WaterLevel = 0;
-// let DCSt18WaterLevel = 0;
-// let DCSt19WaterLevel = 0;
-// let DCSt20WaterLevel = 0;
+let DCSt1WaterLevel = 0;
+let DCSt2WaterLevel = 0;
+let DCSt3WaterLevel = 0;
+let DCSt4WaterLevel = 0;
+let DCSt5WaterLevel = 0;
+let DCSt6WaterLevel = 0;
+let DCSt7WaterLevel = 0;
+let DCSt8WaterLevel = 0;
+let DCSt9WaterLevel = 0;
+let DCSt10WaterLevel = 0;
+let DCSt11WaterLevel = 0;
+let DCSt12WaterLevel = 0;
+let DCSt13WaterLevel = 0;
+let DCSt14WaterLevel = 0;
+let DCSt15WaterLevel = 0;
+let DCSt16WaterLevel = 0;
+let DCSt17WaterLevel = 0;
+let DCSt18WaterLevel = 0;
+let DCSt19WaterLevel = 0;
+let DCSt20WaterLevel = 0;
 // !!! etong let kineme gagayahin
 
 // random increment generator
@@ -417,172 +417,172 @@ function updatePolyLineWaterLevels() {
 
     // increments
     // const boundariesWaterLevel = getRandomIncrement(-2, 4);
-    const highwayWaterLevel = getRandomIncrement(-2, 4);
-    const carmenWaterLevel = getRandomIncrement(-3, 5);
-    const hanggaStWaterLevel = getRandomIncrement(-2, 4);
-    const forrestStWaterLevel = getRandomIncrement(-3, 5);
-    const drmCrstPrvWaterLevel = getRandomIncrement(-4, 6);
-    const TrvrStWaterLevel = getRandomIncrement(-3, 5);
-    const MchlStWaterLevel = getRandomIncrement(-2, 4);
-    const LnnlStWaterLevel = getRandomIncrement(-3, 4);
-    const ShrwdStWaterLevel = getRandomIncrement(-2, 3);
-    const ShwnStWaterLevel = getRandomIncrement(-3, 5);
-    const ShlbyStWaterLevel = getRandomIncrement(-2, 4);
-    const StnlyStWaterLevel = getRandomIncrement(-3, 5);
-    const StvStWaterLevel = getRandomIncrement(-4, 6);
-    const SpncrStWaterLevel = getRandomIncrement(-3, 5);
-    const TrmnStWaterLevel = getRandomIncrement(-2, 4);
-    const TrntnStWaterLevel = getRandomIncrement(-3, 4);
-    const TrcyStWaterLevel = getRandomIncrement(-3, 5);
-    const TmthyStWaterLevel = getRandomIncrement(-2, 4);
-    const TbbyStWaterLevel = getRandomIncrement(-2, 3);
-    const ThrmnStWaterLevel = getRandomIncrement(-3, 5);
-    const VncntStWaterLevel = getRandomIncrement(-2, 4);
-    const VrglStWaterLevel = getRandomIncrement(-4, 6);
-    const WrrnStWaterLevel = getRandomIncrement(-3, 5);
-    const WllcStWaterLevel = getRandomIncrement(-2, 4);
-    const WltrStWaterLevel = getRandomIncrement(-3, 5);
-    const WlkrStWaterLevel = getRandomIncrement(-2, 4);
-    const MchllStWaterLevel = getRandomIncrement(-3, 5);
-    const MrrsStWaterLevel = getRandomIncrement(-4, 6);
-    const GfryStWaterLevel = getRandomIncrement(-3, 4);
-    const MrryStWaterLevel = getRandomIncrement(-2, 5);
-    const MyrnStWaterLevel = getRandomIncrement(-3, 4);
-    const NthnStWaterLevel = getRandomIncrement(-4, 6);
-    const NvneStWaterLevel = getRandomIncrement(-3, 5);
-    const RdStWaterLevel = getRandomIncrement(-2, 4);
-    const RlphStWaterLevel = getRandomIncrement(-3, 5);
-    const PrkrStWaterLevel = getRandomIncrement(-2, 4);
-    const ScttStWaterLevel = getRandomIncrement(-3, 4);
-    const SnfrdStWaterLevel = getRandomIncrement(-2, 3);
-    const RbnStWaterLevel = getRandomIncrement(-3, 5);
-    const RlyStWaterLevel = getRandomIncrement(-2, 4);
-    const RcStWaterLevel = getRandomIncrement(-3, 5);
-    const PlStWaterLevel = getRandomIncrement(-2, 4);
-    const OrvllStWaterLevel = getRandomIncrement(-2, 5);
-    const ChnsyStWaterLevel = getRandomIncrement(-3, 5);
-    const LndsyStWaterLevel = getRandomIncrement(-2, 4);
-    const LnwdStWaterLevel = getRandomIncrement(-3, 4);
-    const CrsnStWaterLevel = getRandomIncrement(-4, 6);
-    const HltnStWaterLevel = getRandomIncrement(-3, 5);
-    const HwrdStWaterLevel = getRandomIncrement(-2, 4);
-    const HrshllStWaterLevel = getRandomIncrement(-2, 3);
-    const HrmnStWaterLevel = getRandomIncrement(-3, 2);
-    const HlthStWaterLevel = getRandomIncrement(-2, 4);
-    const HywdStWaterLevel = getRandomIncrement(-3, 5);
-    const HrldStWaterLevel = getRandomIncrement(-4, 6);
-    const JsprStWaterLevel = getRandomIncrement(-2, 4);
-    const LslyStWaterLevel = getRandomIncrement(-3, 5);
-    const FlydStWaterLevel = getRandomIncrement(-2, 3);
-    const ElwdStWaterLevel = getRandomIncrement(-3, 5);
-    const ErnstStWaterLevel = getRandomIncrement(-2, 4);
-    const EthnStWaterLevel = getRandomIncrement(-3, 5);
-    const EllswrthStWaterLevel = getRandomIncrement(-2, 4);
-    const EllsStWaterLevel = getRandomIncrement(-3, 4);
-    const ErlStWaterLevel = getRandomIncrement(-2, 3);
-    const HntrStWaterLevel = getRandomIncrement(-3, 5);
-    const JrrtStWaterLevel = getRandomIncrement(-2, 4);
-    const CmrnStWaterLevel = getRandomIncrement(-3, 4);
-    const KrbyStWaterLevel = getRandomIncrement(-2, 5);
-    const LvrnStWaterLevel = getRandomIncrement(-3, 4);
-    const KrtsStWaterLevel = getRandomIncrement(-4, 6);
-    const KvnStWaterLevel = getRandomIncrement(-2, 4);
-    const KnnStWaterLevel = getRandomIncrement(-3, 5);
-    const KndllStWaterLevel = getRandomIncrement(-2, 4);
-    const KthStWaterLevel = getRandomIncrement(-3, 4);
-    const KnnthStWaterLevel = getRandomIncrement(-2, 5);
-    const KndrckStWaterLevel = getRandomIncrement(-3, 5);
-    const KnnyStWaterLevel = getRandomIncrement(-4, 6);
-    const JysnStWaterLevel = getRandomIncrement(-3, 5);
-    const JrmnStWaterLevel = getRandomIncrement(-2, 4);
-    const JrllStWaterLevel = getRandomIncrement(-3, 5);
-    const JstnStWaterLevel = getRandomIncrement(-2, 4);
-    const BrcStWaterLevel = getRandomIncrement(-3, 5);
-    const MxwllStWaterLevel = getRandomIncrement(-2, 4);
-    const MynrdStWaterLevel = getRandomIncrement(-3, 4);
-    const McknlyStWaterLevel = getRandomIncrement(-2, 3);
-    const MrrllStWaterLevel = getRandomIncrement(-4, 6);
-    const MckyStWaterLevel = getRandomIncrement(-3, 5);
-    const RndllStWaterLevel = getRandomIncrement(-2, 4);
-    const McArthurVillageMainRWaterLevel = getRandomIncrement(-3, 5);
-    const MAVSt1WaterLevel = getRandomIncrement(-2, 4);
-    const MAVSt2WaterLevel = getRandomIncrement(-3, 5);
-    const MAVSt3WaterLevel = getRandomIncrement(-2, 4);
-    const MAVSt4WaterLevel = getRandomIncrement(-3, 4);
-    const MAVSt5WaterLevel = getRandomIncrement(-2, 5);
-    const MAVSt6WaterLevel = getRandomIncrement(-3, 5);
-    const MAVSt7WaterLevel = getRandomIncrement(-2, 4);
-    const MAVSt8WaterLevel = getRandomIncrement(-3, 5);
-    const MAVSt9WaterLevel = getRandomIncrement(-2, 4);
-    const MAVSt10WaterLevel = getRandomIncrement(-3, 4);
-    const MAVSt11WaterLevel = getRandomIncrement(-2, 5);
-    const MAVSt12WaterLevel = getRandomIncrement(-3, 4);
-    const MAVSt13WaterLevel = getRandomIncrement(-2, 5);
-    const MAVSt14WaterLevel = getRandomIncrement(-3, 5);
-    const MAVSt15WaterLevel = getRandomIncrement(-2, 4);
-    const ibaLongosRdWaterLevel = getRandomIncrement(-3, 5);
-    const calumpangLongosRdWaterLevel = getRandomIncrement(-2, 4);
-    const riversidestreetWaterLevel = getRandomIncrement(-3, 4);
-    const sanjoseVillageRdWaterLevel = getRandomIncrement(-2, 3);
-    const riversidestreet2WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt1WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt2WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt3WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt4WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt5WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt6WaterLevel = getRandomIncrement(-3, 4);
-    const DCSt7WaterLevel = getRandomIncrement(-2, 5);
-    const DCSt8WaterLevel = getRandomIncrement(-3, 4);
-    const DCSt9WaterLevel = getRandomIncrement(-2, 5);
-    const DCSt10WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt11WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt12WaterLevel = getRandomIncrement(-3, 4);
-    const DCSt13WaterLevel = getRandomIncrement(-2, 5);
-    const DCSt14WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt15WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt16WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt17WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt18WaterLevel = getRandomIncrement(-3, 5);
-    const DCSt19WaterLevel = getRandomIncrement(-2, 4);
-    const DCSt20WaterLevel = getRandomIncrement(-3, 5);
+    // const highwayWaterLevel = getRandomIncrement(-2, 4);
+    const carmenIncrement = getRandomIncrement(-3, 5);
+    const hanggaStIncrement = getRandomIncrement(-2, 4);
+    const forrestStIncrement = getRandomIncrement(-3, 5);
+    const drmCrstPrvIncrement = getRandomIncrement(-4, 6);
+    const TrvrStIncrement = getRandomIncrement(-3, 5);
+    const MchlStIncrement = getRandomIncrement(-2, 4);
+    const LnnlStIncrement = getRandomIncrement(-3, 4);
+    const ShrwdStIncrement = getRandomIncrement(-2, 3);
+    const ShwnStIncrement = getRandomIncrement(-3, 5);
+    const ShlbyStIncrement = getRandomIncrement(-2, 4);
+    const StnlyStIncrement = getRandomIncrement(-3, 5);
+    const StvStIncrement = getRandomIncrement(-4, 6);
+    const SpncrStIncrement = getRandomIncrement(-3, 5);
+    const TrmnStIncrement = getRandomIncrement(-2, 4);
+    const TrntnStIncrement = getRandomIncrement(-3, 4);
+    const TrcyStIncrement = getRandomIncrement(-3, 5);
+    const TmthyStIncrement = getRandomIncrement(-2, 4);
+    const TbbyStIncrement = getRandomIncrement(-2, 3);
+    const ThrmnStIncrement = getRandomIncrement(-3, 5);
+    const VncntStIncrement = getRandomIncrement(-2, 4);
+    const VrglStIncrement = getRandomIncrement(-4, 6);
+    const WrrnStIncrement = getRandomIncrement(-3, 5);
+    const WllcStIncrement = getRandomIncrement(-2, 4);
+    const WltrStIncrement = getRandomIncrement(-3, 5);
+    const WlkrStIncrement = getRandomIncrement(-2, 4);
+    const MchllStIncrement = getRandomIncrement(-3, 5);
+    const MrrsStIncrement = getRandomIncrement(-4, 6);
+    const GfryStIncrement = getRandomIncrement(-3, 4);
+    const MrryStIncrement = getRandomIncrement(-2, 5);
+    const MyrnStIncrement = getRandomIncrement(-3, 4);
+    const NthnStIncrement = getRandomIncrement(-4, 6);
+    const NvneStIncrement = getRandomIncrement(-3, 5);
+    const RdStIncrement = getRandomIncrement(-2, 4);
+    const RlphStIncrement = getRandomIncrement(-3, 5);
+    const PrkrStIncrement = getRandomIncrement(-2, 4);
+    const ScttStIncrement = getRandomIncrement(-3, 4);
+    const SnfrdStIncrement = getRandomIncrement(-2, 3);
+    const RbnStIncrement = getRandomIncrement(-3, 5);
+    const RlyStIncrement = getRandomIncrement(-2, 4);
+    const RcStIncrement = getRandomIncrement(-3, 5);
+    const PlStIncrement = getRandomIncrement(-2, 4);
+    const OrvllStIncrement = getRandomIncrement(-2, 5);
+    const ChnsyStIncrement = getRandomIncrement(-3, 5);
+    const LndsyStIncrement = getRandomIncrement(-2, 4);
+    const LnwdStIncrement = getRandomIncrement(-3, 4);
+    const CrsnStIncrement = getRandomIncrement(-4, 6);
+    const HltnStIncrement = getRandomIncrement(-3, 5);
+    const HwrdStIncrement = getRandomIncrement(-2, 4);
+    const HrshllStIncrement = getRandomIncrement(-2, 3);
+    const HrmnStIncrement = getRandomIncrement(-3, 2);
+    const HlthStIncrement = getRandomIncrement(-2, 4);
+    const HywdStIncrement = getRandomIncrement(-3, 5);
+    const HrldStIncrement = getRandomIncrement(-4, 6);
+    const JsprStIncrement = getRandomIncrement(-2, 4);
+    const LslyStIncrement = getRandomIncrement(-3, 5);
+    const FlydStIncrement = getRandomIncrement(-2, 3);
+    const ElwdStIncrement = getRandomIncrement(-3, 5);
+    const ErnstStIncrement = getRandomIncrement(-2, 4);
+    const EthnStIncrement = getRandomIncrement(-3, 5);
+    const EllswrthStIncrement = getRandomIncrement(-2, 4);
+    const EllsStIncrement = getRandomIncrement(-3, 4);
+    const ErlStIncrement = getRandomIncrement(-2, 3);
+    const HntrStIncrement = getRandomIncrement(-3, 5);
+    const JrrtStIncrement = getRandomIncrement(-2, 4);
+    const CmrnStIncrement = getRandomIncrement(-3, 4);
+    const KrbyStIncrement = getRandomIncrement(-2, 5);
+    const LvrnStIncrement = getRandomIncrement(-3, 4);
+    const KrtsStIncrement = getRandomIncrement(-4, 6);
+    const KvnStIncrement = getRandomIncrement(-2, 4);
+    const KnnStIncrement = getRandomIncrement(-3, 5);
+    const KndllStIncrement = getRandomIncrement(-2, 4);
+    const KthStIncrement = getRandomIncrement(-3, 4);
+    const KnnthStIncrement = getRandomIncrement(-2, 5);
+    const KndrckStIncrement = getRandomIncrement(-3, 5);
+    const KnnyStIncrement = getRandomIncrement(-4, 6);
+    const JysnStIncrement = getRandomIncrement(-3, 5);
+    const JrmnStIncrement = getRandomIncrement(-2, 4);
+    const JrllStIncrement = getRandomIncrement(-3, 5);
+    const JstnStIncrement = getRandomIncrement(-2, 4);
+    const BrcStIncrement = getRandomIncrement(-3, 5);
+    const MxwllStIncrement = getRandomIncrement(-2, 4);
+    const MynrdStIncrement = getRandomIncrement(-3, 4);
+    const McknlyStIncrement = getRandomIncrement(-2, 3);
+    const MrrllStIncrement = getRandomIncrement(-4, 6);
+    const MckyStIncrement = getRandomIncrement(-3, 5);
+    const RndllStIncrement = getRandomIncrement(-2, 4);
+    const McArthurVillageMainRIncrement = getRandomIncrement(-3, 5);
+    const MAVSt1Increment = getRandomIncrement(-2, 4);
+    const MAVSt2Increment = getRandomIncrement(-3, 5);
+    const MAVSt3Increment = getRandomIncrement(-2, 4);
+    const MAVSt4Increment = getRandomIncrement(-3, 4);
+    const MAVSt5Increment = getRandomIncrement(-2, 5);
+    const MAVSt6Increment = getRandomIncrement(-3, 5);
+    const MAVSt7Increment = getRandomIncrement(-2, 4);
+    const MAVSt8Increment = getRandomIncrement(-3, 5);
+    const MAVSt9Increment = getRandomIncrement(-2, 4);
+    const MAVSt10Increment = getRandomIncrement(-3, 4);
+    const MAVSt11Increment = getRandomIncrement(-2, 5);
+    const MAVSt12Increment = getRandomIncrement(-3, 4);
+    const MAVSt13Increment = getRandomIncrement(-2, 5);
+    const MAVSt14Increment = getRandomIncrement(-3, 5);
+    const MAVSt15Increment = getRandomIncrement(-2, 4);
+    const ibaLongosRdIncrement = getRandomIncrement(-3, 5);
+    const calumpangLongosRdIncrement = getRandomIncrement(-2, 4);
+    const riversidestreetIncrement = getRandomIncrement(-3, 4);
+    const sanjoseVillageRdIncrement = getRandomIncrement(-2, 3);
+    const riversidestreet2Increment = getRandomIncrement(-3, 5);
+    const DCSt1Increment = getRandomIncrement(-2, 4);
+    const DCSt2Increment = getRandomIncrement(-3, 5);
+    const DCSt3Increment = getRandomIncrement(-2, 4);
+    const DCSt4Increment = getRandomIncrement(-3, 5);
+    const DCSt5Increment = getRandomIncrement(-2, 4);
+    const DCSt6Increment = getRandomIncrement(-3, 4);
+    const DCSt7Increment = getRandomIncrement(-2, 5);
+    const DCSt8Increment = getRandomIncrement(-3, 4);
+    const DCSt9Increment = getRandomIncrement(-2, 5);
+    const DCSt10Increment = getRandomIncrement(-3, 5);
+    const DCSt11Increment = getRandomIncrement(-2, 4);
+    const DCSt12Increment = getRandomIncrement(-3, 4);
+    const DCSt13Increment = getRandomIncrement(-2, 5);
+    const DCSt14Increment = getRandomIncrement(-3, 5);
+    const DCSt15Increment = getRandomIncrement(-2, 4);
+    const DCSt16Increment = getRandomIncrement(-3, 5);
+    const DCSt17Increment = getRandomIncrement(-2, 4);
+    const DCSt18Increment = getRandomIncrement(-3, 5);
+    const DCSt19Increment = getRandomIncrement(-2, 4);
+    const DCSt20Increment = getRandomIncrement(-3, 5);
     // !!! etong const kineme gagayahin
 
     // Boundaries
-    boundariesWaterlevel += boundariesIncrement;
-    boundariesWaterlevel = Math.max(0, boundariesWaterLevel);
+    // boundariesWaterlevel += boundariesIncrement;
+    // boundariesWaterlevel = Math.max(0, boundariesWaterLevel);
 
-    let boundariesColor = 'green';
-    let boundariesStatus = 'Passable';
+    // let boundariesColor = 'green';
+    // let boundariesStatus = 'Passable';
 
-    if (boundariesWaterLevel >= 15) {
-         boundariesColor = 'red';
-         boundariesStatus = 'Impassable';
-     } else if (boundariesWaterlevel >= 10) {
-         boundariesColor = 'yellow';
-         boundariesStatus = 'Risky';
-     }
+    // if (boundariesWaterLevel >= 15) {
+    //      boundariesColor = 'red';
+    //      boundariesStatus = 'Impassable';
+    //  } else if (boundariesWaterlevel >= 10) {
+    //      boundariesColor = 'yellow';
+    //      boundariesStatus = 'Risky';
+    //  }
 
 
-     boundariesLine.setStyle({ color: boundariesColor });
-     boundariesLine.getPopup().setContent(`<b>Boundaries</b><br>Status: ${boundariesStatus}<br>Water Level: ${boundariesWaterLevel} cm`);
+    //  boundariesLine.setStyle({ color: boundariesColor });
+    //  boundariesLine.getPopup().setContent(`<b>Boundaries</b><br>Status: ${boundariesStatus}<br>Water Level: ${boundariesWaterLevel} cm`);
 
     // Highway
-    highwayWaterLevel += highwayWaterIncrement;
-    highwayWaterLevel = Math.max(0, highwayWaterLevel);
+    // highwayWaterLevel += highwayWaterIncrement;
+    // highwayWaterLevel = Math.max(0, highwayWaterLevel);
 
-    let highwayWaterColor = 'green';
-    let highwayWaterStatus = 'Passable';
+    // let highwayWaterColor = 'green';
+    // let highwayWaterStatus = 'Passable';
 
-    if (highwayWaterLevel >= 15) {
-        highwayWaterColor = 'red';
-        highwayWaterStatus = 'Impassable';
-    } else if (highwayWaterLevel >= 10) {
-        highwayWaterColor = 'yellow';
-        highwayWaterStatus = 'Risky';
-    }
+    // if (highwayWaterLevel >= 15) {
+    //     highwayWaterColor = 'red';
+    //     highwayWaterStatus = 'Impassable';
+    // } else if (highwayWaterLevel >= 10) {
+    //     highwayWaterColor = 'yellow';
+    //     highwayWaterStatus = 'Risky';
+    // }
 
-    highwayLine.setStyle({ color: highwayWaterColor });
-    highwayLine.getPopup().setContent(`<b>Highway</b><br>Status: ${highwayStatus}<br>Water Level: ${highwayWaterLevel} cm`);
+    // highwayLine.setStyle({ color: highwayWaterColor });
+    // highwayLine.getPopup().setContent(`<b>Highway</b><br>Status: ${highwayStatus}<br>Water Level: ${highwayWaterLevel} cm`);
 
 
     // carmen
@@ -1545,10 +1545,10 @@ function updatePolyLineWaterLevels() {
     JrrtStLine.getPopup().setContent(`<b>Jarret Street</b><br>Status: ${JrrtStStatus}<br>Water Level: ${JrrtStWaterLevel} cm`);
 
     // CmrnSt
-    CrsnStWaterLevel += CrmnStIncrement;
-    CrsnStWaterLevel = Math.max(0, CrmnStWaterLevel);
+    CmrnStWaterLevel += CmrnStIncrement;
+    CmrnStWaterLevel = Math.max(0, CmrnStWaterLevel);
     let CmrnStColor = 'green';
-    letCmrnStStatus = 'Passable';
+    let CmrnStStatus = 'Passable';
     if (CmrnStWaterLevel >= 15) {
         CmrnStColor = 'red';
         CmrnStStatus = 'Impassable';
@@ -2255,7 +2255,7 @@ function updatePolyLineWaterLevels() {
     drmCrstPrvLine.bindPopup(`<b>Dream Crest Homes Subdivision</b><br>Status: ${drmCrstPrvStatus}<br>Water Level: ${drmCrstPrvWaterLevel} cm`);
 
 
-        // DCSt 1
+    // DCSt 1
     DCSt1WaterLevel += DCSt1Increment;
     DCSt1WaterLevel = Math.max(0, DCSt1WaterLevel);
 
@@ -2356,11 +2356,11 @@ function updatePolyLineWaterLevels() {
 
     DCSt6Line.setStyle({ color: DCSt6Color });
     DCSt6Line.bindPopup(`<b>Dream Crest Street 6</b><br>Status: ${DCSt6Status}<br>Water Level: ${DCSt6WaterLevel} cm`);
-    
-        // DCSt 7
+
+    // DCSt 7
     DCSt7WaterLevel += DCSt7Increment;
     DCSt6WaterLevel = Math.max(0, DCSt7WaterLevel);
-    
+
     let DCSt7Color = 'green';
     let DCSt7Status = 'Passable';
     if (DCSt7WaterLevel >= 15) {
@@ -2370,14 +2370,14 @@ function updatePolyLineWaterLevels() {
         DCSt7Color = 'yellow';
         DCSt7Status = 'Risky';
     }
-    
+
     DCSt7Line.setStyle({ color: DCSt7Color });
     DCSt7Line.bindPopup(`<b>Dream Crest Street 7</b><br>Status: ${DCSt7Status}<br>Water Level: ${DCSt7WaterLevel} cm`);
-    
+
 
     DCSt8WaterLevel += DCSt8Increment;
     DCSt8WaterLevel = Math.max(0, DCSt8WaterLevel);
-    
+
     let DCSt8Color = 'green';
     let DCSt8Status = 'Passable';
     if (DCSt8WaterLevel >= 15) {
@@ -2387,10 +2387,10 @@ function updatePolyLineWaterLevels() {
         DCSt8Color = 'yellow';
         DCSt8Status = 'Risky';
     }
-    
+
     DCSt8Line.setStyle({ color: DCSt8Color });
     DCSt8Line.bindPopup(`<b>Dream Crest Street 8</b><br>Status: ${DCSt8Status}<br>Water Level: ${DCSt8WaterLevel} cm`);
-    
+
     // DCSt 9
     DCSt9WaterLevel += DCSt9Increment;
     DCSt9WaterLevel = Math.max(0, DCSt9WaterLevel);
@@ -2595,7 +2595,7 @@ function updatePolyLineWaterLevels() {
     DCSt20Line.setStyle({ color: DCSt20Color });
     DCSt20Line.bindPopup(`<b>Dream Crest Street 20</b><br>Status: ${DCSt20Status}<br>Water Level: ${DCSt20WaterLevel} cm`);
 
-    
+
 
 }
 

@@ -1,29 +1,25 @@
-// const ctx = document.getElementById('waterLevelChart').getContext('2d');
-// const waterLevelChart = new Chart(ctx, {
-//     type: 'line',
-//     data: {
-//         labels: [],
-//         datasets: [{
-//             label: 'Water Level',
-//             data: [],
-//             borderWidth: 2,
-//             fill: false
-//         }]
-//     },
-//     options: {
-//         scales: {
-//             y: {
-//                 beginAtZero: true
-//             }
-//         }
-//     }
-// });
+// don't touch this waterLevelChart plz it is for the sensor, tenkz!!
 
-function updateClock() {
-    const now = new Date();
-    const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
-    document.getElementById('clock').textContent = now.toLocaleString('en-US', options);
-}
+const ctx = document.getElementById('waterLevelChart').getContext('2d');
+const waterLevelChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [],
+        datasets: [{
+            label: 'Water Level',
+            data: [],
+            borderWidth: 2,
+            fill: false
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
 
 function fetchWaterLevelData() {
     fetch('assets/php/functions/fetch_water_lvls.php')
@@ -66,9 +62,43 @@ function fetchWaterLevelData() {
         })
         .catch(error => console.error('Error fetching data:', error));
 }
-
-
-setInterval(fetchWaterLevelData, 5000);
 fetchWaterLevelData();
-setInterval(updateClock, 1000);
-updateClock();
+setInterval(fetchWaterLevelData, 5000);
+
+document.addEventListener('DOMContentLoaded', function () {
+    function updateClock() {
+        const now = new Date();
+        const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+        document.getElementById('clock').textContent = now.toLocaleString('en-US', options);
+    }
+
+    updateClock();
+
+    setInterval(updateClock, 1000);
+});
+
+
+// route
+function toggleRouteDetails(routeName) {
+    const details = document.getElementById('details-' + routeName);
+    if (details.style.display === 'none' || details.style.display === '') {
+        details.style.display = 'block';
+    } else {
+        details.style.display = 'none';
+    }
+}
+
+// search functionality
+document.getElementById('routeSearch').addEventListener('input', function () {
+    const searchQuery = this.value.toLowerCase();
+    const routeContainers = document.querySelectorAll('.route-container');
+
+    routeContainers.forEach(container => {
+        const routeName = container.querySelector('.route-name').textContent.toLowerCase();
+        if (routeName.includes(searchQuery)) {
+            container.style.display = '';
+        } else {
+            container.style.display = 'none';
+        }
+    });
+});

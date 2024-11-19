@@ -9,6 +9,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
+// checker
+console.log("Map initialized:", map);
+// console.log("Origin Route:", originRoute);
+// console.log("Destination Route:", destinationRoute);
+
 // routes
 export const routes = [
     // {

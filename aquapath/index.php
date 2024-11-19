@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,18 @@
     <!-- leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
-    
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- css -->
-    <link rel="stylesheet" href="assets/css/styles.css"/>
-    <link rel="stylesheet" href="assets/css/nav.css"/>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
 
     <!-- scripts -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="module" src="assets/js/randomscript2.js" defer></script>
+    <script type="module" src="assets/js/script.js" defer></script>
     <script src="assets/js/DOM.js" defer></script>
 </head>
 
@@ -27,13 +28,17 @@
     <!--=============== NAVBAR ===============-->
     <nav class="nav">
         <ul class="nav__list">
-            <li class="home"><a href="index.php" class="nav__link active-link"><i class="homie fas fa-home"></i></a></li>
-            <li class="route"><button id="toggleRouteSearch" class="nav__route"><i class="routing fa-solid fa-route"></i></button></li>
-            <li class="plus"><button class="nav__expand" id="nav-expand"><i class="phone fa-solid fa-phone"></i></button></li>
+            <li class="home"><a href="index.php" class="nav__link active-link"><i class="homie fas fa-home"></i></a>
+            </li>
+            <li class="route"><button id="toggleRouteSearch" class="nav__route"><i
+                        class="routing fa-solid fa-route"></i></button></li>
+            <li class="plus"><button class="nav__expand" id="nav-expand"><i
+                        class="phone fa-solid fa-phone"></i></button></li>
             <li class="toggle">
                 <button id="toggle-directions"><i class="fa-solid fa-toggle-on"></i></button>
             </li>
-            <li class="history"><a href="history.php" class="nav__link"><i class="fa-solid fa-clock-rotate-left"></i></a></li>
+            <li class="history"><a href="history.php" class="nav__link"><i
+                        class="fa-solid fa-clock-rotate-left"></i></a></li>
         </ul>
     </nav>
 
@@ -52,7 +57,7 @@
         <button id="closeRouteSearch">&times;</button>
         <h2>AquaPather</h2>
         <input type="text" rows="2" id="origin" placeholder="Enter origin">
-        <div id="origin-suggestions"></div> <!-- Suggestions dropdown for origin -->        
+        <div id="origin-suggestions"></div> <!-- Suggestions dropdown for origin -->
 
         <i class="fa-solid fa-arrow-right-long rightArrow"></i>
 
@@ -65,13 +70,14 @@
         </div>
     </div>
 
-    <div id="loadingMessage" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.7); color: white; padding: 20px; border-radius: 5px; z-index: 1000;">
+    <div id="loadingMessage"
+        style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.7); color: white; padding: 20px; border-radius: 5px; z-index: 1000;">
         Getting Directions...
     </div>
 
     <!-- !!! make this a button plz above the navbar -->
     <button id="locate-btn"><i class="fa-solid fa-location-dot"></i></button>
-        
+
     <div id="directions" style="display: none;">
         <button id="close-directions">&times;</button>
         <div id="route-info"></div>
@@ -114,4 +120,5 @@
         );
     </script>
 </body>
+
 </html>
