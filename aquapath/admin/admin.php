@@ -3,8 +3,8 @@ session_start();
 
 try {
     $pdo = new PDO('mysql:host=localhost;dbname=db_aquapath', 'root', '');
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Set error mode to exception
-    $sql = "SELECT level, status FROM tbl_water_lvl ORDER BY id DESC LIMIT 1"; // Fetch the latest entry
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = "SELECT level, status FROM tbl_water_lvl ORDER BY id DESC LIMIT 1";
     $stmt = $pdo->query($sql);
 
     if ($stmt) {
@@ -38,28 +38,53 @@ try {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
-    <link rel="stylesheet" href="assets/css/admin.css"/>
-   
-    
+
     <style>
-        label {
-            font-size: 18px;
-            font-weight: bold;
-            margin-left: 10px;
-            color: #0076b6;
+        #map {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
-        #waterLevel {
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            z-index: 1000;
+            padding: 0 15px;
+            width: 80%;
+            justify-content: center;
+        }
+
+        .controls label {
+            
+            font-size: 1.05rem;
+            font-weight: bold;
+            color: #003366; 
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(255, 255, 255, 0.7); 
+            padding: 5px;
+            border-radius: 5px; 
+}
+ 
+
+        .controls .input-field {
             padding: 8px;
-            font-size: 16px;
+            font-size: 1rem;
             border-radius: 5px;
             border: 1px solid #ccc;
-            width: 200px;
-            margin-right: 10px;
-            margin: 5px;
+            width: 150px;
+            margin: 5px 10px 5px 0;
         }
 
-        #updateColor {
+        .primary-btn {
             padding: 10px 20px;
             background-color: #4CAF50;
             color: white;
@@ -67,19 +92,133 @@ try {
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            width: 180px;
+            margin-top: 10px;
         }
 
-        #updateColor:hover {
+        .primary-btn:hover {
             background-color: #45a049;
         }
 
-    
+        .button-group {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
 
+        .icon-btn {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .icon-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .rain {
+            background-color: gray;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cloud {
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sun {
+            background-color: yellow;
+            color: black;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sun:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .cloud:hover {
+            background-color: lightblue;
+        }
+
+        .rain:hover {
+            background-color: darkgray;
+        }
+
+        @media (max-width: 768px) {
+            .controls {
+                top: 10px;
+            }
+
+            .controls label,
+            .controls .input-field,
+            .primary-btn {
+                font-size: 1rem;
+                margin: 5px 0;
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .primary-btn {
+                width: 150px;
+                margin-top: 10px;
+            }
+
+            .button-group {
+                bottom: 10px;
+            }
+
+            .icon-btn {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .controls label {
+                font-size: 1rem;
+            }
+
+            .controls .input-field {
+                width: 120px;
+            }
+
+            .primary-btn {
+                font-size: 1rem;
+                width: 120px;
+            }
+
+            .button-group {
+                bottom: 10px;
+                gap: 5px;
+            }
+
+            .icon-btn {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 
 <body>
-<div id="map" style="height: 600px;"></div>
+    <div id="map"></div>
 
     <div class="controls">
         <label for="waterLevel">Enter Water Level (cm): </label>
@@ -88,25 +227,20 @@ try {
     </div>
 
     <div class="button-group">
-    <div class="button-group" style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-        <button id="rainButton" 
-                style="background-color: gray; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; font-size: 16px;">
+        <button id="rainButton" class="icon-btn rain">
             <i class="fa-solid fa-cloud-rain"></i>
         </button>
 
-        <button id="cloudButton" 
-                style="background-color: blue; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; font-size: 16px;">
+        <button id="cloudButton" class="icon-btn cloud">
             <i class="fa-solid fa-cloud"></i>
         </button>
 
-        <button id="sunButton" 
-                style="background-color: yellow; color: black; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; font-size: 16px;">
+        <button id="sunButton" class="icon-btn sun">
             <i class="fa-solid fa-sun"></i>
         </button>
     </div>
 
     <script>
-        // trigger buttons when pressed
         $(document).ready(function () {
             $('#rainButton').click(function () {
                 $.ajax({
@@ -120,7 +254,6 @@ try {
                 });
             });
 
-            // Handle Cloud button
             $('#cloudButton').click(function () {
                 $.ajax({
                     url: 'update_control_state.php',
@@ -128,7 +261,7 @@ try {
                     data: { action: 'cloud' },
                     success: function (response) {
                         console.log('Cloud button pressed', response);
-                        alert('Cloud Button Clicked!');  // For testing purposes
+                        alert('Cloud Button Clicked!');
                     },
                     error: function (xhr, status, error) {
                         console.error('Error in Cloud button AJAX:', error);
@@ -137,7 +270,6 @@ try {
                 });
             });
 
-            // Handle Sun button
             $('#sunButton').click(function () {
                 $.ajax({
                     url: 'update_control_state.php',
@@ -145,7 +277,7 @@ try {
                     data: { action: 'sun' },
                     success: function (response) {
                         console.log('Sun button pressed', response);
-                        alert('Sun Button Clicked!');  // For testing purposes
+                        alert('Sun Button Clicked!');
                     },
                     error: function (xhr, status, error) {
                         console.error('Error in Sun button AJAX:', error);
@@ -154,9 +286,7 @@ try {
                 });
             });
         });
-    </script>
 
-    <script>
         const map = L.map('map').setView([14.8713199, 120.7932753], 15);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -164,8 +294,8 @@ try {
         }).addTo(map);
 
         const highwayCoordinates = [
-            [14.876023, 120.795324], // Point A
-            [14.871466, 120.799345]  // Point B (extend as needed)
+            [14.876023, 120.795324],
+            [14.871466, 120.799345]
         ];
 
         let highwayLine = L.polyline(highwayCoordinates, { color: 'green', weight: 5 }).addTo(map);
