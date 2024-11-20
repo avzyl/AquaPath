@@ -90,6 +90,7 @@ body {
 }
 
 .suggestion-item {
+    font-size: 70%;
     padding: 8px;
     border-bottom: 1px solid #ddd;
 }
@@ -187,6 +188,7 @@ input:focus {
     padding: 0.5rem 0.7rem;
     border-radius: 15px;
     width: 90vw;
+    max-height: 80vh;
 }
 
 #closeRouteSearch {
@@ -228,7 +230,11 @@ input:focus {
 }
 
 #origin-suggestions {
-    font-size: 5px;
+    overflow-y: scroll;
+}
+
+#origin-suggestions::-webkit-scrollbar {
+    display: none;
 }
 
 #destination {
@@ -236,6 +242,15 @@ input:focus {
     grid-row: 3;
     height: 100%;
     width: 100%;
+}
+
+#destination-suggestions::-webkit-scrollbar {
+    display: none;
+}
+
+#destination-suggestions {
+    grid-column: 3;
+    overflow-y: scroll;
 }
 
 .rightArrow {
