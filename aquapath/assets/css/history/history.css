@@ -152,6 +152,7 @@ canvas {
     transition: 0.3s ease;
     display: flex;
     align-items: center;
+    flex-direction: column;
 
 }
 
