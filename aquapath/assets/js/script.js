@@ -8,12 +8,12 @@ const routes = [
     {
         name: "Highway",
         polyline: locations["Highway"] ? L.polyline(locations["Highway"], { color: 'green', opacity: 0.6 }) : null,
-        status: 'safe',
+        status: 'Safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
     },
     {
-        name: "Carmen V. de Luna Street",
+        name: "Carmen V. de Luna",
         polyline: locations["Carmen V. de Luna"] ? L.polyline(locations["Carmen V. de Luna"], { color: 'red', opacity: 0.6 }) : null,
         status: 'Danger',
         waterLevel: 25,
@@ -153,13 +153,6 @@ const routes = [
         incrementRange: { min: -2, max: 4 }
     },
     {
-        name: "Carmen V. de Luna",
-        polyline: locations["Carmen V. de Luna"] ? L.polyline(locations["Carmen V. de Luna"], { color: 'green', opacity: 0.6 }) : null,
-        status: 'Safe',
-        waterLevel: 8,
-        incrementRange: { min: -2, max: 4 }
-    },
-    {
         name: "Hangga Street",
         polyline: locations["Hangga Street"] ? L.polyline(locations["Hangga Street"], { color: 'yellow', opacity: 0.6 }) : null,
         status: 'Risky',
@@ -294,9 +287,9 @@ const routes = [
     },
     {
         name: "Ethan Street",
-        polyline: locations["Ethan Street"] ? L.polyline(locations["Ethan Street"], { color: 'yellow', opacity: 0.6 }) : null,
-        status: 'Risky',
-        waterLevel: 12,
+        polyline: locations["Ethan Street"] ? L.polyline(locations["Ethan Street"], { color: 'red', opacity: 0.6 }) : null,
+        status: 'Danger',
+        waterLevel: 22,
         incrementRange: { min: -2, max: 4 }
     },
     {
@@ -425,13 +418,6 @@ const routes = [
         incrementRange: { min: -2, max: 4 }
     },
     {
-        name: "Ethan Street",
-        polyline: locations["Ethan Street"] ? L.polyline(locations["Ethan Street"], { color: 'yellow', opacity: 0.6 }) : null,
-        status: 'Risky',
-        waterLevel: 13,
-        incrementRange: { min: -2, max: 4 }
-    },
-    {
         name: "Earl Street",
         polyline: locations["Earl Street"] ? L.polyline(locations["Earl Street"], { color: 'yellow', opacity: 0.6 }) : null,
         status: 'Risky',
@@ -447,16 +433,16 @@ const routes = [
     },
     {
         name: "Jasper Street",
-        polyline: locations["Jasper Street"] ? L.polyline(locations["Jasper Street"], { color: 'red', opacity: 0.6 }) : null,
-        status: 'Danger',
-        waterLevel: 22,
+        polyline: locations["Jasper Street"] ? L.polyline(locations["Jasper Street"], { color: 'yellow', opacity: 0.6 }) : null,
+        status: 'Risky',
+        waterLevel: 12,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Hilton Street",
-        polyline: locations["Hilton Street"] ? L.polyline(locations["Hilton Street"], { color: 'red', opacity: 0.6 }) : null,
-        status: 'Danger',
-        waterLevel: 25,
+        polyline: locations["Hilton Street"] ? L.polyline(locations["Hilton Street"], { color: 'gren', opacity: 0.6 }) : null,
+        status: 'Safe',
+        waterLevel: 2,
         incrementRange: { min: -2, max: 4 }
     },
     {
@@ -636,16 +622,16 @@ const routes = [
     },
     {
         name: "Nathan Street",
-        polyline: locations["Nathan Street"] ? L.polyline(locations["Nathan Street"], { color: 'green', opacity: 0.6 }) : null,
-        status: 'Safe',
-        waterLevel: 2,
+        polyline: locations["Nathan Street"] ? L.polyline(locations["Nathan Street"], { color: 'red', opacity: 0.6 }) : null,
+        status: 'Danger',
+        waterLevel: 25,
         incrementRange: { min: -2, max: 4 }
     },
     {
         name: "Nevine Street",
-        polyline: locations["Nevine Street"] ? L.polyline(locations["Nevine Street"], { color: 'green', opacity: 0.6 }) : null,
-        status: 'Safe',
-        waterLevel: 4,
+        polyline: locations["Nevine Street"] ? L.polyline(locations["Nevine Street"], { color: 'red', opacity: 0.6 }) : null,
+        status: 'Danger',
+        waterLevel: 24,
         incrementRange: { min: -2, max: 4 }
     },
     {
@@ -684,8 +670,8 @@ const routes = [
         incrementRange: { min: -2, max: 4 }
     },
     {
-        name: "Chaunsey",
-        polyline: locations["Chaunsey"] ? L.polyline(locations["Chaunsey"], { color: 'green', opacity: 0.6 }) : null,
+        name: "Chaunsey Street",
+        polyline: locations["Chaunsey Street"] ? L.polyline(locations["Chaunsey Street"], { color: 'green', opacity: 0.6 }) : null,
         status: 'Safe',
         waterLevel: 0,
         incrementRange: { min: -2, max: 4 }
@@ -699,9 +685,9 @@ const routes = [
     },
     {
         name: "Scott Street",
-        polyline: locations["Scott Street"] ? L.polyline(locations["Scott Street"], { color: 'green', opacity: 0.6 }) : null,
-        status: 'Safe',
-        waterLevel: 0,
+        polyline: locations["Scott Street"] ? L.polyline(locations["Scott Street"], { color: 'yellow', opacity: 0.6 }) : null,
+        status: 'Risky',
+        waterLevel: 15,
         incrementRange: { min: -2, max: 4 }
     },
     {
@@ -713,9 +699,9 @@ const routes = [
     },
     {
         name: "Robin Street",
-        polyline: locations["Robin Street"] ? L.polyline(locations["Robin Street"], { color: 'green', opacity: 0.6 }) : null,
-        status: 'Safe',
-        waterLevel: 0,
+        polyline: locations["Robin Street"] ? L.polyline(locations["Robin Street"], { color: 'red', opacity: 0.6 }) : null,
+        status: 'Danger',
+        waterLevel: 23,
         incrementRange: { min: -2, max: 4 }
     },
     {
@@ -994,9 +980,9 @@ inputElement.addEventListener('input', function () {
 
 // ============================= ROUTING ============================= //
 let currentRoutingControl = null;
-let polylineToErase = null;  // Store the polyline for potential modification
+let polylineToErase = null;
 
-// Find and show the route
+// find and show the route
 function findRoute() {
     document.getElementById('loadingMessage').style.display = 'none';
 
@@ -1004,10 +990,13 @@ function findRoute() {
     const destinationName = document.getElementById('destination').value;
 
     let originLatLng;
+    let originRoute;
+
+    // check origin
     if (originName.toLowerCase() === 'current location' && currentLat && currentLng) {
         originLatLng = L.latLng(currentLat, currentLng);
     } else {
-        const originRoute = routes.find(route => route.name.toLowerCase() === originName.toLowerCase());
+        originRoute = routes.find(route => route.name.toLowerCase() === originName.toLowerCase());
         if (originRoute) {
             originLatLng = originRoute.polyline ? originRoute.polyline.getLatLngs()[0] : originRoute.coordinates;
         } else {
@@ -1016,65 +1005,53 @@ function findRoute() {
         }
     }
 
+    // check destination
     const destinationRoute = routes.find(route => route.name.toLowerCase() === destinationName.toLowerCase());
     if (!destinationRoute) {
         showToast("Please enter a valid destination.");
         return;
     }
-
     const destinationLatLng = destinationRoute.polyline ? destinationRoute.polyline.getLatLngs()[0] : destinationRoute.coordinates;
 
-    let isDanger = false;
+    const originIsDangerous = isAlongDanger(originRoute);
+    const destinationIsDangerous = isAlongDanger(destinationRoute);
 
-    for (const route of routes) {
-        if (route.status === 'Danger') {
-            const dangerLatLngs = route.polyline.getLatLngs();
-            for (let j = 0; j < dangerLatLngs.length - 1; j++) {
-                const dangerStart = dangerLatLngs[j];
-                const dangerEnd = dangerLatLngs[j + 1];
+    if (originIsDangerous || destinationIsDangerous) {
+        showToast("Either the origin or destination is near a dangerous route.");
 
-                if (doIntersect(originLatLng, destinationLatLng, dangerStart, dangerEnd)) {
-                    isDanger = true;
-                    break;
-                }
-            }
-        }
-        if (isDanger) break;
+        suggestSafeRoutes(originRoute, destinationRoute);
+
+        return;
     }
 
-    if (isDanger) {
-        showToast('The selected route contains dangerous roads. Suggesting safer alternatives.');
-        suggestSafeRoutes();
-    } else {
-        showToast('The selected route is safe.');
+    showToast('The selected route is safe.');
 
-        // Remove existing polyline if any
-        if (currentRoutingControl) {
-            currentRoutingControl.remove();
-        }
-
-        currentRoutingControl = L.Routing.control({
-            waypoints: [originLatLng, destinationLatLng],
-            routeWhileDragging: true,
-            lineOptions: { styles: [{ color: 'blue', weight: 5 }] }
-        }).addTo(map).on('routesfound', function (e) {
-            const routes = e.routes;
-            const directionsDiv = document.getElementById('directions');
-            directionsDiv.style.display = 'block';
-
-            const locationNames = `<h5>From: <strong>${originName}</strong> to <strong>${destinationName}</strong></h5>`;
-            const routeSummary = `<p><strong>${routes[0].summary.totalDistance.toFixed(1)} meters</strong>, 
-            <strong>${routes[0].summary.totalTime.toFixed(0)} seconds</strong></p>`;
-            const routeInstructions = routes[0].instructions.map(i => `<p>${i.text}</p>`).join('');
-
-            const routeInfoDiv = document.getElementById('route-info');
-            routeInfoDiv.innerHTML = locationNames + routeSummary + routeInstructions;
-
-            // Store the polyline for further checks
-            polylineToErase = e.routes[0].coordinates;
-        });
+    if (currentRoutingControl) {
+        currentRoutingControl.remove();
     }
+
+    currentRoutingControl = L.Routing.control({
+        waypoints: [originLatLng, destinationLatLng],
+        routeWhileDragging: true,
+        lineOptions: { styles: [{ color: 'blue', weight: 5 }] }
+    }).addTo(map).on('routesfound', function (e) {
+        const routes = e.routes;
+        const directionsDiv = document.getElementById('directions');
+        directionsDiv.style.display = 'block';
+
+        const locationNames = `<h5>From: <strong>${originName}</strong> to <strong>${destinationName}</strong></h5>`;
+        const routeSummary = `<p><strong>${routes[0].summary.totalDistance.toFixed(1)} meters</strong>, 
+        <strong>${routes[0].summary.totalTime.toFixed(0)} seconds</strong></p>`;
+        const routeInstructions = routes[0].instructions.map(i => `<p>${i.text}</p>`).join('');
+
+        const routeInfoDiv = document.getElementById('route-info');
+        routeInfoDiv.innerHTML = locationNames + routeSummary + routeInstructions;
+
+        polylineToErase = e.routes[0].coordinates;
+    });
 }
+
+
 
 // Event Listeners
 document.getElementById('searchRoute').addEventListener('click', findRoute);
@@ -1095,8 +1072,6 @@ function findSafeRoutes(originRoute, destinationRoute) {
 
         if (route.waterLevel >= 15) {
             continue;
-        } else if (route.waterLevel >= 10) {
-            // warning
         }
 
         if (route === destinationRoute) {
@@ -1107,8 +1082,8 @@ function findSafeRoutes(originRoute, destinationRoute) {
         visited.add(route.name);
 
         routes.forEach(nextRoute => {
-            if (nextRoute.waterLevel < 15 && !visited.has(nextRoute.name)) {
-                if (canConnect(route, nextRoute)) {
+            if (nextRoute.waterLevel < 15 && !visited.has(nextRoute.name) && canConnect(route, nextRoute)) {
+                if (!isNearDanger(nextRoute)) {
                     routeQueue.push({ route: nextRoute, path: [...path, nextRoute] });
                 }
             }
@@ -1118,6 +1093,7 @@ function findSafeRoutes(originRoute, destinationRoute) {
     return safePaths;
 }
 
+
 // polyline erase
 function watchLocationAndEraseRoute() {
     if (navigator.geolocation) {
@@ -1126,24 +1102,18 @@ function watchLocationAndEraseRoute() {
                 currentLat = position.coords.latitude;
                 currentLng = position.coords.longitude;
 
-                // Check if the current position intersects or is near the route polyline
                 if (polylineToErase) {
                     const userLatLng = L.latLng(currentLat, currentLng);
 
-                    // Loop through the polyline and check if the user is near the route
                     for (let i = 0; i < polylineToErase.length - 1; i++) {
                         const point1 = polylineToErase[i];
                         const point2 = polylineToErase[i + 1];
 
-                        // Calculate the distance from the user's location to the polyline segment
                         const distance = getDistanceFromLine(userLatLng, point1, point2);
 
-                        // If the user is within a certain distance (e.g., 20 meters), consider erasing this segment
                         if (distance < 20) {
-                            // Logic to "erase" or modify the polyline (e.g., remove that segment)
-                            polylineToErase.splice(i, 1); // Erase the segment (example)
+                            polylineToErase.splice(i, 1);
 
-                            // Optionally update the route on the map by removing or updating the polyline
                             currentRoutingControl.getPlan().setWaypoints(polylineToErase);
                         }
                     }
@@ -1157,13 +1127,13 @@ function watchLocationAndEraseRoute() {
     }
 }
 
-// Utility function to get distance from a point to a line segment
 function getDistanceFromLine(point, lineStart, lineEnd) {
-    const line = L.LineUtil;
-    return line.pointToSegmentDistance(point, lineStart, lineEnd);
+    const A = lineStart.lat - lineEnd.lat;
+    const B = lineStart.lng - lineEnd.lng;
+    const C = lineStart.lat * lineEnd.lng - lineStart.lng * lineEnd.lat;
+    const distance = Math.abs(A * point.lng + B * point.lat + C) / Math.sqrt(A * A + B * B);
+    return distance;
 }
-
-
 
 function canConnect(routeA, routeB) {
     const latLngsA = routeA.polyline.getLatLngs();
@@ -1171,16 +1141,21 @@ function canConnect(routeA, routeB) {
     return latLngsA.some(latLngA => latLngsB.some(latLngB => latLngA.equals(latLngB)));
 }
 
+const DANGER_DISTANCE_THRESHOLD = 1;
 function isAlongDanger(route) {
     for (const dangerRoute of routes.filter(r => r.status === 'Danger')) {
         const dangerLatLngs = dangerRoute.polyline.getLatLngs();
 
-        for (let j = 0; j < dangerLatLngs.length - 1; j++) {
-            const dangerStart = dangerLatLngs[j];
-            const dangerEnd = dangerLatLngs[j + 1];
+        for (let i = 0; i < dangerLatLngs.length - 1; i++) {
+            const dangerStart = dangerLatLngs[i];
+            const dangerEnd = dangerLatLngs[i + 1];
 
-            for (const latLng of route.polyline.getLatLngs()) {
-                if (doIntersect(latLng, dangerStart, latLng, dangerEnd)) {
+            for (let j = 0; j < route.polyline.getLatLngs().length - 1; j++) {
+                const routeStart = route.polyline.getLatLngs()[j];
+                const routeEnd = route.polyline.getLatLngs()[j + 1];
+
+                if (doIntersect(routeStart, routeEnd, dangerStart, dangerEnd)) {
+                    console.log('Route intersects with danger route');
                     return true;
                 }
             }
@@ -1189,39 +1164,128 @@ function isAlongDanger(route) {
     return false;
 }
 
-function suggestSafeRoutes() {
-    const originName = document.getElementById('origin').value;
-    const destinationName = document.getElementById('destination').value;
+function isNearDanger(route) {
+    const DANGER_DISTANCE_THRESHOLD = 50;
 
-    const originRoute = routes.find(route => route.name.toLowerCase() === originName.toLowerCase());
-    const destinationRoute = routes.find(route => route.name.toLowerCase() === destinationName.toLowerCase());
+    for (const dangerRoute of routes.filter(r => r.status === 'Danger')) {
+        const dangerLatLngs = dangerRoute.polyline.getLatLngs();
 
-    if (!originRoute || !destinationRoute) {
-        showToast("Please enter valid location names.");
-        return;
+        for (let i = 0; i < route.polyline.getLatLngs().length - 1; i++) {
+            const routeStart = route.polyline.getLatLngs()[i];
+            const routeEnd = route.polyline.getLatLngs()[i + 1];
+
+            for (let j = 0; j < dangerLatLngs.length - 1; j++) {
+                const dangerStart = dangerLatLngs[j];
+                const dangerEnd = dangerLatLngs[j + 1];
+
+                if (getDistanceFromLine(routeStart, dangerStart, dangerEnd) < DANGER_DISTANCE_THRESHOLD) {
+                    return true;
+                }
+            }
+        }
     }
-
-    const safeRoutes = findSafeRoutes(originRoute, destinationRoute);
-
-    const filteredSafeRoutes = safeRoutes.filter(path => {
-        return path.every(route => route.status === 'safe' && !isAlongDanger(route));
-    });
-
-    if (filteredSafeRoutes.length === 0) {
-        // showToast('No safe routes available.');
-        return;
-    }
-
-    filteredSafeRoutes.forEach(path => {
-        path.forEach(route => {
-            route.polyline.setStyle({ color: 'blue' });
-            route.polyline.addTo(map);
-        });
-    });
-
-    showToast('Suggested longer safe routes found.');
+    return false;
 }
 
+
+let safeRoutes = [];
+let selectedOriginRoute = null;
+let selectedDestinationRoute = null;
+
+function suggestSafeRoutes(originRoute, destinationRoute) {
+    const directionsDiv = document.getElementById('directions');
+    const safeRoutesDiv = document.getElementById('safe-routes');
+    safeRoutesDiv.innerHTML = '';
+
+    selectedOriginRoute = originRoute;
+    selectedDestinationRoute = destinationRoute;
+
+    safeRoutes = findSafeRoutes(originRoute, destinationRoute);
+
+    if (safeRoutes.length > 0) {
+        const safeRouteList = safeRoutes.map((route, index) => {
+            const routeDetails = getRouteDetails(route);
+            return `
+                <li>
+                    <strong>${route.name}</strong><br>
+                    Distance: ${routeDetails.distance} meters<br>
+                    Time: ${routeDetails.time} seconds<br>
+                    <button class="select-safe-route" data-index="${index}">Select this route</button>
+                </li>
+            `;
+        }).join('');
+
+        safeRoutesDiv.innerHTML = `
+            <h5>Suggested Safe Alternatives:</h5>
+            <ul>${safeRouteList}</ul>
+        `;
+    } else {
+        safeRoutesDiv.innerHTML = '<p>No safe alternative routes found.</p>';
+    }
+
+    directionsDiv.appendChild(safeRoutesDiv);
+}
+
+function getRouteDetails(route) {
+    const polyline = route.polyline || route.coordinates;
+    const distance = polyline.reduce((acc, point, i) => {
+        if (i > 0) {
+            acc += point.distanceTo(polyline[i - 1]);
+        }
+        return acc;
+    }, 0).toFixed(1);
+
+    const time = route.summary ? route.summary.totalTime.toFixed(0) : 0;
+
+    return { distance, time };
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('directions').addEventListener('click', function (event) {
+        if (event.target && event.target.classList.contains('select-safe-route')) {
+            const routeIndex = event.target.getAttribute('data-index');
+            selectSafeRoute(routeIndex);
+        }
+    });
+});
+
+function selectSafeRoute(routeIndex) {
+    if (!selectedOriginRoute || !selectedDestinationRoute) {
+        console.error("Origin or destination route is not available.");
+        return;
+    }
+
+    const selectedRoute = safeRoutes[routeIndex];
+    if (!selectedRoute) {
+        console.error("Selected route is not found.");
+        return;
+    }
+
+    if (currentRoutingControl) {
+        currentRoutingControl.remove();
+    }
+
+    currentRoutingControl = L.Routing.control({
+        waypoints: [selectedRoute.polyline.getLatLngs()[0], selectedDestinationRoute.coordinates],
+        routeWhileDragging: true,
+        lineOptions: { styles: [{ color: 'green', weight: 5 }] }
+    }).addTo(map).on('routesfound', function (e) {
+        const routes = e.routes;
+        const routeInfoDiv = document.getElementById('route-info');
+        routeInfoDiv.innerHTML = `
+            <h5>Route from ${selectedRoute.name} to ${selectedDestinationRoute.name}</h5>
+            <p><strong>${routes[0].summary.totalDistance.toFixed(1)} meters</strong>, 
+            <strong>${routes[0].summary.totalTime.toFixed(0)} seconds</strong></p>
+            ${routes[0].instructions.map(i => `<p>${i.text}</p>`).join('')}
+        `;
+
+        polylineToErase = e.routes[0].coordinates;
+    });
+
+    document.getElementById('safe-routes').innerHTML = '';
+
+    showToast('Route updated to your selected safe route.');
+}
 
 function doIntersect(p1, p2, p3, p4) {
     const orientation = (p, q, r) => {

@@ -55,6 +55,29 @@ body {
     gap: 20px;
 }
 
+#safe-routes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#safe-routes li {
+    margin-bottom: 10px;
+}
+
+#safe-routes button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#safe-routes button:hover {
+    background-color: #45a049;
+}
+
 /* #toggle-directions {
     position: fixed;
     bottom: 20px;
