@@ -19,23 +19,36 @@ if (file_exists($historyFile)) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Level Monitoring</title>
+
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- History JS -->
     <script src="assets/js/history/history.js" defer></script>
-    <link rel="stylesheet" href="assets/css/nav.css"/>
-    <link rel="stylesheet" href="assets/css/style.css"/>
-    <link rel="stylesheet" href="assets/css/history/history.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/history/history.css" />
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS (Animate on Scroll) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="module" src="assets/js/randomscript2.js" defer></script>
+    <script type="module" src="assets/js/script.js" defer></script>
     <script src="assets/js/DOM.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+
 </head>
+
 <body>
     <nav class="nav">
         <ul class="nav__list">
@@ -47,10 +60,11 @@ if (file_exists($historyFile)) {
                         class="fa-solid fa-clock-rotate-left"></i></a></li>
         </ul>
     </nav>
+
     <section>
         <div class="tcontainer">
             <div class="title">
-                <h2>Water Level Monitoring</h2>
+                <h2>Brgy. Longos Water Level</h2>
             </div>
         </div>
         <div class="clocknsearchcon">
@@ -130,47 +144,112 @@ if (file_exists($historyFile)) {
                 </script>
 
             <?php } ?>
-        </div>
 
-        <script>
-            function toggleRouteDetails(routeName) {
-                const details = document.getElementById('details-' + routeName);
-                if (details.style.display === 'none' || details.style.display === '') {
-                    details.style.display = 'block';
-                } else {
-                    details.style.display = 'none';
-                }
-            }
+            <!-- Highway route (new route) -->
+            <div class="route-container">
+                <div class="route-name" onclick="toggleRouteDetails('Highway')">
+                    Highway
+                </div>
 
-            document.getElementById('routeSearch').addEventListener('input', function () {
-                const searchQuery = this.value.toLowerCase();
-                const routeContainers = document.querySelectorAll('.route-container');
+                <div class="route-details" id="details-Highway" style="display: none;">
+                    <canvas id="chart-Highway"></canvas>
 
-                routeContainers.forEach(container => {
-                    const routeName = container.querySelector('.route-name').textContent.toLowerCase();
-                    if (routeName.includes(searchQuery)) {
-                        container.style.display = '';
-                    } else {
-                        container.style.display = 'none';
-                    }
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Water Level</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="highwayDataTable">
+                            <!-- Data will be inserted dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const ctx = document.getElementById('chart-Highway').getContext('2d');
+                    new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: [],
+                            datasets: [{
+                                label: 'Highway Water Levels',
+                                data: [],
+                                borderColor: 'blue',
+                                fill: false
+                            }]
+                        }
+                    });
+
+                    fetchWaterLevelDataForHighway();
                 });
-            });
-        </script>
-    </section>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        function updateClock() {
-            const clockElement = document.getElementById('clock');
-            const now = new Date();
-            const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-            clockElement.textContent = timeString;
-        }
 
-        setInterval(updateClock, 1000);
-        updateClock();
-    </script>
+                function fetchWaterLevelDataForHighway() {
+                    fetch('assets/php/functions/fetch_water_lvls.php')
+                        .then(response => response.json())
+                        .then(data => {
+                            const highwayDataTable = document.getElementById('highwayDataTable');
+                            highwayDataTable.innerHTML = '';
+
+                            const labels = [];
+                            const waterLevels = [];
+                            const statusColors = [];
+
+                            data.forEach(entry => {
+                                let lineColor;
+                                if (entry.level < 10) {
+                                    lineColor = 'rgba(76, 175, 80, 1)'; // Green
+                                } else if (entry.level >= 10 && entry.level < 20) {
+                                    lineColor = 'rgba(255, 193, 7, 1)'; // Yellow
+                                } else {
+                                    lineColor = 'rgba(255, 0, 0, 1)'; // Red
+                                }
+
+                                labels.push(entry.timestamp);
+                                waterLevels.push(entry.level);
+                                statusColors.push(lineColor);
+
+                                highwayDataTable.innerHTML += `
+                                    <tr>
+                                        <td>${entry.timestamp}</td>
+                                        <td>${entry.level} cm</td>
+                                        <td>${entry.status}</td>
+                                    </tr>
+                                `;
+                            });
+
+                            const chart = Chart.getChart('chart-Highway');
+                            chart.data.labels = labels;
+                            chart.data.datasets[0].data = waterLevels;
+                            chart.data.datasets[0].borderColor = statusColors;
+                            chart.update();
+                        })
+                        .catch(error => console.error('Error fetching data:', error));
+                }
+
+                function toggleRouteDetails(routeName) {
+                    const details = document.getElementById('details-' + routeName);
+                    details.style.display = details.style.display === 'none' ? 'block' : 'none';
+                }
+            </script>
+
+            <script>
+                function updateClock() {
+                    const clockElement = document.getElementById('clock');
+                    const now = new Date();
+                    const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                    clockElement.textContent = timeString;
+                }
+
+                setInterval(updateClock, 1000);
+                updateClock();
+            </script>
+        </div>
+    </section>
 </body>
+
 </html>

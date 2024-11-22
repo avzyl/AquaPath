@@ -81,7 +81,10 @@
     <div id="directions" style="display: none;">
         <button id="close-directions">&times;</button>
         <div id="route-info"></div>
+        <div id="safe-routes"></div>
     </div>
+
+    <button id="selectSafeRouteBtn" style="display:none;">Select Safer Route</button>
 
     <!-- hotlines -->
     <div id="popup" style="display: none;">
