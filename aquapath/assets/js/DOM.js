@@ -72,7 +72,7 @@ document.getElementById('closeRouteSearch').addEventListener('click', function (
 // toggle direction
 document.getElementById('toggle-directions').addEventListener('click', function () {
     const directions = document.getElementById('directions');
-    directions.style.display = directions.style.display === 'none' || directions.style.display === '' ? 'flex' : 'none';
+    directions.style.display = directions.style.display === 'none' || directions.style.display === '' ? 'grid' : 'none';
 });
 
 // close direction
