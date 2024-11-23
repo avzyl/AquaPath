@@ -1037,7 +1037,7 @@ function findRoute() {
     }).addTo(map).on('routesfound', function (e) {
         const routes = e.routes;
         const directionsDiv = document.getElementById('directions');
-        directionsDiv.style.display = 'block';
+        directionsDiv.style.display = 'grid';
 
         const locationNames = `<h5>From: <strong>${originName}</strong> to <strong>${destinationName}</strong></h5>`;
         const routeSummary = `<p><strong>${routes[0].summary.totalDistance.toFixed(1)} meters</strong>, 

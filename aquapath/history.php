@@ -62,10 +62,31 @@ if (file_exists($historyFile)) {
     </nav>
 
     <section>
-        <div class="tcontainer">
-            <div class="title">
-                <h2>Brgy. Longos Water Level</h2>
+        
+        <div id="popup" style="display: none;">
+            <div class="contitle">
+                <h4 class="title">Need Help?</h4>
+                <button id="close-hotlines">&times;</button>
             </div>
+            <div class="con1">
+                <h4>Longos Rescue:</h4>
+                <div class="box">(044)760-6192</div>
+            </div>
+            <div class="con2">
+                <h4>Malolos Rescue:</h4>
+                <div class="box">(044)760-51-60</div>
+            </div>
+            <div class="con3">
+                <h4>Bulacan Rescue</h4>
+                <div class="box">(044)-791-0566</div>
+            </div>
+            <div class="con4">
+                <h4>National Emergency Hotline</h4>
+                <div class="box">911</div>
+            </div>
+        </div>
+        <div class="tcontainer">
+            <h2>Brgy. Longos <br>Water Level</h2>
         </div>
         <div class="clocknsearchcon">
             <div id="clock">Loading Clock...</div>
@@ -250,6 +271,7 @@ if (file_exists($historyFile)) {
             </script>
         </div>
     </section>
+
 </body>
 
 </html>
