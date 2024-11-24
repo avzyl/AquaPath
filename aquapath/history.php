@@ -23,7 +23,11 @@ if (file_exists($historyFile)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Level Monitoring</title>
+    <title>Aquapath Water Level History</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -50,6 +54,7 @@ if (file_exists($historyFile)) {
 </head>
 
 <body>
+
     <nav class="nav">
         <ul class="nav__list">
             <li class="home"><a href="index.php" class="nav__link active-link"><i class="homie fas fa-home"></i></a>
@@ -61,6 +66,29 @@ if (file_exists($historyFile)) {
         </ul>
     </nav>
 
+    <!-- hotlines -->
+    <div id="popup" style="display: none;">
+        <div class="contitle">
+            <h4 class="title-hotlines">Need Help?</h4>
+            <button id="close-hotlines">&times;</button>
+        </div>
+        <div class="con1">
+            <h4>Longos Rescue:</h4>
+            <div class="box">(044)760-6192</div>
+        </div>
+        <div class="con2">
+            <h4>Malolos Rescue:</h4>
+            <div class="box">(044)760-51-60</div>
+        </div>
+        <div class="con3">
+            <h4>Bulacan Rescue</h4>
+            <div class="box">(044)-791-0566</div>
+        </div>
+        <div class="con4">
+            <h4>National Emergency Hotline</h4>
+            <div class="box">911</div>
+        </div>
+    </div>
     <section>
         <div class="tcontainer">
             <div class="title">
@@ -213,13 +241,12 @@ if (file_exists($historyFile)) {
                                 waterLevels.push(entry.level);
                                 statusColors.push(lineColor);
 
-                                highwayDataTable.innerHTML += `
-                                    <tr>
-                                        <td>${entry.timestamp}</td>
-                                        <td>${entry.level} cm</td>
-                                        <td>${entry.status}</td>
-                                    </tr>
-                                `;
+                                highwayDataTable.innerHTML +=
+                                    `<tr>
+                        <td>${entry.timestamp}</td>
+                        <td>${entry.level} cm</td>
+                        <td>${entry.status}</td>
+                    </tr>`;
                             });
 
                             const chart = Chart.getChart('chart-Highway');
@@ -235,6 +262,17 @@ if (file_exists($historyFile)) {
                     const details = document.getElementById('details-' + routeName);
                     details.style.display = details.style.display === 'none' ? 'block' : 'none';
                 }
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const navExpandButton = document.getElementById('nav-expand');
+                    if (navExpandButton) {
+                        navExpandButton.addEventListener('click', function () {
+                            const popup = document.getElementById('popup');
+                            popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
+                        });
+                    }
+                });
+
             </script>
 
             <script>

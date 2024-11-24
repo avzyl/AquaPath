@@ -13,25 +13,22 @@ body {
 
 .leaflet-control-container {
     display: none !important;
-    /* Hides the entire control container */
 }
 
 #directions {
     position: fixed;
-    top: 70px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background: white;
-    border-radius: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     padding: 10px;
+    display: none;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    min-width: 250px;
+    width: 90%;
+    max-width: 600px;
     z-index: 1000;
-    max-height: 300px;
-    display: flex;
-    grid-row: 1fr 2fr;
-    overflow: scroll;
-    text-align: center;
 }
 
 #directions::-webkit-scrollbar {

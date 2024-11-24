@@ -767,8 +767,8 @@ let boundariesLine = L.polyline(boundaries, { color: 'black', weight: 3 }).addTo
 // addAdditionalLocations();
 
 // state checker
-let rainActive = false;
-let decreaseWaterLevel = false;
+// let rainActive = false;
+// let decreaseWaterLevel = false;
 
 // function checkState() {
 //     $.ajax({
@@ -891,7 +891,7 @@ let currentLng = null;
 
 function showLocation() {
     if (navigator.geolocation) {
-        locationWatcher = navigator.geolocation.watchPosition(
+        navigator.geolocation.watchPosition(
             (position) => {
                 currentLat = position.coords.latitude;
                 currentLng = position.coords.longitude;
@@ -968,6 +968,7 @@ function showSuggestions(input, suggestionsDiv) {
     }
 }
 
+
 const inputElement = document.getElementById('origin');
 const suggestionsDiv = document.getElementById('suggestions');
 
@@ -992,35 +993,39 @@ function findRoute() {
     let originLatLng;
     let originRoute;
 
-    // check origin
     if (originName.toLowerCase() === 'current location' && currentLat && currentLng) {
         originLatLng = L.latLng(currentLat, currentLng);
     } else {
         originRoute = routes.find(route => route.name.toLowerCase() === originName.toLowerCase());
+
         if (originRoute) {
-            originLatLng = originRoute.polyline ? originRoute.polyline.getLatLngs()[0] : originRoute.coordinates;
+            if (originRoute.polyline) {
+                originLatLng = originRoute.polyline.getLatLngs()[0];
+            } else if (originRoute.coordinates) {
+                originLatLng = L.latLng(originRoute.coordinates[0], originRoute.coordinates[1]);
+            } else {
+                showToast("Origin route doesn't have valid coordinates or polyline.");
+                return;
+            }
         } else {
             showToast("Please enter a valid origin.");
             return;
         }
     }
 
-    // check destination
     const destinationRoute = routes.find(route => route.name.toLowerCase() === destinationName.toLowerCase());
-    if (!destinationRoute) {
-        showToast("Please enter a valid destination.");
+    if (!destinationRoute || !destinationRoute.polyline) {
+        showToast("Please enter a valid destination with a polyline.");
         return;
     }
-    const destinationLatLng = destinationRoute.polyline ? destinationRoute.polyline.getLatLngs()[0] : destinationRoute.coordinates;
+    const destinationLatLng = destinationRoute.polyline.getLatLngs()[0];
 
     const originIsDangerous = isAlongDanger(originRoute);
     const destinationIsDangerous = isAlongDanger(destinationRoute);
 
     if (originIsDangerous || destinationIsDangerous) {
         showToast("Either the origin or destination is near a dangerous route.");
-
         suggestSafeRoutes(originRoute, destinationRoute);
-
         return;
     }
 
@@ -1028,6 +1033,7 @@ function findRoute() {
 
     if (currentRoutingControl) {
         currentRoutingControl.remove();
+        currentRoutingControl = null;
     }
 
     currentRoutingControl = L.Routing.control({
@@ -1036,16 +1042,17 @@ function findRoute() {
         lineOptions: { styles: [{ color: 'blue', weight: 5 }] }
     }).addTo(map).on('routesfound', function (e) {
         const routes = e.routes;
-        const directionsDiv = document.getElementById('directions');
-        directionsDiv.style.display = 'block';
-
         const locationNames = `<h5>From: <strong>${originName}</strong> to <strong>${destinationName}</strong></h5>`;
+
         const routeSummary = `<p><strong>${routes[0].summary.totalDistance.toFixed(1)} meters</strong>, 
         <strong>${routes[0].summary.totalTime.toFixed(0)} seconds</strong></p>`;
         const routeInstructions = routes[0].instructions.map(i => `<p>${i.text}</p>`).join('');
 
         const routeInfoDiv = document.getElementById('route-info');
         routeInfoDiv.innerHTML = locationNames + routeSummary + routeInstructions;
+
+        const directionsDiv = document.getElementById('directions');
+        directionsDiv.style.display = 'block';
 
         polylineToErase = e.routes[0].coordinates;
     });
@@ -1141,9 +1148,19 @@ function canConnect(routeA, routeB) {
     return latLngsA.some(latLngA => latLngsB.some(latLngB => latLngA.equals(latLngB)));
 }
 
-const DANGER_DISTANCE_THRESHOLD = 1;
 function isAlongDanger(route) {
+    // Ensure the route has a polyline before proceeding
+    if (!route || !route.polyline) {
+        console.error(`No polyline available for route: ${route ? route.name : 'Unknown route'}`);
+        return false; // Return false to avoid errors and to skip routes without a polyline
+    }
+
     for (const dangerRoute of routes.filter(r => r.status === 'Danger')) {
+        if (!dangerRoute.polyline) {
+            console.warn(`Skipping dangerous route with no polyline: ${dangerRoute.name}`);
+            continue; // Skip dangerous routes that don't have a polyline
+        }
+
         const dangerLatLngs = dangerRoute.polyline.getLatLngs();
 
         for (let i = 0; i < dangerLatLngs.length - 1; i++) {
@@ -1156,7 +1173,7 @@ function isAlongDanger(route) {
 
                 if (doIntersect(routeStart, routeEnd, dangerStart, dangerEnd)) {
                     console.log('Route intersects with danger route');
-                    return true;
+                    return true; // Return true if an intersection is found
                 }
             }
         }
@@ -1330,12 +1347,10 @@ document.getElementById('destination').addEventListener('input', function () {
 });
 
 
-
 // clear routes
 function clearRoutes() {
     if (currentRoutingControl) {
         map.removeControl(currentRoutingControl);
-
         currentRoutingControl = null;
     }
 
@@ -1350,6 +1365,15 @@ function clearRoutes() {
 
     const directionsDiv = document.getElementById('directions');
     directionsDiv.style.display = 'none';
+
+    const safeRoutesDiv = document.getElementById('safe-routes');
+    safeRoutesDiv.innerHTML = '';
+
+    safeRoutes = [];
+    selectedOriginRoute = null;
+    selectedDestinationRoute = null;
+
+    document.getElementById('selectSafeRouteBtn').style.display = 'none';
 }
 
 document.getElementById('clearRouteBtn').addEventListener('click', clearRoutes);
@@ -1360,6 +1384,7 @@ document.getElementById('clearRouteBtn').addEventListener('click', () => {
     document.getElementById('destination').value = '';
     showToast("Route search cleared.");
 });
+
 
 
 // search location
@@ -1377,7 +1402,7 @@ function setLocation(location) {
 
     currentMarker.bindPopup(`<b>${location.display_name}</b>`).openPopup();
 
-    map.setView([lat, lon], 13);
+    map.setView([lat, lon], 15);
 }
 
 document.getElementById('searchLocation').addEventListener('input', function () {

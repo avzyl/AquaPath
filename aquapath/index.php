@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaPath</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
 
     <!-- leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -55,19 +59,19 @@
     <!-- !!! move all the styles to styles.css plz, tinatamad na ako maglipat-lipat file kaya dito ko na nilagay -->
     <div class="routeContainer" id="routeSearchContainer" style="display: none;">
         <button id="closeRouteSearch">&times;</button>
-        <h2>AquaPather</h2>
+        <h2>Aquapath</h2>
         <input type="text" rows="2" id="origin" placeholder="Enter origin">
         <div id="origin-suggestions"></div> <!-- Suggestions dropdown for origin -->
 
         <i class="fa-solid fa-arrow-right-long rightArrow"></i>
 
         <input type="text" rows="2" id="destination" placeholder="Enter destination">
-        <div id="destination-suggestions"></div>
         <br>
         <div class="routeBtn">
             <button id="searchRoute"><i class="fa-solid fa-magnifying-glass"></i>Search Route</button>
             <button id="clearRouteBtn">Clear Routes</button>
         </div>
+        <div id="destination-suggestions"></div>
     </div>
 
     <div id="loadingMessage"
@@ -114,14 +118,6 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init(
-            {
-                duration: 1200
-            }
-        );
-    </script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@ import * as Constants from './const2.js';
 const { locations, boundaries } = Constants;
 
 // map
-export const map = L.map('map').setView([14.8713199, 120.7932753], 15);
+export const map = L.map('map').setView([14.8726382, 120.7899598], 15);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '© OpenStreetMap'
