@@ -28,9 +28,11 @@ try {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flood Monitoring</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -80,7 +82,7 @@ try {
             font-size: 1rem;
             border-radius: 5px;
             border: 1px solid #ccc;
-            width: 150px;
+            width: 160px;
             margin: 5px 10px 5px 0;
         }
 
@@ -93,7 +95,6 @@ try {
             cursor: pointer;
             transition: background-color 0.3s ease;
             width: 180px;
-            margin-top: 10px;
         }
 
         .primary-btn:hover {
@@ -189,6 +190,7 @@ try {
             .icon-btn {
                 font-size: 1.2rem;
             }
+
         }
 
         @media (max-width: 480px) {
@@ -197,12 +199,12 @@ try {
             }
 
             .controls .input-field {
-                width: 120px;
+                width: 140px;
             }
 
             .primary-btn {
                 font-size: 1rem;
-                width: 120px;
+                width: 140px;
             }
 
             .button-group {
