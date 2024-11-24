@@ -1042,6 +1042,9 @@ function findRoute() {
         lineOptions: { styles: [{ color: 'blue', weight: 5 }] }
     }).addTo(map).on('routesfound', function (e) {
         const routes = e.routes;
+        const directionsDiv = document.getElementById('directions');
+        directionsDiv.style.display = 'block';
+
         const locationNames = `<h5>From: <strong>${originName}</strong> to <strong>${destinationName}</strong></h5>`;
 
         const routeSummary = `<p><strong>${routes[0].summary.totalDistance.toFixed(1)} meters</strong>, 
@@ -1050,9 +1053,6 @@ function findRoute() {
 
         const routeInfoDiv = document.getElementById('route-info');
         routeInfoDiv.innerHTML = locationNames + routeSummary + routeInstructions;
-
-        const directionsDiv = document.getElementById('directions');
-        directionsDiv.style.display = 'block';
 
         polylineToErase = e.routes[0].coordinates;
     });
@@ -1493,7 +1493,7 @@ function fetchLatestData() {
     fetch('assets/php/functions/fetch_data.php')
         .then(response => response.json())
         .then(data => {
-            const waterLevel = parseInt(data.level);
+            const waterLevel = parseInt(data.water_lvl);
             const status = data.status;
 
             if (waterLevel === 'No data') {

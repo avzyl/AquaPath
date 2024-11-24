@@ -15,20 +15,31 @@ body {
     display: none !important;
 }
 
+.leaflet-popup-content {
+    font-size: 13px;
+}
+
+.leaflet-popup-content b {
+    font-size: 15px;
+}
+
 #directions {
     position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    display: none;
+    border-radius: 20px;
+    padding: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 600px;
     z-index: 1000;
+    max-height: 300px;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    text-align: center;
+    overflow-y: scroll;
 }
 
 #directions::-webkit-scrollbar {
@@ -42,6 +53,7 @@ body {
     cursor: pointer;
     display: flex;
     align-items: flex-start;
+    margin-bottom: 10px;
 }
 
 #route-info {
@@ -50,6 +62,19 @@ body {
     align-self: center;
     flex-direction: column;
     gap: 20px;
+    font-size: 10px;
+}
+
+#route-info p {
+    font-size: 15px;
+}
+
+#route-info strong {
+    font-size: 15px;
+}
+
+#route-info h5 {
+    font-size: 15px;
 }
 
 #safe-routes ul {
@@ -58,7 +83,7 @@ body {
 }
 
 #safe-routes li {
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 #safe-routes button {
@@ -359,6 +384,7 @@ input:focus {
     display: grid;
     animation: fade-up 0.5s 1;
     padding: 20px;
+    overflow-y: scroll;
 }
 
 @keyframes fade-up {
@@ -386,6 +412,7 @@ input:focus {
 #popup h4 {
     font-size: 15px;
     color: #fff;
+    margin-bottom: 5px;
 }
 
 #popup.show {
@@ -400,4 +427,5 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
 }
